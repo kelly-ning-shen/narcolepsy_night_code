@@ -3,6 +3,9 @@ Ning Shen from Fudan University, China
 
 ## Objective & Motivation
 Using full-night PSG recordings to automatically detect patients with narcolepsy.
+- 针对夜晚睡眠中非事件性的睡眠障碍 → 缺少事件标注 → sparse supervision
+- 想要结合睡眠结构来诊断
+- 挖掘睡眠的内在信息
 
 ## The Key method
 1. proposed: multitask

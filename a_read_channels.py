@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-python 3.7.1 64-bit (global)
+python 3.6.7 ('stanford-stages': conda)
+Using pyedflib to read signal information.
 """
-from mne.io import read_raw_edf
-import matplotlib.pyplot as plt
-# import mne
+import pyedflib
 import pandas as pd
 import os
 
 base = 'G:/NSRR/mnc/cnc/chp/'
-
-
 
 def findAllFile(base):
     for filepath, dirnames, filenames in os.walk(base):
@@ -22,29 +19,37 @@ def readSignalInfo(base,save=True):
     total = 25
     chs_names_pad = []
     subject = []
-    sample_Hz = []
     for filepath,filename in findAllFile(base):
         fullname = filepath + filename # filepath: G:/NSRR/mnc/cnc/chc/   filename: chc056-nsrr.edf
         print('\ndata path: ' + fullname)
 
         print('Next step: read channels')
         try:
-            raw = read_raw_edf(fullname, preload=False)
+            f = pyedflib.EdfReader(fullname)
         except RuntimeWarning:
             pass
         else:
-            ch_names = raw.info['ch_names']
-            s_Hz = raw.info['sfreq']
-            ch_names_pad = ch_names + [' ']*(total-len(ch_names)) # total: 要取最大的通道数，这样才能形成一个矩阵
+            n = f.signals_in_file # signal numbers
+            signal_labels = f.getSignalLabels() # list
+            signal_fs = f.getSampleFrequencies() # array
+
+            # concat 2 list with ': '
+            for i in range(n):
+                signal_labels[i] += ': ' + str(signal_fs[i])
+            # print(signal_labels)
+
+            ch_names_pad = signal_labels + [' ']*(total-len(signal_labels)) # total: 要取最大的通道数，这样才能形成一个矩阵
             chs_names_pad.append(ch_names_pad)
-            subject.append(filename)
-            sample_Hz.append(s_Hz)
+            subject.append(filename.split('.')[0]) # w/o .edf
+
+            f._close()
+            del f
 
     # After searching for all subjects
     chs_names_dict = dict(zip(subject,chs_names_pad))
     chs_names_dt = pd.DataFrame(chs_names_dict)
     print(chs_names_dt)
-    print(sample_Hz)
+
 
     if save:
         savetoExcel(chs_names_dt)
@@ -58,4 +63,4 @@ def savetoExcel(chs_names_dt):
 
 
 if __name__ == '__main__':
-    readSignalInfo(base,save=False)
+    readSignalInfo(base,save=True)

@@ -6,7 +6,7 @@ Using pyedflib to read signal information.
 import pyedflib
 
 def readSignalInfo():
-    fullname = 'G:/NSRR/mnc/cnc/chp/chp060-nsrr.edf'
+    fullname = 'G:/NSRR/mnc/cnc/chp/chp040-nsrr.edf'
 
     f = pyedflib.EdfReader(fullname)
 
@@ -24,7 +24,13 @@ def readSignalInfo():
         signal_labels[i] += ': ' + str(signal_fs[i])
     print(signal_labels)
 
-
+    # Test2: pyedflib - EdfReader - readSignal(chn)
+    # chn, namely channel number: start from 0, or 1?
+    for i in range(n):
+        print('\n======{} {}====='.format(i,signal_labels[i]))
+        signal = f.readSignal(i)
+        print('signal first 5 points: ', signal[0:5])
+        print('signal last 5 points: ', signal[-5:])
 
 
     # header = f.getHeader()  # {'technician': '', 'recording_additional': '', 'patientname': '', 'patient_additional': '', 'patientcode': '', 'equipment': '', 'admincode': '', 

@@ -19,7 +19,7 @@ Using full-night PSG recordings to automatically detect patients with narcolepsy
   - step 2: narcolepsy detection
 
 ### Dataset
-CNC (78 recordings)
+CNC (78 recordings) **(with signal and annotation)**
 > Used for narcolepsy testing sample 2 in: <br>
 > [2]	J. B. Stephansen et al., "Neural network analysis of sleep stages enables efficient diagnosis of narcolepsy," Nat. Commun., Article vol. 9, p. 15, Dec 2018, Art no. 5229, doi: 10.1038/s41467-018-07229-3.
 - T1 NARCOLEPSY (55)

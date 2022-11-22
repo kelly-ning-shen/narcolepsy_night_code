@@ -2,6 +2,7 @@
 """
 python 3.6.7 ('stanford-stages': conda)
 Using pyedflib to read signal information.
+Used before diagnosis! (This is another part)
 """
 import pyedflib
 import pandas as pd

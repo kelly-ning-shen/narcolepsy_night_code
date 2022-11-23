@@ -66,6 +66,7 @@ def main(base,configInput):
         edfFilename = filepath + filename # filepath: G:/NSRR/mnc/cnc/chc/   filename: chc056-nsrr.edf
         appConfig.edf_path = edfFilename
         myprint('\nData path: ' + appConfig.edf_path)
+        appConfig.xml_path = changeFileExt(edfFilename, '.xml') # sleep staging annotations
 
         appConfig.narcolepsy = getNCStatus(filename) # clinical diagnosis 1:NT1, 0:control
         myprint('Clinical diagnosis:', DIAGNOSIS[appConfig.narcolepsy])
@@ -80,9 +81,10 @@ def main(base,configInput):
 
         ## run the program!
         # narcoApp.eval_all()
-        signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
-        cdiagnosis = narcoApp.get_clinical_diagnosis() 
-        narcoApp.get_sleep_staging_annotation()
+        # signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
+        # cdiagnosis = narcoApp.get_clinical_diagnosis() # 无需进入 prepare.py
+        annotations = narcoApp.get_sleep_staging_annotation()
+        print('Yes!')
 
         # if hypnoConfig['show']['hypnogram']:
         #     print("Hypnogram:")

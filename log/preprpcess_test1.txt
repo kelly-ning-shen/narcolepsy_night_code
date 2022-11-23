@@ -11,3 +11,27 @@ Clinical diagnosis: Narcolepsy type 1
 Loading previously saved preprocessed data
 PAUSE HERE!
 Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+
+Data path: G:/NSRR/mnc/cnc/test/chc001-nsrr.edf
+Clinical diagnosis: Other
+Read annotations from xml
+pickling done
+Backend Qt5Agg is interactive backend. Turning interactive mode on.
+Yes!
+
+Data path: G:/NSRR/mnc/cnc/test/chp001-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Read annotations from xml
+pickling done
+Yes!
+
+Data path: G:/NSRR/mnc/cnc/test/chc001-nsrr.edf
+Clinical diagnosis: Other
+Loading previously read sleep staging annotations
+Backend Qt5Agg is interactive backend. Turning interactive mode on.
+Yes!
+
+Data path: G:/NSRR/mnc/cnc/test/chp001-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Loading previously read sleep staging annotations
+Yes!

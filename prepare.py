@@ -168,6 +168,7 @@ class Prepare(object):
     def __init__(self,appConfig):
         self.config = appConfig
         self.PreProcessing = PreProcess(appConfig)
+        self.xml_path = appConfig.xml_path
         # self.narcolepsy = appConfig.narcolepsy
 
     def get_signal(self):
@@ -183,4 +184,51 @@ class Prepare(object):
         
     def get_annotation(self):
         # get sleep staging annotation
-        pass
+        a = Path(self.xml_path)
+        a = Path(a.with_suffix('.ann_pkl'))
+
+        if (a.exists()):
+            myprint('Loading previously read sleep staging annotations')
+            with a.open('rb') as fp:
+                self.annotations = pickle.load(fp)
+        else:
+            myprint('Read annotations from xml')
+            self.annotations = self.readAnnfromXml()
+
+            # pickle our file
+            with a.open('wb') as fp:
+                pickle.dump(self.annotations, fp)
+                myprint('pickling done')
+
+        return self.annotations
+
+    def readAnnfromXml(self):
+        annotation_dict = {
+            'wake': 0,
+            'NREM1': 1,
+            'NREM2': 2,
+            'NREM3': 3,
+            'REM': 4
+        }
+        annotations = []
+        start = -1
+        import xml.etree.ElementTree as ET
+        ScoredEvents = ET.parse(self.xml_path).find('Instances').findall('Instance')
+        for event in ScoredEvents:
+            # event_type = event.find('EventType').text
+            # if event_type != 'Stages|Stages':
+            #     continue
+            event_concept = event.attrib['class']
+            # start_time = float(event.find('Start').text)
+            duration = float(event.find('Duration').text)
+            assert duration % 30 == 0
+            N = int(duration // 30) # if not 30s one annotation
+            if event_concept in annotation_dict.keys():
+                anns = [annotation_dict[event_concept]] * N
+            else:
+                anns = [-1] * N
+            if start == -1:
+                start = float(event.find('Start').text)
+            annotations.extend(anns)
+        return annotations
+        # return start, annotations # start 记录最开始的时间点 (all start from 0)

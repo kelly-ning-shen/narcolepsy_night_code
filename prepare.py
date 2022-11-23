@@ -49,7 +49,7 @@ class PreProcess(object):
             myprint('Loading previously saved preprocessed data')
             with p.open('rb') as fp:
                 self.loaded_channels = pickle.load(fp)
-            myprint('PAUSE HERE!')
+            # myprint('PAUSE HERE!')
         else:
             myprint('Load EDF')
             self.loadEDF() # 2022/11/22: finish

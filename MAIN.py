@@ -81,9 +81,10 @@ def main(base,configInput):
 
         ## run the program!
         # narcoApp.eval_all()
-        # signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
+        signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
         # cdiagnosis = narcoApp.get_clinical_diagnosis() # 无需进入 prepare.py
         annotations = narcoApp.get_sleep_staging_annotation()
+        check_epochs(signal, annotations)
         print('Yes!')
 
         # if hypnoConfig['show']['hypnogram']:
@@ -112,6 +113,14 @@ def main(base,configInput):
 
         # renderHypnodensity(narcoApp.get_hypnodensity(), showPlot=hypnoConfig['show']['plot'],
         #     savePlot=hypnoConfig['save']['plot'], fileName=hypnoConfig['filename']['plot'])
+
+def check_epochs(signal, annotations):
+    epochs_num1 = len(signal['C3'])/3000
+    epochs_num2 = len(annotations)
+    if epochs_num1 == epochs_num2:
+        print(f'Same epochs num: {epochs_num2}')
+    else:
+        print(f'Different epochs num: signal ({epochs_num1}), ann ({epochs_num2})')
 
 def getNCStatus(filename):
     # get clinical diagnosis result from filename (for CNC only)

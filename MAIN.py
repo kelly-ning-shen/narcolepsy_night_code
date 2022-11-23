@@ -18,7 +18,7 @@ DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 
 DIAGNOSIS = ["Other","Narcolepsy type 1"]
 NARCOLEPSY_PREDICTION_CUTOFF = 0.5 # if apply sigmoid (the default threshold) TODO: 阈值与ROC曲线
-base = 'G:/NSRR/mnc/cnc/test/'
+base = 'G:/NSRR/mnc/cnc/chp/'
 
 if savelog:
     class Logger(object):
@@ -36,7 +36,7 @@ if savelog:
     path = os.path.abspath(os.path.dirname(__file__))
     type = sys.getfilesystemencoding()
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
-    sys.stdout = Logger('log/preprpcess_test1.txt') # 不需要自己先新建txt文档  # right: filter_right
+    sys.stdout = Logger('log/TEST_chpfirst120epochs.txt') # 不需要自己先新建txt文档  # right: filter_right
 
 def findAllFile(base):
     for filepath, dirnames, filenames in os.walk(base):
@@ -65,7 +65,7 @@ def main(base,configInput):
     for filepath,filename in findAllFile(base): # for everyone participants
         edfFilename = filepath + filename # filepath: G:/NSRR/mnc/cnc/chc/   filename: chc056-nsrr.edf
         appConfig.edf_path = edfFilename
-        myprint('\nData path: ' + appConfig.edf_path)
+        print('\nData path: ' + appConfig.edf_path)
         appConfig.xml_path = changeFileExt(edfFilename, '.xml') # sleep staging annotations
 
         appConfig.narcolepsy = getNCStatus(filename) # clinical diagnosis 1:NT1, 0:control
@@ -81,11 +81,12 @@ def main(base,configInput):
 
         ## run the program!
         # narcoApp.eval_all()
-        signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
+        # signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
         # cdiagnosis = narcoApp.get_clinical_diagnosis() # 无需进入 prepare.py
         annotations = narcoApp.get_sleep_staging_annotation()
-        check_epochs(signal, annotations)
-        print('Yes!')
+        # check_epochs(signal, annotations)
+        print(annotations[:120])
+        myprint('Yes!')
 
         # if hypnoConfig['show']['hypnogram']:
         #     print("Hypnogram:")

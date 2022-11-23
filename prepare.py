@@ -58,9 +58,9 @@ class PreProcess(object):
             # self.psg_noise_level()
 
             self.filtering() # 0.2Hz-49Hz
-            print('filtering done')
+            myprint('filtering done')
 
-            # print('Encode')
+            # myprint('Encode')
             # self.encoding()
 
             # pickle our file
@@ -107,10 +107,10 @@ class PreProcess(object):
 
                 fs = int(self.edf.samplefrequency(self.channels_used[ch]))
                 # fs = Decimal(fs).quantize(Decimal('.0001'), rounding=ROUND_DOWN)
-                print('fs', fs)
+                myprint('fs', fs)
 
                 self.resampling(ch, fs)
-                print('Resampling done')
+                myprint('Resampling done')
 
                 # Trim excess
                 self.trim(ch)

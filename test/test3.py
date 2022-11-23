@@ -1,2 +1,6 @@
-signal_labels = ['a','b','c','d']
-print(f'original signals ({len(signal_labels)}): {signal_labels}')
+filename = 'chc056-nsrr.edf'
+if filename[2].lower() == 'c':
+    narcolepsy = 0
+elif filename[2].lower() == 'p':
+    narcolepsy = 1
+print(narcolepsy)

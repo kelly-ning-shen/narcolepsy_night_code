@@ -1,11 +1,13 @@
 
-data path: G:/NSRR/mnc/cnc/test/chc001-nsrr.edf
+Data path: G:/NSRR/mnc/cnc/test/chc001-nsrr.edf
+Clinical diagnosis: Other
 Backend Qt5Agg is interactive backend. Turning interactive mode on.
 Loading previously saved preprocessed data
 PAUSE HERE!
 Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
 
-data path: G:/NSRR/mnc/cnc/test/chp001-nsrr.edf
+Data path: G:/NSRR/mnc/cnc/test/chp001-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
 Loading previously saved preprocessed data
 PAUSE HERE!
 Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']

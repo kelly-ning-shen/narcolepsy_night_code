@@ -6,7 +6,7 @@ import numpy as np
 from matplotlib.patches import Polygon
 
 from config import AppConfig
-from diagnosis import Diagnose
+from prepare import Prepare
 from a_tools import myprint
 
 savelog = 1
@@ -17,6 +17,7 @@ DEFAULT_SECONDS_PER_EPOCH = 30
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 
 DIAGNOSIS = ["Other","Narcolepsy type 1"]
+NARCOLEPSY_PREDICTION_CUTOFF = 0.5 # if apply sigmoid (the default threshold) TODO: 阈值与ROC曲线
 base = 'G:/NSRR/mnc/cnc/test/'
 
 if savelog:
@@ -61,10 +62,13 @@ def main(base,configInput):
     hyp['show'].update(configInput.get('show', {}))
 
     ## For every edf file!
-    for filepath,filename in findAllFile(base):
+    for filepath,filename in findAllFile(base): # for everyone participants
         edfFilename = filepath + filename # filepath: G:/NSRR/mnc/cnc/chc/   filename: chc056-nsrr.edf
         appConfig.edf_path = edfFilename
-        myprint('\ndata path: ' + appConfig.edf_path)
+        myprint('\nData path: ' + appConfig.edf_path)
+
+        appConfig.narcolepsy = getNCStatus(filename) # clinical diagnosis 1:NT1, 0:control
+        myprint('Clinical diagnosis:', DIAGNOSIS[appConfig.narcolepsy])
 
         hyp['filename']['plot'] = changeFileExt(edfFilename, '.hypnodensity.png');
         hyp['filename']['hypnodensity'] = changeFileExt(edfFilename, '.hypnodensity.txt');
@@ -74,8 +78,11 @@ def main(base,configInput):
 
         narcoApp = NarcoApp(appConfig)
 
+        ## run the program!
         # narcoApp.eval_all()
-        narcoApp.get_signal() # run the program!
+        signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
+        cdiagnosis = narcoApp.get_clinical_diagnosis() 
+        narcoApp.get_sleep_staging_annotation()
 
         # if hypnoConfig['show']['hypnogram']:
         #     print("Hypnogram:")
@@ -104,6 +111,14 @@ def main(base,configInput):
         # renderHypnodensity(narcoApp.get_hypnodensity(), showPlot=hypnoConfig['show']['plot'],
         #     savePlot=hypnoConfig['save']['plot'], fileName=hypnoConfig['filename']['plot'])
 
+def getNCStatus(filename):
+    # get clinical diagnosis result from filename (for CNC only)
+    # filename: chc056-nsrr.edf
+    if filename[2].lower() == 'c': # control
+        narcolepsy = 0
+    elif filename[2].lower() == 'p': # patient
+        narcolepsy = 1
+    return narcolepsy
 
 def changeFileExt(fullName, newExt):
     baseName, _ = os.path.splitext(fullName)
@@ -146,7 +161,8 @@ class NarcoApp(object):
         self.config = appConfig
         self.edf_path = appConfig.edf_path  # full filename of an .EDF to use for header information.  A template .edf
 
-        self.Diagnose = Diagnose(appConfig) # 可以把这里改成一个通用的类！
+        self.Prepare = Prepare(appConfig) # 可以把这里改成一个通用的类！
+        self.narcolepsy = appConfig.narcolepsy # clinical diagnosis 1:NT1, 0:control
         # self.Hypnodensity = Hypnodensity(appConfig)
 
         # self.models_used = appConfig.models_used
@@ -157,10 +173,13 @@ class NarcoApp(object):
         # self.extract_features = ExtractFeatures(appConfig)  <-- now in Hypnodensity
 
     def get_signal(self):
-        return self.Diagnose.get_signal()
+        return self.Prepare.get_signal()
 
-    def one_phase(self):
-        return self.Diagnose.one_phase()
+    def get_clinical_diagnosis(self):
+        return self.narcolepsy # clinical diagnosis 1:NT1, 0:control
+
+    def get_sleep_staging_annotation(self):
+        return self.Prepare.get_annotation()
 
     def get_diagnosis(self):
         prediction = self.narcolepsy_probability

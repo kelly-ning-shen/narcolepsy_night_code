@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Diagnosis:
+prepare:
 1. PreProcess (class)
 2. main part
     2.1 OnePhase (class)
@@ -164,15 +164,23 @@ class PreProcess(object):
                         dtype=np.float32)
 
 
-class Diagnose(object):
+class Prepare(object):
     def __init__(self,appConfig):
         self.config = appConfig
         self.PreProcessing = PreProcess(appConfig)
+        # self.narcolepsy = appConfig.narcolepsy
 
     def get_signal(self):
+        # get preprocessed signal
         self.loaded_channels = self.PreProcessing.preprocessing()
         self.channels = list(self.loaded_channels.keys())
         myprint(f'Load preprocessed signal for diagnosis ({len(self.channels)}): {self.channels}')
+        return self.loaded_channels
 
-    def one_phase(self):
+    # def get_diagnosis(self):
+    #     # get clinical diagnosis (myprint in MAIN)
+    #     return self.narcolepsy
+        
+    def get_annotation(self):
+        # get sleep staging annotation
         pass

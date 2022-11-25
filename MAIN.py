@@ -9,7 +9,7 @@ from config import AppConfig
 from prepare import Prepare
 from a_tools import myprint
 
-savelog = 1
+savelog = 0
 
 DEBUG_MODE = False
 STANDARD_EPOCH_SEC = 30
@@ -18,7 +18,7 @@ DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 
 DIAGNOSIS = ["Other","Narcolepsy type 1"]
 NARCOLEPSY_PREDICTION_CUTOFF = 0.5 # if apply sigmoid (the default threshold) TODO: 阈值与ROC曲线
-base = 'G:/NSRR/mnc/cnc/chp/'
+base = 'G:/NSRR/mnc/cnc/test/'
 
 if savelog:
     class Logger(object):
@@ -36,7 +36,7 @@ if savelog:
     path = os.path.abspath(os.path.dirname(__file__))
     type = sys.getfilesystemencoding()
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
-    sys.stdout = Logger('log/TEST_chpfirst120epochs.txt') # 不需要自己先新建txt文档  # right: filter_right
+    sys.stdout = Logger('log/TEST_test_trim_epoch.txt') # 不需要自己先新建txt文档  # right: filter_right
 
 def findAllFile(base):
     for filepath, dirnames, filenames in os.walk(base):
@@ -60,7 +60,7 @@ def main(base,configInput):
     # hyp: update with configInput
     hyp['save'].update(configInput.get('save', {}))
     hyp['show'].update(configInput.get('show', {}))
-
+    totalinput = 0
     ## For every edf file!
     for filepath,filename in findAllFile(base): # for everyone participants
         edfFilename = filepath + filename # filepath: G:/NSRR/mnc/cnc/chc/   filename: chc056-nsrr.edf
@@ -83,11 +83,19 @@ def main(base,configInput):
         # narcoApp.eval_all()
         # signal = narcoApp.get_signal()  # get preprocessed signal self.loaded_channels
         # cdiagnosis = narcoApp.get_clinical_diagnosis() # 无需进入 prepare.py
-        annotations = narcoApp.get_sleep_staging_annotation()
+        # annotations = narcoApp.get_sleep_staging_annotation() # list
+        data = narcoApp.get_prepared_data() # self.loaded_channels, self.annotations, (self.erridx)
+        totalinput += len(data[1])//30 # 15min
+        
+        if len(data) > 2:
+            # exists erridx
+            erridx = data[2]
+            print(erridx)
         # check_epochs(signal, annotations)
-        print(annotations[:120])
+        print(data[1][:120])
+        
         myprint('Yes!')
-
+    print(totalinput)
         # if hypnoConfig['show']['hypnogram']:
         #     print("Hypnogram:")
         #     hypnogram = narcoApp.get_hypnogram()
@@ -183,6 +191,9 @@ class NarcoApp(object):
         self.narco_features = []
         self.narcolepsy_probability = []
         # self.extract_features = ExtractFeatures(appConfig)  <-- now in Hypnodensity
+    
+    def get_prepared_data(self):
+        return self.Prepare.preparing()
 
     def get_signal(self):
         return self.Prepare.get_signal()

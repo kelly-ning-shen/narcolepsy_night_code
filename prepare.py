@@ -167,12 +167,28 @@ class PreProcess(object):
 class Prepare(object):
     def __init__(self,appConfig):
         self.config = appConfig
+        self.fs = appConfig.fs
         self.PreProcessing = PreProcess(appConfig)
         self.xml_path = appConfig.xml_path
         # self.narcolepsy = appConfig.narcolepsy
+    
+    def preparing(self):
+        myprint('Get signal')
+        self.get_signal()
+
+        myprint('Get annotations')
+        self.get_annotation()
+
+        myprint('Check epochs num...')
+        self.check_epochs()
+
+        try:
+            return self.loaded_channels, self.annotations, self.erridx
+        except AttributeError:
+            return self.loaded_channels, self.annotations
 
     def get_signal(self):
-        # get preprocessed signal
+        # get preprocessed signal (without trim misssing anns)
         self.loaded_channels = self.PreProcessing.preprocessing()
         self.channels = list(self.loaded_channels.keys())
         myprint(f'Load preprocessed signal for diagnosis ({len(self.channels)}): {self.channels}')
@@ -183,7 +199,7 @@ class Prepare(object):
     #     return self.narcolepsy
         
     def get_annotation(self):
-        # get sleep staging annotation
+        # get sleep staging annotation (without trim misssing anns)
         a = Path(self.xml_path)
         a = Path(a.with_suffix('.ann_pkl'))
 
@@ -230,5 +246,44 @@ class Prepare(object):
             if start == -1:
                 start = float(event.find('Start').text)
             annotations.extend(anns)
-        return annotations
         # return start, annotations # start 记录最开始的时间点 (all start from 0)
+        return np.array(annotations)
+        
+    def check_epochs(self):
+        epoch_num_signal = len(self.loaded_channels[self.channels[0]])/int(self.fs * 30)
+        epoch_num_ann = len(self.annotations)
+        if epoch_num_signal != epoch_num_ann:
+            print(f'Different epochs num: signal ({epoch_num_signal}), ann ({epoch_num_ann})')
+        else:
+            print(f'Same epochs num: {len(self.annotations)}')
+            self.trim_epochs()
+
+    def trim_epochs(self):
+        # if same epoch num in signal and anns
+        erridx = np.where(self.annotations==-1)[0]
+        if len(erridx)>0 and (erridx[0] == 0 or erridx[-1] == len(self.annotations)-1):
+            erridx_del = erridx # 默认都在头或尾
+            if erridx.size != erridx[-1]-erridx[0]+1:
+                # 如果中间还有缺失的
+                # 只删去开头或结尾的（需要找到连续的idx）
+                # 找到[0,1,2,3]
+                # 这里不存在头和尾都异常的
+                erridx_d = np.diff(erridx)
+                idx = np.where(erridx_d==1)[0] # idx: index of erridx_d
+                erridx_del = erridx[idx[0]:idx[-1]+2] # 需要删除的erridx
+            erridx = np.setdiff1d(erridx,erridx_del) # which missing values are still there
+
+            myprint('Delete missing value in anns')
+            self.annotations = np.delete(self.annotations,erridx_del)
+            print(f'Trim epochs to {len(self.annotations)}')
+
+            myprint('Delete the corresponding epochs in signal')
+            start = int(self.fs * 30 * erridx_del[0])
+            finish = int(self.fs * 30 * (erridx_del[-1]+1))
+            for ch in self.channels:
+                # self.loaded_channels[ch] = self.loaded_channels[ch][start:finish] # 这是要截掉的部分！不是要保留的部分！
+                self.loaded_channels[ch] = np.delete(self.loaded_channels[ch], np.arange(start,finish))
+                print(len(self.loaded_channels[ch])/3000)
+
+        if len(erridx) > 0:
+            self.erridx = erridx # which missing values are still there

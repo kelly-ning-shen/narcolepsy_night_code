@@ -18,7 +18,8 @@ DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 
 DIAGNOSIS = ["Other","Narcolepsy type 1"]
 NARCOLEPSY_PREDICTION_CUTOFF = 0.5 # if apply sigmoid (the default threshold) TODO: 阈值与ROC曲线
-base = 'G:/NSRR/mnc/cnc/test/'
+# base = 'G:/NSRR/mnc/cnc/test/'
+base = 'data/mnc/cnc/chp/'
 
 if savelog:
     class Logger(object):
@@ -36,7 +37,7 @@ if savelog:
     path = os.path.abspath(os.path.dirname(__file__))
     type = sys.getfilesystemencoding()
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
-    sys.stdout = Logger('log/TEST_test_trim_epoch.txt') # 不需要自己先新建txt文档  # right: filter_right
+    sys.stdout = Logger('log/TEST_chp_trim_epoch.txt') # 不需要自己先新建txt文档  # right: filter_right
 
 def findAllFile(base):
     for filepath, dirnames, filenames in os.walk(base):

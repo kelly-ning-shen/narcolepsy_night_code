@@ -1,0 +1,1779 @@
+
+Data path: data/mnc/cnc/chp/chp013-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1001
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp043-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1209
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 1 1 1
+ 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1
+ 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 1 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp005-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1306
+[2 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2
+ 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0 1 2 0 0 0 0 0 0 1 1 1 1
+ 1 1 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp016-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1274
+[0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 3 2 3 2 2 3 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp045-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1205
+[85]
+[ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  1  2  2  2  2  1  1  4  0  4  1  3 -1  0  0  2  2  2  2  2  2  4  2
+  2  2  1  2  2  2  2  2  1  2  2  0  0  1  1  2  2  2  3  3  3  3  2  3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp048-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1063
+Delete missing value in anns
+Trim epochs to 1031
+Delete the corresponding epochs in signal
+1031.0
+1031.0
+1031.0
+1031.0
+1031.0
+1031.0
+1031.0
+[0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp034-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1043
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp052-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1000
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1
+ 4 4 4 4 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp040-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1072
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 1 1 0 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp049-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1081
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 1 1
+ 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 1 2 2 2 2 2 1 2 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp007-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1155
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp010-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 974
+[0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp008-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 955
+[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp011-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1014
+[0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2
+ 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp017-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1013
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 1 1 0 0 1
+ 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 2
+ 2 2 2 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp024-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1129
+[0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 2 0 0 0 0 0 0 0 1 1 1 1 2 2 2 2 2
+ 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp020-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1152
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp018-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1128
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp009-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1034
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp036-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1264
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 2 2
+ 2 1 2 2 2 2 2 2 0 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 1 2 2 2 2 2 2 2 2 2 3
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp047-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 893
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4 4 0 1 4 0 4 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 0 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 1 2 2 1 1 0 1
+ 2 2 1 1 2 2 2 2 0 1 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 2 2 2 2
+ 2 2 0 1 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp029-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1047
+[0 0 0 0 0 0 0 0 0 1 1 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp046-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1095
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp057-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1198
+[310]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp004-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 985
+[0 0 0 0 0 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 4 4 4 4 4 1 1 1 1 1 1 1 1 1 1
+ 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp041-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1338
+Delete missing value in anns
+Trim epochs to 1109
+Delete the corresponding epochs in signal
+1109.0
+1109.0
+1109.0
+1109.0
+1109.0
+1109.0
+1109.0
+[0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4
+ 4 2 2 2 2 2 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp055-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1114
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 0 0 0 0 0
+ 0 0 1 1 1 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp033-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1010
+[0 0 0 0 0 0 1 1 1 1 4 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1
+ 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp030-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1200
+[389]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp051-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1090
+[1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp014-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1005
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 0 0 0 0 1 2
+ 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp054-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1122
+[0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 4 4 4 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 0 2 2 2 2 2 2 2 0 0 0 0 0 1 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 1 1 1 1 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp003-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1218
+Delete missing value in anns
+Trim epochs to 1001
+Delete the corresponding epochs in signal
+1001.0
+1001.0
+1001.0
+1001.0
+1001.0
+1001.0
+1001.0
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp015-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1156
+[0 0 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp037-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1036
+[949 950]
+[0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 1
+ 1 1 1 1 1 1 1 1 1]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp053-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1085
+[0 0 0 0 0 1 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp002-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1081
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 4 4 4 4 1 1 1 1 1 4
+ 4 4 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp056-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (21): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'cchin_l', 'ECG1_2', 'lleg', 'rleg', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'spo2', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+Channel[O1] was empty (skipped)!
+Channel[O2] was empty (skipped)!
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (6)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (5): ['C3', 'C4', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1101
+[0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 1 1 1 1 1 1 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp022-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (22): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'chin', 'snore', 'ECG2', 'lleg', 'rleg', 'flow', 'thorax', 'abdomen', 'spo2', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG']
+The real label of EMG: chin
+Loading C3 (4)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E1 (0)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E2 (1)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading EMG (8)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1267
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp059-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (25): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'chin', 'snore', 'ECG2', 'lleg', 'rleg', 'flow', 'thorax', 'abdomen', 'spo2', 'pulse', 'position', 'etco2', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: chin
+Loading C3 (4)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E1 (0)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E2 (1)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading EMG (8)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1138
+[0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp038-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1028
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 0 0 0 0 0 0 0 0 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 1 0 0 0 0 0 0 0 0 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 0 1 4 0 0
+ 1 1 1 1 1 1 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp042-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (25): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'chin', 'snore', 'lleg', 'rleg', 'flow', 'thorax', 'abdomen', 'spo2', 'position', 'ECG1', 'ECG2', 'ECG3', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: chin
+Loading C3 (4)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E1 (0)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E2 (1)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading EMG (8)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1123
+Delete missing value in anns
+Trim epochs to 1117
+Delete the corresponding epochs in signal
+1117.0
+1117.0
+1117.0
+1117.0
+1117.0
+1117.0
+1117.0
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 1 4 4 4 4 4 4 4 1 1 1 1 1 1 0 1 0 1 1 1 1 1 1 2 2 2 4 4 4 2 4 4
+ 4 0 1 1 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp006-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1101
+[0 0 0 0 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1 1 1 1 1 1
+ 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp044-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1051
+[0 0 0 0 1 1 4 4 4 4 4 4 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 2 2 2 1 1 1 1 1 1 1
+ 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp058-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1033
+[0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp032-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1065
+[0 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1 1 1 1 4 4 4 4 4
+ 1 1 1 1 1 1 2 2 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 2 1 1 1 1 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp025-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'chin', 'lleg', 'rleg', 'ECG2', 'snore', 'flow', 'thorax', 'abdomen', 'spo2', 'position', 'pulse', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG']
+The real label of EMG: chin
+Loading C3 (2)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading C4 (3)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E1 (6)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E2 (7)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading EMG (8)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading O1 (4)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading O2 (5)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1235
+Delete missing value in anns
+Trim epochs to 448
+Delete the corresponding epochs in signal
+448.0
+448.0
+448.0
+448.0
+448.0
+448.0
+448.0
+[3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0 0 0 2 1 2 1 1 1 1 2 2
+ 2 1 2 2 2 2 2 2 1 2 2 2 2 2 1 1 2 2 1 2 2 1 2 2 2 2 1 1 1 1 2 2 2 2 2 1 1
+ 1 1 1 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp026-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 943
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2
+ 0 0 1 1 1 1 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp039-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1111
+[0 0 0 1 1 1 1 1 4 4 4 4 4 4 4 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2
+ 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp012-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1116
+[0 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp031-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1112
+[0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 2 2 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp001-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'chin', 'snore', 'ECG2', 'lleg', 'rleg', 'flow', 'thorax', 'abdomen', 'spo2', 'pulse', 'position', 'etco2', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG']
+The real label of EMG: chin
+Loading C3 (4)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading E1 (0)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading E2 (1)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading EMG (8)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1164
+[4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 3 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp019-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (23): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'lleg1_2', 'rleg1_2', 'spo2', 'nas_pres', 'flow', 'thorax', 'abdomen', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3 (4)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E1 (0)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading E2 (1)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading EMG (8)
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 941
+[0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 1 1 0 0 0 0 0 0 0 0 0 0
+ 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0
+ 0 0 1 1 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp028-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'chin', 'snore', 'ECG2', 'lleg', 'rleg', 'flow', 'thorax', 'abdomen', 'spo2', 'pulse', 'position', 'etco2', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG']
+The real label of EMG: chin
+Loading C3 (4)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading C4 (5)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading E1 (0)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading E2 (1)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading EMG (8)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading O1 (6)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading O2 (7)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1050
+Delete missing value in anns
+Trim epochs to 1033
+Delete the corresponding epochs in signal
+1033.0
+1033.0
+1033.0
+1033.0
+1033.0
+1033.0
+1033.0
+[187]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chp/chp060-nsrr.edf
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Load EDF
+original signals (24): ['F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'chin', 'lleg', 'rleg', 'ECG2', 'snore', 'flow', 'thorax', 'abdomen', 'spo2', 'position', 'pulse', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: chin
+Loading C3 (2)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading C4 (3)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E1 (6)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading E2 (7)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading EMG (8)
+fs 200
+original samplerate =  200
+resampling to  100
+Resampling done
+Loading O1 (4)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Loading O2 (5)
+fs 500
+original samplerate =  500
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering E1
+Filtering E2
+Filtering EMG
+Filtering O1
+Filtering O2
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1263
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 1 1 1 1 0 0 0 1 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 2 0 1 1 0 0 2 0 0 2 1 1 2
+ 2 2 3 3 3 3 3 3 3]
+Yes!
+1951

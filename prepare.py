@@ -74,16 +74,20 @@ class PreProcess(object):
         signal_labels = self.edf.getSignalLabels() # list
         myprint(f'original signals ({len(signal_labels)}): {signal_labels}')
 
-        for ch in self.channels:
-            if ch != 'EMG':
+        for ch in self.channels:  # self.channels = ['C3','C4','O1','O2','E1','E2','EMG']
+            if ch in signal_labels:
                 self.channels_used[ch] = signal_labels.index(ch)
-            else:
+            elif ch == 'EMG':
                 emglabels = ('cchin_l', 'chin')
                 for e in emglabels:
                     if e in signal_labels:
                         emglabel = e
                         myprint('The real label of EMG:', emglabel)
                 self.channels_used[ch] = signal_labels.index(emglabel)
+            else: # ch not in signal labels
+                print(f'Channel[{ch}] was empty (skipped)!')
+                del self.channels_used[ch] # 如果采集的信号中不包含这个通道，那就在dict中删去
+                del self.loaded_channels[ch]
 
     def loadEDF(self):
         if not self.edf:
@@ -93,31 +97,25 @@ class PreProcess(object):
                 print('OSError:', 'Loading', self.edf_pathname)
                 raise(osErr)
         self.channelUsed() # update self.channels_used
-        for ch in self.channels:  # self.channels = ['C3','C4','O1','O2','E1','E2','EMG']
-            myprint('Loading', ch)
-            if isinstance(self.channels_used[ch], int):
-                myprint(self.channels_used[ch], ch)
-                self.loaded_channels[ch] = self.edf.readSignal(self.channels_used[ch]) # read signals according to channels index
-                if self.edf.getPhysicalDimension(self.channels_used[ch]).lower() == 'mv': # signal的单位统一成uV
-                    myprint('mv')
-                    self.loaded_channels[ch] *= 1e3
-                elif self.edf.getPhysicalDimension(self.channels_used[ch]).lower() == 'v':
-                    myprint('v')
-                    self.loaded_channels[ch] *= 1e6
+        for ch in self.channels_used:
+            myprint(f'Loading {ch} ({self.channels_used[ch]})')
+            self.loaded_channels[ch] = self.edf.readSignal(self.channels_used[ch]) # read signals according to channels index
+            if self.edf.getPhysicalDimension(self.channels_used[ch]).lower() == 'mv': # signal的单位统一成uV
+                myprint('mv')
+                self.loaded_channels[ch] *= 1e3
+            elif self.edf.getPhysicalDimension(self.channels_used[ch]).lower() == 'v':
+                myprint('v')
+                self.loaded_channels[ch] *= 1e6
 
-                fs = int(self.edf.samplefrequency(self.channels_used[ch]))
-                # fs = Decimal(fs).quantize(Decimal('.0001'), rounding=ROUND_DOWN)
-                myprint('fs', fs)
+            fs = int(self.edf.samplefrequency(self.channels_used[ch]))
+            # fs = Decimal(fs).quantize(Decimal('.0001'), rounding=ROUND_DOWN)
+            myprint('fs', fs)
 
-                self.resampling(ch, fs)
-                myprint('Resampling done')
+            self.resampling(ch, fs)
+            myprint('Resampling done')
 
-                # Trim excess
-                self.trim(ch)
-
-            else:
-                print('channel[', ch, '] was empty (skipped)', sep='') # 如果采集的信号中不包含这个通道，那就在dict中删去
-                del self.channels_used[ch]
+            # Trim excess
+            self.trim(ch)
 
     def trim(self, ch):
         # 30 represents the epoch length most often used in standard hypnogram scoring.

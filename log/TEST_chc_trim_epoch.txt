@@ -1,0 +1,1638 @@
+nohup: 忽略输入
+
+Data path: data/mnc/cnc/chc/chc004-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+/home/shenning/.conda/envs/narcolepsy/lib/python3.6/site-packages/scipy/signal/signaltools.py:2383: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  return y[keep]
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+/home/shenning/.conda/envs/narcolepsy/lib/python3.6/site-packages/scipy/signal/_arraytools.py:45: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  b = a[a_slice]
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1065
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 3 3 3 3 3 3 0 0 0 0 0 0 1 1 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc033-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 871
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 1 1 1 1 1 2
+ 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc028-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 886
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc027-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 900
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc014-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 959
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc022-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 812
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc037-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 887
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 1 1 1 1 1 1 1 1 2 2 2 2 2 2 1 2 2 2 2 2 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc015-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 936
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc009-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 890
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 2 2 2 2 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc040-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 1083
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc052-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 917
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc005-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 950
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 2 2 2 2 1 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 0 0 0 0 1 1 2 2 2 2 2 2 2 2 2 1 1
+ 1 2 1 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc025-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 830
+[0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc035-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 900
+[0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc012-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 920
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+ 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 2 2 2 2
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc008-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 960
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 1 1 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc016-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 959
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+ 1 1 0 1 1 0 1 1 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc001-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 803
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc056-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 920
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 0 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 3 3 3 3 3 3 0 0 1 1 2 2 1 2 2 0 0 0 0 0 0 0 1 1 2 2 2 2 1 2 1 1 0 0
+ 1 0 1 1 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc013-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 940
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc006-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 826
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 2 2 2 2 2 2 2 1 0 1 1 1 2 2 2
+ 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 1 1 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc041-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 858
+[0 0 0 0 0 0 0 0 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 0 0 1 1 0 0 0 0 1
+ 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 1 2 2 1 1 1 1 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/chc/chc010-nsrr.edf
+Clinical diagnosis: Other
+Get signal
+Load EDF
+original signals (24): ['E1', 'E2', 'F3', 'F4', 'C3', 'C4', 'O1', 'O2', 'cchin_l', 'ECG1_2', 'spo2', 'flow', 'nas_pres', 'thorax', 'abdomen', 'snore', 'lleg', 'rleg', 'position', 'cs_EEG', 'cs_LOC', 'cs_ROC', 'cs_EMG', 'cs_ECG']
+The real label of EMG: cchin_l
+Loading C3
+4 C3
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading C4
+5 C4
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O1
+6 O1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading O2
+7 O2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E1
+0 E1
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading E2
+1 E2
+fs 128
+original samplerate =  128
+resampling to  100
+Resampling done
+Loading EMG
+8 EMG
+mv
+fs 256
+original samplerate =  256
+resampling to  100
+Resampling done
+Filtering remaining signals
+Filtering C3
+Filtering C4
+Filtering O1
+Filtering O2
+Filtering E1
+Filtering E2
+Filtering EMG
+filtering done
+pickling done
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Read annotations from xml
+pickling done
+Check epochs num...
+Same epochs num: 861
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 1 1]
+Yes!
+687

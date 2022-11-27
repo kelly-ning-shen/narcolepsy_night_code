@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 
 
-DURATION_MINUTES = 60
+DURATION_MINUTES = 15
 DEFAULT_MINUTES_PER_EPOCH = 0.5
 DEFAULT_SECONDS_PER_EPOCH = 30
 fs = 100
@@ -25,7 +25,7 @@ def viewasIMG(EEG,EOG,EMG,ann,i):
     tickpos = np.arange(nepoch)*(signal_pic.shape[0]/nepoch)
     plt.yticks(tickpos,ann)
     # plt.colorbar()
-    plt.savefig(f'pic/chc001-nsrr_60min_{i}_ann.png', bbox_inches='tight')
+    plt.savefig(f'pic/chp056-nsrr_15min_{i}_ann.png', bbox_inches='tight')
     plt.close()
     # plt.show()
     # input()
@@ -40,8 +40,8 @@ def signaltoSquare(signal):
     return signal
     
 if __name__ == '__main__':
-    p = Path('data/mnc/cnc/chc/chc001-nsrr.pkl')
-    a = Path('data/mnc/cnc/chc/chc001-nsrr.ann_pkl')
+    p = Path('data/mnc/cnc/chp/chp056-nsrr.pkl')
+    a = Path('data/mnc/cnc/chp/chp056-nsrr.ann_pkl')
     with p.open('rb') as fp:
         loaded_channels = pickle.load(fp)
     with a.open('rb') as fp:

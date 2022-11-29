@@ -25,7 +25,7 @@ def viewasIMG(EEG,EOG,EMG,ann,i):
     tickpos = np.arange(nepoch)*(signal_pic.shape[0]/nepoch)
     plt.yticks(tickpos,ann)
     # plt.colorbar()
-    plt.savefig(f'pic/chp001-nsrr_15min_{i}_ann.png', bbox_inches='tight')
+    plt.savefig(f'pic/chc001-nsrr_15min_{i}_ann_U.png', bbox_inches='tight')
     plt.close()
     # plt.show()
     # input()
@@ -40,8 +40,8 @@ def signaltoSquare(signal):
     return signal
     
 if __name__ == '__main__':
-    p = Path('data/mnc/cnc/chp/chp001-nsrr.pkl')
-    a = Path('data/mnc/cnc/chp/chp001-nsrr.ann_pkl')
+    p = Path('data/mnc/cnc/chc/chc001-nsrr.pkl')
+    a = Path('data/mnc/cnc/chc/chc001-nsrr.ann_pkl')
     with p.open('rb') as fp:
         loaded_channels = pickle.load(fp)
     with a.open('rb') as fp:
@@ -58,12 +58,16 @@ if __name__ == '__main__':
     # 1. min-max normalization (0-1)
     tool = MinMaxScaler(feature_range=(0,1)) # min:0, max:1
     C4 = tool.fit_transform(C4[:, np.newaxis])
-    E1 = tool.fit_transform(E1[:, np.newaxis])
+    EOG = E2 - E1
+    EOG = tool.fit_transform(EOG[:, np.newaxis])
+    # E1 = tool.fit_transform(E1[:, np.newaxis])
+    # E2 = tool.fit_transform(E2[:, np.newaxis])
+    
     EMG = tool.fit_transform(EMG[:, np.newaxis])
 
     for i in range(nduration):
         EEG1 = C4[i*nsample:(i+1)*nsample]
-        EOG1 = E1[i*nsample:(i+1)*nsample]
+        EOG1 = EOG[i*nsample:(i+1)*nsample]
         EMG1 = EMG[i*nsample:(i+1)*nsample]
         ann1 = annotations[i*nepoch:(i+1)*nepoch]
     

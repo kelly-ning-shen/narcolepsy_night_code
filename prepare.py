@@ -14,6 +14,7 @@ from pathlib import Path
 import numpy as np
 import pyedflib
 import scipy.signal as signal  # for edf channel sampling and filtering
+from sklearn.preprocessing import MinMaxScaler
 
 from a_tools import myprint
 
@@ -180,6 +181,9 @@ class Prepare(object):
         myprint('Check epochs num...')
         self.check_epochs()
 
+        myprint('Trim to 15 min, and save as single file (signal, annotations)')
+        self.trim_15min_duration()
+
         try:
             return self.loaded_channels, self.annotations, self.erridx
         except AttributeError:
@@ -285,3 +289,65 @@ class Prepare(object):
 
         if len(erridx) > 0:
             self.erridx = erridx # which missing values are still there
+    
+    def trim_15min_duration(self):
+        '''
+        trim self.loaded_channels, self.annotations to 15 min durations
+        self.loaded_channels: EEG (C4); EOG (E2-E1); EMG (EMG)
+        1. [signal] select loaded_channels: EEG, EOG, EMG
+        2. [signal] normalize loaded_channels
+        3. [signal, ann] trim to 15min durations
+        4. [signal] reshape to square 3*300*300
+        '''
+
+        path = self.xml_path.split('.')[0] # 'data/mnc/cnc/chc/chc001-nsrr'
+        s0 = Path(f'{path}_15min_0.s_pkl')
+
+        if not (s0.exists()):
+            # 1. [signal] select loaded_channels: EEG, EOG, EMG
+            self.EEG = self.loaded_channels['C4']
+            self.EOG = self.loaded_channels['E2'] - self.loaded_channels['E1'] # EOG: E2-E1 (ROC-LOC)
+            self.EMG = self.loaded_channels['EMG']
+
+            # 2. [signal] normalize loaded_channels
+            scaler = MinMaxScaler(feature_range=(0,1)) # min: 0, max: 1
+            self.EEG = scaler.fit_transform(self.EEG[:, np.newaxis])
+            self.EOG = scaler.fit_transform(self.EOG[:, np.newaxis])
+            self.EMG = scaler.fit_transform(self.EMG[:, np.newaxis])
+
+            # 3. [signal, ann] trim to 15min durations
+            DURATION_MINUTES = 15
+            DEFAULT_MINUTES_PER_EPOCH = 0.5
+            DEFAULT_SECONDS_PER_EPOCH = 30
+
+            nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
+            nsample = int(nepoch*DEFAULT_SECONDS_PER_EPOCH*self.fs)
+            nduration = len(self.EEG) // nsample
+
+            myprint('Save signal_pic and ann of 15min EEG, EOG, EMG')
+            for i in range(nduration):
+                EEG = self.EEG[i*nsample:(i+1)*nsample]
+                EOG = self.EOG[i*nsample:(i+1)*nsample]
+                EMG = self.EMG[i*nsample:(i+1)*nsample]
+                ann = self.annotations[i*nepoch:(i+1)*nepoch]
+                # to square
+                lens = int(np.sqrt(len(EEG)))
+                EEG = EEG.reshape(lens,lens)
+                EOG = EOG.reshape(lens,lens)
+                EMG = EMG.reshape(lens,lens)
+                signal_pic = np.array([EEG, EOG, EMG])
+                signal_pic = signal_pic.transpose(1,2,0)
+                
+                # save
+                s = Path(f'{path}_15min_{i}.s_pkl')
+                with s.open('wb') as fp:
+                    pickle.dump([signal_pic, ann], fp)
+            myprint(f'pickling done: 15min ({nduration})')
+        else:
+            # How many 15min inputs are saved?
+            base = s0.parent
+            name = s0.stem
+            name = name.split('_')[0]
+            ninput = len(sorted(Path(base).glob(f'{name}_*.s_pkl')))
+            myprint(f'Already pickled: 15min ({ninput})')
+            

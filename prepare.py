@@ -336,7 +336,7 @@ class Prepare(object):
                 EOG = EOG.reshape(lens,lens)
                 EMG = EMG.reshape(lens,lens)
                 signal_pic = np.array([EEG, EOG, EMG])
-                signal_pic = signal_pic.transpose(1,2,0)
+                # signal_pic = signal_pic.transpose(1,2,0)
                 
                 # save
                 s = Path(f'{path}_15min_{i}.s_pkl')

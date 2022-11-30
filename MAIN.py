@@ -19,7 +19,7 @@ DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 DIAGNOSIS = ["Other","Narcolepsy type 1"]
 NARCOLEPSY_PREDICTION_CUTOFF = 0.5 # if apply sigmoid (the default threshold) TODO: 阈值与ROC曲线
 # base = 'G:/NSRR/mnc/cnc/test/'
-base = 'data/mnc/cnc/chp/'
+base = 'data/mnc/cnc/cnc/'
 
 if savelog:
     class Logger(object):

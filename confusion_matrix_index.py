@@ -9,9 +9,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import itertools
-from collections import Counter
-from tensorflow.keras.utils import to_categorical
-from sklearn.metrics import confusion_matrix
+# from collections import Counter
+# from tensorflow.keras.utils import to_categorical
+# from sklearn.metrics import confusion_matrix
 
 
 #confusion matrix
@@ -29,8 +29,8 @@ def plot_confusion_matrix(cm, classes_num,mode,savepic=0,picpath='',
     plt.title(title)
     plt.colorbar()
     tick_marks = np.arange(classes_num)
-    plt.xticks(tick_marks,['Wake','NREM','REM'],rotation=45)
-    plt.yticks(tick_marks,['Wake','NREM','REM'])
+    plt.xticks(tick_marks,['Wake','N1','N2','N3','REM'],rotation=45)
+    plt.yticks(tick_marks,['Wake','N1','N2','N3','REM'])
     thresh = np.nanmax(cm) / 2 # ignore NaN !
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         # plt.text(j, i, '{:.2f}'.format(cm[i, j]), horizontalalignment="center",

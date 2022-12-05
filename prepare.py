@@ -14,7 +14,8 @@ from pathlib import Path
 import numpy as np
 import pyedflib
 import scipy.signal as signal  # for edf channel sampling and filtering
-from sklearn.preprocessing import MinMaxScaler
+# from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 
 from a_tools import myprint
 
@@ -301,7 +302,7 @@ class Prepare(object):
         '''
 
         path = self.xml_path.split('.')[0] # 'data/mnc/cnc/chc/chc001-nsrr'
-        s0 = Path(f'{path}_15min_0.s_pkl')
+        s0 = Path(f'{path}_15min_zscore_0.s_pkl')
 
         if not (s0.exists()):
             # 1. [signal] select loaded_channels: EEG, EOG, EMG
@@ -310,7 +311,8 @@ class Prepare(object):
             self.EMG = self.loaded_channels['EMG']
 
             # 2. [signal] normalize loaded_channels
-            scaler = MinMaxScaler(feature_range=(0,1)) # min: 0, max: 1
+            # scaler = MinMaxScaler(feature_range=(0,1)) # min: 0, max: 1
+            scaler = StandardScaler()
             self.EEG = scaler.fit_transform(self.EEG[:, np.newaxis])
             self.EOG = scaler.fit_transform(self.EOG[:, np.newaxis])
             self.EMG = scaler.fit_transform(self.EMG[:, np.newaxis])
@@ -339,7 +341,7 @@ class Prepare(object):
                 # signal_pic = signal_pic.transpose(1,2,0)
                 
                 # save
-                s = Path(f'{path}_15min_{i}.s_pkl')
+                s = Path(f'{path}_15min_zscore_{i}.s_pkl')
                 with s.open('wb') as fp:
                     pickle.dump([signal_pic, ann], fp)
             myprint(f'pickling done: 15min ({nduration})')

@@ -9,7 +9,7 @@ from config import AppConfig
 from prepare import Prepare
 from a_tools import myprint
 
-savelog = 0
+savelog = 1
 
 DEBUG_MODE = False
 STANDARD_EPOCH_SEC = 30
@@ -37,7 +37,7 @@ if savelog:
     path = os.path.abspath(os.path.dirname(__file__))
     type = sys.getfilesystemencoding()
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
-    sys.stdout = Logger('log/TEST_chp_trim_epoch.txt') # 不需要自己先新建txt文档  # right: filter_right
+    sys.stdout = Logger('log/TEST_cnc_15min_zscore.txt') # 不需要自己先新建txt文档  # right: filter_right
 
 def findAllFile(base):
     for filepath, dirnames, filenames in os.walk(base):

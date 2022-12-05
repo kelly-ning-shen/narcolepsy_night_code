@@ -29,7 +29,7 @@ from confusion_matrix_index import plot_confusion_matrix
 savelog = 1
 savepic = 1
 savecheckpoints = 1
-MODE = 'squaresmalle_15min_shuffle'
+MODE = 'squaresmalle_15min_zscore_shuffle'
 
 if savelog:
     class Logger(object):
@@ -74,7 +74,7 @@ def loadSubjectData(base):
     for i in range(nsubject):
         subject = subjects[i] # WindowsPath('dsata/mnc/cnc/cnc/chc001-nsrr.xml')
         name = subject.stem
-        subject_data = sorted(Path(base).glob(f'{name}_15min_*.s_pkl'))
+        subject_data = sorted(Path(base).glob(f'{name}_15min_zscore_*.s_pkl'))
         subject_data = sorted(subject_data, key=lambda x: int(str(x).split('.')[0].split('_')[-1]))
         ndata = len(subject_data)
         myprint(f'15min inputs: {name} ({ndata})')
@@ -366,7 +366,7 @@ def ignore_unknown_label(sss):
     return sss
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':    
     LeaveOneSubjectOut(base)
     # x = torch.randn(10,3,300,300)
     # net = SquareSmallE(n_channels=3)

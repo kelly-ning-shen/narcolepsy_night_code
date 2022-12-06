@@ -24,12 +24,12 @@ from torch.autograd import Function
 from torch.utils.data import Dataset, DataLoader
 
 from a_tools import myprint
-from confusion_matrix_index import plot_confusion_matrix
+from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
 savelog = 1
 savepic = 1
-savecheckpoints = 1
-MODE = 'squaresmalle_15min_zscore_shuffle'
+savecheckpoints = 0
+MODE = 'squaresmalle_15min_zscore_shuffle_ROC'
 
 if savelog:
     class Logger(object):
@@ -59,7 +59,8 @@ LR = 0.001        # i.e, 0.001
 
 # prepare checkpoint dir
 dir_checkpoint = f'checkpoints/{MODE}/checkpoints'
-DIAGNOSIS = ["Other","Narcolepsy type 1"]
+DIAGNOSIS = ["Other","NT1"]
+SLEEPSTAGE = ['Wake','N1','N2','N3','REM']
 
 def loadSubjectData(base):
     '''
@@ -70,6 +71,7 @@ def loadSubjectData(base):
     print(f'Subjects num: {nsubject}\n')
 
     subjects_data = {}
+    n15minduration = 0
     # read: the inputs of one subject (save to dict)
     for i in range(nsubject):
         subject = subjects[i] # WindowsPath('dsata/mnc/cnc/cnc/chc001-nsrr.xml')
@@ -79,13 +81,19 @@ def loadSubjectData(base):
         ndata = len(subject_data)
         myprint(f'15min inputs: {name} ({ndata})')
         subjects_data[name] = subject_data # list of datapath
+        n15minduration += len(subject_data)
     
-    return subjects_data
+    return subjects_data, n15minduration
 
 def LeaveOneSubjectOut(base):
-    subjects_data = loadSubjectData(base)
+    subjects_data, n15minduration = loadSubjectData(base)
     conf_mats = np.zeros((5,5), dtype=np.int)
+    ds_subject = np.zeros((len(subjects_data),3)) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
+    ds_15min = np.zeros((n15minduration,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
+    j = -1
+    tmp = 0
     for subject in subjects_data:
+        j += 1
         # get filepaths of train_data, test_data
         # Can use these filepaths for CustomDataset
         test_data = subjects_data[subject] # get filepaths of test data
@@ -149,10 +157,27 @@ def LeaveOneSubjectOut(base):
         print('==== START TESTING ====')
         # [TODO] test_loader是否需要使用minibatch？
         test_dataloader = DataLoader(NarcoNight15min(test_data), shuffle=False, batch_size=BATCH_SIZE)
-        conf_mat = test_on_subject(model, test_dataloader, ntest, subject)
+        conf_mat, d_pred, d_label, ds_15min[tmp:tmp+ntest,:] = test_on_subject(model, test_dataloader, ntest, subject)
         conf_mats += conf_mat
+        tmp += ntest
+        
+        ds_subject[j,0] = d_pred
+        ds_subject[j,1] = d_label
     picpath = f'pic/{MODE}/conf_mat_all.png' # TODO: 根据运行设置将图片放到某个文件夹里
-    plot_confusion_matrix(conf_mats,5,'all',savepic=savepic,picpath=picpath)
+    plot_confusion_matrix(conf_mats,5,'all',ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
+    
+    ds_subject[:,2] = np.where(ds_subject[:,0]>0.5, 1, 0)
+    acc_ds = accuracy_score(ds_subject[:,1], ds_subject[:,2])
+    print(f'Diagnosis acc on patients: {acc_ds}')
+    conf_mat_d = confusion_matrix(ds_subject[:,1], ds_subject[:,2]) # true, pred
+    picpath = f'pic/{MODE}/conf_mat_diagnosis.png' # TODO: 根据运行设置将图片放到某个文件夹里
+    plot_confusion_matrix(conf_mat_d,2,'all',ticks=DIAGNOSIS,savepic=savepic,picpath=picpath) # TODO: 画图吗？还是添加变量改xlabel，ylabel？
+    
+    # ROC curve
+    picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
+    plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=1,picpath=picpath)
+    picpath = f'pic/{MODE}/ROC_curve_diagnosis_15min.png'
+    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],'all 15min',savepic=1,picpath=picpath)
 
 class NarcoNight15min(Dataset):
     def __init__(self, filepaths):
@@ -295,8 +320,8 @@ class SquareSmallE(nn.Module):
 def test_on_subject(model, dataloader, ntest, subject):
     # set net model to evaluation
     model.eval() # 不启用 BatchNormalization 和 Dropout
-    sss = np.zeros((ntest*30,2)) # metric 1 (sleep stage). col0: preds, col1: lables (15min: 30 epochs)
-    ds = np.zeros((ntest,2)) # metric 2 (diagnose). col0: preds, col1: lables
+    sss = np.zeros((ntest*30,2)) # [every 30s-epoch] metric 1 (sleep stage). col0: preds, col1: lables (15min: 30 epochs)
+    ds = np.zeros((ntest,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
     for i, data in enumerate(dataloader): # tqdm()
         # Get data from the batch
         inputs = data['signal_pic'].to(device) # shape: [10,3,300,300]
@@ -330,27 +355,24 @@ def test_on_subject(model, dataloader, ntest, subject):
     print(f'Sleep stage: acc = {acc_ss}')
     print(classification_report(sss[:,1], sss[:,0]),'\n')
     picpath = f'pic/{MODE}/conf_mat_{subject}.png'
-    plot_confusion_matrix(conf_mat,5,subject,savepic=savepic,picpath=picpath)
+    plot_confusion_matrix(conf_mat,5,subject,ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
 
     acc_d = accuracy_score(ds[:,1], np.where(ds[:,0]>0.5, 1, 0))
+    print(f'Diagnosis acc on 15mins: {acc_d}')
     d_pred, d_label = get_diagnose(ds)
     if abs(d_label-d_pred) < 0.5:
         print(f'Right! Diagnosis: {DIAGNOSIS[d_label]}')
     else:
         print(f'Wrong!!! Real Diagnosis: {DIAGNOSIS[d_label]}')
-    return conf_mat
+    return conf_mat, d_pred, d_label, ds
 
 def get_diagnose(ds):
     label = int(ds[0,1])
-
     preds = ds[:,0]
-    pred = preds[0]
-
-    if not np.all(preds==pred):
-        print(preds)
-        pred = np.mean(preds)
+    print(preds)
+    pred = np.mean(preds)
     print(f'pred: {pred}, label: {label}')
-    return pred, label
+    return pred, label # float, int
     
 def myflatten(x):
     x = x.reshape(-1,1)
@@ -366,7 +388,7 @@ def ignore_unknown_label(sss):
     return sss
 
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
     LeaveOneSubjectOut(base)
     # x = torch.randn(10,3,300,300)
     # net = SquareSmallE(n_channels=3)

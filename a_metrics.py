@@ -9,13 +9,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import itertools
+from sklearn.metrics import roc_auc_score, roc_curve
 # from collections import Counter
 # from tensorflow.keras.utils import to_categorical
 # from sklearn.metrics import confusion_matrix
 
 
 #confusion matrix
-def plot_confusion_matrix(cm, classes_num,mode,savepic=0,picpath='',
+def plot_confusion_matrix(cm, classes_num,mode,ticks,savepic=0,picpath='Default_confmat.png',
                           title='Confusion matrix',
                           cmap='gray_r'):
     '''
@@ -25,12 +26,12 @@ def plot_confusion_matrix(cm, classes_num,mode,savepic=0,picpath='',
     cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
     plt.figure(figsize=(6.2,5.2))
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    title = 'Confusion matrix ('+mode+')'
+    title = f'Confusion matrix ({mode})'
     plt.title(title)
     plt.colorbar()
     tick_marks = np.arange(classes_num)
-    plt.xticks(tick_marks,['Wake','N1','N2','N3','REM'],rotation=45)
-    plt.yticks(tick_marks,['Wake','N1','N2','N3','REM'])
+    plt.xticks(tick_marks,ticks,rotation=45)
+    plt.yticks(tick_marks,ticks)
     thresh = np.nanmax(cm) / 2 # ignore NaN !
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         # plt.text(j, i, '{:.2f}'.format(cm[i, j]), horizontalalignment="center",
@@ -135,3 +136,51 @@ def metric(cm):
 # model = load_model('model/right/third_attempt/beat/scale_RRI_NSV/weights_best_beat_B_scale_RRI_NSV_45-0.98.hdf5')
 # plot_confuse(model,[test_signals,test_RRIs],test_onehot,'test')
 # plt.show()
+
+def plot_ROC_curve(y_labels, y_pred_probas, mode, savepic=0, picpath='Default_ROCcurve.png'):
+    fpr, tpr, thresholds = roc_curve(y_labels,y_pred_probas,pos_label=1)
+    auc = roc_auc_score(y_labels,y_pred_probas)
+    for i, threshold in enumerate(thresholds):
+        print(f'fpr: {fpr[i]}, tpr: {tpr[i]}, threshold: {threshold}, ')
+    maxidx = (tpr-fpr).tolist().index(max(tpr-fpr))
+    best_threshold = thresholds[maxidx]
+    best_fpr = fpr[maxidx]
+    best_tpr = tpr[maxidx]
+    print(f'\n=== best_threshold: {best_threshold}, best_fpr: {best_fpr}, best_tpr: {best_tpr} ===')
+
+    # create ROC curve
+    title = f'ROC curve ({mode})'
+    plt.figure(figsize=(5.6,5.2))
+    plt.plot([0,1],[0,1],c='slategrey',linestyle='--',zorder=1)
+    plt.plot(fpr, tpr, c='goldenrod', label='ROC curve (area = {0:.2f})'.format(auc), lw=2,zorder=2)
+    plt.ylabel('True positive rate')
+    plt.xlabel('False positive rate')
+    plt.xlim([-0.05, 1.05])
+    plt.ylim([-0.05, 1.05])
+    plt.legend(loc=4)
+    plt.scatter(best_fpr, best_tpr, s=30, c='r',linewidths=1, edgecolors='k',zorder=3)
+    
+    plt.title(title)
+    if savepic:
+        plt.savefig(picpath)
+    plt.show()
+    plt.close()
+
+if __name__ =='__main__':
+    cm = np.array([[18, 5], [6, 49]])
+    plot_confusion_matrix(cm,2,'all',['Other','NT1'],savepic=1)
+    # f = open('log/TEST_15min.txt','r',encoding='utf-8').readlines()
+    # d_preds_15min = []
+    # d_labels_15min = []
+    # for i in range(len(f)):
+    #     a = f[i]
+    #     print(type(a))
+    #     d_preds = list(map(float, f[i].split(' ')))
+    #     if i < 23:
+    #         label = 0
+    #     else:
+    #         label = 1
+    #     d_labels = [label]*len(d_preds)
+    #     d_preds_15min += d_preds
+    #     d_labels_15min += d_labels
+    # plot_ROC_curve(np.array(d_labels_15min),np.array(d_preds_15min),'all 15min',savepic=1,picpath='pic/squaresmalle_15min_zscore_shuffle/ROC_curve_diagnosis_15min.png')

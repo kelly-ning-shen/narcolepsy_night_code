@@ -20,16 +20,19 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch import optim
-from torch.autograd import Function
+# from torch.autograd import Function
 from torch.utils.data import Dataset, DataLoader
 
+# from network import SquareSmallE
+from network import MultiCNNC2CM
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
 savelog = 1
 savepic = 1
-savecheckpoints = 0
-MODE = 'squaresmalle_15min_zscore_shuffle_ROC'
+savecheckpoints = 1
+MODE = 'multicnnc2cm_15min_zscore_shuffle_ROC'
+is_per_epoch = 1
 
 if savelog:
     class Logger(object):
@@ -112,7 +115,7 @@ def LeaveOneSubjectOut(base):
         # test_dataset = NarcoNight15min(test_data)
 
         print('==== START TRAINING ====')
-        model = SquareSmallE(n_channels=3)
+        model = MultiCNNC2CM(n_channels=3)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         model.to(device)
@@ -157,12 +160,18 @@ def LeaveOneSubjectOut(base):
         print('==== START TESTING ====')
         # [TODO] test_loader是否需要使用minibatch？
         test_dataloader = DataLoader(NarcoNight15min(test_data), shuffle=False, batch_size=BATCH_SIZE)
-        conf_mat, d_pred, d_label, ds_15min[tmp:tmp+ntest,:] = test_on_subject(model, test_dataloader, ntest, subject)
+        conf_mat, d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
+        ds_15min[tmp:tmp+ntest,:] = ds_15min_subject
         conf_mats += conf_mat
         tmp += ntest
         
         ds_subject[j,0] = d_pred
         ds_subject[j,1] = d_label
+
+        with open(f'diagnosis/{MODE}/ds_15min_subject.txt','a') as fp:
+            np.savetxt(fp,np.squeeze(ds_15min_subject[:,0]), fmt='%f', newline=' ')
+            fp.write('\n')
+            print('Save 15mins of subject {subject}')
     picpath = f'pic/{MODE}/conf_mat_all.png' # TODO: 根据运行设置将图片放到某个文件夹里
     plot_confusion_matrix(conf_mats,5,'all',ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
     
@@ -175,9 +184,12 @@ def LeaveOneSubjectOut(base):
     
     # ROC curve
     picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
-    plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=1,picpath=picpath)
+    plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=savepic,picpath=picpath)
     picpath = f'pic/{MODE}/ROC_curve_diagnosis_15min.png'
-    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],'all 15min',savepic=1,picpath=picpath)
+    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],'all 15min',savepic=savepic,picpath=picpath)
+
+    np.savetxt(f'diagnosis/{MODE}/ds_subject.txt', ds_subject, fmt=['%f', '%d', '%d']) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
+    np.savetxt(f'diagnosis/{MODE}/ds_15min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
 
 class NarcoNight15min(Dataset):
     def __init__(self, filepaths):
@@ -199,123 +211,15 @@ class NarcoNight15min(Dataset):
         d = self.data[index]
         with d.open('rb') as fp:
             signal_pic, ann = pickle.load(fp)
+        if is_per_epoch:
+            signal_pic = signal_pic.reshape((3,30,3000))
         signal_pic = torch.from_numpy(signal_pic) # shape: torch.Size ([3,300,300])
         ann = torch.from_numpy(ann) # shape: torch.Size ([30])
         diagnosis = self.diagnosis[index]
         sample = {'signal_pic': signal_pic, 'ann': ann, 'diagnosis': diagnosis}
         return sample
 
-####################### DEFINE MODEL #######################
-class SpConv2d(nn.Module):
-    '''NeurlPS2019: Convolution with even-sized kernels and symmetric padding'''
-    def __init__(self,in_channels,out_channels,kernel_size,stride,padding,*args,**kwargs):
-        super(SpConv2d,self).__init__()
-        self.spconv = nn.Conv2d(in_channels,out_channels,kernel_size,stride,padding)
-    def forward(self,x):
-        n,c,h,w = x.size()
-        assert c % 4 == 0
-        x1 = x[:,:c//4,:,:]
-        x2 = x[:,c//4:c//2,:,:]
-        x3 = x[:,c//2:c//4*3,:,:]
-        x4 = x[:,c//4*3:c,:,:]
-        x1 = nn.functional.pad(x1,(1,0,1,0),mode = "constant",value = 0) # left top
-        x2 = nn.functional.pad(x2,(0,1,1,0),mode = "constant",value = 0) # right top
-        x3 = nn.functional.pad(x3,(1,0,0,1),mode = "constant",value = 0) # left bottom
-        x4 = nn.functional.pad(x4,(0,1,0,1),mode = "constant",value = 0) # right bottom
-        x = torch.cat([x1,x2,x3,x4],dim = 1)
-        return self.spconv(x)
 
-class DepthwiseConv(nn.Module):
-    '''(可以用于第一层卷积层！读取每个通道的信息！)
-    Mentioned in: 
-    1. Xception
-    2. MobileNet'''
-    def __init__(self, in_channels, out_channels):
-        super(DepthwiseConv, self).__init__()
-        self.depth_wise = nn.Conv2d(in_channels, in_channels, kernel_size=3, padding=1, groups=in_channels)
-        self.point_wise = nn.Conv2d(in_channels, out_channels, kernel_size=1)
-    def forward(self, x):
-        x = self.depth_wise(x)
-        x = self.point_wise(x)
-        return x
-
-class SingleConv(nn.Module):
-    '''[kernel: square] (conv -> BN -> ReLU)'''
-    def __init__(self, in_channels, out_channels, kernel_size, stride, padding):
-        super(SingleConv, self).__init__()
-        self.conv = nn.Sequential(
-            nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding),
-            nn.BatchNorm2d(out_channels),
-            nn.ReLU(inplace=True)
-        )
-    def forward(self, x):
-        x = self.conv(x)
-        return x
-
-class OutSleepStage(nn.Module):
-    '''conv [kernel: 1*1]*out_channels)'''
-    def __init__(self, in_channels, out_channels):
-        super(OutSleepStage, self).__init__()
-        self.outsleepstage = nn.Conv2d(in_channels,out_channels,kernel_size=1,padding=0)
-    def forward(self, x):
-        x = self.outsleepstage(x)
-        return x
-
-class OutDiagnosis(nn.Module):
-    '''(flatten -> fc -> fc)'''
-    def __init__(self, in_channels, hidden_channels):
-        # in_channels: the number of features that are input to the fully-connected layer after flattening
-        super(OutDiagnosis, self).__init__()
-        self.fc = nn.Sequential(
-            nn.Flatten(),
-            nn.Linear(in_channels, hidden_channels),
-            nn.ReLU(inplace=True),
-            nn.Linear(hidden_channels, 1)
-        )
-    def forward(self, x):
-        x = self.fc(x)
-        return x
-
-class SquareSmallE(nn.Module):
-    '''Plan 1: 
-    - kernel_shape: square
-    - kernel_size: small
-    - structure: encoder'''
-    def __init__(self, n_channels):
-        super(SquareSmallE, self).__init__()
-        self.conv1 = SingleConv(n_channels, 64, kernel_size=5, stride=3, padding=1)     # main: conv2d + batchnorm + relu
-        self.conv2 = SingleConv(64, 128, kernel_size=7, stride=3, padding=0)            # main: conv2d + batchnorm + relu
-        self.conv3 = SingleConv(128, 128, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-
-        self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,30), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
-        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
-        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
-
-        self.conv4 = SingleConv(128, 256, kernel_size=5, stride=3, padding=1)           # main: conv2d + batchnorm + relu
-        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        self.conv6 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        
-        self.out_d = OutDiagnosis(1024,hidden_channels=256)
-    def forward(self, x):
-        x = self.conv1(x)
-        x = self.conv2(x)
-        x = self.conv3(x)
-
-        ss = self.conv3_ss1(x)
-        # ss = self.conv3_ss2(ss)
-        ss = self.out_ss(ss)    # multitask 1: sleep staging
-        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
-
-        x = self.conv4(x)
-        x = self.conv5(x)
-        x = self.conv6(x)
-        x = self.conv7(x)
-        x = self.conv8(x)
-
-        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
-        return ss, d
 
 def test_on_subject(model, dataloader, ntest, subject):
     # set net model to evaluation

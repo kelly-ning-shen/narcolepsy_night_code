@@ -1,14 +1,15 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
+####################### MODEL COMPONENTS #######################
 class SpConv2d(nn.Module):
+    '''NeurlPS2019: Convolution with even-sized kernels and symmetric padding'''
     def __init__(self,in_channels,out_channels,kernel_size,stride,padding,*args,**kwargs):
         super(SpConv2d,self).__init__()
-        self.conv = nn.Conv2d(in_channels,out_channels,kernel_size,stride,padding)
+        self.spconv = nn.Conv2d(in_channels,out_channels,kernel_size,stride,padding)
     def forward(self,x):
         n,c,h,w = x.size()
-        assert c % 4 == 0 # need 4*n channels (can't)
+        assert c % 4 == 0
         x1 = x[:,:c//4,:,:]
         x2 = x[:,c//4:c//2,:,:]
         x3 = x[:,c//2:c//4*3,:,:]
@@ -18,7 +19,35 @@ class SpConv2d(nn.Module):
         x3 = nn.functional.pad(x3,(1,0,0,1),mode = "constant",value = 0) # left bottom
         x4 = nn.functional.pad(x4,(0,1,0,1),mode = "constant",value = 0) # right bottom
         x = torch.cat([x1,x2,x3,x4],dim = 1)
-        return self.conv(x) # [10,4,301,301]
+        return self.spconv(x)
+
+class DepthwiseConv(nn.Module):
+    '''(可以用于第一层卷积层！读取每个通道的信息！)
+    Mentioned in: 
+    1. Xception
+    2. MobileNet'''
+    def __init__(self, in_channels, out_channels):
+        super(DepthwiseConv, self).__init__()
+        self.depth_wise = nn.Conv2d(in_channels, in_channels, kernel_size=3, padding=1, groups=in_channels)
+        self.point_wise = nn.Conv2d(in_channels, out_channels, kernel_size=1)
+    def forward(self, x):
+        x = self.depth_wise(x)
+        x = self.point_wise(x)
+        return x
+
+class SingleConv(nn.Module):
+    '''[kernel: square] (conv -> BN -> ReLU)'''
+    def __init__(self, in_channels, out_channels, kernel_size, stride, padding):
+        super(SingleConv, self).__init__()
+        self.conv = nn.Sequential(
+            nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(inplace=True)
+        )
+    def forward(self, x):
+        x = self.conv(x)
+        return x
+
 class OutSleepStage(nn.Module):
     '''conv [kernel: 1*1]*out_channels)'''
     def __init__(self, in_channels, out_channels):
@@ -44,7 +73,6 @@ class OutDiagnosis(nn.Module):
         return x
 
 class SELayer(nn.Module):
-    '''squeeze-and-excitation networks, Momenta, ImageNet2017 champiom'''
     def __init__(self, channel, reduction=16):
         super(SELayer, self).__init__()
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
@@ -59,35 +87,6 @@ class SELayer(nn.Module):
         y = self.avg_pool(x).view(b, c)
         y = self.fc(y).view(b, c, 1, 1)
         return x*y.expand_as(x)
-
-class SELayer(nn.Module):
-    def __init__(self, channel, reduction=16):
-        super(SELayer, self).__init__()
-        self.avg_pool = nn.AdaptiveAvgPool2d(1)
-        self.fc = nn.Sequential(
-            nn.Linear(channel, channel // reduction, bias=False),
-            nn.ReLU(inplace=True),
-            nn.Linear(channel // reduction, channel, bias=False),
-            nn.Sigmoid()
-        )
-    def forward(self, x):
-        b, c, _, _ = x.size()
-        y = self.avg_pool(x).view(b, c)
-        y = self.fc(y).view(b, c, 1, 1)
-        return x*y.expand_as(x)
-
-class SingleConv(nn.Module):
-    '''[kernel: square] (conv -> BN -> ReLU)'''
-    def __init__(self, in_channels, out_channels, kernel_size, stride, padding):
-        super(SingleConv, self).__init__()
-        self.conv = nn.Sequential(
-            nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding),
-            nn.BatchNorm2d(out_channels),
-            nn.ReLU(inplace=True)
-        )
-    def forward(self, x):
-        x = self.conv(x)
-        return x
 
 class CNNBlock(nn.Module):
     '''Zhou Wei: A Lightweight Segmented Attention Network for Sleep Staging by Fusing Local Characteristics and Adjacent Information'''
@@ -128,17 +127,49 @@ class MultiCNN_SE(nn.Module):
     def forward(self, x):
         x = self.multicnn(x)
         x = self.se(x)
-        return x
+        return x # torch.Size([10, 128, 30, 179])
 
-class Net(nn.Module):
-    def __init__(self):
-        super(Net,self).__init__()
-        # self.conv = SpConv2d(3,16,4,1,0)
-        # self.pool = nn.MaxPool2d(kernel_size=(1,4),stride=(1,4))
-        # self.conv = SpConv2d(in_channels=4,out_channels=16,kernel_size=4,stride=1,padding=0)
-        self.se = SELayer(128, 16)
-    def forward(self,x):
-        return self.se(x)
+####################### MODELS #######################
+class SquareSmallE(nn.Module):
+    '''Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels):
+        super(SquareSmallE, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=5, stride=3, padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=7, stride=3, padding=0)            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+
+        self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,30), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv4 = SingleConv(128, 256, kernel_size=5, stride=3, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+
+        ss = self.conv3_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv4(x)
+        x = self.conv5(x)
+        x = self.conv6(x)
+        x = self.conv7(x)
+        x = self.conv8(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d
 
 class MultiCNNC2CM(nn.Module):
     '''
@@ -169,16 +200,6 @@ class MultiCNNC2CM(nn.Module):
         ss = torch.squeeze(ss, 3)
 
         d = self.conv3(x)
-        # d = self.out_d(d)
+        d = self.out_d(d)
         return ss, d
-
-if __name__ == "__main__":
-    x = torch.randn(10,3,30,3000)
-    # net = Net()
-    # net = MultiCNN_SE(in_channels=3)
-    net = MultiCNNC2CM(n_channels=3)
-    ss, d = net(x)
-    print(ss)
-    print(ss.shape)
-    print(d)
-    print(d.shape)
+        

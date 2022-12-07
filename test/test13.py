@@ -1,18 +1,12 @@
 import numpy as np
-f = open('log/TEST_15min_ROC.txt','r',encoding='utf-8').readlines()
-d_preds_15min = []
-d_labels_15min = []
-for i in range(len(f)):
-    a = f[i]
-    print(type(a))
-    d_preds = list(map(float, f[i].split(' ')))
-    if i < 23:
-        label = 0
-    else:
-        label = 1
-    d_labels = [label]*len(d_preds)
-    d_preds_15min += d_preds
-    d_labels_15min += d_labels
-
-print(d_preds_15min)
-print(d_labels_15min)
+a = np.arange(40)
+a = a.reshape((2,4,5))
+print(a)
+print(a[0,:,:])
+print(a[1,:,:])
+# a = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])
+# print(a)
+b = a.reshape((2,2,10))
+print(b)
+print(b[0,:,:])
+print(b[1,:,:])

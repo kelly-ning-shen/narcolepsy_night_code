@@ -14,7 +14,7 @@ import sys
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 # from tqdm import tqdm
 
-# os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
 import torch
 import torch.nn as nn
@@ -31,7 +31,7 @@ from a_metrics import plot_confusion_matrix, plot_ROC_curve
 savelog = 1
 savepic = 1
 savecheckpoints = 1
-MODE = 'multicnnc2cm_15min_zscore_shuffle_ROC'
+MODE = 'multicnnc2cm_15min_zscore_shuffle_ROC1'
 is_per_epoch = 1
 
 if savelog:
@@ -52,7 +52,7 @@ if savelog:
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
     sys.stdout = Logger(f'log/TEST_classifier_{MODE}.txt') # 不需要自己先新建txt文档  # right: filter_right
 
-device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
 print(device)
 
 base = 'data/mnc/cnc/cnc/'
@@ -118,6 +118,7 @@ def LeaveOneSubjectOut(base):
         model = MultiCNNC2CM(n_channels=3)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
+        # model = nn.DataParallel(model, device_ids=[0,1])
         model.to(device)
         diagnose_loss = nn.BCEWithLogitsLoss()
         sleepstage_loss = nn.CrossEntropyLoss(ignore_index=-1) # ignore sleep stage ann with -1
@@ -151,11 +152,11 @@ def LeaveOneSubjectOut(base):
 
 
             print('Epoch finished! Loss: {}'.format(epoch_loss/i))
-            if savecheckpoints:
-                torch.save(model.state_dict(),
-                            f'{dir_checkpoint}_{subject}_CP{epoch+1}.pth')
-                            # dir_checkpoint + 'CP{}.pth'.format(epoch + 1))
-            print('Checkpoint {} saved !'.format(epoch + 1))
+        if savecheckpoints:
+            torch.save(model.state_dict(),
+                        f'{dir_checkpoint}_{subject}.pth')
+                        # dir_checkpoint + 'CP{}.pth'.format(epoch + 1))
+        print('Model saved !\n')
         
         print('==== START TESTING ====')
         # [TODO] test_loader是否需要使用minibatch？

@@ -100,12 +100,12 @@ def metric(cm):
             ppr = 100*TP/(FP+TP)
         else:
             ppr = 0
-            print('\nThe ppr of ',i,' has ZeroDivisionError.\n')
+            print('\nThe ppr of ',i,' has ZeroDivisionError.')
         if (sen+ppr) != 0:
             f1score = 2*sen*ppr/(sen+ppr)
         else:
             f1score = 0
-            print('\nThe f1-score of ',i,' has ZeroDivisionError.\n')
+            print('\nThe f1-score of ',i,' has ZeroDivisionError.')
             
         metrics['acc %'].append(acc)
         metrics['sen %'].append(sen)
@@ -153,10 +153,12 @@ def plot_ROC_curve(y_labels, y_pred_probas, mode, savepic=0, picpath='Default_RO
     plt.figure(figsize=(5.6,5.2))
     plt.plot([0,1],[0,1],c='slategrey',linestyle='--',zorder=1)
     plt.plot(fpr, tpr, c='goldenrod', label='ROC curve (area = {0:.2f})'.format(auc), lw=2,zorder=2)
-    plt.ylabel('True positive rate')
-    plt.xlabel('False positive rate')
-    plt.xlim([-0.05, 1.05])
-    plt.ylim([-0.05, 1.05])
+    plt.ylabel('Sensitivity')
+    plt.xlabel('1-specificity')
+    # plt.xlim([-0.05, 1.05])
+    # plt.ylim([-0.05, 1.05])
+    plt.xlim([0, 1])
+    plt.ylim([0, 1])
     plt.legend(loc=4)
     plt.scatter(best_fpr, best_tpr, s=30, c='r',linewidths=1, edgecolors='k',zorder=3)
     
@@ -167,15 +169,17 @@ def plot_ROC_curve(y_labels, y_pred_probas, mode, savepic=0, picpath='Default_RO
     plt.close()
 
 if __name__ =='__main__':
-    cm = np.array([[18, 5], [6, 49]])
-    plot_confusion_matrix(cm,2,'all',['Other','NT1'],savepic=1)
-    # f = open('log/TEST_15min.txt','r',encoding='utf-8').readlines()
+    threshold = 0.7481693067785465
+    cm = np.array([[21, 2], [5, 50]])
+    plot_confusion_matrix(cm,2,'all',['Other','NT1'],savepic=1,picpath=f'pic/multicnnc2cm_15min_zscore_shuffle_ROC/thredhold={threshold}.png')
+    # f = open('diagnosis/multicnnc2cm_15min_zscore_shuffle_ROC/ds_15min_subject.txt','r',encoding='utf-8').readlines()
     # d_preds_15min = []
     # d_labels_15min = []
     # for i in range(len(f)):
     #     a = f[i]
-    #     print(type(a))
-    #     d_preds = list(map(float, f[i].split(' ')))
+    #     d_preds = a.split(' ')
+    #     d_preds = d_preds[0:-1] # ignore the last '\n'
+    #     d_preds = list(map(float, d_preds))
     #     if i < 23:
     #         label = 0
     #     else:
@@ -183,4 +187,4 @@ if __name__ =='__main__':
     #     d_labels = [label]*len(d_preds)
     #     d_preds_15min += d_preds
     #     d_labels_15min += d_labels
-    # plot_ROC_curve(np.array(d_labels_15min),np.array(d_preds_15min),'all 15min',savepic=1,picpath='pic/squaresmalle_15min_zscore_shuffle/ROC_curve_diagnosis_15min.png')
+    # plot_ROC_curve(np.array(d_labels_15min),np.array(d_preds_15min),'all 15min',savepic=1,picpath='pic/multicnnc2cm_15min_zscore_shuffle_ROC/ROC_curve_diagnosis_15min_01.png')

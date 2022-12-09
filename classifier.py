@@ -31,8 +31,13 @@ from a_metrics import plot_confusion_matrix, plot_ROC_curve
 savelog = 1
 savepic = 1
 savecheckpoints = 1
-MODE = 'multicnnc2cm_15min_zscore_shuffle_ROC1'
-is_per_epoch = 1
+
+is_per_epoch = 0 # 15min才需要使用这个
+DURATION_MINUTES = 5 # my first choice: 15min
+DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
+nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
+
+MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC'
 
 if savelog:
     class Logger(object):
@@ -79,10 +84,10 @@ def loadSubjectData(base):
     for i in range(nsubject):
         subject = subjects[i] # WindowsPath('dsata/mnc/cnc/cnc/chc001-nsrr.xml')
         name = subject.stem
-        subject_data = sorted(Path(base).glob(f'{name}_15min_zscore_*.s_pkl'))
+        subject_data = sorted(Path(base).glob(f'{name}_{DURATION_MINUTES}min_zscore_*.s_pkl'))
         subject_data = sorted(subject_data, key=lambda x: int(str(x).split('.')[0].split('_')[-1]))
         ndata = len(subject_data)
-        myprint(f'15min inputs: {name} ({ndata})')
+        myprint(f'{DURATION_MINUTES}min inputs: {name} ({ndata})')
         subjects_data[name] = subject_data # list of datapath
         n15minduration += len(subject_data)
     
@@ -115,7 +120,7 @@ def LeaveOneSubjectOut(base):
         # test_dataset = NarcoNight15min(test_data)
 
         print('==== START TRAINING ====')
-        model = MultiCNNC2CM(n_channels=3)
+        model = MultiCNNC2CM(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
@@ -169,10 +174,10 @@ def LeaveOneSubjectOut(base):
         ds_subject[j,0] = d_pred
         ds_subject[j,1] = d_label
 
-        with open(f'diagnosis/{MODE}/ds_15min_subject.txt','a') as fp:
+        with open(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min_subject.txt','a') as fp:
             np.savetxt(fp,np.squeeze(ds_15min_subject[:,0]), fmt='%f', newline=' ')
             fp.write('\n')
-            print('Save 15mins of subject {subject}')
+            print(f'Save {DURATION_MINUTES}mins of subject {subject}')
     picpath = f'pic/{MODE}/conf_mat_all.png' # TODO: 根据运行设置将图片放到某个文件夹里
     plot_confusion_matrix(conf_mats,5,'all',ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
     
@@ -186,11 +191,11 @@ def LeaveOneSubjectOut(base):
     # ROC curve
     picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
     plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=savepic,picpath=picpath)
-    picpath = f'pic/{MODE}/ROC_curve_diagnosis_15min.png'
-    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],'all 15min',savepic=savepic,picpath=picpath)
+    picpath = f'pic/{MODE}/ROC_curve_diagnosis_{DURATION_MINUTES}min.png'
+    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],'all {DURATION_MINUTES}min',savepic=savepic,picpath=picpath)
 
     np.savetxt(f'diagnosis/{MODE}/ds_subject.txt', ds_subject, fmt=['%f', '%d', '%d']) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
-    np.savetxt(f'diagnosis/{MODE}/ds_15min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
+    np.savetxt(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
 
 class NarcoNight15min(Dataset):
     def __init__(self, filepaths):
@@ -225,7 +230,7 @@ class NarcoNight15min(Dataset):
 def test_on_subject(model, dataloader, ntest, subject):
     # set net model to evaluation
     model.eval() # 不启用 BatchNormalization 和 Dropout
-    sss = np.zeros((ntest*30,2)) # [every 30s-epoch] metric 1 (sleep stage). col0: preds, col1: lables (15min: 30 epochs)
+    sss = np.zeros((ntest*nepoch,2)) # [every 30s-epoch] metric 1 (sleep stage). col0: preds, col1: lables (15min: 30 epochs)
     ds = np.zeros((ntest,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
     for i, data in enumerate(dataloader): # tqdm()
         # Get data from the batch
@@ -241,8 +246,8 @@ def test_on_subject(model, dataloader, ntest, subject):
         ss_outputs = F.softmax(ss_outputs, dim=1)
         ss_outputs_indices = torch.argmax(ss_outputs, dim=1) # shape: [10,30]
         nbatch = d_labels.shape[0]
-        sss[i*BATCH_SIZE*30:i*BATCH_SIZE*30+nbatch*30, 0] = myflatten(ss_outputs_indices.cpu().numpy()) # col0: preds
-        sss[i*BATCH_SIZE*30:i*BATCH_SIZE*30+nbatch*30, 1] = myflatten(data['ann'].numpy()) # col1: lables
+        sss[i*BATCH_SIZE*nepoch:i*BATCH_SIZE*nepoch+nbatch*nepoch, 0] = myflatten(ss_outputs_indices.cpu().numpy()) # col0: preds
+        sss[i*BATCH_SIZE*nepoch:i*BATCH_SIZE*nepoch+nbatch*nepoch, 1] = myflatten(data['ann'].numpy()) # col1: lables
 
         # metric 2: narcolepsy detection (predicted condition for every 15min (for every input))
         ## 编写函数将15min的患病情况转换为整夜的患病情况
@@ -263,7 +268,7 @@ def test_on_subject(model, dataloader, ntest, subject):
     plot_confusion_matrix(conf_mat,5,subject,ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
 
     acc_d = accuracy_score(ds[:,1], np.where(ds[:,0]>0.5, 1, 0))
-    print(f'Diagnosis acc on 15mins: {acc_d}')
+    print(f'Diagnosis acc on {DURATION_MINUTES}mins: {acc_d}')
     d_pred, d_label = get_diagnose(ds)
     if abs(d_label-d_pred) < 0.5:
         print(f'Right! Diagnosis: {DIAGNOSIS[d_label]}')

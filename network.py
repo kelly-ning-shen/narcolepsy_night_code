@@ -178,8 +178,9 @@ class MultiCNNC2CM(nn.Module):
     - kernel_size: big, small
     - structure: encoder
     combine: SAN (Wei Zhou), C2CM (Cuntai Guan)
+    parameter: nepoch: num of epochs in one xx min duration (for example, nepoch=30 when 15min)
     '''
-    def __init__(self, n_channels):
+    def __init__(self, n_channels, nepoch):
         super(MultiCNNC2CM, self).__init__()
         self.multicnn_se = MultiCNN_SE(n_channels)
         self.conv1 = SingleConv(128, 128, kernel_size=(1,7), stride=(1,3), padding=0)
@@ -188,7 +189,7 @@ class MultiCNNC2CM(nn.Module):
         self.conv2_ss1 = SingleConv(128, 5, kernel_size=(1,4), stride=1, padding=0)
         self.out_ss = OutSleepStage(5,5)
 
-        self.conv3 = SingleConv(128, 256, kernel_size=(30,1), stride=1, padding=0)
+        self.conv3 = SingleConv(128, 256, kernel_size=(nepoch,1), stride=1, padding=0)
         self.out_d = OutDiagnosis(1024, hidden_channels=256)
     def forward(self, x):
         x = self.multicnn_se(x)

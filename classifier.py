@@ -125,6 +125,7 @@ def LeaveOneSubjectOut(base):
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
         model.to(device)
+        print(f'load model to {device}')
         diagnose_loss = nn.BCEWithLogitsLoss()
         sleepstage_loss = nn.CrossEntropyLoss(ignore_index=-1) # ignore sleep stage ann with -1
         optimizer = optim.Adam(model.parameters(), lr=LR)

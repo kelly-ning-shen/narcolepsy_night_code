@@ -15,6 +15,7 @@ DEBUG_MODE = False
 STANDARD_EPOCH_SEC = 30
 DEFAULT_SECONDS_PER_EPOCH = 30
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
+DURATION_MINUTES = 5 # my first choice: 15min
 
 DIAGNOSIS = ["Other","Narcolepsy type 1"]
 NARCOLEPSY_PREDICTION_CUTOFF = 0.5 # if apply sigmoid (the default threshold) TODO: 阈值与ROC曲线
@@ -37,17 +38,18 @@ if savelog:
     path = os.path.abspath(os.path.dirname(__file__))
     type = sys.getfilesystemencoding()
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
-    sys.stdout = Logger('log/TEST_cnc_15min_zscore.txt') # 不需要自己先新建txt文档  # right: filter_right
+    sys.stdout = Logger(f'log/TEST_cnc_{DURATION_MINUTES}min_zscore.txt') # 不需要自己先新建txt文档  # right: filter_right
 
 def findAllFile(base):
     for filepath, dirnames, filenames in os.walk(base):
         for filename in filenames:
-            if filename.endswith('.edf'):
+            if filename.endswith('.xml'):
                 yield filepath,filename
 
 def main(base,configInput):
     # configInput is object with additional settings.   'lightsOff','lightsOn','save','show'
     appConfig = AppConfig()
+    appConfig.DURATION_MINUTES = DURATION_MINUTES
     # hyp: default
     hyp = {'show': {}, 'save': {}, 'filename': {}}
     hyp['show']['plot'] = False
@@ -86,7 +88,7 @@ def main(base,configInput):
         # cdiagnosis = narcoApp.get_clinical_diagnosis() # 无需进入 prepare.py
         # annotations = narcoApp.get_sleep_staging_annotation() # list
         data = narcoApp.get_prepared_data() # self.loaded_channels, self.annotations, (self.erridx)
-        totalinput += len(data[1])//30 # 15min
+        totalinput += len(data[1])//int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH) # 15min    len(data[1]): num of epochs
         
         if len(data) > 2:
             # exists erridx

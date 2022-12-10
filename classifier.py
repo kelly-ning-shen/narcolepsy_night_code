@@ -253,7 +253,7 @@ def test_on_subject(model, dataloader, ntest, subject):
         ## 编写函数将15min的患病情况转换为整夜的患病情况
         ## return 模型对该患者的判断 （0: control, 1: NT1)
         # sig = nn.Sigmoid()
-        d_outputs = F.sigmoid(d_outputs)
+        d_outputs = torch.sigmoid(d_outputs)
         d_outputs = torch.squeeze(d_outputs)
         ds[i*BATCH_SIZE:i*BATCH_SIZE+nbatch, 0] = d_outputs.cpu().detach().numpy() # col0: preds
         ds[i*BATCH_SIZE:i*BATCH_SIZE+nbatch, 1] = data['diagnosis'].numpy() # col1: lables

@@ -1,5 +1,6 @@
 '''Calculate output dimension of the convolutional kernel!'''
-ninput = 3000
+import math
+ninput = 12
 padding = 0
 settings = [
     [3, 2],
@@ -10,8 +11,10 @@ settings = [
     [5, 3],
     [7, 2],
     [7, 3],
+    [7, 5],
     [8, 2],
     [8, 3],
+    [8, 5],
     [10, 2],
     [10, 3],
     [12, 2],

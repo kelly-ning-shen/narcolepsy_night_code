@@ -130,47 +130,6 @@ class MultiCNN_SE(nn.Module):
         return x # torch.Size([10, 128, 30, 179])
 
 ####################### MODELS #######################
-class SquareSmallE(nn.Module):
-    '''Plan 1: 
-    - kernel_shape: square
-    - kernel_size: small
-    - structure: encoder'''
-    def __init__(self, n_channels):
-        super(SquareSmallE, self).__init__()
-        self.conv1 = SingleConv(n_channels, 64, kernel_size=5, stride=3, padding=1)     # main: conv2d + batchnorm + relu
-        self.conv2 = SingleConv(64, 128, kernel_size=7, stride=3, padding=0)            # main: conv2d + batchnorm + relu
-        self.conv3 = SingleConv(128, 128, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-
-        self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,30), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
-        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
-        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
-
-        self.conv4 = SingleConv(128, 256, kernel_size=5, stride=3, padding=1)           # main: conv2d + batchnorm + relu
-        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        self.conv6 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
-        
-        self.out_d = OutDiagnosis(1024,hidden_channels=256)
-    def forward(self, x):
-        x = self.conv1(x)
-        x = self.conv2(x)
-        x = self.conv3(x)
-
-        ss = self.conv3_ss1(x)
-        # ss = self.conv3_ss2(ss)
-        ss = self.out_ss(ss)    # multitask 1: sleep staging
-        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
-
-        x = self.conv4(x)
-        x = self.conv5(x)
-        x = self.conv6(x)
-        x = self.conv7(x)
-        x = self.conv8(x)
-
-        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
-        return ss, d
-
 class MultiCNNC2CM(nn.Module):
     '''
     Plan 2: input: 3*30*3000
@@ -203,4 +162,299 @@ class MultiCNNC2CM(nn.Module):
         d = self.conv3(x)
         d = self.out_d(d)
         return ss, d
+
+class SquareSmall2_5min(nn.Module):
+    '''(input: 3*100*150)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch): # TODO: change parameters | classifier.py reshape
+        super(SquareSmall2_5min, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=(3,5), stride=(2,3), padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=5, stride=3, padding=0)            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=4, stride=3, padding=0)           # main: conv2d + batchnorm + relu
+
+        self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv4 = SingleConv(128, 256, kernel_size=3, stride=1, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=2, stride=1, padding=0)           # main: conv2d + batchnorm + relu
         
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+
+        ss = self.conv3_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv4(x)
+        x = self.conv5(x)
+        x = self.conv6(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d
+
+class SquareSmall5min(nn.Module):
+    '''(input: 3*100*300)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch): # TODO: change parameters | classifier.py reshape
+        super(SquareSmall5min, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=(3,5), stride=(1,3), padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=7, stride=3, padding=0)            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=7, stride=3, padding=1)           # main: conv2d + batchnorm + relu
+
+        self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv4 = SingleConv(128, 256, kernel_size=3, stride=1, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+
+        ss = self.conv3_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv4(x)
+        x = self.conv5(x)
+        x = self.conv6(x)
+        x = self.conv7(x)
+        x = self.conv8(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d
+
+class SquareSmall10min(nn.Module):
+    '''(input: 3*200*300)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch): # TODO: change parameters | classifier.py reshape
+        super(SquareSmall10min, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=(3,5), stride=(2,3), padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=5, stride=2, padding=1)            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=7, stride=2, padding=0)
+        self.conv4 = SingleConv(128, 128, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+
+        self.conv4_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv5 = SingleConv(128, 256, kernel_size=3, stride=2, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv9 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+        x = self.conv4(x)
+
+        ss = self.conv4_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv5(x)
+        x = self.conv6(x)
+        x = self.conv7(x)
+        x = self.conv8(x)
+        x = self.conv9(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d
+
+class SquareSmall15min(nn.Module):
+    '''(input: 3*300*300)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch):
+        super(SquareSmall15min, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=5, stride=3, padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=7, stride=3, padding=0)            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+
+        self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv4 = SingleConv(128, 256, kernel_size=5, stride=3, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+
+        ss = self.conv3_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv4(x)
+        x = self.conv5(x)
+        x = self.conv6(x)
+        x = self.conv7(x)
+        x = self.conv8(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d
+
+class SquareSmall30min(nn.Module):
+    '''(input: 3*600*300)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch): # TODO: change parameters | classifier.py reshape
+        super(SquareSmall30min, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=(5,7), stride=(3,2), padding=(1,0))     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=(5,7), stride=(3,2), padding=(0,1))            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=(5,7), stride=1, padding=0)
+        self.conv4 = SingleConv(128, 128, kernel_size=(3,7), stride=1, padding=0)           # main: conv2d + batchnorm + relu
+
+        self.conv4_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv5 = SingleConv(128, 256, kernel_size=3, stride=3, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=5, stride=2, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv9 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+        x = self.conv4(x)
+
+        ss = self.conv4_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv5(x)
+        x = self.conv6(x)
+        x = self.conv7(x)
+        x = self.conv8(x)
+        x = self.conv9(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d
+        
+class SquareSmall60min(nn.Module):
+    '''(input: 3*600*600)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch):
+        super(SquareSmall60min, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=7, stride=5, padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=3, stride=1, padding=1)            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=3, stride=1, padding=1)           # main: conv2d + batchnorm + relu
+
+        self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv4 = SingleConv(128, 256, kernel_size=3, stride=3, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=3, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=3, stride=2, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+
+        ss = self.conv3_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv4(x)
+        x = self.conv5(x)
+        x = self.conv6(x)
+        x = self.conv7(x)
+        x = self.conv8(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d
+
+class SquareSmall90min(nn.Module):
+    '''(input: 3*900*600)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch):
+        super(SquareSmall90min, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=(7,5), stride=(5,3), padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=(3,7), stride=1, padding=(1,0))            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=(3,7), stride=1, padding=(1,0))
+        self.conv4 = SingleConv(128, 128, kernel_size=(3,7), stride=1, padding=(1,0))
+        self.conv5 = SingleConv(128, 128, kernel_size=3, stride=1, padding=(1,0))           # main: conv2d + batchnorm + relu
+
+        self.conv5_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv6 = SingleConv(128, 256, kernel_size=7, stride=5, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv7 = SingleConv(256, 256, kernel_size=3, stride=3, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv8 = SingleConv(256, 256, kernel_size=3, stride=3, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv9 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+        x = self.conv4(x)
+        x = self.conv5(x)
+
+        ss = self.conv5_ss1(x)
+        # ss = self.conv3_ss2(ss)
+        ss = self.out_ss(ss)    # multitask 1: sleep staging
+        ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv6(x)
+        x = self.conv7(x)
+        x = self.conv8(x)
+        x = self.conv9(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return ss, d

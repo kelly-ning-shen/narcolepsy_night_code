@@ -4,3 +4,6 @@ data
 .vscode
 
 checkpoints
+
+classifier1.py
+network1.py

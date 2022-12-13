@@ -23,8 +23,8 @@ from torch import optim
 # from torch.autograd import Function
 from torch.utils.data import Dataset, DataLoader
 
-# from network import SquareSmallE
-from network import MultiCNNC2CM
+from network import SquareSmall2_5min
+# from network import MultiCNNC2CM
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
@@ -33,11 +33,11 @@ savepic = 1
 savecheckpoints = 1
 
 is_per_epoch = 0 # 15min才需要使用这个
-DURATION_MINUTES = 5 # my first choice: 15min
+DURATION_MINUTES = 2.5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
-MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC'
+MODE = f'squaresmall_{DURATION_MINUTES}min_zscore_shuffle_ROC'
 
 if savelog:
     class Logger(object):
@@ -57,7 +57,7 @@ if savelog:
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
     sys.stdout = Logger(f'log/TEST_classifier_{MODE}.txt') # 不需要自己先新建txt文档  # right: filter_right
 
-device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 print(device)
 
 base = 'data/mnc/cnc/cnc/'
@@ -80,12 +80,16 @@ def loadSubjectData(base):
 
     subjects_data = {}
     n15minduration = 0
+    if DURATION_MINUTES == 2.5:
+        idx = 1
+    else:
+        idx = 0
     # read: the inputs of one subject (save to dict)
     for i in range(nsubject):
         subject = subjects[i] # WindowsPath('dsata/mnc/cnc/cnc/chc001-nsrr.xml')
         name = subject.stem
         subject_data = sorted(Path(base).glob(f'{name}_{DURATION_MINUTES}min_zscore_*.s_pkl'))
-        subject_data = sorted(subject_data, key=lambda x: int(str(x).split('.')[0].split('_')[-1]))
+        subject_data = sorted(subject_data, key=lambda x: int(str(x).split('.')[idx].split('_')[-1]))
         ndata = len(subject_data)
         myprint(f'{DURATION_MINUTES}min inputs: {name} ({ndata})')
         subjects_data[name] = subject_data # list of datapath
@@ -120,7 +124,7 @@ def LeaveOneSubjectOut(base):
         # test_dataset = NarcoNight15min(test_data)
 
         print('==== START TRAINING ====')
-        model = MultiCNNC2CM(n_channels=3,nepoch=nepoch)
+        model = SquareSmall2_5min(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
@@ -193,7 +197,7 @@ def LeaveOneSubjectOut(base):
     picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
     plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=savepic,picpath=picpath)
     picpath = f'pic/{MODE}/ROC_curve_diagnosis_{DURATION_MINUTES}min.png'
-    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],'all {DURATION_MINUTES}min',savepic=savepic,picpath=picpath)
+    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],f'all {DURATION_MINUTES}min',savepic=savepic,picpath=picpath)
 
     np.savetxt(f'diagnosis/{MODE}/ds_subject.txt', ds_subject, fmt=['%f', '%d', '%d']) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
     np.savetxt(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
@@ -218,8 +222,21 @@ class NarcoNight15min(Dataset):
         d = self.data[index]
         with d.open('rb') as fp:
             signal_pic, ann = pickle.load(fp)
-        if is_per_epoch:
+        if is_per_epoch: # only for 15min (already saved as 300*300)
             signal_pic = signal_pic.reshape((3,30,3000))
+        else: 
+            if DURATION_MINUTES == 2.5:
+                signal_pic = signal_pic.reshape((3,100,150))
+            elif DURATION_MINUTES == 5:
+                signal_pic = signal_pic.reshape((3,100,300))
+            elif DURATION_MINUTES == 10:
+                signal_pic = signal_pic.reshape((3,200,300))
+            elif DURATION_MINUTES == 30:
+                signal_pic = signal_pic.reshape((3,600,300))
+            elif DURATION_MINUTES == 60:
+                signal_pic = signal_pic.reshape((3,600,600))
+            elif DURATION_MINUTES == 90:
+                signal_pic = signal_pic.reshape((3,900,600))
         signal_pic = torch.from_numpy(signal_pic) # shape: torch.Size ([3,300,300])
         ann = torch.from_numpy(ann) # shape: torch.Size ([30])
         diagnosis = self.diagnosis[index]

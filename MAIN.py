@@ -15,7 +15,7 @@ DEBUG_MODE = False
 STANDARD_EPOCH_SEC = 30
 DEFAULT_SECONDS_PER_EPOCH = 30
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
-DURATION_MINUTES = 5 # my first choice: 15min
+DURATION_MINUTES = 0.5 # my first choice: 15min
 
 DIAGNOSIS = ["Other","Narcolepsy type 1"]
 NARCOLEPSY_PREDICTION_CUTOFF = 0.5 # if apply sigmoid (the default threshold) TODO: 阈值与ROC曲线

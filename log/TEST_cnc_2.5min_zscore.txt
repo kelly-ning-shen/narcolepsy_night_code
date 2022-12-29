@@ -1,0 +1,1393 @@
+
+Data path: data/mnc/cnc/cnc/chc037-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 887
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (177)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 1 1 1 1 1 1 1 1 2 2 2 2 2 2 1 2 2 2 2 2 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc028-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 886
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (177)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp006-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1101
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (220)
+[0 0 0 0 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1 1 1 1 1 1
+ 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp059-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1138
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (227)
+[0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp032-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1065
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (213)
+[0 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1 1 1 1 4 4 4 4 4
+ 1 1 1 1 1 1 2 2 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 2 1 1 1 1 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp049-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1081
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (216)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 1 1
+ 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 1 2 2 2 2 2 1 2 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp007-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1155
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (231)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc009-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 890
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (178)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 2 2 2 2 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc012-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 920
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (184)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+ 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 2 2 2 2
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc025-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 830
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (166)
+[0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp031-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1112
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (222)
+[0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 2 2 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp024-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1129
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (225)
+[0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 2 0 0 0 0 0 0 0 1 1 1 1 2 2 2 2 2
+ 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp039-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1111
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (222)
+[0 0 0 1 1 1 1 1 4 4 4 4 4 4 4 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2
+ 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc052-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 917
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (183)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc056-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 920
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (184)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 0 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 3 3 3 3 3 3 0 0 1 1 2 2 1 2 2 0 0 0 0 0 0 0 1 1 2 2 2 2 1 2 1 1 0 0
+ 1 0 1 1 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp034-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1043
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (208)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp014-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1005
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (201)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 0 0 0 0 1 2
+ 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp060-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1263
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (252)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 1 1 1 1 0 0 0 1 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 2 0 1 1 0 0 2 0 0 2 1 1 2
+ 2 2 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp057-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1198
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (239)
+[310]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc022-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 812
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (162)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp025-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1235
+Delete missing value in anns
+Trim epochs to 448
+Delete the corresponding epochs in signal
+448.0
+448.0
+448.0
+448.0
+448.0
+448.0
+448.0
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (89)
+[3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0 0 0 2 1 2 1 1 1 1 2 2
+ 2 1 2 2 2 2 2 2 1 2 2 2 2 2 1 1 2 2 1 2 2 1 2 2 2 2 1 1 1 1 2 2 2 2 2 1 1
+ 1 1 1 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp040-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1072
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (214)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 1 1 0 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp048-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1063
+Delete missing value in anns
+Trim epochs to 1031
+Delete the corresponding epochs in signal
+1031.0
+1031.0
+1031.0
+1031.0
+1031.0
+1031.0
+1031.0
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (206)
+[0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc013-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 940
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (188)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc001-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 803
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (160)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc016-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 959
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (191)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+ 1 1 0 1 1 0 1 1 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp018-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1128
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (225)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp028-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1050
+Delete missing value in anns
+Trim epochs to 1033
+Delete the corresponding epochs in signal
+1033.0
+1033.0
+1033.0
+1033.0
+1033.0
+1033.0
+1033.0
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (206)
+[187]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp056-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (5): ['C3', 'C4', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1101
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (220)
+[0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 1 1 1 1 1 1 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp055-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1114
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (222)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 0 0 0 0 0
+ 0 0 1 1 1 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp004-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 985
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (197)
+[0 0 0 0 0 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 4 4 4 4 4 1 1 1 1 1 1 1 1 1 1
+ 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp058-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1033
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (206)
+[0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp015-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1156
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (231)
+[0 0 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp009-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1034
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (206)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc033-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 871
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (174)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 1 1 1 1 1 2
+ 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp013-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1001
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (200)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp019-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 941
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (188)
+[0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 1 1 0 0 0 0 0 0 0 0 0 0
+ 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0
+ 0 0 1 1 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc004-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1065
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (213)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 3 3 3 3 3 3 0 0 0 0 0 0 1 1 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp047-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 893
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (178)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4 4 0 1 4 0 4 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 0 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 1 2 2 1 1 0 1
+ 2 2 1 1 2 2 2 2 0 1 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 2 2 2 2
+ 2 2 0 1 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp020-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1152
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (230)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc010-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 861
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (172)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 1 1]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp054-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1122
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (224)
+[0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 4 4 4 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 0 2 2 2 2 2 2 2 0 0 0 0 0 1 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 1 1 1 1 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc027-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 900
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (180)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp012-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1116
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (223)
+[0 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc014-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 959
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (191)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp010-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 974
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (194)
+[0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp033-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1010
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (202)
+[0 0 0 0 0 0 1 1 1 1 4 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1
+ 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp016-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1274
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (254)
+[0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 3 2 3 2 2 3 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp029-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1047
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (209)
+[0 0 0 0 0 0 0 0 0 1 1 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp002-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1081
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (216)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 4 4 4 4 1 1 1 1 1 4
+ 4 4 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp030-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1200
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (240)
+[389]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp008-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 955
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (191)
+[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc035-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 900
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (180)
+[0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp003-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1218
+Delete missing value in anns
+Trim epochs to 1001
+Delete the corresponding epochs in signal
+1001.0
+1001.0
+1001.0
+1001.0
+1001.0
+1001.0
+1001.0
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (200)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc041-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 858
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (171)
+[0 0 0 0 0 0 0 0 0 0 1 1 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 0 0 1 1 0 0 0 0 1
+ 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 1 2 2 1 1 1 1 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc015-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 936
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (187)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp051-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1090
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (218)
+[1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc040-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1083
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (216)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp041-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1338
+Delete missing value in anns
+Trim epochs to 1109
+Delete the corresponding epochs in signal
+1109.0
+1109.0
+1109.0
+1109.0
+1109.0
+1109.0
+1109.0
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (221)
+[0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4 4 4
+ 4 2 2 2 2 2 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc008-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 960
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (192)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 1 1 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp045-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1205
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (241)
+[85]
+[ 0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  0  1  2  2  2  2  1  1  4  0  4  1  3 -1  0  0  2  2  2  2  2  2  4  2
+  2  2  1  2  2  2  2  2  1  2  2  0  0  1  1  2  2  2  3  3  3  3  2  3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp036-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1264
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (252)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 2 2
+ 2 1 2 2 2 2 2 2 0 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 1 2 2 2 2 2 2 2 2 2 3
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp043-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1209
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (241)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 1 1 1
+ 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 1 1 1
+ 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 1 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc006-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 826
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (165)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 2 2 2 2 2 2 2 1 0 1 1 1 2 2 2
+ 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 1 1 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp011-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1014
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (202)
+[0 0 0 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2
+ 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp026-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 943
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (188)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2
+ 0 0 1 1 1 1 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp005-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1306
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (261)
+[2 2 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 2 2 2 2
+ 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 0 1 2 0 0 0 0 0 0 1 1 1 1
+ 1 1 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp022-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1267
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (253)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp053-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1085
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (217)
+[0 0 0 0 0 1 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp017-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1013
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (202)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 1 1 0 0 1
+ 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 2
+ 2 2 2 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp044-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1051
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (210)
+[0 0 0 0 1 1 4 4 4 4 4 4 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 2 2 2 1 1 1 1 1 1 1
+ 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp037-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1036
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (207)
+[949 950]
+[0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 1
+ 1 1 1 1 1 1 1 1 1]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp038-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1028
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (205)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 0 0 0 0 0 0 0 0 1 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 1 0 0 0 0 0 0 0 0 1 1 4 4 4 4 4 4 4 4 4 4 4 4 4 4 0 1 4 0 0
+ 1 1 1 1 1 1 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp001-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1164
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (232)
+[4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 0 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 3 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp052-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1000
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (200)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1
+ 4 4 4 4 4 4 4 4 4]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chc005-nsrr.xml
+Clinical diagnosis: Other
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 950
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (190)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 2 2 2 2 1 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+ 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 0 0 0 0 1 1 2 2 2 2 2 2 2 2 2 1 1
+ 1 2 1 2 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp042-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'E1', 'E2', 'EMG', 'O1', 'O2']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1123
+Delete missing value in anns
+Trim epochs to 1117
+Delete the corresponding epochs in signal
+1117.0
+1117.0
+1117.0
+1117.0
+1117.0
+1117.0
+1117.0
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (223)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 1 4 4 4 4 4 4 4 1 1 1 1 1 1 0 1 0 1 1 1 1 1 1 2 2 2 4 4 4 2 4 4
+ 4 0 1 1 2 2 2 2 2]
+Yes!
+
+Data path: data/mnc/cnc/cnc/chp046-nsrr.xml
+Clinical diagnosis: Narcolepsy type 1
+Get signal
+Loading previously saved preprocessed data
+Load preprocessed signal for diagnosis (7): ['C3', 'C4', 'O1', 'O2', 'E1', 'E2', 'EMG']
+Get annotations
+Loading previously read sleep staging annotations
+Check epochs num...
+Same epochs num: 1095
+Trim to 2.5 min, and save as single file (signal, annotations)
+pickling done: 2.5min (219)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+ 4 4 4 4 4 4 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2]
+Yes!
+16020

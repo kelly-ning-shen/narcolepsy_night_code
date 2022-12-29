@@ -165,7 +165,7 @@ def plot_ROC_curve(y_labels, y_pred_probas, mode, savepic=0, picpath='Default_RO
     plt.title(title)
     if savepic:
         plt.savefig(picpath)
-    plt.show()
+    # plt.show()
     plt.close()
 
 if __name__ =='__main__':

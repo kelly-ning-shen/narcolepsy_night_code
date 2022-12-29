@@ -23,8 +23,8 @@ from torch import optim
 # from torch.autograd import Function
 from torch.utils.data import Dataset, DataLoader
 
-from network import SquareSmall2_5min
-# from network import MultiCNNC2CM
+# from network import SquareSmall10min
+from network import MultiCNNC2CM
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
@@ -33,11 +33,11 @@ savepic = 1
 savecheckpoints = 1
 
 is_per_epoch = 0 # 15min才需要使用这个
-DURATION_MINUTES = 2.5 # my first choice: 15min
+DURATION_MINUTES = 0.5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
-MODE = f'squaresmall_{DURATION_MINUTES}min_zscore_shuffle_ROC'
+MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC'
 
 if savelog:
     class Logger(object):
@@ -57,7 +57,7 @@ if savelog:
     # sys.stdout = Logger('log/withoutIH_AASM_right_IIRFil0.3_' + feature_type + '_nol.txt') # 不需要自己先新建txt文档  # right: filter_right
     sys.stdout = Logger(f'log/TEST_classifier_{MODE}.txt') # 不需要自己先新建txt文档  # right: filter_right
 
-device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(device)
 
 base = 'data/mnc/cnc/cnc/'
@@ -80,10 +80,10 @@ def loadSubjectData(base):
 
     subjects_data = {}
     n15minduration = 0
-    if DURATION_MINUTES == 2.5:
-        idx = 1
-    else:
+    if DURATION_MINUTES % 1 == 0:
         idx = 0
+    else:
+        idx = 1
     # read: the inputs of one subject (save to dict)
     for i in range(nsubject):
         subject = subjects[i] # WindowsPath('dsata/mnc/cnc/cnc/chc001-nsrr.xml')
@@ -124,7 +124,7 @@ def LeaveOneSubjectOut(base):
         # test_dataset = NarcoNight15min(test_data)
 
         print('==== START TRAINING ====')
-        model = SquareSmall2_5min(n_channels=3,nepoch=nepoch)
+        model = MultiCNNC2CM(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
@@ -137,7 +137,7 @@ def LeaveOneSubjectOut(base):
         for epoch in range(EPOCHS):
             print('Starting epoch {}/{}.'.format(epoch + 1, EPOCHS)) 
             model.train()
-            train_dataloader = DataLoader(NarcoNight15min(train_data), shuffle=True, batch_size=BATCH_SIZE)
+            train_dataloader = DataLoader(NarcoNight15min(train_data), shuffle=True, batch_size=BATCH_SIZE,drop_last=True)
             epoch_loss = 0
 
             for i, data in enumerate(train_dataloader): # tqdm(train_dataloader)
@@ -154,7 +154,7 @@ def LeaveOneSubjectOut(base):
                 loss = loss_ss + loss_d #  [TODO] multitask 中简单相加loss，肯定是不合理的，还需要修改！
                 epoch_loss += loss.item()
                 if i % 10 == 0: # print loss every 10 step
-                    print('{0:.4f} --- loss: {1:.6f}, loss_ss: {2:.6f}, loss_d: {3:.6f}'.format(i * BATCH_SIZE / ntrain, loss.item(), loss_ss.item(), loss_d.item()))
+                    myprint('{0:.4f} --- loss: {1:.6f}, loss_ss: {2:.6f}, loss_d: {3:.6f}'.format(i * BATCH_SIZE / ntrain, loss.item(), loss_ss.item(), loss_d.item()))
                 
                 optimizer.zero_grad()
                 loss.backward()
@@ -297,7 +297,7 @@ def test_on_subject(model, dataloader, ntest, subject):
 def get_diagnose(ds):
     label = int(ds[0,1])
     preds = ds[:,0]
-    print(preds)
+    myprint(preds)
     pred = np.mean(preds)
     print(f'pred: {pred}, label: {label}')
     return pred, label # float, int

@@ -163,6 +163,39 @@ class MultiCNNC2CM(nn.Module):
         d = self.out_d(d)
         return ss, d
 
+class MultiCNNC2CM_Onephase(nn.Module):
+    '''
+    Plan 2: input: 3*30*3000
+    - kernel_shape: C2CM (not square)
+    - kernel_size: big, small
+    - structure: encoder
+    combine: SAN (Wei Zhou), C2CM (Cuntai Guan)
+    parameter: nepoch: num of epochs in one xx min duration (for example, nepoch=30 when 15min)
+    '''
+    def __init__(self, n_channels, nepoch):
+        super(MultiCNNC2CM_Onephase, self).__init__()
+        self.multicnn_se = MultiCNN_SE(n_channels)
+        self.conv1 = SingleConv(128, 128, kernel_size=(1,7), stride=(1,3), padding=0)
+        self.conv2 = SingleConv(128, 128, kernel_size=(1,3), stride=(1,3), padding=0)
+
+        # self.conv2_ss1 = SingleConv(128, 5, kernel_size=(1,4), stride=1, padding=0)
+        # self.out_ss = OutSleepStage(5,5)
+
+        self.conv3 = SingleConv(128, 256, kernel_size=(nepoch,1), stride=1, padding=0)
+        self.out_d = OutDiagnosis(1024, hidden_channels=256)
+    def forward(self, x):
+        x = self.multicnn_se(x)
+        x = self.conv1(x)
+        x = self.conv2(x)
+
+        # ss = self.conv2_ss1(x)
+        # ss = self.out_ss(ss)
+        # ss = torch.squeeze(ss, 3)
+
+        d = self.conv3(x)
+        d = self.out_d(d)
+        return d
+
 class SquareSmall2_5min(nn.Module):
     '''(input: 3*100*150)
     Plan 1: 

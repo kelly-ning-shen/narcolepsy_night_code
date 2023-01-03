@@ -34,11 +34,11 @@ savecheckpoints = 1
 
 is_multitask = 0
 is_per_epoch = 1
-DURATION_MINUTES = 2.5 # my first choice: 15min
+DURATION_MINUTES = 5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
-MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_onephase1'
+MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_onephase'
 
 if savelog:
     class Logger(object):

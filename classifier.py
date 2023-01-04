@@ -34,7 +34,7 @@ savecheckpoints = 1
 
 is_multitask = 0
 is_per_epoch = 1
-DURATION_MINUTES = 15 # my first choice: 15min
+DURATION_MINUTES = 60 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 

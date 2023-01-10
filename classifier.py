@@ -34,7 +34,7 @@ savecheckpoints = 1
 
 is_multitask = 0
 is_per_epoch = 1
-DURATION_MINUTES = 60 # my first choice: 15min
+DURATION_MINUTES = 1 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
@@ -92,7 +92,7 @@ def loadSubjectData(base):
         subject_data = sorted(Path(base).glob(f'{name}_{DURATION_MINUTES}min_zscore_*.s_pkl'))
         subject_data = sorted(subject_data, key=lambda x: int(str(x).split('.')[idx].split('_')[-1]))
         ndata = len(subject_data)
-        myprint(f'{DURATION_MINUTES}min inputs: {name} ({ndata})')
+        print(f'{DURATION_MINUTES}min inputs: {name} ({ndata})')
         subjects_data[name] = subject_data # list of datapath
         n15minduration += len(subject_data)
     
@@ -165,7 +165,7 @@ def LeaveOneSubjectOut(base):
                 else:
                     loss = loss_d
                     if i % 10 == 0: # print loss every 10 step
-                        print('{0:.4f} --- loss_d: {1:.6f}'.format(i * BATCH_SIZE / ntrain, loss_d.item()))
+                        myprint('{0:.4f} --- loss_d: {1:.6f}'.format(i * BATCH_SIZE / ntrain, loss_d.item()))
                 
                 epoch_loss += loss.item()
                 optimizer.zero_grad()

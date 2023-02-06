@@ -329,6 +329,11 @@ class Prepare(object):
             nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
             nsample = int(nepoch*DEFAULT_SECONDS_PER_EPOCH*self.fs)
             nduration = len(self.EEG) // nsample
+            a = self.annotations[:nduration]
+            with open(f'diagnosis/ann_subject.txt','a') as fp:
+                np.savetxt(fp,a, fmt='%f', newline=' ')
+                fp.write('\n')
+                print(f'Save ann_subject!')
 
             # myprint('Save signal_pic and ann of 15min EEG, EOG, EMG')
             for i in range(nduration):

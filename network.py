@@ -196,6 +196,44 @@ class MultiCNNC2CM_Onephase(nn.Module):
         d = self.out_d(d)
         return d
 
+class SquareSmall2_5min_Onephase(nn.Module):
+    '''(input: 3*100*150)
+    Plan 1: 
+    - kernel_shape: square
+    - kernel_size: small
+    - structure: encoder'''
+    def __init__(self, n_channels, nepoch): # TODO: change parameters | classifier.py reshape
+        super(SquareSmall2_5min_Onephase, self).__init__()
+        self.conv1 = SingleConv(n_channels, 64, kernel_size=(3,5), stride=(2,3), padding=1)     # main: conv2d + batchnorm + relu
+        self.conv2 = SingleConv(64, 128, kernel_size=5, stride=3, padding=0)            # main: conv2d + batchnorm + relu
+        self.conv3 = SingleConv(128, 128, kernel_size=4, stride=3, padding=0)           # main: conv2d + batchnorm + relu
+
+        # self.conv3_ss1 = SingleConv(128, 5, kernel_size=(1,nepoch), stride=1, padding=0)  # sleep stage: conv2d + batchnorm + relu
+        # # self.conv3_ss2 = SingleConv(128, 64, kernel_size=1, stride=1, padding=0)        # sleep stage: conv2d + batchnorm + relu
+        # self.out_ss = OutSleepStage(5, 5)                                              # sleep stage: conv2d (kernel_size=1)
+
+        self.conv4 = SingleConv(128, 256, kernel_size=3, stride=1, padding=1)           # main: conv2d + batchnorm + relu
+        self.conv5 = SingleConv(256, 256, kernel_size=3, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        self.conv6 = SingleConv(256, 256, kernel_size=2, stride=1, padding=0)           # main: conv2d + batchnorm + relu
+        
+        self.out_d = OutDiagnosis(1024,hidden_channels=256)
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        x = self.conv3(x)
+
+        # ss = self.conv3_ss1(x)
+        # # ss = self.conv3_ss2(ss)
+        # ss = self.out_ss(ss)    # multitask 1: sleep staging
+        # ss = torch.squeeze(ss, 3) # [TODO] 效果怎么样？
+
+        x = self.conv4(x)
+        x = self.conv5(x)
+        x = self.conv6(x)
+
+        d = self.out_d(x)       # multitask 2: narcolepsy diagnosis
+        return d
+
 class SquareSmall2_5min(nn.Module):
     '''(input: 3*100*150)
     Plan 1: 

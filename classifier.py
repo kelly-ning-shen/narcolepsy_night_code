@@ -38,7 +38,7 @@ DURATION_MINUTES = 2.5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
-MODE = f'squaresmall_{DURATION_MINUTES}min_zscore_shuffle_ROC_onephase'
+MODE = f'squaresmall_{DURATION_MINUTES}min_zscore_shuffle_ROC_onephase1'
 
 if savelog:
     class Logger(object):

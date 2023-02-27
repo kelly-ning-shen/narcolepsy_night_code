@@ -1,0 +1,2795 @@
+cuda:0
+Subjects num: 78
+
+90min inputs: chc001-nsrr (4)
+90min inputs: chc004-nsrr (5)
+90min inputs: chc005-nsrr (5)
+90min inputs: chc006-nsrr (4)
+90min inputs: chc008-nsrr (5)
+90min inputs: chc009-nsrr (4)
+90min inputs: chc010-nsrr (4)
+90min inputs: chc012-nsrr (5)
+90min inputs: chc013-nsrr (5)
+90min inputs: chc014-nsrr (5)
+90min inputs: chc015-nsrr (5)
+90min inputs: chc016-nsrr (5)
+90min inputs: chc022-nsrr (4)
+90min inputs: chc025-nsrr (4)
+90min inputs: chc027-nsrr (5)
+90min inputs: chc028-nsrr (4)
+90min inputs: chc033-nsrr (4)
+90min inputs: chc035-nsrr (5)
+90min inputs: chc037-nsrr (4)
+90min inputs: chc040-nsrr (6)
+90min inputs: chc041-nsrr (4)
+90min inputs: chc052-nsrr (5)
+90min inputs: chc056-nsrr (5)
+90min inputs: chp001-nsrr (6)
+90min inputs: chp002-nsrr (6)
+90min inputs: chp003-nsrr (5)
+90min inputs: chp004-nsrr (5)
+90min inputs: chp005-nsrr (7)
+90min inputs: chp006-nsrr (6)
+90min inputs: chp007-nsrr (6)
+90min inputs: chp008-nsrr (5)
+90min inputs: chp009-nsrr (5)
+90min inputs: chp010-nsrr (5)
+90min inputs: chp011-nsrr (5)
+90min inputs: chp012-nsrr (6)
+90min inputs: chp013-nsrr (5)
+90min inputs: chp014-nsrr (5)
+90min inputs: chp015-nsrr (6)
+90min inputs: chp016-nsrr (7)
+90min inputs: chp017-nsrr (5)
+90min inputs: chp018-nsrr (6)
+90min inputs: chp019-nsrr (5)
+90min inputs: chp020-nsrr (6)
+90min inputs: chp022-nsrr (7)
+90min inputs: chp024-nsrr (6)
+90min inputs: chp025-nsrr (2)
+90min inputs: chp026-nsrr (5)
+90min inputs: chp028-nsrr (5)
+90min inputs: chp029-nsrr (5)
+90min inputs: chp030-nsrr (6)
+90min inputs: chp031-nsrr (6)
+90min inputs: chp032-nsrr (5)
+90min inputs: chp033-nsrr (5)
+90min inputs: chp034-nsrr (5)
+90min inputs: chp036-nsrr (7)
+90min inputs: chp037-nsrr (5)
+90min inputs: chp038-nsrr (5)
+90min inputs: chp039-nsrr (6)
+90min inputs: chp040-nsrr (5)
+90min inputs: chp041-nsrr (6)
+90min inputs: chp042-nsrr (6)
+90min inputs: chp043-nsrr (6)
+90min inputs: chp044-nsrr (5)
+90min inputs: chp045-nsrr (6)
+90min inputs: chp046-nsrr (6)
+90min inputs: chp047-nsrr (4)
+90min inputs: chp048-nsrr (5)
+90min inputs: chp049-nsrr (6)
+90min inputs: chp051-nsrr (6)
+90min inputs: chp052-nsrr (5)
+90min inputs: chp053-nsrr (6)
+90min inputs: chp054-nsrr (6)
+90min inputs: chp055-nsrr (6)
+90min inputs: chp056-nsrr (6)
+90min inputs: chp057-nsrr (6)
+90min inputs: chp058-nsrr (5)
+90min inputs: chp059-nsrr (6)
+90min inputs: chp060-nsrr (7)
+
+=== Test on chc001-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6372478760778904
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5696303907781839
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5257445115596056
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47770055308938025
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3089647158049047
+Starting epoch 6/10.
+Epoch finished! Loss: 0.35916307354345917
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1509360612835735
+Starting epoch 8/10.
+Epoch finished! Loss: 0.09788176201982424
+Starting epoch 9/10.
+Epoch finished! Loss: 0.041349996550707147
+Starting epoch 10/10.
+Epoch finished! Loss: 0.05148867465904914
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.0
+pred: 0.8897414207458496, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc001-nsrr
+
+=== Test on chc004-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6639870807528496
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5852684922516346
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5541482590138912
+Starting epoch 4/10.
+Epoch finished! Loss: 0.530383599549532
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46793590672314167
+Starting epoch 6/10.
+Epoch finished! Loss: 0.41694820653647185
+Starting epoch 7/10.
+Epoch finished! Loss: 0.36254960037767886
+Starting epoch 8/10.
+Epoch finished! Loss: 0.24916855609044433
+Starting epoch 9/10.
+Epoch finished! Loss: 0.11241680558305234
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1142481645103544
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.4
+pred: 0.6020251892507076, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc004-nsrr
+
+=== Test on chc005-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6501767881214618
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5763682775199414
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5368570744991302
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47795331105589867
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3965460952371359
+Starting epoch 6/10.
+Epoch finished! Loss: 0.29936720840632913
+Starting epoch 7/10.
+Epoch finished! Loss: 0.29768280079588294
+Starting epoch 8/10.
+Epoch finished! Loss: 0.2031909644138068
+Starting epoch 9/10.
+Epoch finished! Loss: 0.048236296488903464
+Starting epoch 10/10.
+Epoch finished! Loss: 0.01502636390941916
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.4
+pred: 0.5226998001337051, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc005-nsrr
+
+=== Test on chc006-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6441356241703033
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5721428215503692
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4783697683364153
+Starting epoch 4/10.
+Epoch finished! Loss: 0.417515810392797
+Starting epoch 5/10.
+Epoch finished! Loss: 0.33791235499083994
+Starting epoch 6/10.
+Epoch finished! Loss: 0.1292816188186407
+Starting epoch 7/10.
+Epoch finished! Loss: 0.05621738102054223
+Starting epoch 8/10.
+Epoch finished! Loss: 0.04426497671229299
+Starting epoch 9/10.
+Epoch finished! Loss: 0.09607790496374946
+Starting epoch 10/10.
+Epoch finished! Loss: 0.18369174441904762
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.25
+pred: 0.7953455969691277, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc006-nsrr
+
+=== Test on chc008-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6606463432312012
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5956822536885739
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5046596519649029
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4386272385716438
+Starting epoch 5/10.
+Epoch finished! Loss: 0.403043819218874
+Starting epoch 6/10.
+Epoch finished! Loss: 0.22195283509790897
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1577746558119543
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1189841159270145
+Starting epoch 9/10.
+Epoch finished! Loss: 0.07215698402142152
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07886278936057352
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.0
+pred: 0.9331403970718384, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc008-nsrr
+
+=== Test on chc009-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6866275526583194
+Starting epoch 2/10.
+Epoch finished! Loss: 0.588743644580245
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5444336220622062
+Starting epoch 4/10.
+Epoch finished! Loss: 0.45678307861089706
+Starting epoch 5/10.
+Epoch finished! Loss: 0.41302417814731596
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3692840747535229
+Starting epoch 7/10.
+Epoch finished! Loss: 0.20892749847844244
+Starting epoch 8/10.
+Epoch finished! Loss: 0.14322379464283586
+Starting epoch 9/10.
+Epoch finished! Loss: 0.10433811844559386
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07404607296921313
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.25
+pred: 0.6869026718195528, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc009-nsrr
+
+=== Test on chc010-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6510051801800728
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5711089469492435
+Starting epoch 3/10.
+Epoch finished! Loss: 0.540761774033308
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4924472663551569
+Starting epoch 5/10.
+Epoch finished! Loss: 0.36507891714572904
+Starting epoch 6/10.
+Epoch finished! Loss: 0.2946510219946504
+Starting epoch 7/10.
+Epoch finished! Loss: 0.16371175572276114
+Starting epoch 8/10.
+Epoch finished! Loss: 0.20362683390267194
+Starting epoch 9/10.
+Epoch finished! Loss: 0.11113255235832184
+Starting epoch 10/10.
+Epoch finished! Loss: 0.031419543561059984
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.0
+pred: 0.9046417623758316, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc010-nsrr
+
+=== Test on chc012-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6792291566729546
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5743726219981908
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5456708945333958
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5160469606518745
+Starting epoch 5/10.
+Epoch finished! Loss: 0.49485973417758944
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4148790255188942
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3470928667113185
+Starting epoch 8/10.
+Epoch finished! Loss: 0.24689898379147052
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1370932229270693
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12926758721005172
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.7915311098098755, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc012-nsrr
+
+=== Test on chc013-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6489096529781818
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5495613157749176
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4586785711348057
+Starting epoch 4/10.
+Epoch finished! Loss: 0.44274590387940405
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4022824238985777
+Starting epoch 6/10.
+Epoch finished! Loss: 0.19074993445537985
+Starting epoch 7/10.
+Epoch finished! Loss: 0.12209948111558333
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1345928482420277
+Starting epoch 9/10.
+Epoch finished! Loss: 0.18174533580895513
+Starting epoch 10/10.
+Epoch finished! Loss: 0.047939651733031496
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.8122453719377518, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc013-nsrr
+
+=== Test on chc014-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6319438070058823
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5489192694425583
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5150616951286793
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5041559360921383
+Starting epoch 5/10.
+Epoch finished! Loss: 0.39831004831939937
+Starting epoch 6/10.
+Epoch finished! Loss: 0.29694888945668935
+Starting epoch 7/10.
+Epoch finished! Loss: 0.30885815862566235
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1513486712006852
+Starting epoch 9/10.
+Epoch finished! Loss: 0.06644296895246952
+Starting epoch 10/10.
+Epoch finished! Loss: 0.0321585464902455
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.8919778108596802, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc014-nsrr
+
+=== Test on chc015-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6623397499322892
+Starting epoch 2/10.
+Epoch finished! Loss: 0.567132318019867
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5239346720278263
+Starting epoch 4/10.
+Epoch finished! Loss: 0.49744832925498483
+Starting epoch 5/10.
+Epoch finished! Loss: 0.41403680592775344
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3351473780348897
+Starting epoch 7/10.
+Epoch finished! Loss: 0.22822012258693575
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1910207052482292
+Starting epoch 9/10.
+Epoch finished! Loss: 0.12649937847163528
+Starting epoch 10/10.
+Epoch finished! Loss: 0.13282341465237552
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8
+pred: 0.2782097801566124, label: 0
+Right! Diagnosis: Other
+Save 90mins of subject chc015-nsrr
+
+=== Test on chc016-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6525688879191875
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5731272868812084
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5181239582598209
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5051041956990957
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3804856214672327
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4047596580348909
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3139850124716759
+Starting epoch 8/10.
+Epoch finished! Loss: 0.11590135199949145
+Starting epoch 9/10.
+Epoch finished! Loss: 0.024674815469188614
+Starting epoch 10/10.
+Epoch finished! Loss: 0.015816591258044355
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6
+pred: 0.4097388364374638, label: 0
+Right! Diagnosis: Other
+Save 90mins of subject chc016-nsrr
+
+=== Test on chc022-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6334235511720181
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5893499437719584
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5631215810775757
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47284818440675735
+Starting epoch 5/10.
+Epoch finished! Loss: 0.38331405110657213
+Starting epoch 6/10.
+Epoch finished! Loss: 0.27668427377939225
+Starting epoch 7/10.
+Epoch finished! Loss: 0.09511081794044003
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1574714853602927
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1533654481987469
+Starting epoch 10/10.
+Epoch finished! Loss: 0.073802818270633
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.0
+pred: 0.9404039829969406, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc022-nsrr
+
+=== Test on chc025-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6634231187403202
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5892670504748821
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5150542486459017
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5019343830645084
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4808861069381237
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3036288466304541
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1944339989218861
+Starting epoch 8/10.
+Epoch finished! Loss: 0.18115443955175578
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1627555896062404
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12448917768197135
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.75
+pred: 0.3762255497276783, label: 0
+Right! Diagnosis: Other
+Save 90mins of subject chc025-nsrr
+
+=== Test on chc027-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6640731774270534
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5753206968307495
+Starting epoch 3/10.
+Epoch finished! Loss: 0.6020493544638157
+Starting epoch 4/10.
+Epoch finished! Loss: 0.547094502300024
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5174136344343424
+Starting epoch 6/10.
+Epoch finished! Loss: 0.43723530508577824
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3907727824524045
+Starting epoch 8/10.
+Epoch finished! Loss: 0.2965555442497134
+Starting epoch 9/10.
+Epoch finished! Loss: 0.14127753109205515
+Starting epoch 10/10.
+Epoch finished! Loss: 0.15755654210224748
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.6869884103536605, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc027-nsrr
+
+=== Test on chc028-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.653861366212368
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5690276876091958
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5239796083420515
+Starting epoch 4/10.
+Epoch finished! Loss: 0.523964311927557
+Starting epoch 5/10.
+Epoch finished! Loss: 0.44954084753990176
+Starting epoch 6/10.
+Epoch finished! Loss: 0.32086991518735886
+Starting epoch 7/10.
+Epoch finished! Loss: 0.32476817481219766
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1925669504329562
+Starting epoch 9/10.
+Epoch finished! Loss: 0.11979137174785137
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07936019524058793
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.75
+pred: 0.40105442283675075, label: 0
+Right! Diagnosis: Other
+Save 90mins of subject chc028-nsrr
+
+=== Test on chc033-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6306331887841224
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5760546687990427
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5358996480703354
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47816454209387305
+Starting epoch 5/10.
+Epoch finished! Loss: 0.409276233240962
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3568006790243089
+Starting epoch 7/10.
+Epoch finished! Loss: 0.37322096191346643
+Starting epoch 8/10.
+Epoch finished! Loss: 0.18669691423419862
+Starting epoch 9/10.
+Epoch finished! Loss: 0.17260852307081223
+Starting epoch 10/10.
+Epoch finished! Loss: 0.14376145030837506
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.5
+pred: 0.5187779786065221, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc033-nsrr
+
+=== Test on chc035-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.662122055515647
+Starting epoch 2/10.
+Epoch finished! Loss: 0.6048773497343063
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5496908128261566
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5113626077771187
+Starting epoch 5/10.
+Epoch finished! Loss: 0.49588703326880934
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4017004709690809
+Starting epoch 7/10.
+Epoch finished! Loss: 0.33562038335949185
+Starting epoch 8/10.
+Epoch finished! Loss: 0.28523452319204806
+Starting epoch 9/10.
+Epoch finished! Loss: 0.22764927558600903
+Starting epoch 10/10.
+Epoch finished! Loss: 0.11311279565561563
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.7917321383953094, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc035-nsrr
+
+=== Test on chc037-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6249267950654029
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5652381431311368
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5565291546285153
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5038945503532887
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4008143004029989
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3296016700565815
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2308965370990336
+Starting epoch 8/10.
+Epoch finished! Loss: 0.22314435159787535
+Starting epoch 9/10.
+Epoch finished! Loss: 0.05460524916998111
+Starting epoch 10/10.
+Epoch finished! Loss: 0.05189418957597809
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.75
+pred: 0.4298052377998829, label: 0
+Right! Diagnosis: Other
+Save 90mins of subject chc037-nsrr
+
+=== Test on chc040-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6242803014814854
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5746737450361252
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5650365851819515
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47678607106208803
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4105190124362707
+Starting epoch 6/10.
+Epoch finished! Loss: 0.30529818921349944
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2650491239503026
+Starting epoch 8/10.
+Epoch finished! Loss: 0.2156844254117459
+Starting epoch 9/10.
+Epoch finished! Loss: 0.11500363065861166
+Starting epoch 10/10.
+Epoch finished! Loss: 0.05916588837280869
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.16666666666666666
+pred: 0.776621283342441, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc040-nsrr
+
+=== Test on chc041-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6376526951789856
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5986943647265435
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5553564414381981
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47121848724782467
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3586445488035679
+Starting epoch 6/10.
+Epoch finished! Loss: 0.34541678708046675
+Starting epoch 7/10.
+Epoch finished! Loss: 0.17883069538511337
+Starting epoch 8/10.
+Epoch finished! Loss: 0.10706376085290685
+Starting epoch 9/10.
+Epoch finished! Loss: 0.14687323428224772
+Starting epoch 10/10.
+Epoch finished! Loss: 0.08751215868396685
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.5
+pred: 0.3852194829378277, label: 0
+Right! Diagnosis: Other
+Save 90mins of subject chc041-nsrr
+
+=== Test on chc052-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6498354129493237
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5876150287687778
+Starting epoch 3/10.
+Epoch finished! Loss: 0.565967871248722
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5199571143835783
+Starting epoch 5/10.
+Epoch finished! Loss: 0.49212282747030256
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4507848400622606
+Starting epoch 7/10.
+Epoch finished! Loss: 0.39050686582922933
+Starting epoch 8/10.
+Epoch finished! Loss: 0.2280034932307899
+Starting epoch 9/10.
+Epoch finished! Loss: 0.13143012374639512
+Starting epoch 10/10.
+Epoch finished! Loss: 0.119917069922667
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.7986806244705804, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc052-nsrr
+
+=== Test on chc056-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.7021912328898907
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5767295181751251
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5599325090646744
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4822222176939249
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46630953401327135
+Starting epoch 6/10.
+Epoch finished! Loss: 0.2749489974230528
+Starting epoch 7/10.
+Epoch finished! Loss: 0.23842606162652374
+Starting epoch 8/10.
+Epoch finished! Loss: 0.19418148435652255
+Starting epoch 9/10.
+Epoch finished! Loss: 0.10771542515140027
+Starting epoch 10/10.
+Epoch finished! Loss: 0.06781611769692972
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.4
+pred: 0.559478223323822, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 90mins of subject chc056-nsrr
+
+=== Test on chp001-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6726898811757565
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5978786759078503
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5839170318096876
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5145252376794816
+Starting epoch 5/10.
+Epoch finished! Loss: 0.48986985459923743
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3574669800698757
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3529006388038397
+Starting epoch 8/10.
+Epoch finished! Loss: 0.28788415929302574
+Starting epoch 9/10.
+Epoch finished! Loss: 0.04864921652479097
+Starting epoch 10/10.
+Epoch finished! Loss: 0.019159630649664906
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.869804821908474, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp001-nsrr
+
+=== Test on chp002-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6490207359194755
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5920846611261368
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5674476355314255
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5191262479871511
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4647986598312855
+Starting epoch 6/10.
+Epoch finished! Loss: 0.33665117509663106
+Starting epoch 7/10.
+Epoch finished! Loss: 0.28330167271196843
+Starting epoch 8/10.
+Epoch finished! Loss: 0.16301182301249356
+Starting epoch 9/10.
+Epoch finished! Loss: 0.202323326934129
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1313030776102096
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6666666666666666
+pred: 0.6939885119597117, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp002-nsrr
+
+=== Test on chp003-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6561446562409401
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5778600700199604
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5081249609589576
+Starting epoch 4/10.
+Epoch finished! Loss: 0.45975213274359705
+Starting epoch 5/10.
+Epoch finished! Loss: 0.35386356730014085
+Starting epoch 6/10.
+Epoch finished! Loss: 0.2769517257809639
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1602859454229474
+Starting epoch 8/10.
+Epoch finished! Loss: 0.12029812887776643
+Starting epoch 9/10.
+Epoch finished! Loss: 0.0630605235870462
+Starting epoch 10/10.
+Epoch finished! Loss: 0.04102605038788169
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9701524138450622, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp003-nsrr
+
+=== Test on chp004-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6549261659383774
+Starting epoch 2/10.
+Epoch finished! Loss: 0.599302700906992
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5548445459455251
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5295745596289635
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4016371563076973
+Starting epoch 6/10.
+Epoch finished! Loss: 0.33567178174853324
+Starting epoch 7/10.
+Epoch finished! Loss: 0.24621868601534516
+Starting epoch 8/10.
+Epoch finished! Loss: 0.13016721819294616
+Starting epoch 9/10.
+Epoch finished! Loss: 0.08157942262478173
+Starting epoch 10/10.
+Epoch finished! Loss: 0.06809332593838917
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6
+pred: 0.6922114074230195, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp004-nsrr
+
+=== Test on chp005-nsrr. train_data(405), test_data(7) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6477867804467679
+Starting epoch 2/10.
+Epoch finished! Loss: 0.57175567522645
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5529921129345894
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5182643290609121
+Starting epoch 5/10.
+Epoch finished! Loss: 0.45619485676288607
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3771965362131596
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2229758035391569
+Starting epoch 8/10.
+Epoch finished! Loss: 0.158788395463489
+Starting epoch 9/10.
+Epoch finished! Loss: 0.09207386533962562
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07863521255203523
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8571428571428571
+pred: 0.8526491347168174, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp005-nsrr
+
+=== Test on chp006-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6604837462306022
+Starting epoch 2/10.
+Epoch finished! Loss: 0.592041552811861
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5686670176684856
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5536561191082001
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46382534243166446
+Starting epoch 6/10.
+Epoch finished! Loss: 0.41653099097311497
+Starting epoch 7/10.
+Epoch finished! Loss: 0.326154625415802
+Starting epoch 8/10.
+Epoch finished! Loss: 0.20344932228326798
+Starting epoch 9/10.
+Epoch finished! Loss: 0.06550830705091357
+Starting epoch 10/10.
+Epoch finished! Loss: 0.10877062692889013
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6666666666666666
+pred: 0.5829843704899152, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp006-nsrr
+
+=== Test on chp007-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6498146958649158
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5816127885133028
+Starting epoch 3/10.
+Epoch finished! Loss: 0.553914063423872
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4516912389546633
+Starting epoch 5/10.
+Epoch finished! Loss: 0.44196563214063644
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3130633231252432
+Starting epoch 7/10.
+Epoch finished! Loss: 0.22810979965142905
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1455525310477242
+Starting epoch 9/10.
+Epoch finished! Loss: 0.07212711466709151
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1250838284875499
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.8404287050167719, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp007-nsrr
+
+=== Test on chp008-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6925578631460667
+Starting epoch 2/10.
+Epoch finished! Loss: 0.59919423609972
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5717034183442593
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5242570281028748
+Starting epoch 5/10.
+Epoch finished! Loss: 0.43835783414542673
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3593035351485014
+Starting epoch 7/10.
+Epoch finished! Loss: 0.24814334688708187
+Starting epoch 8/10.
+Epoch finished! Loss: 0.14751461832784116
+Starting epoch 9/10.
+Epoch finished! Loss: 0.07306063300929963
+Starting epoch 10/10.
+Epoch finished! Loss: 0.15198345265816898
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9295781373977661, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp008-nsrr
+
+=== Test on chp009-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6437339171767235
+Starting epoch 2/10.
+Epoch finished! Loss: 0.601571249589324
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5194473125040531
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4592471729964018
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3989258948713541
+Starting epoch 6/10.
+Epoch finished! Loss: 0.2243546155281365
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1781211739871651
+Starting epoch 8/10.
+Epoch finished! Loss: 0.18137571995612234
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1326784957316704
+Starting epoch 10/10.
+Epoch finished! Loss: 0.06489361695421395
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8
+pred: 0.770985696464777, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp009-nsrr
+
+=== Test on chp010-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6716875165700913
+Starting epoch 2/10.
+Epoch finished! Loss: 0.6267313476651907
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5740480422973633
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5578405383974314
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5123942039906979
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4742582570761442
+Starting epoch 7/10.
+Epoch finished! Loss: 0.406463273614645
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3660124043002725
+Starting epoch 9/10.
+Epoch finished! Loss: 0.24753451477736235
+Starting epoch 10/10.
+Epoch finished! Loss: 0.15378622324205934
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9574972748756408, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp010-nsrr
+
+=== Test on chp011-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6605461750179529
+Starting epoch 2/10.
+Epoch finished! Loss: 0.6243802551180124
+Starting epoch 3/10.
+Epoch finished! Loss: 0.6009575959295035
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5673538014292717
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5528867915272713
+Starting epoch 6/10.
+Epoch finished! Loss: 0.47908468805253507
+Starting epoch 7/10.
+Epoch finished! Loss: 0.44715904742479323
+Starting epoch 8/10.
+Epoch finished! Loss: 0.33928556442260743
+Starting epoch 9/10.
+Epoch finished! Loss: 0.2932779093272984
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1302747212117538
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8
+pred: 0.7731608957052231, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp011-nsrr
+
+=== Test on chp012-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.7020822376012802
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5995472148060799
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5537444699555636
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5110369488596916
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4901693664491177
+Starting epoch 6/10.
+Epoch finished! Loss: 0.41044167447835206
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3722212426364422
+Starting epoch 8/10.
+Epoch finished! Loss: 0.18221336752176284
+Starting epoch 9/10.
+Epoch finished! Loss: 0.17587692402303218
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1594776981160976
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.5
+pred: 0.5422703848841289, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp012-nsrr
+
+=== Test on chp013-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6620470277965069
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5619549371302128
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5190345771610737
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4654333408921957
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4213329818099737
+Starting epoch 6/10.
+Epoch finished! Loss: 0.33110458990558983
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2656897594220936
+Starting epoch 8/10.
+Epoch finished! Loss: 0.27579926885664463
+Starting epoch 9/10.
+Epoch finished! Loss: 0.13221523580141364
+Starting epoch 10/10.
+Epoch finished! Loss: 0.040272405502037145
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9919400334358215, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp013-nsrr
+
+=== Test on chp014-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.661930599808693
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5865715317428112
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5751116335391998
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5624646008014679
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5339805856347084
+Starting epoch 6/10.
+Epoch finished! Loss: 0.48525975197553634
+Starting epoch 7/10.
+Epoch finished! Loss: 0.34955213163048027
+Starting epoch 8/10.
+Epoch finished! Loss: 0.2874942174181342
+Starting epoch 9/10.
+Epoch finished! Loss: 0.18468129367101938
+Starting epoch 10/10.
+Epoch finished! Loss: 0.06752072508679703
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.28867484629154205, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 90mins of subject chp014-nsrr
+
+=== Test on chp015-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6470008812844753
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5529868070036172
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5139526601880788
+Starting epoch 4/10.
+Epoch finished! Loss: 0.48734820634126663
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4127523761242628
+Starting epoch 6/10.
+Epoch finished! Loss: 0.31193662211298945
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2153601055033505
+Starting epoch 8/10.
+Epoch finished! Loss: 0.13069209749810398
+Starting epoch 9/10.
+Epoch finished! Loss: 0.17828930335817858
+Starting epoch 10/10.
+Epoch finished! Loss: 0.13826314948964863
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9436717132727305, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp015-nsrr
+
+=== Test on chp016-nsrr. train_data(405), test_data(7) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6962732456624507
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5891181610524654
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5740571431815624
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5328690998256207
+Starting epoch 5/10.
+Epoch finished! Loss: 0.477101081609726
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3977692073211074
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3540208702906966
+Starting epoch 8/10.
+Epoch finished! Loss: 0.22345498222857713
+Starting epoch 9/10.
+Epoch finished! Loss: 0.13876477275043725
+Starting epoch 10/10.
+Epoch finished! Loss: 0.09305063511710614
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.7142857142857143
+pred: 0.6704484958733831, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp016-nsrr
+
+=== Test on chp017-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.638818895816803
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5673034682869911
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5553960897028446
+Starting epoch 4/10.
+Epoch finished! Loss: 0.503803376108408
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42643194310367105
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4411748979240656
+Starting epoch 7/10.
+Epoch finished! Loss: 0.22884417911991478
+Starting epoch 8/10.
+Epoch finished! Loss: 0.12684678197838367
+Starting epoch 9/10.
+Epoch finished! Loss: 0.2227419621311128
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12015442554838955
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8
+pred: 0.8583115875720978, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp017-nsrr
+
+=== Test on chp018-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6461583176627755
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5923372015357018
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5265552252531052
+Starting epoch 4/10.
+Epoch finished! Loss: 0.46654787063598635
+Starting epoch 5/10.
+Epoch finished! Loss: 0.36806791722774507
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3695909069851041
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1565297252498567
+Starting epoch 8/10.
+Epoch finished! Loss: 0.04847905251081101
+Starting epoch 9/10.
+Epoch finished! Loss: 0.07103944271802902
+Starting epoch 10/10.
+Epoch finished! Loss: 0.06290534747386119
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.7932520459095637, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp018-nsrr
+
+=== Test on chp019-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6293615970760584
+Starting epoch 2/10.
+Epoch finished! Loss: 0.6167194806039333
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5745269481092692
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5004487872123718
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4484132930636406
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4048425931483507
+Starting epoch 7/10.
+Epoch finished! Loss: 0.20635140342637898
+Starting epoch 8/10.
+Epoch finished! Loss: 0.22515893103554846
+Starting epoch 9/10.
+Epoch finished! Loss: 0.13156567194964736
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07367098404793068
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8
+pred: 0.6641142226755619, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp019-nsrr
+
+=== Test on chp020-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6515901915729045
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5816199332475662
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5694549359381199
+Starting epoch 4/10.
+Epoch finished! Loss: 0.48182174414396284
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5041038587689399
+Starting epoch 6/10.
+Epoch finished! Loss: 0.37487788274884226
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3102615557610989
+Starting epoch 8/10.
+Epoch finished! Loss: 0.21044858284294604
+Starting epoch 9/10.
+Epoch finished! Loss: 0.19803705154918133
+Starting epoch 10/10.
+Epoch finished! Loss: 0.18881134358234702
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.8602574666341146, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp020-nsrr
+
+=== Test on chp022-nsrr. train_data(405), test_data(7) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6440952952951193
+Starting epoch 2/10.
+Epoch finished! Loss: 0.623879250884056
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5650936596095562
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5235664919018745
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5138204395771027
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4195774205029011
+Starting epoch 7/10.
+Epoch finished! Loss: 0.40693924464285375
+Starting epoch 8/10.
+Epoch finished! Loss: 0.24797033313661815
+Starting epoch 9/10.
+Epoch finished! Loss: 0.12984100296162068
+Starting epoch 10/10.
+Epoch finished! Loss: 0.061266184761188926
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.7142857142857143
+pred: 0.6664105421722135, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp022-nsrr
+
+=== Test on chp024-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6457212947309017
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5976998150348664
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5771771505475044
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5552329979836941
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5718383546918631
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5146960850805045
+Starting epoch 7/10.
+Epoch finished! Loss: 0.503064562752843
+Starting epoch 8/10.
+Epoch finished! Loss: 0.43546082992106677
+Starting epoch 9/10.
+Epoch finished! Loss: 0.40097649544477465
+Starting epoch 10/10.
+Epoch finished! Loss: 0.2714809008873999
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.9001208742459615, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp024-nsrr
+
+=== Test on chp025-nsrr. train_data(410), test_data(2) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6414562828838826
+Starting epoch 2/10.
+Epoch finished! Loss: 0.584628326818347
+Starting epoch 3/10.
+Epoch finished! Loss: 0.522702855989337
+Starting epoch 4/10.
+Epoch finished! Loss: 0.44572152346372607
+Starting epoch 5/10.
+Epoch finished! Loss: 0.39663925766944885
+Starting epoch 6/10.
+Epoch finished! Loss: 0.2184474871493876
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1585635001771152
+Starting epoch 8/10.
+Epoch finished! Loss: 0.17480970494216308
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1080519525334239
+Starting epoch 10/10.
+Epoch finished! Loss: 0.03308399039960932
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9976179897785187, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp025-nsrr
+
+=== Test on chp026-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6958332993090153
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5905444890260696
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5643774054944515
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5291479054838419
+Starting epoch 5/10.
+Epoch finished! Loss: 0.48957124799489976
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4244320534169674
+Starting epoch 7/10.
+Epoch finished! Loss: 0.35155368205159904
+Starting epoch 8/10.
+Epoch finished! Loss: 0.35132918767631055
+Starting epoch 9/10.
+Epoch finished! Loss: 0.15929516847245395
+Starting epoch 10/10.
+Epoch finished! Loss: 0.10842469176859595
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6
+pred: 0.6575961291790009, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp026-nsrr
+
+=== Test on chp028-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6444599881768227
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5727516494691371
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5581040292978287
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5461312152445317
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5360935062170029
+Starting epoch 6/10.
+Epoch finished! Loss: 0.49101450070738795
+Starting epoch 7/10.
+Epoch finished! Loss: 0.42607179917395116
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3838856816291809
+Starting epoch 9/10.
+Epoch finished! Loss: 0.30228846445679664
+Starting epoch 10/10.
+Epoch finished! Loss: 0.2953409282490611
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.2814169280230999, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 90mins of subject chp028-nsrr
+
+=== Test on chp029-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6490744560956955
+Starting epoch 2/10.
+Epoch finished! Loss: 0.6321108140051365
+Starting epoch 3/10.
+Epoch finished! Loss: 0.58075635060668
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4929189544171095
+Starting epoch 5/10.
+Epoch finished! Loss: 0.480083516985178
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3782832967117429
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3215310646221042
+Starting epoch 8/10.
+Epoch finished! Loss: 0.25182049479335544
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1750775263644755
+Starting epoch 10/10.
+Epoch finished! Loss: 0.09981940558645874
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9555607795715332, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp029-nsrr
+
+=== Test on chp030-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6757653817534447
+Starting epoch 2/10.
+Epoch finished! Loss: 0.579891374334693
+Starting epoch 3/10.
+Epoch finished! Loss: 0.52061289511621
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47741125598549844
+Starting epoch 5/10.
+Epoch finished! Loss: 0.38991403616964815
+Starting epoch 6/10.
+Epoch finished! Loss: 0.37887039594352245
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2674520707689226
+Starting epoch 8/10.
+Epoch finished! Loss: 0.12917104966472834
+Starting epoch 9/10.
+Epoch finished! Loss: 0.10193166652170475
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1271563386893831
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6666666666666666
+pred: 0.5665726872781912, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp030-nsrr
+
+=== Test on chp031-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.669281916320324
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5869241498410702
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5246297094970942
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4807693589478731
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3855057034641504
+Starting epoch 6/10.
+Epoch finished! Loss: 0.30979583896696566
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2613671250175685
+Starting epoch 8/10.
+Epoch finished! Loss: 0.18003076375462115
+Starting epoch 9/10.
+Epoch finished! Loss: 0.07916881339624524
+Starting epoch 10/10.
+Epoch finished! Loss: 0.05367650213302113
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6666666666666666
+pred: 0.6960753429060181, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp031-nsrr
+
+=== Test on chp032-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.666034123301506
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5733420602977276
+Starting epoch 3/10.
+Epoch finished! Loss: 0.561586631089449
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5157017584890127
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42126886546611786
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3577073235064745
+Starting epoch 7/10.
+Epoch finished! Loss: 0.26530434284359217
+Starting epoch 8/10.
+Epoch finished! Loss: 0.20691445590928198
+Starting epoch 9/10.
+Epoch finished! Loss: 0.12008809982798993
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07212939224264119
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9542312145233154, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp032-nsrr
+
+=== Test on chp033-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6542912308126688
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5973153837025166
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5680310867726803
+Starting epoch 4/10.
+Epoch finished! Loss: 0.48254036381840704
+Starting epoch 5/10.
+Epoch finished! Loss: 0.44492443837225437
+Starting epoch 6/10.
+Epoch finished! Loss: 0.43654898181557655
+Starting epoch 7/10.
+Epoch finished! Loss: 0.43639919627457857
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3241969119757414
+Starting epoch 9/10.
+Epoch finished! Loss: 0.26104192566126583
+Starting epoch 10/10.
+Epoch finished! Loss: 0.18810665721539407
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.0
+pred: 0.03669524490833283, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 90mins of subject chp033-nsrr
+
+=== Test on chp034-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6490013193339109
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5933075331151485
+Starting epoch 3/10.
+Epoch finished! Loss: 0.52652433142066
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47086975947022436
+Starting epoch 5/10.
+Epoch finished! Loss: 0.430573607981205
+Starting epoch 6/10.
+Epoch finished! Loss: 0.29174870159476995
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2975564710330218
+Starting epoch 8/10.
+Epoch finished! Loss: 0.234250954259187
+Starting epoch 9/10.
+Epoch finished! Loss: 0.06487882236833684
+Starting epoch 10/10.
+Epoch finished! Loss: 0.06468565685208887
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9197222113609314, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp034-nsrr
+
+=== Test on chp036-nsrr. train_data(405), test_data(7) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6503701001405716
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5985320579260588
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5146089568734169
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4394103307276964
+Starting epoch 5/10.
+Epoch finished! Loss: 0.37530890516936777
+Starting epoch 6/10.
+Epoch finished! Loss: 0.26956570642068983
+Starting epoch 7/10.
+Epoch finished! Loss: 0.11959272841922938
+Starting epoch 8/10.
+Epoch finished! Loss: 0.12427293250220828
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1656228079169523
+Starting epoch 10/10.
+Epoch finished! Loss: 0.09335840080748312
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.42857142857142855
+pred: 0.5305587973977838, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp036-nsrr
+
+=== Test on chp037-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6674195636063814
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5816417369991541
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5505718115717173
+Starting epoch 4/10.
+Epoch finished! Loss: 0.48585548624396324
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3673053512349725
+Starting epoch 6/10.
+Epoch finished! Loss: 0.29792418628931044
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2552643711678684
+Starting epoch 8/10.
+Epoch finished! Loss: 0.08234560625860468
+Starting epoch 9/10.
+Epoch finished! Loss: 0.05479804762871936
+Starting epoch 10/10.
+Epoch finished! Loss: 0.026623665262013672
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9111748337745667, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp037-nsrr
+
+=== Test on chp038-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6491050764918327
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5954345405101776
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5835638999938965
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5520385485142469
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5234601750969887
+Starting epoch 6/10.
+Epoch finished! Loss: 0.42268678434193135
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3477779313921928
+Starting epoch 8/10.
+Epoch finished! Loss: 0.2934837879613042
+Starting epoch 9/10.
+Epoch finished! Loss: 0.19614984272047878
+Starting epoch 10/10.
+Epoch finished! Loss: 0.061310645993216895
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8
+pred: 0.7116470634937286, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp038-nsrr
+
+=== Test on chp039-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6500396460294724
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5852473393082619
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5637700542807579
+Starting epoch 4/10.
+Epoch finished! Loss: 0.46755616217851637
+Starting epoch 5/10.
+Epoch finished! Loss: 0.38454704228788616
+Starting epoch 6/10.
+Epoch finished! Loss: 0.29697886407375335
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2225094033870846
+Starting epoch 8/10.
+Epoch finished! Loss: 0.13519046078436076
+Starting epoch 9/10.
+Epoch finished! Loss: 0.042006006219889966
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07815461098798551
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9288791716098785, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp039-nsrr
+
+=== Test on chp040-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6659018822014332
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5991374768316746
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5695935465395451
+Starting epoch 4/10.
+Epoch finished! Loss: 0.49855185523629186
+Starting epoch 5/10.
+Epoch finished! Loss: 0.41253187227994204
+Starting epoch 6/10.
+Epoch finished! Loss: 0.24574887938797474
+Starting epoch 7/10.
+Epoch finished! Loss: 0.13540391724091022
+Starting epoch 8/10.
+Epoch finished! Loss: 0.12211963700829073
+Starting epoch 9/10.
+Epoch finished! Loss: 0.10306772590847686
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07755318601848557
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6
+pred: 0.6799391806125641, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp040-nsrr
+
+=== Test on chp041-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6667234994471073
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5718746595084667
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4639301020652056
+Starting epoch 4/10.
+Epoch finished! Loss: 0.3932764783501625
+Starting epoch 5/10.
+Epoch finished! Loss: 0.2791096134111285
+Starting epoch 6/10.
+Epoch finished! Loss: 0.18783642072230577
+Starting epoch 7/10.
+Epoch finished! Loss: 0.11769859732594341
+Starting epoch 8/10.
+Epoch finished! Loss: 0.11974206332815811
+Starting epoch 9/10.
+Epoch finished! Loss: 0.18173869380261748
+Starting epoch 10/10.
+Epoch finished! Loss: 0.06657341317040846
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9321306546529134, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp041-nsrr
+
+=== Test on chp042-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6678992107510566
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5832522116601467
+Starting epoch 3/10.
+Epoch finished! Loss: 0.522551815211773
+Starting epoch 4/10.
+Epoch finished! Loss: 0.48032005317509174
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42218048870563507
+Starting epoch 6/10.
+Epoch finished! Loss: 0.28484030682593586
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2517346478998661
+Starting epoch 8/10.
+Epoch finished! Loss: 0.16411531171761454
+Starting epoch 9/10.
+Epoch finished! Loss: 0.15937560210004448
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07001093481667339
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.7434926728407542, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp042-nsrr
+
+=== Test on chp043-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6718702375888824
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5935413002967834
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5840479463338852
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5286847673356533
+Starting epoch 5/10.
+Epoch finished! Loss: 0.47313696555793283
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3733654677867889
+Starting epoch 7/10.
+Epoch finished! Loss: 0.387221696972847
+Starting epoch 8/10.
+Epoch finished! Loss: 0.24670869931578637
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1242147687356919
+Starting epoch 10/10.
+Epoch finished! Loss: 0.07347280419780873
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9543674091498057, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp043-nsrr
+
+=== Test on chp044-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6835893806070089
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5863920167088509
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5417776636779308
+Starting epoch 4/10.
+Epoch finished! Loss: 0.540521216392517
+Starting epoch 5/10.
+Epoch finished! Loss: 0.47617656253278257
+Starting epoch 6/10.
+Epoch finished! Loss: 0.44571273028850555
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3718557173386216
+Starting epoch 8/10.
+Epoch finished! Loss: 0.24397416692227125
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1702462375164032
+Starting epoch 10/10.
+Epoch finished! Loss: 0.10952881597913802
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9948172926902771, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp044-nsrr
+
+=== Test on chp045-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.688532380014658
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5923366241157055
+Starting epoch 3/10.
+Epoch finished! Loss: 0.529116191715002
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4780735433101654
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4128228943794966
+Starting epoch 6/10.
+Epoch finished! Loss: 0.2899268513545394
+Starting epoch 7/10.
+Epoch finished! Loss: 0.19961606785655023
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1140501948306337
+Starting epoch 9/10.
+Epoch finished! Loss: 0.14344782123807817
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12196398181840777
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.8785269061724345, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp045-nsrr
+
+=== Test on chp046-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.7113371878862381
+Starting epoch 2/10.
+Epoch finished! Loss: 0.6120428077876567
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5725514978170395
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5017722241580487
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46545965000987055
+Starting epoch 6/10.
+Epoch finished! Loss: 0.34927231036126616
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3671436049975455
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1781856036512181
+Starting epoch 9/10.
+Epoch finished! Loss: 0.13237048764713108
+Starting epoch 10/10.
+Epoch finished! Loss: 0.094525255006738
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.6666666666666666
+pred: 0.6873744465410709, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp046-nsrr
+
+=== Test on chp047-nsrr. train_data(408), test_data(4) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6727906465530396
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5979634098708629
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5775024823844432
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5334542095661163
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4717525266110897
+Starting epoch 6/10.
+Epoch finished! Loss: 0.42513196244835855
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3864581262692809
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34564604740589855
+Starting epoch 9/10.
+Epoch finished! Loss: 0.18499339348636568
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1274354472057894
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.0
+pred: 0.013824814232066274, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 90mins of subject chp047-nsrr
+
+=== Test on chp048-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6747984752058983
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5512025564908981
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5415709592401982
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4164130300283432
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3445638608187437
+Starting epoch 6/10.
+Epoch finished! Loss: 0.22536253212019802
+Starting epoch 7/10.
+Epoch finished! Loss: 0.15042137855198234
+Starting epoch 8/10.
+Epoch finished! Loss: 0.1722202240023762
+Starting epoch 9/10.
+Epoch finished! Loss: 0.10051154628163203
+Starting epoch 10/10.
+Epoch finished! Loss: 0.031125699702533892
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.28321513906121254, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 90mins of subject chp048-nsrr
+
+=== Test on chp049-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.640834492444992
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5783747881650925
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4938338749110699
+Starting epoch 4/10.
+Epoch finished! Loss: 0.3920750513672829
+Starting epoch 5/10.
+Epoch finished! Loss: 0.25329954121261833
+Starting epoch 6/10.
+Epoch finished! Loss: 0.26732552237808704
+Starting epoch 7/10.
+Epoch finished! Loss: 0.18987157712690533
+Starting epoch 8/10.
+Epoch finished! Loss: 0.13890720629133285
+Starting epoch 9/10.
+Epoch finished! Loss: 0.07038309504860081
+Starting epoch 10/10.
+Epoch finished! Loss: 0.09503621244366514
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9364789426326752, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp049-nsrr
+
+=== Test on chp051-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6659690171480179
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5941693257540465
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5192964341491461
+Starting epoch 4/10.
+Epoch finished! Loss: 0.44603420309722425
+Starting epoch 5/10.
+Epoch finished! Loss: 0.34336913879960773
+Starting epoch 6/10.
+Epoch finished! Loss: 0.31438184580765666
+Starting epoch 7/10.
+Epoch finished! Loss: 0.1299710900755599
+Starting epoch 8/10.
+Epoch finished! Loss: 0.08839407436316833
+Starting epoch 9/10.
+Epoch finished! Loss: 0.05482934694737196
+Starting epoch 10/10.
+Epoch finished! Loss: 0.05256173314410262
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9976762036482493, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp051-nsrr
+
+=== Test on chp052-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6521154001355172
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5854030352085828
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5590934224426747
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5421838112175464
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4540392607450485
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3517231151461601
+Starting epoch 7/10.
+Epoch finished! Loss: 0.36618527863174677
+Starting epoch 8/10.
+Epoch finished! Loss: 0.20329265627078713
+Starting epoch 9/10.
+Epoch finished! Loss: 0.1432696001138538
+Starting epoch 10/10.
+Epoch finished! Loss: 0.11332198842428624
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.4
+pred: 0.48675776496529577, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 90mins of subject chp052-nsrr
+
+=== Test on chp053-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.645778677240014
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5818366192281246
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5544800467789173
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5029235571622849
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4670191653072834
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4581774014979601
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3605774695053697
+Starting epoch 8/10.
+Epoch finished! Loss: 0.31778903435915706
+Starting epoch 9/10.
+Epoch finished! Loss: 0.21872066268697382
+Starting epoch 10/10.
+Epoch finished! Loss: 0.16668342248303816
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9154104689757029, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp053-nsrr
+
+=== Test on chp054-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6519651286303997
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5753819048404694
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5402037758380175
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5226525083184242
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4857066232711077
+Starting epoch 6/10.
+Epoch finished! Loss: 0.34729164429008963
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2636802242603153
+Starting epoch 8/10.
+Epoch finished! Loss: 0.24690069439820944
+Starting epoch 9/10.
+Epoch finished! Loss: 0.18476007408462464
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1130148750031367
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.78981096111238, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp054-nsrr
+
+=== Test on chp055-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.7011420875787735
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5843979582190514
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5747287958860398
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5461325809359551
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4844240676611662
+Starting epoch 6/10.
+Epoch finished! Loss: 0.402298154309392
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3277426803484559
+Starting epoch 8/10.
+Epoch finished! Loss: 0.25550327645614745
+Starting epoch 9/10.
+Epoch finished! Loss: 0.15168359496165068
+Starting epoch 10/10.
+Epoch finished! Loss: 0.1338229693879839
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.5
+pred: 0.5036083118369182, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp055-nsrr
+
+=== Test on chp056-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6989689577370882
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5866511330008507
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5457358561456204
+Starting epoch 4/10.
+Epoch finished! Loss: 0.49666783958673477
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42494371477514503
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4097587790340185
+Starting epoch 7/10.
+Epoch finished! Loss: 0.2389084548689425
+Starting epoch 8/10.
+Epoch finished! Loss: 0.13024888527579606
+Starting epoch 9/10.
+Epoch finished! Loss: 0.12042581608984619
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12340271436842158
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9876324335734049, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp056-nsrr
+
+=== Test on chp057-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6602287761867046
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5941739279776812
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5407427255064249
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5068406730890274
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42569868825376034
+Starting epoch 6/10.
+Epoch finished! Loss: 0.32032904792577027
+Starting epoch 7/10.
+Epoch finished! Loss: 0.29426889372989534
+Starting epoch 8/10.
+Epoch finished! Loss: 0.22276850878261029
+Starting epoch 9/10.
+Epoch finished! Loss: 0.10883619802771136
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12688629203476012
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9996670683224996, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp057-nsrr
+
+=== Test on chp058-nsrr. train_data(407), test_data(5) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6421139754354954
+Starting epoch 2/10.
+Epoch finished! Loss: 0.6009518146514893
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5797367885708808
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4828280847519636
+Starting epoch 5/10.
+Epoch finished! Loss: 0.3936667162925005
+Starting epoch 6/10.
+Epoch finished! Loss: 0.2744146258104593
+Starting epoch 7/10.
+Epoch finished! Loss: 0.14412152563454583
+Starting epoch 8/10.
+Epoch finished! Loss: 0.08524634102359414
+Starting epoch 9/10.
+Epoch finished! Loss: 0.07172873068775516
+Starting epoch 10/10.
+Epoch finished! Loss: 0.09600852215662599
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.2
+pred: 0.37836828604340556, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 90mins of subject chp058-nsrr
+
+=== Test on chp059-nsrr. train_data(406), test_data(6) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6719219572842121
+Starting epoch 2/10.
+Epoch finished! Loss: 0.588634817302227
+Starting epoch 3/10.
+Epoch finished! Loss: 0.562298035994172
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5472332380712033
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4904613606631756
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3752380754798651
+Starting epoch 7/10.
+Epoch finished! Loss: 0.35654932223260405
+Starting epoch 8/10.
+Epoch finished! Loss: 0.17493716147728264
+Starting epoch 9/10.
+Epoch finished! Loss: 0.13331868675304576
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12026805714704096
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 0.8333333333333334
+pred: 0.7297781966626644, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp059-nsrr
+
+=== Test on chp060-nsrr. train_data(405), test_data(7) ===
+Define dataloader
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6575738489627838
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5987230531871319
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5759278476238251
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5423054605722427
+Starting epoch 5/10.
+Epoch finished! Loss: 0.498369836807251
+Starting epoch 6/10.
+Epoch finished! Loss: 0.46072248332202437
+Starting epoch 7/10.
+Epoch finished! Loss: 0.35683817937970164
+Starting epoch 8/10.
+Epoch finished! Loss: 0.322102259285748
+Starting epoch 9/10.
+Epoch finished! Loss: 0.22616644334048033
+Starting epoch 10/10.
+Epoch finished! Loss: 0.12829224263550715
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 90mins: 1.0
+pred: 0.9960863505090986, label: 1
+Right! Diagnosis: NT1
+Save 90mins of subject chp060-nsrr
+Diagnosis acc on patients: 0.6923076923076923
+
+====== all ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  69.23  26.09   87.27  46.15     33.33
+1  69.23  87.27   26.09  73.85     80.00
+Total accuracy: 69.23%
+Average sen: 56.68%
+Average spec: 56.68%
+Macro f1-score: 56.67%
+fpr: 0.0, tpr: 0.0, threshold: 1.9996670683224997, 
+fpr: 0.0, tpr: 0.01818181818181818, threshold: 0.9996670683224996, 
+fpr: 0.0, tpr: 0.23636363636363636, threshold: 0.9436717132727305, 
+fpr: 0.043478260869565216, tpr: 0.23636363636363636, threshold: 0.9404039829969406, 
+fpr: 0.043478260869565216, tpr: 0.2545454545454545, threshold: 0.9364789426326752, 
+fpr: 0.08695652173913043, tpr: 0.2545454545454545, threshold: 0.9331403970718384, 
+fpr: 0.08695652173913043, tpr: 0.36363636363636365, threshold: 0.9111748337745667, 
+fpr: 0.13043478260869565, tpr: 0.36363636363636365, threshold: 0.9046417623758316, 
+fpr: 0.13043478260869565, tpr: 0.38181818181818183, threshold: 0.9001208742459615, 
+fpr: 0.21739130434782608, tpr: 0.38181818181818183, threshold: 0.8897414207458496, 
+fpr: 0.21739130434782608, tpr: 0.4909090909090909, threshold: 0.8404287050167719, 
+fpr: 0.34782608695652173, tpr: 0.4909090909090909, threshold: 0.7953455969691277, 
+fpr: 0.34782608695652173, tpr: 0.509090909090909, threshold: 0.7932520459095637, 
+fpr: 0.43478260869565216, tpr: 0.509090909090909, threshold: 0.7915311098098755, 
+fpr: 0.43478260869565216, tpr: 0.5272727272727272, threshold: 0.78981096111238, 
+fpr: 0.4782608695652174, tpr: 0.5272727272727272, threshold: 0.776621283342441, 
+fpr: 0.4782608695652174, tpr: 0.6909090909090909, threshold: 0.6873744465410709, 
+fpr: 0.5652173913043478, tpr: 0.6909090909090909, threshold: 0.6869026718195528, 
+fpr: 0.5652173913043478, tpr: 0.7818181818181819, threshold: 0.6575961291790009, 
+fpr: 0.6086956521739131, tpr: 0.7818181818181819, threshold: 0.6020251892507076, 
+fpr: 0.6086956521739131, tpr: 0.8181818181818182, threshold: 0.5665726872781912, 
+fpr: 0.6521739130434783, tpr: 0.8181818181818182, threshold: 0.559478223323822, 
+fpr: 0.6521739130434783, tpr: 0.8545454545454545, threshold: 0.5305587973977838, 
+fpr: 0.7391304347826086, tpr: 0.8545454545454545, threshold: 0.5187779786065221, 
+fpr: 0.7391304347826086, tpr: 0.8909090909090909, threshold: 0.48675776496529577, 
+fpr: 0.9130434782608695, tpr: 0.8909090909090909, threshold: 0.3852194829378277, 
+fpr: 0.9130434782608695, tpr: 0.9090909090909091, threshold: 0.37836828604340556, 
+fpr: 0.9565217391304348, tpr: 0.9090909090909091, threshold: 0.3762255497276783, 
+fpr: 0.9565217391304348, tpr: 0.9636363636363636, threshold: 0.2814169280230999, 
+fpr: 1.0, tpr: 0.9636363636363636, threshold: 0.2782097801566124, 
+fpr: 1.0, tpr: 1.0, threshold: 0.013824814232066274, 
+
+=== best_threshold: 0.9111748337745667, best_fpr: 0.08695652173913043, best_tpr: 0.36363636363636365 ===
+fpr: 0.0, tpr: 0.0, threshold: 2.0, 
+fpr: 0.009433962264150943, tpr: 0.016339869281045753, threshold: 1.0, 
+fpr: 0.009433962264150943, tpr: 0.02287581699346405, threshold: 0.9999998807907104, 
+fpr: 0.009433962264150943, tpr: 0.029411764705882353, threshold: 0.9999996423721313, 
+fpr: 0.018867924528301886, tpr: 0.029411764705882353, threshold: 0.9999992847442627, 
+fpr: 0.018867924528301886, tpr: 0.0392156862745098, threshold: 0.9999978542327881, 
+fpr: 0.02830188679245283, tpr: 0.0392156862745098, threshold: 0.9999977350234985, 
+fpr: 0.02830188679245283, tpr: 0.042483660130718956, threshold: 0.9999973773956299, 
+fpr: 0.03773584905660377, tpr: 0.042483660130718956, threshold: 0.9999963045120239, 
+fpr: 0.03773584905660377, tpr: 0.0457516339869281, threshold: 0.9999954700469971, 
+fpr: 0.04716981132075472, tpr: 0.0457516339869281, threshold: 0.99998939037323, 
+fpr: 0.05660377358490566, tpr: 0.049019607843137254, threshold: 0.9999855756759644, 
+fpr: 0.05660377358490566, tpr: 0.06535947712418301, threshold: 0.9999744892120361, 
+fpr: 0.0660377358490566, tpr: 0.06535947712418301, threshold: 0.9999692440032959, 
+fpr: 0.0660377358490566, tpr: 0.0784313725490196, threshold: 0.9999644756317139, 
+fpr: 0.08490566037735849, tpr: 0.0784313725490196, threshold: 0.9999610185623169, 
+fpr: 0.08490566037735849, tpr: 0.10457516339869281, threshold: 0.9999332427978516, 
+fpr: 0.09433962264150944, tpr: 0.10457516339869281, threshold: 0.9999213218688965, 
+fpr: 0.09433962264150944, tpr: 0.10784313725490197, threshold: 0.9999198913574219, 
+fpr: 0.10377358490566038, tpr: 0.10784313725490197, threshold: 0.9999173879623413, 
+fpr: 0.10377358490566038, tpr: 0.1111111111111111, threshold: 0.9999092817306519, 
+fpr: 0.11320754716981132, tpr: 0.1111111111111111, threshold: 0.9999006986618042, 
+fpr: 0.11320754716981132, tpr: 0.12091503267973856, threshold: 0.9998838901519775, 
+fpr: 0.12264150943396226, tpr: 0.12091503267973856, threshold: 0.9998708963394165, 
+fpr: 0.12264150943396226, tpr: 0.12745098039215685, threshold: 0.9998624324798584, 
+fpr: 0.1320754716981132, tpr: 0.12745098039215685, threshold: 0.9998555183410645, 
+fpr: 0.1320754716981132, tpr: 0.1503267973856209, threshold: 0.9998189806938171, 
+fpr: 0.14150943396226415, tpr: 0.1503267973856209, threshold: 0.9998143315315247, 
+fpr: 0.14150943396226415, tpr: 0.16993464052287582, threshold: 0.9997664093971252, 
+fpr: 0.1509433962264151, tpr: 0.16993464052287582, threshold: 0.9997645020484924, 
+fpr: 0.1509433962264151, tpr: 0.17320261437908496, threshold: 0.9997546076774597, 
+fpr: 0.16981132075471697, tpr: 0.17320261437908496, threshold: 0.9997454285621643, 
+fpr: 0.16981132075471697, tpr: 0.1830065359477124, threshold: 0.999624490737915, 
+fpr: 0.1792452830188679, tpr: 0.1830065359477124, threshold: 0.9996005892753601, 
+fpr: 0.1792452830188679, tpr: 0.1895424836601307, threshold: 0.9995860457420349, 
+fpr: 0.18867924528301888, tpr: 0.1895424836601307, threshold: 0.999580442905426, 
+fpr: 0.18867924528301888, tpr: 0.20261437908496732, threshold: 0.999534010887146, 
+fpr: 0.20754716981132076, tpr: 0.20261437908496732, threshold: 0.9994738698005676, 
+fpr: 0.20754716981132076, tpr: 0.21895424836601307, threshold: 0.9993844032287598, 
+fpr: 0.2169811320754717, tpr: 0.21895424836601307, threshold: 0.9993143081665039, 
+fpr: 0.2169811320754717, tpr: 0.2222222222222222, threshold: 0.9992992877960205, 
+fpr: 0.2358490566037736, tpr: 0.2222222222222222, threshold: 0.9991905093193054, 
+fpr: 0.2358490566037736, tpr: 0.25163398692810457, threshold: 0.9989649057388306, 
+fpr: 0.24528301886792453, tpr: 0.25163398692810457, threshold: 0.9989609718322754, 
+fpr: 0.24528301886792453, tpr: 0.2549019607843137, threshold: 0.9989176988601685, 
+fpr: 0.2641509433962264, tpr: 0.2549019607843137, threshold: 0.9987791180610657, 
+fpr: 0.2641509433962264, tpr: 0.2581699346405229, threshold: 0.9987733960151672, 
+fpr: 0.27358490566037735, tpr: 0.2581699346405229, threshold: 0.9987714886665344, 
+fpr: 0.27358490566037735, tpr: 0.2875816993464052, threshold: 0.9982219338417053, 
+fpr: 0.2830188679245283, tpr: 0.2875816993464052, threshold: 0.9981993436813354, 
+fpr: 0.2830188679245283, tpr: 0.3660130718954248, threshold: 0.9956238865852356, 
+fpr: 0.29245283018867924, tpr: 0.3660130718954248, threshold: 0.9956170320510864, 
+fpr: 0.29245283018867924, tpr: 0.37254901960784315, threshold: 0.9955190420150757, 
+fpr: 0.3018867924528302, tpr: 0.37254901960784315, threshold: 0.9953937530517578, 
+fpr: 0.3018867924528302, tpr: 0.3758169934640523, threshold: 0.9953823685646057, 
+fpr: 0.3113207547169811, tpr: 0.3758169934640523, threshold: 0.9952182173728943, 
+fpr: 0.3113207547169811, tpr: 0.39869281045751637, threshold: 0.9930676221847534, 
+fpr: 0.32075471698113206, tpr: 0.39869281045751637, threshold: 0.9929983615875244, 
+fpr: 0.32075471698113206, tpr: 0.4019607843137255, threshold: 0.9928580522537231, 
+fpr: 0.330188679245283, tpr: 0.4019607843137255, threshold: 0.9925408363342285, 
+fpr: 0.330188679245283, tpr: 0.40522875816993464, threshold: 0.9921344518661499, 
+fpr: 0.33962264150943394, tpr: 0.40522875816993464, threshold: 0.9921132326126099, 
+fpr: 0.33962264150943394, tpr: 0.43790849673202614, threshold: 0.9902603030204773, 
+fpr: 0.3490566037735849, tpr: 0.43790849673202614, threshold: 0.9901506900787354, 
+fpr: 0.3490566037735849, tpr: 0.4411764705882353, threshold: 0.9900564551353455, 
+fpr: 0.3584905660377358, tpr: 0.4411764705882353, threshold: 0.989168643951416, 
+fpr: 0.3584905660377358, tpr: 0.45098039215686275, threshold: 0.9880708456039429, 
+fpr: 0.36792452830188677, tpr: 0.45098039215686275, threshold: 0.9877306818962097, 
+fpr: 0.36792452830188677, tpr: 0.477124183006536, threshold: 0.9849840998649597, 
+fpr: 0.37735849056603776, tpr: 0.477124183006536, threshold: 0.984495997428894, 
+fpr: 0.37735849056603776, tpr: 0.4934640522875817, threshold: 0.9819356203079224, 
+fpr: 0.3867924528301887, tpr: 0.4934640522875817, threshold: 0.9816484451293945, 
+fpr: 0.3867924528301887, tpr: 0.5032679738562091, threshold: 0.980248749256134, 
+fpr: 0.39622641509433965, tpr: 0.5032679738562091, threshold: 0.9792563915252686, 
+fpr: 0.39622641509433965, tpr: 0.5098039215686274, threshold: 0.9775047898292542, 
+fpr: 0.4056603773584906, tpr: 0.5098039215686274, threshold: 0.9769750833511353, 
+fpr: 0.4056603773584906, tpr: 0.5163398692810458, threshold: 0.972886323928833, 
+fpr: 0.41509433962264153, tpr: 0.5163398692810458, threshold: 0.9727852940559387, 
+fpr: 0.41509433962264153, tpr: 0.5326797385620915, threshold: 0.9682325720787048, 
+fpr: 0.42452830188679247, tpr: 0.5326797385620915, threshold: 0.9671542048454285, 
+fpr: 0.42452830188679247, tpr: 0.545751633986928, threshold: 0.9632136225700378, 
+fpr: 0.4339622641509434, tpr: 0.545751633986928, threshold: 0.9606314897537231, 
+fpr: 0.4339622641509434, tpr: 0.5751633986928104, threshold: 0.9469175338745117, 
+fpr: 0.44339622641509435, tpr: 0.5751633986928104, threshold: 0.9469103813171387, 
+fpr: 0.44339622641509435, tpr: 0.5849673202614379, threshold: 0.9404187798500061, 
+fpr: 0.4528301886792453, tpr: 0.5849673202614379, threshold: 0.9403253793716431, 
+fpr: 0.4528301886792453, tpr: 0.5915032679738562, threshold: 0.9334909319877625, 
+fpr: 0.46226415094339623, tpr: 0.5915032679738562, threshold: 0.9319003224372864, 
+fpr: 0.46226415094339623, tpr: 0.6111111111111112, threshold: 0.9213694334030151, 
+fpr: 0.4716981132075472, tpr: 0.6111111111111112, threshold: 0.9213448166847229, 
+fpr: 0.4716981132075472, tpr: 0.6241830065359477, threshold: 0.903935968875885, 
+fpr: 0.4811320754716981, tpr: 0.6241830065359477, threshold: 0.9030200839042664, 
+fpr: 0.4811320754716981, tpr: 0.6372549019607843, threshold: 0.8861611485481262, 
+fpr: 0.49056603773584906, tpr: 0.6372549019607843, threshold: 0.8826463222503662, 
+fpr: 0.49056603773584906, tpr: 0.6405228758169934, threshold: 0.8812447786331177, 
+fpr: 0.5, tpr: 0.6405228758169934, threshold: 0.8808684349060059, 
+fpr: 0.5, tpr: 0.6470588235294118, threshold: 0.8695274591445923, 
+fpr: 0.5188679245283019, tpr: 0.6470588235294118, threshold: 0.8603171110153198, 
+fpr: 0.5188679245283019, tpr: 0.6568627450980392, threshold: 0.8486903309822083, 
+fpr: 0.5471698113207547, tpr: 0.6568627450980392, threshold: 0.8380807042121887, 
+fpr: 0.5471698113207547, tpr: 0.6601307189542484, threshold: 0.8346918225288391, 
+fpr: 0.5660377358490566, tpr: 0.6601307189542484, threshold: 0.83326655626297, 
+fpr: 0.5660377358490566, tpr: 0.6830065359477124, threshold: 0.7761706113815308, 
+fpr: 0.5849056603773585, tpr: 0.6830065359477124, threshold: 0.7666624784469604, 
+fpr: 0.5849056603773585, tpr: 0.696078431372549, threshold: 0.7512242794036865, 
+fpr: 0.5943396226415094, tpr: 0.696078431372549, threshold: 0.7461012601852417, 
+fpr: 0.5943396226415094, tpr: 0.6993464052287581, threshold: 0.7352294325828552, 
+fpr: 0.6037735849056604, tpr: 0.6993464052287581, threshold: 0.7348388433456421, 
+fpr: 0.6037735849056604, tpr: 0.7189542483660131, threshold: 0.6811891198158264, 
+fpr: 0.6132075471698113, tpr: 0.7189542483660131, threshold: 0.6686891913414001, 
+fpr: 0.6132075471698113, tpr: 0.7254901960784313, threshold: 0.6638011932373047, 
+fpr: 0.6226415094339622, tpr: 0.7254901960784313, threshold: 0.6407778859138489, 
+fpr: 0.6226415094339622, tpr: 0.7287581699346405, threshold: 0.6389439105987549, 
+fpr: 0.6509433962264151, tpr: 0.7287581699346405, threshold: 0.6044709086418152, 
+fpr: 0.6509433962264151, tpr: 0.7549019607843137, threshold: 0.539802074432373, 
+fpr: 0.660377358490566, tpr: 0.7549019607843137, threshold: 0.5379977226257324, 
+fpr: 0.660377358490566, tpr: 0.761437908496732, threshold: 0.5256041884422302, 
+fpr: 0.6698113207547169, tpr: 0.761437908496732, threshold: 0.5093681216239929, 
+fpr: 0.6698113207547169, tpr: 0.7647058823529411, threshold: 0.49213191866874695, 
+fpr: 0.6792452830188679, tpr: 0.7647058823529411, threshold: 0.49054110050201416, 
+fpr: 0.6792452830188679, tpr: 0.7712418300653595, threshold: 0.47227931022644043, 
+fpr: 0.6981132075471698, tpr: 0.7712418300653595, threshold: 0.45446914434432983, 
+fpr: 0.6981132075471698, tpr: 0.7941176470588235, threshold: 0.4045912027359009, 
+fpr: 0.7075471698113207, tpr: 0.7941176470588235, threshold: 0.3565073609352112, 
+fpr: 0.7075471698113207, tpr: 0.803921568627451, threshold: 0.3367879092693329, 
+fpr: 0.7169811320754716, tpr: 0.803921568627451, threshold: 0.3224492371082306, 
+fpr: 0.7169811320754716, tpr: 0.8071895424836601, threshold: 0.3168591856956482, 
+fpr: 0.7264150943396226, tpr: 0.8071895424836601, threshold: 0.3069198429584503, 
+fpr: 0.7264150943396226, tpr: 0.8104575163398693, threshold: 0.3025743067264557, 
+fpr: 0.7358490566037735, tpr: 0.8104575163398693, threshold: 0.29163455963134766, 
+fpr: 0.7358490566037735, tpr: 0.8202614379084967, threshold: 0.25713035464286804, 
+fpr: 0.7452830188679245, tpr: 0.8202614379084967, threshold: 0.249521404504776, 
+fpr: 0.7452830188679245, tpr: 0.826797385620915, threshold: 0.24178291857242584, 
+fpr: 0.7547169811320755, tpr: 0.826797385620915, threshold: 0.23818159103393555, 
+fpr: 0.7547169811320755, tpr: 0.8366013071895425, threshold: 0.21914537250995636, 
+fpr: 0.7735849056603774, tpr: 0.8366013071895425, threshold: 0.20175835490226746, 
+fpr: 0.7735849056603774, tpr: 0.8562091503267973, threshold: 0.1395542323589325, 
+fpr: 0.7830188679245284, tpr: 0.8562091503267973, threshold: 0.13926172256469727, 
+fpr: 0.7830188679245284, tpr: 0.8594771241830066, threshold: 0.13579992949962616, 
+fpr: 0.7924528301886793, tpr: 0.8594771241830066, threshold: 0.12627854943275452, 
+fpr: 0.7924528301886793, tpr: 0.8627450980392157, threshold: 0.12157219648361206, 
+fpr: 0.8113207547169812, tpr: 0.8627450980392157, threshold: 0.11713319271802902, 
+fpr: 0.8113207547169812, tpr: 0.8725490196078431, threshold: 0.10995246469974518, 
+fpr: 0.8207547169811321, tpr: 0.8725490196078431, threshold: 0.10694708675146103, 
+fpr: 0.8207547169811321, tpr: 0.8758169934640523, threshold: 0.10537240654230118, 
+fpr: 0.8490566037735849, tpr: 0.8758169934640523, threshold: 0.0970887616276741, 
+fpr: 0.8490566037735849, tpr: 0.8790849673202614, threshold: 0.093231201171875, 
+fpr: 0.8584905660377359, tpr: 0.8790849673202614, threshold: 0.08985258638858795, 
+fpr: 0.8584905660377359, tpr: 0.8888888888888888, threshold: 0.08443823456764221, 
+fpr: 0.8867924528301887, tpr: 0.8888888888888888, threshold: 0.07690039277076721, 
+fpr: 0.8867924528301887, tpr: 0.9052287581699346, threshold: 0.0628882348537445, 
+fpr: 0.8962264150943396, tpr: 0.9052287581699346, threshold: 0.059896327555179596, 
+fpr: 0.8962264150943396, tpr: 0.9313725490196079, threshold: 0.038510050624608994, 
+fpr: 0.9056603773584906, tpr: 0.9313725490196079, threshold: 0.03806178644299507, 
+fpr: 0.9056603773584906, tpr: 0.9379084967320261, threshold: 0.035951487720012665, 
+fpr: 0.9150943396226415, tpr: 0.9379084967320261, threshold: 0.03542150557041168, 
+fpr: 0.9150943396226415, tpr: 0.9411764705882353, threshold: 0.0335930734872818, 
+fpr: 0.9245283018867925, tpr: 0.9411764705882353, threshold: 0.033293113112449646, 
+fpr: 0.9245283018867925, tpr: 0.9477124183006536, threshold: 0.02730269730091095, 
+fpr: 0.9339622641509434, tpr: 0.9477124183006536, threshold: 0.02617187611758709, 
+fpr: 0.9339622641509434, tpr: 0.9575163398692811, threshold: 0.01832771673798561, 
+fpr: 0.9433962264150944, tpr: 0.9575163398692811, threshold: 0.01822151616215706, 
+fpr: 0.9433962264150944, tpr: 0.9640522875816994, threshold: 0.016441620886325836, 
+fpr: 0.9528301886792453, tpr: 0.9640522875816994, threshold: 0.01564221829175949, 
+fpr: 0.9528301886792453, tpr: 0.9673202614379085, threshold: 0.014152273535728455, 
+fpr: 0.9622641509433962, tpr: 0.9673202614379085, threshold: 0.012971936725080013, 
+fpr: 0.9622641509433962, tpr: 0.9803921568627451, threshold: 0.010028745979070663, 
+fpr: 0.9716981132075472, tpr: 0.9803921568627451, threshold: 0.008959674276411533, 
+fpr: 0.9716981132075472, tpr: 0.9869281045751634, threshold: 0.006899644620716572, 
+fpr: 0.9905660377358491, tpr: 0.9869281045751634, threshold: 0.005022943951189518, 
+fpr: 0.9905660377358491, tpr: 0.9967320261437909, threshold: 0.0015745237469673157, 
+fpr: 1.0, tpr: 0.9967320261437909, threshold: 0.00014685146743431687, 
+fpr: 1.0, tpr: 1.0, threshold: 1.6899401089176536e-05, 
+
+=== best_threshold: 0.8861611485481262, best_fpr: 0.4811320754716981, best_tpr: 0.6372549019607843 ===

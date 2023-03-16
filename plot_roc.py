@@ -3,40 +3,40 @@ from sklearn.metrics import roc_curve, auc
 import numpy as np
 
 savepic = 1
-names = ['0.5 min', '1 min','2.5 min', '5 min','10 min', '15 min','30 min', '60 min', '90 min']
-files = [
-    'multicnnc2cm_0.5min_zscore_shuffle_ROC_onephase',
-    'multicnnc2cm_1min_zscore_shuffle_ROC_onephase',
-    'multicnnc2cm_2.5min_zscore_shuffle_ROC_onephase1',
-    'multicnnc2cm_5min_zscore_shuffle_ROC_onephase',
-    'multicnnc2cm_10min_zscore_shuffle_ROC_onephase',
-    'multicnnc2cm_15min_zscore_shuffle_ROC_onephase',
-    'multicnnc2cm_30min_zscore_shuffle_ROC_onephase',
-    'multicnnc2cm_60min_zscore_shuffle_ROC_onephase',
-    'multicnnc2cm_90min_zscore_shuffle_ROC_onephase'
-]
-# colors = [ # colorful
-#     '#ffb0b0',
-#     '#ffc895',
-#     '#000000',
-#     '#c9d7b7',
-#     '#a3ccba',
-#     '#7ec1bd',
-#     '#58b6c0',
-#     '#3497ba',
-#     '#46a0c0'
+# names = ['0.5 min', '1 min','2.5 min', '5 min','10 min', '15 min','30 min', '60 min', '90 min']
+# files = [
+#     'multicnnc2cm_0.5min_zscore_shuffle_ROC_onephase',
+#     'multicnnc2cm_1min_zscore_shuffle_ROC_onephase',
+#     'multicnnc2cm_2.5min_zscore_shuffle_ROC_onephase1',
+#     'multicnnc2cm_5min_zscore_shuffle_ROC_onephase',
+#     'multicnnc2cm_10min_zscore_shuffle_ROC_onephase',
+#     'multicnnc2cm_15min_zscore_shuffle_ROC_onephase',
+#     'multicnnc2cm_30min_zscore_shuffle_ROC_onephase',
+#     'multicnnc2cm_60min_zscore_shuffle_ROC_onephase',
+#     'multicnnc2cm_90min_zscore_shuffle_ROC_onephase'
 # ]
-colors = [ # deeper
-    '#ff7373',
-    '#ff8d4d',
-    '#000000',
-    '#ffa626',
-    '#ffc000',
-    '#cdb52f',
-    '#9aaa5d',
-    '#679f8c',
-    '#3494ba'
-]
+# # colors = [ # colorful
+# #     '#ffb0b0',
+# #     '#ffc895',
+# #     '#000000',
+# #     '#c9d7b7',
+# #     '#a3ccba',
+# #     '#7ec1bd',
+# #     '#58b6c0',
+# #     '#3497ba',
+# #     '#46a0c0'
+# # ]
+# colors = [ # deeper
+#     '#ff7373',
+#     '#ff8d4d',
+#     '#000000',
+#     '#ffa626',
+#     '#ffc000',
+#     '#cdb52f',
+#     '#9aaa5d',
+#     '#679f8c',
+#     '#3494ba'
+# ]
 def multi_roc(names, files, colors, title='ROC Curve', savepic=0, picpath='Default_ROCcurve.png'):
     '''
     Multiple ROC curve on one plot.
@@ -73,15 +73,15 @@ def multi_roc(names, files, colors, title='ROC Curve', savepic=0, picpath='Defau
     plt.close()
 
 if __name__ == '__main__':
-    # names = ['multitask+muilticnn', 'one-phase+multicnn', 'multitask+square', 'one-phase+sqaure']
-    # files = [
-    #     'multicnnc2cm_2.5min_zscore_shuffle_ROC',
-    #     'multicnnc2cm_2.5min_zscore_shuffle_ROC_onephase1',
-    #     'squaresmall_2.5min_zscore_shuffle_ROC',
-    #     'squaresmall_2.5min_zscore_shuffle_ROC_onephase1'
-    # ]
-    # colors = ['#ff7373',
-    # '#ff8d4d',
-    # '#ffa626',
-    # '#ffc000']
+    names = ['multitask+muilticnn', 'one-phase+multicnn', 'multitask+square', 'one-phase+sqaure']
+    files = [
+        'multicnnc2cm_90min_zscore_shuffle_ROC',
+        'multicnnc2cm_90min_zscore_shuffle_ROC_onephase',
+        'squaresmall_90min_zscore_shuffle_ROC',
+        'squaresmall_90min_zscore_shuffle_ROC_onephase'
+    ]
+    colors = ['#ff7373',
+    '#ff8d4d',
+    '#ffa626',
+    '#ffc000']
     multi_roc(names, files, colors, title='ROC Curve for NT1 Detection\n(One-Phase + MultiCNNC2CM)', savepic=savepic, picpath='ROC Curve (One-Phase + MultiCNNC2CM).png')

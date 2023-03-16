@@ -38,7 +38,9 @@ DURATION_MINUTES = 2.5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
-MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_load'
+# channel_idx = {'EEG': 0, 'EOG': 1, 'EMG': 2}
+
+MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_EEG'
 
 if savelog:
     class Logger(object):
@@ -126,7 +128,7 @@ def LeaveOneSubjectOut(base):
         # test_dataset = NarcoNight15min(test_data)
 
         print('==== START TRAINING ====')
-        model = MultiCNNC2CM(n_channels=3,nepoch=nepoch)
+        model = MultiCNNC2CM(n_channels=1,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
@@ -184,8 +186,9 @@ def LeaveOneSubjectOut(base):
         # [TODO] test_loader是否需要使用minibatch？
         test_dataloader = DataLoader(NarcoNight15min(test_data), shuffle=False, batch_size=BATCH_SIZE)
         if is_multitask:
-            conf_mat, d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
+            sss, conf_mat, d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
             conf_mats += conf_mat
+            np.savetxt(f'ss/{MODE}/{subject}.txt', sss, fmt=['%d', '%d', '%f', '%f', '%f', '%f', '%f']) # [every 30s-epoch] metric 1 (sleep stage). col0: preds (int), col1: lables (int) (15min: 30 epochs), col2-6: (float) proba distribution (5 sleep stages)
         else:
             d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
         ds_15min[tmp:tmp+ntest,:] = ds_15min_subject
@@ -337,7 +340,8 @@ class NarcoNight15min(Dataset):
                 signal_pic = signal_pic.reshape((3,600,600))
             elif DURATION_MINUTES == 90:
                 signal_pic = signal_pic.reshape((3,900,600))
-        signal_pic = torch.from_numpy(signal_pic) # shape: torch.Size ([3,300,300])
+        # signal_pic = torch.from_numpy(signal_pic) # shape: torch.Size ([3,300,300])
+        signal_pic = torch.from_numpy(signal_pic[0,:,:][np.newaxis,:]) # shape: torch.Size ([1,300,300])
         ann = torch.from_numpy(ann) # shape: torch.Size ([30])
         diagnosis = self.diagnosis[index]
         sample = {'signal_pic': signal_pic, 'ann': ann, 'diagnosis': diagnosis}
@@ -429,8 +433,8 @@ def ignore_unknown_label(sss):
 
 
 if __name__ == '__main__':
-    # LeaveOneSubjectOut(base)
-    LeaveOneSubjectOut_loadmodel(base)
+    LeaveOneSubjectOut(base)
+    # LeaveOneSubjectOut_loadmodel(base)
     # x = torch.randn(10,3,300,300)
     # net = SquareSmallE(n_channels=3)
     # ss, d = net(x)

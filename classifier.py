@@ -40,7 +40,7 @@ nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
 # channel_idx = {'EEG': 0, 'EOG': 1, 'EMG': 2}
 
-MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_EEG'
+MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_EOG'
 
 if savelog:
     class Logger(object):
@@ -341,7 +341,7 @@ class NarcoNight15min(Dataset):
             elif DURATION_MINUTES == 90:
                 signal_pic = signal_pic.reshape((3,900,600))
         # signal_pic = torch.from_numpy(signal_pic) # shape: torch.Size ([3,300,300])
-        signal_pic = torch.from_numpy(signal_pic[0,:,:][np.newaxis,:]) # shape: torch.Size ([1,300,300])
+        signal_pic = torch.from_numpy(signal_pic[1,:,:][np.newaxis,:]) # shape: torch.Size ([1,300,300])
         ann = torch.from_numpy(ann) # shape: torch.Size ([30])
         diagnosis = self.diagnosis[index]
         sample = {'signal_pic': signal_pic, 'ann': ann, 'diagnosis': diagnosis}

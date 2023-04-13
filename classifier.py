@@ -24,7 +24,7 @@ from torch import optim
 from torch.utils.data import Dataset, DataLoader
 
 # from network import SquareSmall10min
-from network import MultiCNNC2CM
+from network import MultiCNNC2CM_S
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
@@ -32,7 +32,9 @@ savelog = 1
 savepic = 1
 savecheckpoints = 1
 
-is_multitask = 1 # 0: onephase, 1: multitask
+do_diagnose = False
+do_sleepstaging = True
+is_multitask = do_diagnose and do_sleepstaging
 is_per_epoch = 1 # input: 0: sqauresmall, 1: multitask
 DURATION_MINUTES = 2.5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
@@ -40,7 +42,7 @@ nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
 # channel_idx = {'EEG': 0, 'EOG': 1, 'EMG': 2}
 
-MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_EMG'
+MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_ss'
 
 if savelog:
     class Logger(object):
@@ -102,10 +104,11 @@ def loadSubjectData(base):
 
 def LeaveOneSubjectOut(base):
     subjects_data, n15minduration = loadSubjectData(base)
-    if is_multitask:
+    if do_sleepstaging:
         conf_mats = np.zeros((5,5), dtype=np.int)
-    ds_subject = np.zeros((len(subjects_data),3)) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
-    ds_15min = np.zeros((n15minduration,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
+    if do_diagnose:
+        ds_subject = np.zeros((len(subjects_data),3)) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
+        ds_15min = np.zeros((n15minduration,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
     j = -1
     tmp = 0
     for subject in subjects_data:
@@ -122,20 +125,17 @@ def LeaveOneSubjectOut(base):
         ntest = len(test_data)
 
         print(f'\n=== Test on {subject}. train_data({ntrain}), test_data({ntest}) ===')
-        print('Define dataloader')
-
-        # train_dataset = NarcoNight15min(train_data)
-        # test_dataset = NarcoNight15min(test_data)
 
         print('==== START TRAINING ====')
-        model = MultiCNNC2CM(n_channels=1,nepoch=nepoch)
+        model = MultiCNNC2CM_S(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
         model.to(device)
         print(f'load model to {device}')
-        diagnose_loss = nn.BCEWithLogitsLoss()
-        if is_multitask:
+        if do_diagnose:
+            diagnose_loss = nn.BCEWithLogitsLoss()
+        if do_sleepstaging:
             sleepstage_loss = nn.CrossEntropyLoss(ignore_index=-1) # ignore sleep stage ann with -1
         optimizer = optim.Adam(model.parameters(), lr=LR)
 
@@ -149,25 +149,28 @@ def LeaveOneSubjectOut(base):
                 inputs = data['signal_pic'].to(device) # shape: [10,3,300,300]
                 # print(f'input shape: {inputs.shape}')
 
-                d_labels = data['diagnosis'].to(device) # shape: [10]
+                if do_diagnose:
+                    d_labels = data['diagnosis'].to(device) # shape: [10]
+                if do_sleepstaging:
+                    ss_labels = data['ann'].to(device) # shape: [10,30]
 
                 if is_multitask:
-                    ss_labels = data['ann'].to(device) # shape: [10,30]
                     ss_outputs, d_outputs = model(inputs) # ss_outputs: shape: [10,5,30]; d_outputs: shape: [10,1]
                     loss_ss = sleepstage_loss(ss_outputs, ss_labels) # preds=ss_outputs [10,5,30]; labels=ss_labels [10,30]
-                else:
-                    d_outputs = model(inputs)
-
-                loss_d = diagnose_loss(d_outputs, d_labels.unsqueeze(1).float()) # shape: [10,1]
-
-                if is_multitask:
+                    loss_d = diagnose_loss(d_outputs, d_labels.unsqueeze(1).float()) # shape: [10,1]
                     loss = loss_ss + loss_d #  [TODO] multitask 中简单相加loss，肯定是不合理的，还需要修改！
                     if i % 10 == 0: # print loss every 10 step
                         myprint('{0:.4f} --- loss: {1:.6f}, loss_ss: {2:.6f}, loss_d: {3:.6f}'.format(i * BATCH_SIZE / ntrain, loss.item(), loss_ss.item(), loss_d.item()))
-                else:
-                    loss = loss_d
+                elif do_diagnose:
+                    d_outputs = model(inputs)
+                    loss = diagnose_loss(d_outputs, d_labels.unsqueeze(1).float()) # shape: [10,1]
                     if i % 10 == 0: # print loss every 10 step
-                        myprint('{0:.4f} --- loss_d: {1:.6f}'.format(i * BATCH_SIZE / ntrain, loss_d.item()))
+                        myprint('{0:.4f} --- loss_d: {1:.6f}'.format(i * BATCH_SIZE / ntrain, loss.item()))
+                elif do_sleepstaging:
+                    ss_outputs = model(inputs)
+                    loss = sleepstage_loss(ss_outputs, ss_labels) # preds=ss_outputs [10,5,30]; labels=ss_labels [10,30]
+                    if i % 10 == 0: # print loss every 10 step
+                        myprint('{0:.4f} --- loss_ss: {1:.6f}'.format(i * BATCH_SIZE / ntrain, loss.item()))
                 
                 epoch_loss += loss.item()
                 optimizer.zero_grad()
@@ -185,49 +188,51 @@ def LeaveOneSubjectOut(base):
         print('==== START TESTING ====')
         # [TODO] test_loader是否需要使用minibatch？
         test_dataloader = DataLoader(NarcoNight15min(test_data), shuffle=False, batch_size=BATCH_SIZE)
-        if is_multitask:
-            sss, conf_mat, d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
+        metric_d, metric_ss = test_on_subject(model, test_dataloader, ntest, subject)
+        if do_diagnose:
+            d_pred, d_label, ds_15min_subject = metric_d
+            ds_15min[tmp:tmp+ntest,:] = ds_15min_subject
+            tmp += ntest
+            ds_subject[j,0] = d_pred
+            ds_subject[j,1] = d_label
+            with open(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min_subject.txt','a') as fp:
+                np.savetxt(fp,np.squeeze(ds_15min_subject[:,0]), fmt='%f', newline=' ')
+                fp.write('\n')
+                print(f'Save {DURATION_MINUTES}mins of subject {subject}')
+        if do_sleepstaging:
+            sss, conf_mat = metric_ss
             conf_mats += conf_mat
             np.savetxt(f'ss/{MODE}/{subject}.txt', sss, fmt=['%d', '%d', '%f', '%f', '%f', '%f', '%f']) # [every 30s-epoch] metric 1 (sleep stage). col0: preds (int), col1: lables (int) (15min: 30 epochs), col2-6: (float) proba distribution (5 sleep stages)
-        else:
-            d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
-        ds_15min[tmp:tmp+ntest,:] = ds_15min_subject
-        
-        tmp += ntest
-        
-        ds_subject[j,0] = d_pred
-        ds_subject[j,1] = d_label
 
-        with open(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min_subject.txt','a') as fp:
-            np.savetxt(fp,np.squeeze(ds_15min_subject[:,0]), fmt='%f', newline=' ')
-            fp.write('\n')
-            print(f'Save {DURATION_MINUTES}mins of subject {subject}')
-    if is_multitask:
+
+    if do_sleepstaging:
         picpath = f'pic/{MODE}/conf_mat_all.png' # TODO: 根据运行设置将图片放到某个文件夹里
         plot_confusion_matrix(conf_mats,5,'all',ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
     
-    ds_subject[:,2] = np.where(ds_subject[:,0]>0.5, 1, 0)
-    acc_ds = accuracy_score(ds_subject[:,1], ds_subject[:,2])
-    print(f'Diagnosis acc on patients: {acc_ds}')
-    conf_mat_d = confusion_matrix(ds_subject[:,1], ds_subject[:,2]) # true, pred
-    picpath = f'pic/{MODE}/conf_mat_diagnosis.png' # TODO: 根据运行设置将图片放到某个文件夹里
-    plot_confusion_matrix(conf_mat_d,2,'all',ticks=DIAGNOSIS,savepic=savepic,picpath=picpath) # TODO: 画图吗？还是添加变量改xlabel，ylabel？
-    
-    # ROC curve
-    picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
-    plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=savepic,picpath=picpath)
-    picpath = f'pic/{MODE}/ROC_curve_diagnosis_{DURATION_MINUTES}min.png'
-    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],f'all {DURATION_MINUTES}min',savepic=savepic,picpath=picpath)
+    if do_diagnose:
+        ds_subject[:,2] = np.where(ds_subject[:,0]>0.5, 1, 0)
+        acc_ds = accuracy_score(ds_subject[:,1], ds_subject[:,2])
+        print(f'Diagnosis acc on patients: {acc_ds}')
+        conf_mat_d = confusion_matrix(ds_subject[:,1], ds_subject[:,2]) # true, pred
+        picpath = f'pic/{MODE}/conf_mat_diagnosis.png' # TODO: 根据运行设置将图片放到某个文件夹里
+        plot_confusion_matrix(conf_mat_d,2,'all',ticks=DIAGNOSIS,savepic=savepic,picpath=picpath) # TODO: 画图吗？还是添加变量改xlabel，ylabel？
+        
+        # ROC curve
+        picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
+        plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=savepic,picpath=picpath)
+        picpath = f'pic/{MODE}/ROC_curve_diagnosis_{DURATION_MINUTES}min.png'
+        plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],f'all {DURATION_MINUTES}min',savepic=savepic,picpath=picpath)
 
-    np.savetxt(f'diagnosis/{MODE}/ds_subject.txt', ds_subject, fmt=['%f', '%d', '%d']) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
-    np.savetxt(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
+        np.savetxt(f'diagnosis/{MODE}/ds_subject.txt', ds_subject, fmt=['%f', '%d', '%d']) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
+        np.savetxt(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
 
 def LeaveOneSubjectOut_loadmodel(base):
     subjects_data, n15minduration = loadSubjectData(base)
-    if is_multitask:
+    if do_sleepstaging:
         conf_mats = np.zeros((5,5), dtype=np.int)
-    ds_subject = np.zeros((len(subjects_data),3)) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
-    ds_15min = np.zeros((n15minduration,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
+    if do_diagnose:
+        ds_subject = np.zeros((len(subjects_data),3)) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
+        ds_15min = np.zeros((n15minduration,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
     j = -1
     tmp = 0
     for subject in subjects_data:
@@ -267,42 +272,43 @@ def LeaveOneSubjectOut_loadmodel(base):
         print('==== START TESTING ====')
         # [TODO] test_loader是否需要使用minibatch？
         test_dataloader = DataLoader(NarcoNight15min(test_data), shuffle=False, batch_size=BATCH_SIZE)
-        if is_multitask:
-            sss, conf_mat, d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
+        metric_d, metric_ss = test_on_subject(model, test_dataloader, ntest, subject)
+        if do_diagnose:
+            d_pred, d_label, ds_15min_subject = metric_d
+            ds_15min[tmp:tmp+ntest,:] = ds_15min_subject
+            tmp += ntest
+            ds_subject[j,0] = d_pred
+            ds_subject[j,1] = d_label
+            with open(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min_subject.txt','a') as fp:
+                np.savetxt(fp,np.squeeze(ds_15min_subject[:,0]), fmt='%f', newline=' ')
+                fp.write('\n')
+                print(f'Save {DURATION_MINUTES}mins of subject {subject}')
+        if do_sleepstaging:
+            sss, conf_mat = metric_ss
             conf_mats += conf_mat
             np.savetxt(f'ss/{MODE}/{subject}.txt', sss, fmt=['%d', '%d', '%f', '%f', '%f', '%f', '%f']) # [every 30s-epoch] metric 1 (sleep stage). col0: preds (int), col1: lables (int) (15min: 30 epochs), col2-6: (float) proba distribution (5 sleep stages)
-        else:
-            d_pred, d_label, ds_15min_subject = test_on_subject(model, test_dataloader, ntest, subject)
-        ds_15min[tmp:tmp+ntest,:] = ds_15min_subject
-        
-        tmp += ntest
-        
-        ds_subject[j,0] = d_pred
-        ds_subject[j,1] = d_label
 
-        with open(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min_subject.txt','a') as fp:
-            np.savetxt(fp,np.squeeze(ds_15min_subject[:,0]), fmt='%f', newline=' ')
-            fp.write('\n')
-            print(f'Save {DURATION_MINUTES}mins of subject {subject}')
-    if is_multitask:
+
+    if do_sleepstaging:
         picpath = f'pic/{MODE}/conf_mat_all.png' # TODO: 根据运行设置将图片放到某个文件夹里
         plot_confusion_matrix(conf_mats,5,'all',ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
     
-    ds_subject[:,2] = np.where(ds_subject[:,0]>0.5, 1, 0)
-    acc_ds = accuracy_score(ds_subject[:,1], ds_subject[:,2])
-    print(f'Diagnosis acc on patients: {acc_ds}')
-    conf_mat_d = confusion_matrix(ds_subject[:,1], ds_subject[:,2]) # true, pred
-    picpath = f'pic/{MODE}/conf_mat_diagnosis.png' # TODO: 根据运行设置将图片放到某个文件夹里
-    plot_confusion_matrix(conf_mat_d,2,'all',ticks=DIAGNOSIS,savepic=savepic,picpath=picpath) # TODO: 画图吗？还是添加变量改xlabel，ylabel？
-    
-    # ROC curve
-    picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
-    plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=savepic,picpath=picpath)
-    picpath = f'pic/{MODE}/ROC_curve_diagnosis_{DURATION_MINUTES}min.png'
-    plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],f'all {DURATION_MINUTES}min',savepic=savepic,picpath=picpath)
+    if do_diagnose:
+        ds_subject[:,2] = np.where(ds_subject[:,0]>0.5, 1, 0)
+        acc_ds = accuracy_score(ds_subject[:,1], ds_subject[:,2])
+        print(f'Diagnosis acc on patients: {acc_ds}')
+        conf_mat_d = confusion_matrix(ds_subject[:,1], ds_subject[:,2]) # true, pred
+        picpath = f'pic/{MODE}/conf_mat_diagnosis.png' # TODO: 根据运行设置将图片放到某个文件夹里
+        plot_confusion_matrix(conf_mat_d,2,'all',ticks=DIAGNOSIS,savepic=savepic,picpath=picpath) # TODO: 画图吗？还是添加变量改xlabel，ylabel？
+        
+        # ROC curve
+        picpath = f'pic/{MODE}/ROC_curve_diagnosis_subjects.png'
+        plot_ROC_curve(ds_subject[:,1],ds_subject[:,0],'all subjects',savepic=savepic,picpath=picpath)
+        picpath = f'pic/{MODE}/ROC_curve_diagnosis_{DURATION_MINUTES}min.png'
+        plot_ROC_curve(ds_15min[:,1],ds_15min[:,0],f'all {DURATION_MINUTES}min',savepic=savepic,picpath=picpath)
 
-    np.savetxt(f'diagnosis/{MODE}/ds_subject.txt', ds_subject, fmt=['%f', '%d', '%d']) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
-    np.savetxt(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
+        np.savetxt(f'diagnosis/{MODE}/ds_subject.txt', ds_subject, fmt=['%f', '%d', '%d']) # col0: preds (float), col1: lables (int 0,1), col2: preds (int 0,1)
+        np.savetxt(f'diagnosis/{MODE}/ds_{DURATION_MINUTES}min.txt', ds_15min, fmt=['%f', '%d']) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
 
 class NarcoNight15min(Dataset):
     def __init__(self, filepaths):
@@ -340,8 +346,8 @@ class NarcoNight15min(Dataset):
                 signal_pic = signal_pic.reshape((3,600,600))
             elif DURATION_MINUTES == 90:
                 signal_pic = signal_pic.reshape((3,900,600))
-        # signal_pic = torch.from_numpy(signal_pic) # shape: torch.Size ([3,300,300])
-        signal_pic = torch.from_numpy(signal_pic[2,:,:][np.newaxis,:]) # shape: torch.Size ([1,300,300])
+        signal_pic = torch.from_numpy(signal_pic) # shape: torch.Size ([3,300,300])
+        # signal_pic = torch.from_numpy(signal_pic[2,:,:][np.newaxis,:]) # shape: torch.Size ([1,300,300]), channel_idx = {'EEG': 0, 'EOG': 1, 'EMG': 2}
         ann = torch.from_numpy(ann) # shape: torch.Size ([30])
         diagnosis = self.diagnosis[index]
         sample = {'signal_pic': signal_pic, 'ann': ann, 'diagnosis': diagnosis}
@@ -352,19 +358,37 @@ class NarcoNight15min(Dataset):
 def test_on_subject(model, dataloader, ntest, subject):
     # set net model to evaluation
     model.eval() # 不启用 BatchNormalization 和 Dropout
-    sss = np.zeros((ntest*nepoch,7)) # [every 30s-epoch] metric 1 (sleep stage). col0: preds, col1: lables (15min: 30 epochs), col2-6: proba distribution (5 sleep stages)
-    ds = np.zeros((ntest,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
+    metric_ss = ()
+    metric_d = ()
+    if do_sleepstaging:
+        sss = np.zeros((ntest*nepoch,7)) # [every 30s-epoch] metric 1 (sleep stage). col0: preds, col1: lables (15min: 30 epochs), col2-6: proba distribution (5 sleep stages)
+    if do_diagnose:
+        ds = np.zeros((ntest,2)) # [every 15 min] metric 2 (diagnose). col0: pred_probas, col1: lables
     for i, data in enumerate(dataloader): # tqdm()
         # Get data from the batch
         inputs = data['signal_pic'].to(device) # shape: [10,3,300,300]
-                
         # ss_labels = data['ann'].to(device) # shape: [10,30]
-        d_labels = data['diagnosis'] # shape: [10]
-        nbatch = d_labels.shape[0]
+        # d_labels = data['diagnosis'] # shape: [10]
+        nbatch = inputs.shape[0]
 
         if is_multitask:
             ss_outputs, d_outputs = model(inputs) # ss_outputs: shape: [10,5,30]; d_outputs: shape: [10,1]
-            
+        elif do_diagnose:
+            d_outputs = model(inputs)
+        elif do_sleepstaging:
+            ss_outputs = model(inputs)
+
+        if do_diagnose:
+            # metric 2: narcolepsy detection (predicted condition for every 15min (for every input))
+            ## 编写函数将15min的患病情况转换为整夜的患病情况
+            ## return 模型对该患者的判断 （0: control, 1: NT1)
+            # sig = nn.Sigmoid()
+            d_outputs = torch.sigmoid(d_outputs)
+            d_outputs = torch.squeeze(d_outputs)
+            ds[i*BATCH_SIZE:i*BATCH_SIZE+nbatch, 0] = d_outputs.cpu().detach().numpy() # col0: preds
+            ds[i*BATCH_SIZE:i*BATCH_SIZE+nbatch, 1] = data['diagnosis'].numpy() # col1: lables
+
+        if do_sleepstaging:
             # metric 1: sleep stage (predicted and true anns for the whole night)
             ## import confusion_matrix_index (get cm, acc, sen, spec)
             # softmax = nn.Softmax(dim=1)
@@ -376,19 +400,17 @@ def test_on_subject(model, dataloader, ntest, subject):
             sss[i*BATCH_SIZE*nepoch:i*BATCH_SIZE*nepoch+nbatch*nepoch, 0] = myflatten(ss_outputs_indices.cpu().numpy()) # col0: preds
             sss[i*BATCH_SIZE*nepoch:i*BATCH_SIZE*nepoch+nbatch*nepoch, 1] = myflatten(data['ann'].numpy()) # col1: lables
             sss[i*BATCH_SIZE*nepoch:i*BATCH_SIZE*nepoch+nbatch*nepoch, 2:] = ss_dis
+
+    if do_diagnose:
+        acc_d = accuracy_score(ds[:,1], np.where(ds[:,0]>0.5, 1, 0))
+        print(f'Diagnosis acc on {DURATION_MINUTES}mins: {acc_d}')
+        d_pred, d_label = get_diagnose(ds)
+        if abs(d_label-d_pred) < 0.5:
+            print(f'Right! Diagnosis: {DIAGNOSIS[d_label]}')
         else:
-            d_outputs = model(inputs)
-
-        # metric 2: narcolepsy detection (predicted condition for every 15min (for every input))
-        ## 编写函数将15min的患病情况转换为整夜的患病情况
-        ## return 模型对该患者的判断 （0: control, 1: NT1)
-        # sig = nn.Sigmoid()
-        d_outputs = torch.sigmoid(d_outputs)
-        d_outputs = torch.squeeze(d_outputs)
-        ds[i*BATCH_SIZE:i*BATCH_SIZE+nbatch, 0] = d_outputs.cpu().detach().numpy() # col0: preds
-        ds[i*BATCH_SIZE:i*BATCH_SIZE+nbatch, 1] = data['diagnosis'].numpy() # col1: lables
-
-    if is_multitask:
+            print(f'Wrong!!! Real Diagnosis: {DIAGNOSIS[d_label]}')
+        metric_d = (d_pred, d_label, ds)
+    if do_sleepstaging:
         sss_cm = ignore_unknown_label(sss) # ignore sleep stage annotation -1 (only for metrics computing)
         acc_ss = accuracy_score(sss_cm[:,1], sss_cm[:,0]) # true, pred
         conf_mat = confusion_matrix(sss_cm[:,1], sss_cm[:,0]) # TODO: 可不可以忽略-1？
@@ -396,19 +418,8 @@ def test_on_subject(model, dataloader, ntest, subject):
         print(classification_report(sss_cm[:,1], sss_cm[:,0]),'\n')
         picpath = f'pic/{MODE}/conf_mat_{subject}.png'
         plot_confusion_matrix(conf_mat,5,subject,ticks=SLEEPSTAGE,savepic=savepic,picpath=picpath)
-
-    acc_d = accuracy_score(ds[:,1], np.where(ds[:,0]>0.5, 1, 0))
-    print(f'Diagnosis acc on {DURATION_MINUTES}mins: {acc_d}')
-    d_pred, d_label = get_diagnose(ds)
-    if abs(d_label-d_pred) < 0.5:
-        print(f'Right! Diagnosis: {DIAGNOSIS[d_label]}')
-    else:
-        print(f'Wrong!!! Real Diagnosis: {DIAGNOSIS[d_label]}')
-    
-    if is_multitask:
-        return sss, conf_mat, d_pred, d_label, ds
-    else:
-        return d_pred, d_label, ds
+        metric_ss = (sss, conf_mat)
+    return metric_d, metric_ss
 
 def get_diagnose(ds):
     label = int(ds[0,1])

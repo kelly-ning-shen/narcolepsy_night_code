@@ -26,16 +26,17 @@ def plot_confusion_matrix(cm, classes_num,mode,ticks,savepic=0,picpath='Default_
     cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
     plt.figure(figsize=(6.2,5.2))
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    title = f'Confusion matrix ({mode})'
-    plt.title(title)
-    plt.colorbar()
+    title = mode
+    plt.title(title,fontsize=16)
+    cb = plt.colorbar()
+    cb.ax.tick_params(labelsize=16)
     tick_marks = np.arange(classes_num)
-    plt.xticks(tick_marks,ticks,rotation=45)
-    plt.yticks(tick_marks,ticks)
+    plt.xticks(tick_marks,ticks,rotation=45,fontsize=16)
+    plt.yticks(tick_marks,ticks,fontsize=16)
     thresh = np.nanmax(cm) / 2 # ignore NaN !
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         # plt.text(j, i, '{:.2f}'.format(cm[i, j]), horizontalalignment="center",
-        plt.text(j, i, cm_num[i, j], horizontalalignment="center", # confusion matrix with num
+        plt.text(j, i, cm_num[i, j], horizontalalignment="center",fontsize=18, # confusion matrix with num
                  color="white" if cm[i, j] > thresh else "black")
         # if cm[i,j] > thresh:
         #     print(i, j, 'white')
@@ -43,8 +44,9 @@ def plot_confusion_matrix(cm, classes_num,mode,ticks,savepic=0,picpath='Default_
         #     print(i, j, 'black')
 
     
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    plt.ylabel('True label',fontsize=16)
+    plt.xlabel('Predicted label',fontsize=16)
+    plt.tight_layout()
 
     ## 模型分类评价指标
     print('\n======',mode,'======')
@@ -169,9 +171,9 @@ def plot_ROC_curve(y_labels, y_pred_probas, mode, savepic=0, picpath='Default_RO
     plt.close()
 
 if __name__ =='__main__':
-    threshold = 0.7481693067785465
-    cm = np.array([[21, 2], [5, 50]])
-    plot_confusion_matrix(cm,2,'all',['Other','NT1'],savepic=1,picpath=f'pic/multicnnc2cm_15min_zscore_shuffle_ROC/thredhold={threshold}.png')
+    method = 'STL + SquareSmall'
+    cm = np.array([[23, 0], [3, 52]])
+    plot_confusion_matrix(cm,2,method,['Other','NT1'],savepic=1,picpath=f'pic/2.5min/{method}.png')
     # f = open('diagnosis/multicnnc2cm_15min_zscore_shuffle_ROC/ds_15min_subject.txt','r',encoding='utf-8').readlines()
     # d_preds_15min = []
     # d_labels_15min = []

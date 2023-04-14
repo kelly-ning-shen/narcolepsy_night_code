@@ -24,7 +24,7 @@ from torch import optim
 from torch.utils.data import Dataset, DataLoader
 
 # from network import SquareSmall10min
-from network import MultiCNNC2CM_S
+from network import SquareSmall2_5min_S
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
@@ -35,14 +35,14 @@ savecheckpoints = 1
 do_diagnose = False
 do_sleepstaging = True
 is_multitask = do_diagnose and do_sleepstaging
-is_per_epoch = 1 # input: 0: sqauresmall, 1: multitask
+is_per_epoch = 0 # input: 0: sqauresmall, 1: multitask
 DURATION_MINUTES = 2.5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
 # channel_idx = {'EEG': 0, 'EOG': 1, 'EMG': 2}
 
-MODE = f'multicnnc2cm_{DURATION_MINUTES}min_zscore_shuffle_ROC_ss'
+MODE = f'squaresmall_{DURATION_MINUTES}min_zscore_shuffle_ROC_ss'
 
 if savelog:
     class Logger(object):
@@ -127,7 +127,7 @@ def LeaveOneSubjectOut(base):
         print(f'\n=== Test on {subject}. train_data({ntrain}), test_data({ntest}) ===')
 
         print('==== START TRAINING ====')
-        model = MultiCNNC2CM_S(n_channels=3,nepoch=nepoch)
+        model = SquareSmall2_5min_S(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])

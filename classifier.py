@@ -24,7 +24,7 @@ from torch import optim
 from torch.utils.data import Dataset, DataLoader
 
 # from network import SquareSmall10min
-from network import SquareSmall2_5min_S
+from network import SquareSmall90min_S
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
@@ -36,7 +36,7 @@ do_diagnose = False
 do_sleepstaging = True
 is_multitask = do_diagnose and do_sleepstaging
 is_per_epoch = 0 # input: 0: sqauresmall, 1: multitask
-DURATION_MINUTES = 2.5 # my first choice: 15min
+DURATION_MINUTES = 90 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
@@ -127,7 +127,7 @@ def LeaveOneSubjectOut(base):
         print(f'\n=== Test on {subject}. train_data({ntrain}), test_data({ntest}) ===')
 
         print('==== START TRAINING ====')
-        model = SquareSmall2_5min_S(n_channels=3,nepoch=nepoch)
+        model = SquareSmall90min_S(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
@@ -414,6 +414,8 @@ def test_on_subject(model, dataloader, ntest, subject):
         sss_cm = ignore_unknown_label(sss) # ignore sleep stage annotation -1 (only for metrics computing)
         acc_ss = accuracy_score(sss_cm[:,1], sss_cm[:,0]) # true, pred
         conf_mat = confusion_matrix(sss_cm[:,1], sss_cm[:,0]) # TODO: 可不可以忽略-1？
+        if conf_mat.shape[0] < 5: # if not 5*5
+            conf_mat = cm_uniform(sss_cm[:,1], sss_cm[:,0], classnum=5)
         print(f'Sleep stage: acc = {acc_ss}')
         print(classification_report(sss_cm[:,1], sss_cm[:,0]),'\n')
         picpath = f'pic/{MODE}/conf_mat_{subject}.png'
@@ -442,6 +444,17 @@ def ignore_unknown_label(sss):
     sss = np.delete(sss, idx, axis=0)
     return sss
 
+def cm_uniform(x, y, classnum):
+    x1 = np.unique(x)
+    y1 = np.unique(y)
+    z1 = np.union1d(x1, y1)
+    forgetidx = np.setdiff1d(np.arange(classnum),z1)
+    x = np.concatenate((x, forgetidx), axis=None)
+    y = np.concatenate((y, forgetidx), axis=None)
+    cm = confusion_matrix(x, y)
+    for idx in forgetidx:
+        cm[idx, idx] = 0
+    return cm
 
 if __name__ == '__main__':
     LeaveOneSubjectOut(base)

@@ -36,7 +36,7 @@ do_diagnose = False
 do_sleepstaging = True
 is_multitask = do_diagnose and do_sleepstaging
 is_per_epoch = 1 # input: 0: sqauresmall, 1: multicnn
-DURATION_MINUTES = 0.5 # my first choice: 15min
+DURATION_MINUTES = 60 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
@@ -142,7 +142,7 @@ def LeaveOneSubjectOut(base):
         for epoch in range(EPOCHS):
             print('Starting epoch {}/{}.'.format(epoch + 1, EPOCHS)) 
             model.train()
-            train_dataloader = DataLoader(NarcoNight15min(train_data), shuffle=True, batch_size=BATCH_SIZE, drop_last=True)
+            train_dataloader = DataLoader(NarcoNight15min(train_data), shuffle=True, batch_size=BATCH_SIZE)
             epoch_loss = 0
 
             for i, data in enumerate(train_dataloader): # tqdm(train_dataloader)
@@ -187,7 +187,7 @@ def LeaveOneSubjectOut(base):
         
         print('==== START TESTING ====')
         # [TODO] test_loader是否需要使用minibatch？
-        test_dataloader = DataLoader(NarcoNight15min(test_data), shuffle=False, batch_size=BATCH_SIZE, drop_last=True)
+        test_dataloader = DataLoader(NarcoNight15min(test_data), shuffle=False, batch_size=BATCH_SIZE)
         metric_d, metric_ss = test_on_subject(model, test_dataloader, ntest, subject)
         if do_diagnose:
             d_pred, d_label, ds_15min_subject = metric_d

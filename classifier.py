@@ -36,7 +36,7 @@ do_diagnose = False
 do_sleepstaging = True
 is_multitask = do_diagnose and do_sleepstaging
 is_per_epoch = 1 # input: 0: sqauresmall, 1: multicnn
-DURATION_MINUTES = 1 # my first choice: 15min
+DURATION_MINUTES = 5 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 

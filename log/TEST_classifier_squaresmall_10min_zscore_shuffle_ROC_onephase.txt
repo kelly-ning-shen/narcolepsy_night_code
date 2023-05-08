@@ -1,0 +1,3647 @@
+cuda:0
+Subjects num: 78
+
+10min inputs: chc001-nsrr (40)
+10min inputs: chc004-nsrr (53)
+10min inputs: chc005-nsrr (47)
+10min inputs: chc006-nsrr (41)
+10min inputs: chc008-nsrr (48)
+10min inputs: chc009-nsrr (44)
+10min inputs: chc010-nsrr (43)
+10min inputs: chc012-nsrr (46)
+10min inputs: chc013-nsrr (47)
+10min inputs: chc014-nsrr (47)
+10min inputs: chc015-nsrr (46)
+10min inputs: chc016-nsrr (47)
+10min inputs: chc022-nsrr (40)
+10min inputs: chc025-nsrr (41)
+10min inputs: chc027-nsrr (45)
+10min inputs: chc028-nsrr (44)
+10min inputs: chc033-nsrr (43)
+10min inputs: chc035-nsrr (45)
+10min inputs: chc037-nsrr (44)
+10min inputs: chc040-nsrr (54)
+10min inputs: chc041-nsrr (42)
+10min inputs: chc052-nsrr (45)
+10min inputs: chc056-nsrr (46)
+10min inputs: chp001-nsrr (58)
+10min inputs: chp002-nsrr (54)
+10min inputs: chp003-nsrr (50)
+10min inputs: chp004-nsrr (49)
+10min inputs: chp005-nsrr (65)
+10min inputs: chp006-nsrr (55)
+10min inputs: chp007-nsrr (57)
+10min inputs: chp008-nsrr (47)
+10min inputs: chp009-nsrr (51)
+10min inputs: chp010-nsrr (48)
+10min inputs: chp011-nsrr (50)
+10min inputs: chp012-nsrr (55)
+10min inputs: chp013-nsrr (50)
+10min inputs: chp014-nsrr (50)
+10min inputs: chp015-nsrr (57)
+10min inputs: chp016-nsrr (63)
+10min inputs: chp017-nsrr (50)
+10min inputs: chp018-nsrr (56)
+10min inputs: chp019-nsrr (47)
+10min inputs: chp020-nsrr (57)
+10min inputs: chp022-nsrr (63)
+10min inputs: chp024-nsrr (56)
+10min inputs: chp025-nsrr (22)
+10min inputs: chp026-nsrr (47)
+10min inputs: chp028-nsrr (51)
+10min inputs: chp029-nsrr (52)
+10min inputs: chp030-nsrr (60)
+10min inputs: chp031-nsrr (55)
+10min inputs: chp032-nsrr (53)
+10min inputs: chp033-nsrr (50)
+10min inputs: chp034-nsrr (52)
+10min inputs: chp036-nsrr (63)
+10min inputs: chp037-nsrr (51)
+10min inputs: chp038-nsrr (51)
+10min inputs: chp039-nsrr (55)
+10min inputs: chp040-nsrr (53)
+10min inputs: chp041-nsrr (55)
+10min inputs: chp042-nsrr (55)
+10min inputs: chp043-nsrr (60)
+10min inputs: chp044-nsrr (52)
+10min inputs: chp045-nsrr (60)
+10min inputs: chp046-nsrr (54)
+10min inputs: chp047-nsrr (44)
+10min inputs: chp048-nsrr (51)
+10min inputs: chp049-nsrr (54)
+10min inputs: chp051-nsrr (54)
+10min inputs: chp052-nsrr (50)
+10min inputs: chp053-nsrr (54)
+10min inputs: chp054-nsrr (56)
+10min inputs: chp055-nsrr (55)
+10min inputs: chp056-nsrr (55)
+10min inputs: chp057-nsrr (59)
+10min inputs: chp058-nsrr (51)
+10min inputs: chp059-nsrr (56)
+10min inputs: chp060-nsrr (63)
+
+=== Test on chc001-nsrr. train_data(3939), test_data(40) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5909587422020866
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5743689229925171
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5640320709643473
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5143030265739552
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46478036717149135
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4397120575868446
+Starting epoch 7/10.
+Epoch finished! Loss: 0.40069039074974205
+Starting epoch 8/10.
+Epoch finished! Loss: 0.38447819435945296
+Starting epoch 9/10.
+Epoch finished! Loss: 0.36660778721552767
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3534270404973103
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.85
+pred: 0.3020334267988801, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc001-nsrr
+
+=== Test on chc004-nsrr. train_data(3926), test_data(53) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.586596668450808
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5107362915818788
+Starting epoch 3/10.
+Epoch finished! Loss: 0.46907246257273516
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4250847342215022
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4022336237284602
+Starting epoch 6/10.
+Epoch finished! Loss: 0.38447717126762987
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3607986912473428
+Starting epoch 8/10.
+Epoch finished! Loss: 0.33424247426874176
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3306671260399934
+Starting epoch 10/10.
+Epoch finished! Loss: 0.29344979227919665
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.6415094339622641
+pred: 0.4286993701221808, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc004-nsrr
+
+=== Test on chc005-nsrr. train_data(3932), test_data(47) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5873356375833807
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5795707287830858
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5729532269879455
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5606904816233171
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5233893634481285
+Starting epoch 6/10.
+Epoch finished! Loss: 0.49959123274903866
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4649358371286902
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4395143237467334
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3989649380133049
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3639817877125194
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.04888995124542333, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc005-nsrr
+
+=== Test on chc006-nsrr. train_data(3938), test_data(41) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5831636082352573
+Starting epoch 2/10.
+Epoch finished! Loss: 0.577873889650704
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5735624933439963
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5741742746217257
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5676808015990803
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5076007395982742
+Starting epoch 7/10.
+Epoch finished! Loss: 0.46035745645145726
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4146908263441261
+Starting epoch 9/10.
+Epoch finished! Loss: 0.38325634094443334
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3694509923951013
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.0
+pred: 0.963069795108423, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 10mins of subject chc006-nsrr
+
+=== Test on chc008-nsrr. train_data(3931), test_data(48) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5862186411182388
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5441250661174759
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4974977363839404
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47508974009342775
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4463922819335952
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4231933666435817
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3962638544596485
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3771342471166118
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3493375053994225
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3487693034775991
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.6666666666666666
+pred: 0.4661665881673495, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc008-nsrr
+
+=== Test on chc009-nsrr. train_data(3935), test_data(44) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5894698103648106
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5780622438165067
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5760733607691966
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5709401709584486
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5694709998050719
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5283531000975131
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5082322026937063
+Starting epoch 8/10.
+Epoch finished! Loss: 0.47027643369961025
+Starting epoch 9/10.
+Epoch finished! Loss: 0.45661423637818443
+Starting epoch 10/10.
+Epoch finished! Loss: 0.438844996213003
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.17374339784410867, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc009-nsrr
+
+=== Test on chc010-nsrr. train_data(3936), test_data(43) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5877461345444502
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5731079897656088
+Starting epoch 3/10.
+Epoch finished! Loss: 0.563564194674407
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5065577114735548
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4571399404726562
+Starting epoch 6/10.
+Epoch finished! Loss: 0.406912619072669
+Starting epoch 7/10.
+Epoch finished! Loss: 0.39724852303967223
+Starting epoch 8/10.
+Epoch finished! Loss: 0.36930061516567647
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3262994482013712
+Starting epoch 10/10.
+Epoch finished! Loss: 0.2962187749663079
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.7209302325581395
+pred: 0.3802453222316365, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc010-nsrr
+
+=== Test on chc012-nsrr. train_data(3933), test_data(46) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5834878678161073
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5674794597631799
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5012229124401665
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4513664067019033
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4307662851862022
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3894725396243367
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3925714802575172
+Starting epoch 8/10.
+Epoch finished! Loss: 0.36662678062233306
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3538387439974392
+Starting epoch 10/10.
+Epoch finished! Loss: 0.33664846376684177
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.021739130434782608
+pred: 0.763587663355081, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 10mins of subject chc012-nsrr
+
+=== Test on chc013-nsrr. train_data(3932), test_data(47) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5886765306308372
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5792960025957826
+Starting epoch 3/10.
+Epoch finished! Loss: 0.575710024807896
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5730515422711846
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5609353066779882
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5106755820015307
+Starting epoch 7/10.
+Epoch finished! Loss: 0.46106454075975273
+Starting epoch 8/10.
+Epoch finished! Loss: 0.43573243510328785
+Starting epoch 9/10.
+Epoch finished! Loss: 0.41221906601169334
+Starting epoch 10/10.
+Epoch finished! Loss: 0.39218841631524737
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.2553191489361702
+pred: 0.6037981275548326, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 10mins of subject chc013-nsrr
+
+=== Test on chc014-nsrr. train_data(3932), test_data(47) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5892973559275838
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5642752228802397
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5066360470296166
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47297117174733383
+Starting epoch 5/10.
+Epoch finished! Loss: 0.43379992345210555
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4046542506295306
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4000163764595682
+Starting epoch 8/10.
+Epoch finished! Loss: 0.36793502641998177
+Starting epoch 9/10.
+Epoch finished! Loss: 0.36024338346325413
+Starting epoch 10/10.
+Epoch finished! Loss: 0.32925967305292003
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.8936170212765957
+pred: 0.2881299407875284, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc014-nsrr
+
+=== Test on chc015-nsrr. train_data(3933), test_data(46) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5913443386403052
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5732415374984572
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5780051513634262
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5704714477289724
+Starting epoch 5/10.
+Epoch finished! Loss: 0.567764605767551
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5679288041273146
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5506974966016435
+Starting epoch 8/10.
+Epoch finished! Loss: 0.49611250347156866
+Starting epoch 9/10.
+Epoch finished! Loss: 0.46317142388444515
+Starting epoch 10/10.
+Epoch finished! Loss: 0.44377423657943277
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.043478260869565216
+pred: 0.8518811794726745, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 10mins of subject chc015-nsrr
+
+=== Test on chc016-nsrr. train_data(3932), test_data(47) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.58366730316298
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5677846040737842
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5551402739061957
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5266023528105733
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5220680483652436
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4423249496227609
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4046464807735448
+Starting epoch 8/10.
+Epoch finished! Loss: 0.38215683013883256
+Starting epoch 9/10.
+Epoch finished! Loss: 0.36724034829524943
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3404241562761727
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.17042979463300806, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc016-nsrr
+
+=== Test on chc022-nsrr. train_data(3939), test_data(40) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5893686171478898
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5740807611523694
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5435096787208212
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5002698063016241
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4648993469149102
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4382382230904266
+Starting epoch 7/10.
+Epoch finished! Loss: 0.40335399674550265
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3867095489121272
+Starting epoch 9/10.
+Epoch finished! Loss: 0.34903905462976026
+Starting epoch 10/10.
+Epoch finished! Loss: 0.32762312978202757
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.975
+pred: 0.13335170214995742, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc022-nsrr
+
+=== Test on chc025-nsrr. train_data(3938), test_data(41) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5854999954236373
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5702349857898765
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5704989929993948
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5700724208324617
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5119152334886046
+Starting epoch 6/10.
+Epoch finished! Loss: 0.475721980817142
+Starting epoch 7/10.
+Epoch finished! Loss: 0.46045882806523153
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4275646192275234
+Starting epoch 9/10.
+Epoch finished! Loss: 0.4060797347822262
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3982474425897647
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.975609756097561
+pred: 0.38802858314863065, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc025-nsrr
+
+=== Test on chc027-nsrr. train_data(3934), test_data(45) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5853803059223651
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5374224053615225
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4929311854845392
+Starting epoch 4/10.
+Epoch finished! Loss: 0.46401536104484975
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4560641128446613
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4182298884516151
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4119310092000864
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3686912257707756
+Starting epoch 9/10.
+Epoch finished! Loss: 0.35610749648348367
+Starting epoch 10/10.
+Epoch finished! Loss: 0.34366885921503143
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9111111111111111
+pred: 0.22501502450969485, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc027-nsrr
+
+=== Test on chc028-nsrr. train_data(3935), test_data(44) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5969260238281643
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5627022459155124
+Starting epoch 3/10.
+Epoch finished! Loss: 0.49742895607426574
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4466941740373315
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4092131737648076
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3730520637132436
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3621412887600542
+Starting epoch 8/10.
+Epoch finished! Loss: 0.31924261133786075
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3028562712760372
+Starting epoch 10/10.
+Epoch finished! Loss: 0.2797282780627258
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.3181818181818182
+pred: 0.6056695641441778, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 10mins of subject chc028-nsrr
+
+=== Test on chc033-nsrr. train_data(3936), test_data(43) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5961479696305351
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5746484980480058
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5645763863058187
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5046906199770727
+Starting epoch 5/10.
+Epoch finished! Loss: 0.452104910108576
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4247084089362894
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3790733500291373
+Starting epoch 8/10.
+Epoch finished! Loss: 0.36111618601183854
+Starting epoch 9/10.
+Epoch finished! Loss: 0.34232397149992355
+Starting epoch 10/10.
+Epoch finished! Loss: 0.32445445478569157
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.0
+pred: 0.9666683729304824, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 10mins of subject chc033-nsrr
+
+=== Test on chc035-nsrr. train_data(3934), test_data(45) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5899074611469686
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5758574370664494
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5756053940485452
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5727531299867096
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5696764630443267
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5594475480891367
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5118444395125974
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4614098797014348
+Starting epoch 9/10.
+Epoch finished! Loss: 0.44637241788947857
+Starting epoch 10/10.
+Epoch finished! Loss: 0.4371827852938315
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9777777777777777
+pred: 0.23734726839595371, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc035-nsrr
+
+=== Test on chc037-nsrr. train_data(3935), test_data(44) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5910861184275484
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5671762140804272
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5349480582178398
+Starting epoch 4/10.
+Epoch finished! Loss: 0.48751947499868525
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4625665286494272
+Starting epoch 6/10.
+Epoch finished! Loss: 0.44556022513155413
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4216070507318919
+Starting epoch 8/10.
+Epoch finished! Loss: 0.40465607135805465
+Starting epoch 9/10.
+Epoch finished! Loss: 0.36690282893696513
+Starting epoch 10/10.
+Epoch finished! Loss: 0.344759467960769
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9318181818181818
+pred: 0.2660505920648575, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc037-nsrr
+
+=== Test on chc040-nsrr. train_data(3925), test_data(54) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.58870268852583
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5758499090692827
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5578098352998495
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5233277570912425
+Starting epoch 5/10.
+Epoch finished! Loss: 0.47079217129824114
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4480970742523062
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4302328336527761
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3969123832767411
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3886381972543135
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3819502202831969
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.8148148148148148
+pred: 0.337193277698976, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc040-nsrr
+
+=== Test on chc041-nsrr. train_data(3937), test_data(42) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5805905989866523
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5824942418940497
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5777413273661495
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5603894652756116
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5095883693555536
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4777731673256435
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4569877931331557
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4134216122044862
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3825054295342084
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3653639586258481
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.23809523809523808
+pred: 0.7058587145237696, label: 0
+Wrong!!! Real Diagnosis: Other
+Save 10mins of subject chc041-nsrr
+
+=== Test on chc052-nsrr. train_data(3934), test_data(45) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5855908914452594
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5628925954719233
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5476342270544163
+Starting epoch 4/10.
+Epoch finished! Loss: 0.48333350081783516
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4224055653234171
+Starting epoch 6/10.
+Epoch finished! Loss: 0.40236250944340807
+Starting epoch 7/10.
+Epoch finished! Loss: 0.37558899723163996
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3399549929316111
+Starting epoch 9/10.
+Epoch finished! Loss: 0.2996584952218842
+Starting epoch 10/10.
+Epoch finished! Loss: 0.2997395965547962
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.09558828841480944, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc052-nsrr
+
+=== Test on chc056-nsrr. train_data(3933), test_data(46) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5858512013468123
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5769913057031218
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5470415669239811
+Starting epoch 4/10.
+Epoch finished! Loss: 0.508801431070454
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4843772516678308
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4478049216455479
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4303054371256258
+Starting epoch 8/10.
+Epoch finished! Loss: 0.39604315514327915
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3816109635409811
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3591953451169356
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.6956521739130435
+pred: 0.4611470653958943, label: 0
+Right! Diagnosis: Other
+Save 10mins of subject chc056-nsrr
+
+=== Test on chp001-nsrr. train_data(3921), test_data(58) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6015166490129671
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5784223921673031
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5132858925403989
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4458002444280654
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4203482808127087
+Starting epoch 6/10.
+Epoch finished! Loss: 0.40726255036282294
+Starting epoch 7/10.
+Epoch finished! Loss: 0.381774492295725
+Starting epoch 8/10.
+Epoch finished! Loss: 0.368069118630065
+Starting epoch 9/10.
+Epoch finished! Loss: 0.35134198809308664
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3314658342290442
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9782988346856216, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp001-nsrr
+
+=== Test on chp002-nsrr. train_data(3925), test_data(54) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5997290826041479
+Starting epoch 2/10.
+Epoch finished! Loss: 0.586682199139376
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5868120964388458
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5806240892531921
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5640655738510647
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5012353217343286
+Starting epoch 7/10.
+Epoch finished! Loss: 0.48477956808495276
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4271621608688515
+Starting epoch 9/10.
+Epoch finished! Loss: 0.40468647709230376
+Starting epoch 10/10.
+Epoch finished! Loss: 0.37924055928098305
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9807365448386581, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp002-nsrr
+
+=== Test on chp003-nsrr. train_data(3929), test_data(50) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5850699478950427
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5091836710213399
+Starting epoch 3/10.
+Epoch finished! Loss: 0.477397015660393
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4334618299439245
+Starting epoch 5/10.
+Epoch finished! Loss: 0.41300372824985154
+Starting epoch 6/10.
+Epoch finished! Loss: 0.38198072071738387
+Starting epoch 7/10.
+Epoch finished! Loss: 0.35689570999951387
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3450536503437526
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3361601626918632
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3119000869099887
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9
+pred: 0.735401731133461, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp003-nsrr
+
+=== Test on chp004-nsrr. train_data(3930), test_data(49) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6048122724252087
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5821859591773578
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5504234913660555
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4799447019337391
+Starting epoch 5/10.
+Epoch finished! Loss: 0.40616477965092174
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3834156338505599
+Starting epoch 7/10.
+Epoch finished! Loss: 0.348911638162574
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3374970440125587
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3155264497677587
+Starting epoch 10/10.
+Epoch finished! Loss: 0.2837502371842916
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9936599415175769, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp004-nsrr
+
+=== Test on chp005-nsrr. train_data(3914), test_data(65) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5977469557691413
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5720597273477203
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5108145424319656
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47295220581162006
+Starting epoch 5/10.
+Epoch finished! Loss: 0.466320625351518
+Starting epoch 6/10.
+Epoch finished! Loss: 0.42973589687548636
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4022278054557798
+Starting epoch 8/10.
+Epoch finished! Loss: 0.39169759703490437
+Starting epoch 9/10.
+Epoch finished! Loss: 0.38111096734890854
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3602678391063
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9846153846153847
+pred: 0.959430723465406, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp005-nsrr
+
+=== Test on chp006-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.594918783221926
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5745093755195944
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5101966590297465
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47376001690875513
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42868983323628806
+Starting epoch 6/10.
+Epoch finished! Loss: 0.40025567289974007
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3759569984917738
+Starting epoch 8/10.
+Epoch finished! Loss: 0.37259062008970245
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3271160914695689
+Starting epoch 10/10.
+Epoch finished! Loss: 0.30870440157548507
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9967592466961254, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp006-nsrr
+
+=== Test on chp007-nsrr. train_data(3922), test_data(57) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.597498784716032
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5736972982329982
+Starting epoch 3/10.
+Epoch finished! Loss: 0.525459762396557
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4772430080920458
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4374820182137952
+Starting epoch 6/10.
+Epoch finished! Loss: 0.41682901210626777
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3956403351597944
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3877501643205784
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3345359284050611
+Starting epoch 10/10.
+Epoch finished! Loss: 0.31334663518913547
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9298245614035088
+pred: 0.8659409592418295, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp007-nsrr
+
+=== Test on chp008-nsrr. train_data(3932), test_data(47) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5953720028846319
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5520837503762646
+Starting epoch 3/10.
+Epoch finished! Loss: 0.48350384459847406
+Starting epoch 4/10.
+Epoch finished! Loss: 0.47195702063218326
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4356818793308341
+Starting epoch 6/10.
+Epoch finished! Loss: 0.41233201870936476
+Starting epoch 7/10.
+Epoch finished! Loss: 0.38804192420180517
+Starting epoch 8/10.
+Epoch finished! Loss: 0.36846133810645754
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3536457088953666
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3399469429489614
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.851063829787234
+pred: 0.7237599682300648, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp008-nsrr
+
+=== Test on chp009-nsrr. train_data(3928), test_data(51) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6037011152247385
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5901079665945501
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5495483653657899
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5008851537214858
+Starting epoch 5/10.
+Epoch finished! Loss: 0.47817170950679144
+Starting epoch 6/10.
+Epoch finished! Loss: 0.45296550587731965
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4109207913659665
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3974527031259269
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3769497446031595
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3580925300983446
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9411764705882353
+pred: 0.826164551225363, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp009-nsrr
+
+=== Test on chp010-nsrr. train_data(3931), test_data(48) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6009471504060366
+Starting epoch 2/10.
+Epoch finished! Loss: 0.583211401340009
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5491997927199793
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5094190711586833
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46619032258902493
+Starting epoch 6/10.
+Epoch finished! Loss: 0.474557010613325
+Starting epoch 7/10.
+Epoch finished! Loss: 0.44240231252732776
+Starting epoch 8/10.
+Epoch finished! Loss: 0.41356596487169045
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3783873574234754
+Starting epoch 10/10.
+Epoch finished! Loss: 0.35905426046775496
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9674983409543833, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp010-nsrr
+
+=== Test on chp011-nsrr. train_data(3929), test_data(50) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.602234084881386
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5887785353222672
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5689211732574871
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5181445856103484
+Starting epoch 5/10.
+Epoch finished! Loss: 0.47367916788373676
+Starting epoch 6/10.
+Epoch finished! Loss: 0.44295827630071005
+Starting epoch 7/10.
+Epoch finished! Loss: 0.40928644998645297
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3903519506851325
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3673078119754791
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3528279858280201
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.94
+pred: 0.8977361285686493, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp011-nsrr
+
+=== Test on chp012-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5991338773497513
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5914123639920537
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5869289083140237
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5665697274463517
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5444850579892494
+Starting epoch 6/10.
+Epoch finished! Loss: 0.48213575723371943
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4536738358438015
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4301272831781178
+Starting epoch 9/10.
+Epoch finished! Loss: 0.41886478822146145
+Starting epoch 10/10.
+Epoch finished! Loss: 0.39070328401059523
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9818181818181818
+pred: 0.8486813523552634, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp012-nsrr
+
+=== Test on chp013-nsrr. train_data(3929), test_data(50) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.598152215231438
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5867336443720423
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5455778120275663
+Starting epoch 4/10.
+Epoch finished! Loss: 0.49297647774979775
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4512759749682582
+Starting epoch 6/10.
+Epoch finished! Loss: 0.43043289774534654
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4002364361088495
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3718440743847465
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3372631289483029
+Starting epoch 10/10.
+Epoch finished! Loss: 0.29594350528276087
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.32
+pred: 0.35241506405174733, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 10mins of subject chp013-nsrr
+
+=== Test on chp014-nsrr. train_data(3929), test_data(50) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5980011665319301
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5877520140944695
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5863024343793489
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5847320035860246
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5860672083740331
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5831379149185152
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5831228976651114
+Starting epoch 8/10.
+Epoch finished! Loss: 0.5833250420282081
+Starting epoch 9/10.
+Epoch finished! Loss: 0.5834422085662277
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5799197915713398
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.6735123538970947, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp014-nsrr
+
+=== Test on chp015-nsrr. train_data(3922), test_data(57) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6009303304385774
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5895945795108469
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5857729803086543
+Starting epoch 4/10.
+Epoch finished! Loss: 0.584041527491443
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5823909715198132
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5844306828720229
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5823290155326225
+Starting epoch 8/10.
+Epoch finished! Loss: 0.5869893457512466
+Starting epoch 9/10.
+Epoch finished! Loss: 0.5852640414116334
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5771234446794403
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.7090039629685251, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp015-nsrr
+
+=== Test on chp016-nsrr. train_data(3916), test_data(63) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5969001762092571
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5834931895479827
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5509670239580257
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5087753262208856
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4743360127786846
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4432418776671295
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4308080119092751
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4237499226008535
+Starting epoch 9/10.
+Epoch finished! Loss: 0.38747607480229623
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3820811557342939
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9498752100127084, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp016-nsrr
+
+=== Test on chp017-nsrr. train_data(3929), test_data(50) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6033683557595525
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5884832718922776
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5867696697918736
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5433105932814735
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4905180569205965
+Starting epoch 6/10.
+Epoch finished! Loss: 0.46552787937832124
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4408309855973538
+Starting epoch 8/10.
+Epoch finished! Loss: 0.41411665608460196
+Starting epoch 9/10.
+Epoch finished! Loss: 0.4132046732215249
+Starting epoch 10/10.
+Epoch finished! Loss: 0.38346595153668706
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.92
+pred: 0.7757108777761459, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp017-nsrr
+
+=== Test on chp018-nsrr. train_data(3923), test_data(56) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5926397599431933
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5351633796354338
+Starting epoch 3/10.
+Epoch finished! Loss: 0.49361025332948383
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4716801995753634
+Starting epoch 5/10.
+Epoch finished! Loss: 0.451028491275347
+Starting epoch 6/10.
+Epoch finished! Loss: 0.42104989153390027
+Starting epoch 7/10.
+Epoch finished! Loss: 0.41097686601308536
+Starting epoch 8/10.
+Epoch finished! Loss: 0.378425628479038
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3807875736787611
+Starting epoch 10/10.
+Epoch finished! Loss: 0.36255021965397255
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9535909571817943, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp018-nsrr
+
+=== Test on chp019-nsrr. train_data(3932), test_data(47) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6011441633219027
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5781778652628566
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5127304975919748
+Starting epoch 4/10.
+Epoch finished! Loss: 0.45703095080136646
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42369521107837443
+Starting epoch 6/10.
+Epoch finished! Loss: 0.39529372052154466
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3820297202953249
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3671483089602327
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3358776166125108
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3213465604125392
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.8085106382978723
+pred: 0.7100036813223616, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp019-nsrr
+
+=== Test on chp020-nsrr. train_data(3922), test_data(57) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5996795217981752
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5699581020340627
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5326122108998955
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5040868629074219
+Starting epoch 5/10.
+Epoch finished! Loss: 0.45332138582455866
+Starting epoch 6/10.
+Epoch finished! Loss: 0.41753446217626333
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4044540373380391
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3795836351963939
+Starting epoch 9/10.
+Epoch finished! Loss: 0.36769955578659264
+Starting epoch 10/10.
+Epoch finished! Loss: 0.33677125883725834
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9554039239883423, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp020-nsrr
+
+=== Test on chp022-nsrr. train_data(3916), test_data(63) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5988320058111645
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5871331589606107
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5403389285897355
+Starting epoch 4/10.
+Epoch finished! Loss: 0.49870080746653134
+Starting epoch 5/10.
+Epoch finished! Loss: 0.45268578610151927
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4175329356051772
+Starting epoch 7/10.
+Epoch finished! Loss: 0.39926943167701096
+Starting epoch 8/10.
+Epoch finished! Loss: 0.36969361671477635
+Starting epoch 9/10.
+Epoch finished! Loss: 0.34215101130935544
+Starting epoch 10/10.
+Epoch finished! Loss: 0.32001088872132705
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.961716337809487, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp022-nsrr
+
+=== Test on chp024-nsrr. train_data(3923), test_data(56) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.595735068147888
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5619464488509966
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4962473050976286
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4584974910379673
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4108107728617532
+Starting epoch 6/10.
+Epoch finished! Loss: 0.39034875516532636
+Starting epoch 7/10.
+Epoch finished! Loss: 0.37652208431794937
+Starting epoch 8/10.
+Epoch finished! Loss: 0.35595296146538186
+Starting epoch 9/10.
+Epoch finished! Loss: 0.31820694862731863
+Starting epoch 10/10.
+Epoch finished! Loss: 0.32078677058524013
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.8035714285714286
+pred: 0.7126592328505856, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp024-nsrr
+
+=== Test on chp025-nsrr. train_data(3957), test_data(22) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.595423079253752
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5676025846713706
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5321031515356861
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4656377398137805
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4494919785215885
+Starting epoch 6/10.
+Epoch finished! Loss: 0.427473557749881
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3972224283444731
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3783414212774627
+Starting epoch 9/10.
+Epoch finished! Loss: 0.35553811045387124
+Starting epoch 10/10.
+Epoch finished! Loss: 0.34358743817745885
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9593618403781544, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp025-nsrr
+
+=== Test on chp026-nsrr. train_data(3932), test_data(47) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5949821904415392
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5734317833534027
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5106170572169865
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4502001248167368
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4212659784324903
+Starting epoch 6/10.
+Epoch finished! Loss: 0.40202576706882653
+Starting epoch 7/10.
+Epoch finished! Loss: 0.39079323177801745
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3735013704642691
+Starting epoch 9/10.
+Epoch finished! Loss: 0.35974458906486745
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3298290949930975
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9361702127659575
+pred: 0.7702928908327793, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp026-nsrr
+
+=== Test on chp028-nsrr. train_data(3928), test_data(51) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6022157999021667
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5832868535451743
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5616672777627804
+Starting epoch 4/10.
+Epoch finished! Loss: 0.49635035715693115
+Starting epoch 5/10.
+Epoch finished! Loss: 0.44661825640621233
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4150993837689867
+Starting epoch 7/10.
+Epoch finished! Loss: 0.40382810606032
+Starting epoch 8/10.
+Epoch finished! Loss: 0.38005297551197664
+Starting epoch 9/10.
+Epoch finished! Loss: 0.35299999361895784
+Starting epoch 10/10.
+Epoch finished! Loss: 0.34968784424875465
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9803921568627451
+pred: 0.8987243122914258, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp028-nsrr
+
+=== Test on chp029-nsrr. train_data(3927), test_data(52) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6008454793493967
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5663558042475155
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5022903694106
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4700570260839803
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42640067093378425
+Starting epoch 6/10.
+Epoch finished! Loss: 0.39918891158030956
+Starting epoch 7/10.
+Epoch finished! Loss: 0.37756205926060066
+Starting epoch 8/10.
+Epoch finished! Loss: 0.35401479502645683
+Starting epoch 9/10.
+Epoch finished! Loss: 0.33873183126276246
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3203466995144073
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.8269230769230769
+pred: 0.7672854610360585, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp029-nsrr
+
+=== Test on chp030-nsrr. train_data(3919), test_data(60) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5987718707841375
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5849348879836099
+Starting epoch 3/10.
+Epoch finished! Loss: 0.547971414406891
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4832256288860765
+Starting epoch 5/10.
+Epoch finished! Loss: 0.44723916648294004
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4078270879852802
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3729479165600084
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34604400567843785
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3130909969739597
+Starting epoch 10/10.
+Epoch finished! Loss: 0.30058647110067366
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.8564752588669459, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp030-nsrr
+
+=== Test on chp031-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6021182961305793
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5911705377606713
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5887465099519005
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5834339920583428
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5847115630702097
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5840270857573772
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5736526951421889
+Starting epoch 8/10.
+Epoch finished! Loss: 0.5075434319750995
+Starting epoch 9/10.
+Epoch finished! Loss: 0.47479486530076487
+Starting epoch 10/10.
+Epoch finished! Loss: 0.44554944853393397
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.43636363636363634
+pred: 0.4879577176137404, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 10mins of subject chp031-nsrr
+
+=== Test on chp032-nsrr. train_data(3926), test_data(53) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6039045571672673
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5591559689111856
+Starting epoch 3/10.
+Epoch finished! Loss: 0.49740589668556134
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4414288056444149
+Starting epoch 5/10.
+Epoch finished! Loss: 0.40798727327919737
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3819755388765919
+Starting epoch 7/10.
+Epoch finished! Loss: 0.36891321537598054
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34122232366733407
+Starting epoch 9/10.
+Epoch finished! Loss: 0.314097573391485
+Starting epoch 10/10.
+Epoch finished! Loss: 0.28988741944563023
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.5471698113207547
+pred: 0.5653588982685557, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp032-nsrr
+
+=== Test on chp033-nsrr. train_data(3929), test_data(50) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5990993257383911
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5888489532683577
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5775784593531672
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5403185284563473
+Starting epoch 5/10.
+Epoch finished! Loss: 0.49274360339100265
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4486055544444493
+Starting epoch 7/10.
+Epoch finished! Loss: 0.41365490409032424
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3896920904897305
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3671191020925738
+Starting epoch 10/10.
+Epoch finished! Loss: 0.37812615984252523
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.8422023010253906, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp033-nsrr
+
+=== Test on chp034-nsrr. train_data(3927), test_data(52) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5966875396516859
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5843543062480737
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5485312401944277
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4836557268792269
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4407820454133408
+Starting epoch 6/10.
+Epoch finished! Loss: 0.39296301615861606
+Starting epoch 7/10.
+Epoch finished! Loss: 0.38490915773626494
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3666738978187953
+Starting epoch 9/10.
+Epoch finished! Loss: 0.35001712326644635
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3274846861176953
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.36538461538461536
+pred: 0.4257577530180032, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 10mins of subject chp034-nsrr
+
+=== Test on chp036-nsrr. train_data(3916), test_data(63) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5954018561431514
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5923683976425844
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5698563361640476
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5148826855832659
+Starting epoch 5/10.
+Epoch finished! Loss: 0.47508428495405886
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4484975204976928
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4347227782087253
+Starting epoch 8/10.
+Epoch finished! Loss: 0.41552576556077697
+Starting epoch 9/10.
+Epoch finished! Loss: 0.37961223374699693
+Starting epoch 10/10.
+Epoch finished! Loss: 0.39132884076184327
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9841269841269841
+pred: 0.9699128842543042, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp036-nsrr
+
+=== Test on chp037-nsrr. train_data(3928), test_data(51) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6045913708073144
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5908923907471555
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5862806102983198
+Starting epoch 4/10.
+Epoch finished! Loss: 0.534535394411306
+Starting epoch 5/10.
+Epoch finished! Loss: 0.48284243959553386
+Starting epoch 6/10.
+Epoch finished! Loss: 0.44558954934532546
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4192578728709902
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4002173299692115
+Starting epoch 9/10.
+Epoch finished! Loss: 0.34640072763194235
+Starting epoch 10/10.
+Epoch finished! Loss: 0.33854829269100206
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9019607843137255
+pred: 0.7954734885225109, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp037-nsrr
+
+=== Test on chp038-nsrr. train_data(3928), test_data(51) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5988177620254609
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5914587051588662
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5726431883415397
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5455275322785791
+Starting epoch 5/10.
+Epoch finished! Loss: 0.49740090517669305
+Starting epoch 6/10.
+Epoch finished! Loss: 0.47521520056286637
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4447795570809014
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4380919539312623
+Starting epoch 9/10.
+Epoch finished! Loss: 0.40533382932142337
+Starting epoch 10/10.
+Epoch finished! Loss: 0.38762564248196324
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.978063097187117, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp038-nsrr
+
+=== Test on chp039-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.597121547261367
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5906888845243624
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5855409658837075
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5718857940210371
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5035520319123657
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4570493669990374
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4190812352474551
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3975574352341343
+Starting epoch 9/10.
+Epoch finished! Loss: 0.36610925967367935
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3657667653597131
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9113336823203347, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp039-nsrr
+
+=== Test on chp040-nsrr. train_data(3926), test_data(53) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5978542434773884
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5878610984631338
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5568881238221514
+Starting epoch 4/10.
+Epoch finished! Loss: 0.496181370690465
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46213538575993507
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4606823517503787
+Starting epoch 7/10.
+Epoch finished! Loss: 0.42440580515837184
+Starting epoch 8/10.
+Epoch finished! Loss: 0.39941125127429866
+Starting epoch 9/10.
+Epoch finished! Loss: 0.37964534884964934
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3406098584017279
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.961134764383424, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp040-nsrr
+
+=== Test on chp041-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5963889897173765
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5729483080153562
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4992058914610926
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4566348228527575
+Starting epoch 5/10.
+Epoch finished! Loss: 0.40553143548266013
+Starting epoch 6/10.
+Epoch finished! Loss: 0.400793598660705
+Starting epoch 7/10.
+Epoch finished! Loss: 0.37134313227950916
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34655091098072577
+Starting epoch 9/10.
+Epoch finished! Loss: 0.30317930404895116
+Starting epoch 10/10.
+Epoch finished! Loss: 0.28350337198460285
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9859527143565091, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp041-nsrr
+
+=== Test on chp042-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.600885442096968
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5870300047479722
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5886260331893454
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5860826705335355
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5856868954641479
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5842376545223654
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5826281526563118
+Starting epoch 8/10.
+Epoch finished! Loss: 0.5790932580676614
+Starting epoch 9/10.
+Epoch finished! Loss: 0.5823164843783086
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5833832610550583
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.6885783737356013, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp042-nsrr
+
+=== Test on chp043-nsrr. train_data(3919), test_data(60) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6019789159602826
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5514889607572799
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4837452288707504
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4470685049319816
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4235233182035139
+Starting epoch 6/10.
+Epoch finished! Loss: 0.38394151189747977
+Starting epoch 7/10.
+Epoch finished! Loss: 0.36767916451863314
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34679146595013416
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3353713208147327
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3175833202574564
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.8833333333333333
+pred: 0.7567784865697225, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp043-nsrr
+
+=== Test on chp044-nsrr. train_data(3927), test_data(52) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6015397192416142
+Starting epoch 2/10.
+Epoch finished! Loss: 0.576252783363571
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5512028066631482
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5116957209776251
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4693077424046945
+Starting epoch 6/10.
+Epoch finished! Loss: 0.41148350912393356
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3778137780954035
+Starting epoch 8/10.
+Epoch finished! Loss: 0.35656476246991325
+Starting epoch 9/10.
+Epoch finished! Loss: 0.33687529631187113
+Starting epoch 10/10.
+Epoch finished! Loss: 0.30977392080715116
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9675689167701281, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp044-nsrr
+
+=== Test on chp045-nsrr. train_data(3919), test_data(60) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5959810775792812
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5686301034124915
+Starting epoch 3/10.
+Epoch finished! Loss: 0.49343364588592364
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4593855226817338
+Starting epoch 5/10.
+Epoch finished! Loss: 0.41795583244632273
+Starting epoch 6/10.
+Epoch finished! Loss: 0.39085995678401664
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3446270749544549
+Starting epoch 8/10.
+Epoch finished! Loss: 0.33493103178413325
+Starting epoch 9/10.
+Epoch finished! Loss: 0.29938613215599524
+Starting epoch 10/10.
+Epoch finished! Loss: 0.29708190346160507
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9666666666666667
+pred: 0.8235888361930848, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp045-nsrr
+
+=== Test on chp046-nsrr. train_data(3925), test_data(54) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.597059348940241
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5852755324496907
+Starting epoch 3/10.
+Epoch finished! Loss: 0.586935019804811
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5876553430393034
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5531221218407154
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4933397355204334
+Starting epoch 7/10.
+Epoch finished! Loss: 0.4555653638909666
+Starting epoch 8/10.
+Epoch finished! Loss: 0.45598169754506374
+Starting epoch 9/10.
+Epoch finished! Loss: 0.42164869739540983
+Starting epoch 10/10.
+Epoch finished! Loss: 0.4031149052197532
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.8888888888888888
+pred: 0.7755926875052629, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp046-nsrr
+
+=== Test on chp047-nsrr. train_data(3935), test_data(44) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5998181797393406
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5875071381946253
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5859152798282584
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5478152123874683
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4779651700009523
+Starting epoch 6/10.
+Epoch finished! Loss: 0.43586376586184855
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3998478534832862
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3912083167042441
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3769777711983249
+Starting epoch 10/10.
+Epoch finished! Loss: 0.36759714554739364
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9647440761327744, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp047-nsrr
+
+=== Test on chp048-nsrr. train_data(3928), test_data(51) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5977113789745739
+Starting epoch 2/10.
+Epoch finished! Loss: 0.589617927881832
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5897038859524288
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5777430562112404
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5142629095638285
+Starting epoch 6/10.
+Epoch finished! Loss: 0.44496308856320627
+Starting epoch 7/10.
+Epoch finished! Loss: 0.39329567821506334
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3618104305802559
+Starting epoch 9/10.
+Epoch finished! Loss: 0.351831349962372
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3344510094243653
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.13725490196078433
+pred: 0.23930111856145017, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 10mins of subject chp048-nsrr
+
+=== Test on chp049-nsrr. train_data(3925), test_data(54) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5998963328192428
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5879185397025882
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5881823440443497
+Starting epoch 4/10.
+Epoch finished! Loss: 0.585982188506394
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5843367535544901
+Starting epoch 6/10.
+Epoch finished! Loss: 0.5849691438583695
+Starting epoch 7/10.
+Epoch finished! Loss: 0.5833438777041678
+Starting epoch 8/10.
+Epoch finished! Loss: 0.5843443646266753
+Starting epoch 9/10.
+Epoch finished! Loss: 0.5778778863272497
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5404767993913622
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9259259259259259
+pred: 0.7374659179606371, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp049-nsrr
+
+=== Test on chp051-nsrr. train_data(3925), test_data(54) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5971442671986867
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5522233659819681
+Starting epoch 3/10.
+Epoch finished! Loss: 0.488746260159782
+Starting epoch 4/10.
+Epoch finished! Loss: 0.45675279663837687
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4315448244843556
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3961745598638544
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3628254213503429
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34165205470077237
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3148951536823748
+Starting epoch 10/10.
+Epoch finished! Loss: 0.29798612525040397
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.825359210923866, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp051-nsrr
+
+=== Test on chp052-nsrr. train_data(3929), test_data(50) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5991183958035342
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5871341479372005
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5646627425615277
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5085316884654517
+Starting epoch 5/10.
+Epoch finished! Loss: 0.47562427864390977
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4569957739844614
+Starting epoch 7/10.
+Epoch finished! Loss: 0.41882695018180777
+Starting epoch 8/10.
+Epoch finished! Loss: 0.4006932195352048
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3864774073341063
+Starting epoch 10/10.
+Epoch finished! Loss: 0.36589040050321087
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9081458151340485, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp052-nsrr
+
+=== Test on chp053-nsrr. train_data(3925), test_data(54) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5814737325572238
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5133074188262833
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4784070376914983
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4425348622762427
+Starting epoch 5/10.
+Epoch finished! Loss: 0.41220345714946793
+Starting epoch 6/10.
+Epoch finished! Loss: 0.38589174283326283
+Starting epoch 7/10.
+Epoch finished! Loss: 0.37443182927233226
+Starting epoch 8/10.
+Epoch finished! Loss: 0.33888713082260624
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3235344468634956
+Starting epoch 10/10.
+Epoch finished! Loss: 0.2924983694446178
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.42592592592592593
+pred: 0.4785625169536582, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 10mins of subject chp053-nsrr
+
+=== Test on chp054-nsrr. train_data(3923), test_data(56) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5892347935207036
+Starting epoch 2/10.
+Epoch finished! Loss: 0.543031408888649
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4715385003281491
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4282291779028518
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4036253721700335
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3848811929703367
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3652680750784217
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34881401326203226
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3276431156056268
+Starting epoch 10/10.
+Epoch finished! Loss: 0.31920875593715786
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.8999378138354847, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp054-nsrr
+
+=== Test on chp055-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5849828788136341
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5099912638947064
+Starting epoch 3/10.
+Epoch finished! Loss: 0.47393291462592935
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4460496727985387
+Starting epoch 5/10.
+Epoch finished! Loss: 0.42569636914651005
+Starting epoch 6/10.
+Epoch finished! Loss: 0.38310448612485615
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3614730727383677
+Starting epoch 8/10.
+Epoch finished! Loss: 0.34478773254597067
+Starting epoch 9/10.
+Epoch finished! Loss: 0.31504692045059435
+Starting epoch 10/10.
+Epoch finished! Loss: 0.29034039667066264
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.01818181818181818
+pred: 0.22629736038771542, label: 1
+Wrong!!! Real Diagnosis: NT1
+Save 10mins of subject chp055-nsrr
+
+=== Test on chp056-nsrr. train_data(3924), test_data(55) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6000524731923123
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5825027464603891
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5701551761630238
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5079008914834383
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4668517072437977
+Starting epoch 6/10.
+Epoch finished! Loss: 0.4257994760207984
+Starting epoch 7/10.
+Epoch finished! Loss: 0.408405872822112
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3628138684838706
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3212787755669988
+Starting epoch 10/10.
+Epoch finished! Loss: 0.29640357363588954
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.6181818181818182
+pred: 0.6325736755674536, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp056-nsrr
+
+=== Test on chp057-nsrr. train_data(3920), test_data(59) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5959018335851562
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5935602781107968
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5831386292986858
+Starting epoch 4/10.
+Epoch finished! Loss: 0.5735613787570573
+Starting epoch 5/10.
+Epoch finished! Loss: 0.5335728085559347
+Starting epoch 6/10.
+Epoch finished! Loss: 0.48568141753868677
+Starting epoch 7/10.
+Epoch finished! Loss: 0.45360386935646274
+Starting epoch 8/10.
+Epoch finished! Loss: 0.42812246354797
+Starting epoch 9/10.
+Epoch finished! Loss: 0.455250006540657
+Starting epoch 10/10.
+Epoch finished! Loss: 0.40678559438042017
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9840400916034893, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp057-nsrr
+
+=== Test on chp058-nsrr. train_data(3928), test_data(51) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6005730446123955
+Starting epoch 2/10.
+Epoch finished! Loss: 0.58957590858395
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5411595864867678
+Starting epoch 4/10.
+Epoch finished! Loss: 0.49917418000345326
+Starting epoch 5/10.
+Epoch finished! Loss: 0.46116375771104073
+Starting epoch 6/10.
+Epoch finished! Loss: 0.433684518750833
+Starting epoch 7/10.
+Epoch finished! Loss: 0.38267277595492044
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3674874169257831
+Starting epoch 9/10.
+Epoch finished! Loss: 0.364456076650139
+Starting epoch 10/10.
+Epoch finished! Loss: 0.3515797954774937
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 0.9803921568627451
+pred: 0.8279803786792007, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp058-nsrr
+
+=== Test on chp059-nsrr. train_data(3923), test_data(56) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.6058444890136622
+Starting epoch 2/10.
+Epoch finished! Loss: 0.5337847607324318
+Starting epoch 3/10.
+Epoch finished! Loss: 0.4916171312940364
+Starting epoch 4/10.
+Epoch finished! Loss: 0.4698365802819632
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4338101042548613
+Starting epoch 6/10.
+Epoch finished! Loss: 0.39949215532337523
+Starting epoch 7/10.
+Epoch finished! Loss: 0.37884356075783776
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3654437882977785
+Starting epoch 9/10.
+Epoch finished! Loss: 0.3498945690463392
+Starting epoch 10/10.
+Epoch finished! Loss: 0.33303278103014644
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9161883911916188, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp059-nsrr
+
+=== Test on chp060-nsrr. train_data(3916), test_data(63) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 0.5813159709772491
+Starting epoch 2/10.
+Epoch finished! Loss: 0.526084989118759
+Starting epoch 3/10.
+Epoch finished! Loss: 0.5014518426964655
+Starting epoch 4/10.
+Epoch finished! Loss: 0.445703626555555
+Starting epoch 5/10.
+Epoch finished! Loss: 0.4039347276015355
+Starting epoch 6/10.
+Epoch finished! Loss: 0.3895085335844923
+Starting epoch 7/10.
+Epoch finished! Loss: 0.3791073508503492
+Starting epoch 8/10.
+Epoch finished! Loss: 0.3624232988756941
+Starting epoch 9/10.
+Epoch finished! Loss: 0.32386415836679966
+Starting epoch 10/10.
+Epoch finished! Loss: 0.31854279229746146
+Model saved !
+
+==== START TESTING ====
+Diagnosis acc on 10mins: 1.0
+pred: 0.9716098138264248, label: 1
+Right! Diagnosis: NT1
+Save 10mins of subject chp060-nsrr
+Diagnosis acc on patients: 0.8333333333333334
+
+====== all ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  83.33  69.57   89.09  72.73     71.11
+1  83.33  89.09   69.57  87.50     88.29
+Total accuracy: 83.33%
+Average sen: 79.33%
+Average spec: 79.33%
+Macro f1-score: 79.70%
+fpr: 0.0, tpr: 0.0, threshold: 1.9967592466961253, 
+fpr: 0.0, tpr: 0.01818181818181818, threshold: 0.9967592466961254, 
+fpr: 0.0, tpr: 0.2, threshold: 0.9674983409543833, 
+fpr: 0.043478260869565216, tpr: 0.2, threshold: 0.9666683729304824, 
+fpr: 0.043478260869565216, tpr: 0.21818181818181817, threshold: 0.9647440761327744, 
+fpr: 0.08695652173913043, tpr: 0.21818181818181817, threshold: 0.963069795108423, 
+fpr: 0.08695652173913043, tpr: 0.4909090909090909, threshold: 0.8564752588669459, 
+fpr: 0.13043478260869565, tpr: 0.4909090909090909, threshold: 0.8518811794726745, 
+fpr: 0.13043478260869565, tpr: 0.6909090909090909, threshold: 0.7672854610360585, 
+fpr: 0.17391304347826086, tpr: 0.6909090909090909, threshold: 0.763587663355081, 
+fpr: 0.17391304347826086, tpr: 0.8181818181818182, threshold: 0.7090039629685251, 
+fpr: 0.21739130434782608, tpr: 0.8181818181818182, threshold: 0.7058587145237696, 
+fpr: 0.21739130434782608, tpr: 0.8727272727272727, threshold: 0.6325736755674536, 
+fpr: 0.30434782608695654, tpr: 0.8727272727272727, threshold: 0.6037981275548326, 
+fpr: 0.30434782608695654, tpr: 0.9272727272727272, threshold: 0.4785625169536582, 
+fpr: 0.43478260869565216, tpr: 0.9272727272727272, threshold: 0.4286993701221808, 
+fpr: 0.43478260869565216, tpr: 0.9454545454545454, threshold: 0.4257577530180032, 
+fpr: 0.5217391304347826, tpr: 0.9454545454545454, threshold: 0.3802453222316365, 
+fpr: 0.5217391304347826, tpr: 0.9636363636363636, threshold: 0.35241506405174733, 
+fpr: 0.6956521739130435, tpr: 0.9636363636363636, threshold: 0.2660505920648575, 
+fpr: 0.6956521739130435, tpr: 0.9818181818181818, threshold: 0.23930111856145017, 
+fpr: 0.7391304347826086, tpr: 0.9818181818181818, threshold: 0.23734726839595371, 
+fpr: 0.7391304347826086, tpr: 1.0, threshold: 0.22629736038771542, 
+fpr: 1.0, tpr: 1.0, threshold: 0.04888995124542333, 
+
+=== best_threshold: 0.6325736755674536, best_fpr: 0.21739130434782608, best_tpr: 0.8727272727272727 ===
+fpr: 0.0, tpr: 0.0, threshold: 2.0, 
+fpr: 0.0, tpr: 0.0006800408024481469, threshold: 1.0, 
+fpr: 0.0, tpr: 0.0013600816048962938, threshold: 0.9999998807907104, 
+fpr: 0.0, tpr: 0.0017001020061203672, threshold: 0.9999997615814209, 
+fpr: 0.0, tpr: 0.0023801428085685142, threshold: 0.9999988079071045, 
+fpr: 0.0, tpr: 0.00986059163549813, threshold: 0.9999285936355591, 
+fpr: 0.0009633911368015414, tpr: 0.00986059163549813, threshold: 0.9999208450317383, 
+fpr: 0.0009633911368015414, tpr: 0.011900714042842571, threshold: 0.9998964071273804, 
+fpr: 0.0019267822736030828, tpr: 0.011900714042842571, threshold: 0.9998949766159058, 
+fpr: 0.0019267822736030828, tpr: 0.021081264875892555, threshold: 0.9997362494468689, 
+fpr: 0.002890173410404624, tpr: 0.021081264875892555, threshold: 0.9997243285179138, 
+fpr: 0.002890173410404624, tpr: 0.022441346480788847, threshold: 0.9996682405471802, 
+fpr: 0.0038535645472061657, tpr: 0.022441346480788847, threshold: 0.999649167060852, 
+fpr: 0.0038535645472061657, tpr: 0.025161509690581434, threshold: 0.999567449092865, 
+fpr: 0.004816955684007707, tpr: 0.025161509690581434, threshold: 0.9995667338371277, 
+fpr: 0.004816955684007707, tpr: 0.04012240734444067, threshold: 0.998958945274353, 
+fpr: 0.005780346820809248, tpr: 0.04012240734444067, threshold: 0.9989041090011597, 
+fpr: 0.005780346820809248, tpr: 0.04114246854811289, threshold: 0.9988691210746765, 
+fpr: 0.00674373795761079, tpr: 0.04114246854811289, threshold: 0.998817503452301, 
+fpr: 0.00674373795761079, tpr: 0.04454267256035362, threshold: 0.9986504912376404, 
+fpr: 0.007707129094412331, tpr: 0.04454267256035362, threshold: 0.9986284971237183, 
+fpr: 0.007707129094412331, tpr: 0.05134308058483509, threshold: 0.9984398484230042, 
+fpr: 0.008670520231213872, tpr: 0.05134308058483509, threshold: 0.9984136819839478, 
+fpr: 0.008670520231213872, tpr: 0.05746344780686841, threshold: 0.9981536269187927, 
+fpr: 0.009633911368015413, tpr: 0.05746344780686841, threshold: 0.9981396198272705, 
+fpr: 0.009633911368015413, tpr: 0.06120367222033322, threshold: 0.997920572757721, 
+fpr: 0.010597302504816955, tpr: 0.06120367222033322, threshold: 0.9979089498519897, 
+fpr: 0.010597302504816955, tpr: 0.06426385583134989, threshold: 0.9977911710739136, 
+fpr: 0.011560693641618497, tpr: 0.06426385583134989, threshold: 0.9977890253067017, 
+fpr: 0.011560693641618497, tpr: 0.06902414144848691, threshold: 0.9976394176483154, 
+fpr: 0.012524084778420038, tpr: 0.06902414144848691, threshold: 0.9976006150245667, 
+fpr: 0.012524084778420038, tpr: 0.07106426385583135, threshold: 0.9974451065063477, 
+fpr: 0.01348747591522158, tpr: 0.07106426385583135, threshold: 0.9973837733268738, 
+fpr: 0.01348747591522158, tpr: 0.07752465147908874, threshold: 0.9969758987426758, 
+fpr: 0.014450867052023121, tpr: 0.07752465147908874, threshold: 0.9969755411148071, 
+fpr: 0.014450867052023121, tpr: 0.08160489629377762, threshold: 0.9967064261436462, 
+fpr: 0.015414258188824663, tpr: 0.08160489629377762, threshold: 0.9966425895690918, 
+fpr: 0.015414258188824663, tpr: 0.08262495749744984, threshold: 0.9965991377830505, 
+fpr: 0.016377649325626204, tpr: 0.08262495749744984, threshold: 0.9965860843658447, 
+fpr: 0.016377649325626204, tpr: 0.0856851411084665, threshold: 0.9964034557342529, 
+fpr: 0.017341040462427744, tpr: 0.0856851411084665, threshold: 0.9964001178741455, 
+fpr: 0.017341040462427744, tpr: 0.08908534512070725, threshold: 0.9962129592895508, 
+fpr: 0.018304431599229287, tpr: 0.08908534512070725, threshold: 0.9961877465248108, 
+fpr: 0.018304431599229287, tpr: 0.09418565113906835, threshold: 0.9959567189216614, 
+fpr: 0.019267822736030827, tpr: 0.09418565113906835, threshold: 0.9959211349487305, 
+fpr: 0.019267822736030827, tpr: 0.10166609996599796, threshold: 0.9955869913101196, 
+fpr: 0.019267822736030827, tpr: 0.1023461407684461, threshold: 0.995583713054657, 
+fpr: 0.019267822736030827, tpr: 0.10404624277456648, threshold: 0.9955031275749207, 
+fpr: 0.02023121387283237, tpr: 0.10404624277456648, threshold: 0.9954966306686401, 
+fpr: 0.02023121387283237, tpr: 0.11696701802108127, threshold: 0.9947497248649597, 
+fpr: 0.02119460500963391, tpr: 0.11696701802108127, threshold: 0.9947466254234314, 
+fpr: 0.02119460500963391, tpr: 0.12988779326759606, threshold: 0.99396151304245, 
+fpr: 0.022157996146435453, tpr: 0.12988779326759606, threshold: 0.9939525723457336, 
+fpr: 0.022157996146435453, tpr: 0.13532811968718123, threshold: 0.9936447143554688, 
+fpr: 0.023121387283236993, tpr: 0.13532811968718123, threshold: 0.9936423301696777, 
+fpr: 0.023121387283236993, tpr: 0.1431485889153349, threshold: 0.9933528900146484, 
+fpr: 0.024084778420038536, tpr: 0.1431485889153349, threshold: 0.9933136105537415, 
+fpr: 0.024084778420038536, tpr: 0.15198911934716083, threshold: 0.9929106831550598, 
+fpr: 0.025048169556840076, tpr: 0.15198911934716083, threshold: 0.992892861366272, 
+fpr: 0.025048169556840076, tpr: 0.1587895273716423, threshold: 0.9923563003540039, 
+fpr: 0.02601156069364162, tpr: 0.1587895273716423, threshold: 0.9923410415649414, 
+fpr: 0.02601156069364162, tpr: 0.15980958857531452, threshold: 0.9922886490821838, 
+fpr: 0.02697495183044316, tpr: 0.15980958857531452, threshold: 0.9922858476638794, 
+fpr: 0.02697495183044316, tpr: 0.16354981298877933, threshold: 0.9921100735664368, 
+fpr: 0.027938342967244702, tpr: 0.16354981298877933, threshold: 0.9920933842658997, 
+fpr: 0.027938342967244702, tpr: 0.1866712002720163, threshold: 0.9900632500648499, 
+fpr: 0.028901734104046242, tpr: 0.1866712002720163, threshold: 0.9900543689727783, 
+fpr: 0.028901734104046242, tpr: 0.18871132267936075, threshold: 0.9898455142974854, 
+fpr: 0.029865125240847785, tpr: 0.18871132267936075, threshold: 0.9898344278335571, 
+fpr: 0.029865125240847785, tpr: 0.20197211832709963, threshold: 0.9886696338653564, 
+fpr: 0.030828516377649325, tpr: 0.20197211832709963, threshold: 0.9886401891708374, 
+fpr: 0.030828516377649325, tpr: 0.21047262835770147, threshold: 0.9876020550727844, 
+fpr: 0.031791907514450865, tpr: 0.21047262835770147, threshold: 0.9875687956809998, 
+fpr: 0.031791907514450865, tpr: 0.22645358721523293, threshold: 0.985620379447937, 
+fpr: 0.03275529865125241, tpr: 0.22645358721523293, threshold: 0.9856176972389221, 
+fpr: 0.03275529865125241, tpr: 0.2366541992519551, threshold: 0.9844660758972168, 
+fpr: 0.03371868978805395, tpr: 0.2366541992519551, threshold: 0.9844414591789246, 
+fpr: 0.03371868978805395, tpr: 0.23733424005440326, threshold: 0.9843957424163818, 
+fpr: 0.03468208092485549, tpr: 0.23733424005440326, threshold: 0.9843769073486328, 
+fpr: 0.03468208092485549, tpr: 0.2512750765045903, threshold: 0.9828236103057861, 
+fpr: 0.03564547206165703, tpr: 0.2512750765045903, threshold: 0.9827880263328552, 
+fpr: 0.03564547206165703, tpr: 0.25399523971438287, threshold: 0.9826518297195435, 
+fpr: 0.036608863198458574, tpr: 0.25399523971438287, threshold: 0.9826439023017883, 
+fpr: 0.036608863198458574, tpr: 0.2754165249914995, threshold: 0.9801939725875854, 
+fpr: 0.03757225433526012, tpr: 0.2754165249914995, threshold: 0.9801739454269409, 
+fpr: 0.03757225433526012, tpr: 0.2818769126147569, threshold: 0.9796205163002014, 
+fpr: 0.038535645472061654, tpr: 0.2818769126147569, threshold: 0.9795777201652527, 
+fpr: 0.038535645472061654, tpr: 0.28255695341720505, threshold: 0.9795276522636414, 
+fpr: 0.0394990366088632, tpr: 0.28255695341720505, threshold: 0.9795238375663757, 
+fpr: 0.0394990366088632, tpr: 0.30023801428085684, threshold: 0.9775771498680115, 
+fpr: 0.04046242774566474, tpr: 0.30023801428085684, threshold: 0.9775112867355347, 
+fpr: 0.04046242774566474, tpr: 0.3043182590955457, threshold: 0.9770684242248535, 
+fpr: 0.041425818882466284, tpr: 0.3043182590955457, threshold: 0.9770565629005432, 
+fpr: 0.041425818882466284, tpr: 0.3049982998979939, threshold: 0.9770172834396362, 
+fpr: 0.04238921001926782, tpr: 0.3049982998979939, threshold: 0.9769796133041382, 
+fpr: 0.04238921001926782, tpr: 0.3060183611016661, threshold: 0.9768655300140381, 
+fpr: 0.04335260115606936, tpr: 0.3060183611016661, threshold: 0.9767961502075195, 
+fpr: 0.04335260115606936, tpr: 0.30805848350901055, threshold: 0.9765242338180542, 
+fpr: 0.04431599229287091, tpr: 0.30805848350901055, threshold: 0.9764718413352966, 
+fpr: 0.04431599229287091, tpr: 0.3213192791567494, threshold: 0.9748022556304932, 
+fpr: 0.04527938342967245, tpr: 0.3213192791567494, threshold: 0.9747738242149353, 
+fpr: 0.04527938342967245, tpr: 0.3233594015640938, threshold: 0.9745526313781738, 
+fpr: 0.046242774566473986, tpr: 0.3233594015640938, threshold: 0.9744890332221985, 
+fpr: 0.046242774566473986, tpr: 0.32709962597755865, threshold: 0.9741360545158386, 
+fpr: 0.04720616570327553, tpr: 0.32709962597755865, threshold: 0.9741162657737732, 
+fpr: 0.04720616570327553, tpr: 0.3318599115946957, threshold: 0.9736219644546509, 
+fpr: 0.04816955684007707, tpr: 0.3318599115946957, threshold: 0.9735919237136841, 
+fpr: 0.04816955684007707, tpr: 0.3352601156069364, threshold: 0.9731682538986206, 
+fpr: 0.04816955684007707, tpr: 0.33594015640938457, threshold: 0.9731044769287109, 
+fpr: 0.04816955684007707, tpr: 0.33866031961917714, threshold: 0.9725943803787231, 
+fpr: 0.049132947976878616, tpr: 0.33866031961917714, threshold: 0.9725651741027832, 
+fpr: 0.049132947976878616, tpr: 0.3393403604216253, threshold: 0.9724979996681213, 
+fpr: 0.05009633911368015, tpr: 0.3393403604216253, threshold: 0.9724538922309875, 
+fpr: 0.05009633911368015, tpr: 0.3403604216252975, threshold: 0.9723052382469177, 
+fpr: 0.051059730250481696, tpr: 0.3403604216252975, threshold: 0.9722645282745361, 
+fpr: 0.051059730250481696, tpr: 0.3468208092485549, threshold: 0.9712093472480774, 
+fpr: 0.05202312138728324, tpr: 0.3468208092485549, threshold: 0.971155047416687, 
+fpr: 0.05202312138728324, tpr: 0.3634818089085345, threshold: 0.9691839814186096, 
+fpr: 0.052986512524084775, tpr: 0.3634818089085345, threshold: 0.9691002368927002, 
+fpr: 0.052986512524084775, tpr: 0.36858211492689563, threshold: 0.9681200385093689, 
+fpr: 0.05491329479768786, tpr: 0.36858211492689563, threshold: 0.9680564403533936, 
+fpr: 0.05491329479768786, tpr: 0.3767426045562734, threshold: 0.9669281244277954, 
+fpr: 0.055876685934489405, tpr: 0.3767426045562734, threshold: 0.9668800830841064, 
+fpr: 0.055876685934489405, tpr: 0.3801428085685141, threshold: 0.966013491153717, 
+fpr: 0.05684007707129094, tpr: 0.3801428085685141, threshold: 0.9660082459449768, 
+fpr: 0.05684007707129094, tpr: 0.38456307378442706, threshold: 0.964828610420227, 
+fpr: 0.057803468208092484, tpr: 0.38456307378442706, threshold: 0.9648172855377197, 
+fpr: 0.057803468208092484, tpr: 0.39102346140768446, threshold: 0.9633272886276245, 
+fpr: 0.05876685934489403, tpr: 0.39102346140768446, threshold: 0.9632260799407959, 
+fpr: 0.05876685934489403, tpr: 0.3998639918395104, threshold: 0.961451530456543, 
+fpr: 0.05973025048169557, tpr: 0.3998639918395104, threshold: 0.9613361954689026, 
+fpr: 0.05973025048169557, tpr: 0.40020401224073443, threshold: 0.961328387260437, 
+fpr: 0.06069364161849711, tpr: 0.40020401224073443, threshold: 0.9613232016563416, 
+fpr: 0.06069364161849711, tpr: 0.4032641958517511, threshold: 0.9605673551559448, 
+fpr: 0.06165703275529865, tpr: 0.4032641958517511, threshold: 0.9605461359024048, 
+fpr: 0.06165703275529865, tpr: 0.40360421625297516, threshold: 0.9605247974395752, 
+fpr: 0.0626204238921002, tpr: 0.40360421625297516, threshold: 0.9604303240776062, 
+fpr: 0.0626204238921002, tpr: 0.4042842570554233, threshold: 0.9603391885757446, 
+fpr: 0.06454720616570328, tpr: 0.4042842570554233, threshold: 0.9603148698806763, 
+fpr: 0.06454720616570328, tpr: 0.40496429785787147, threshold: 0.9602514505386353, 
+fpr: 0.06551059730250482, tpr: 0.40496429785787147, threshold: 0.9602414965629578, 
+fpr: 0.06551059730250482, tpr: 0.41142468548112887, threshold: 0.9583797454833984, 
+fpr: 0.06551059730250482, tpr: 0.412104726283577, threshold: 0.9583213925361633, 
+fpr: 0.06551059730250482, tpr: 0.4148248894933696, threshold: 0.9579053521156311, 
+fpr: 0.06647398843930635, tpr: 0.4148248894933696, threshold: 0.9578350186347961, 
+fpr: 0.06647398843930635, tpr: 0.4172050323019381, threshold: 0.9571917057037354, 
+fpr: 0.0674373795761079, tpr: 0.4172050323019381, threshold: 0.957088828086853, 
+fpr: 0.0674373795761079, tpr: 0.41754505270316217, threshold: 0.9570863246917725, 
+fpr: 0.06840077071290944, tpr: 0.41754505270316217, threshold: 0.9567013382911682, 
+fpr: 0.06840077071290944, tpr: 0.41856511390683443, threshold: 0.9566681981086731, 
+fpr: 0.06936416184971098, tpr: 0.41856511390683443, threshold: 0.9566673040390015, 
+fpr: 0.06936416184971098, tpr: 0.41924515470928253, threshold: 0.9564167857170105, 
+fpr: 0.07032755298651253, tpr: 0.41924515470928253, threshold: 0.956244945526123, 
+fpr: 0.07032755298651253, tpr: 0.42162529751785105, threshold: 0.9552484750747681, 
+fpr: 0.07129094412331406, tpr: 0.42162529751785105, threshold: 0.9551455974578857, 
+fpr: 0.07129094412331406, tpr: 0.4246854811288677, threshold: 0.9547537565231323, 
+fpr: 0.07225433526011561, tpr: 0.4246854811288677, threshold: 0.9546523094177246, 
+fpr: 0.07225433526011561, tpr: 0.4277456647398844, threshold: 0.9537888169288635, 
+fpr: 0.07321772639691715, tpr: 0.4277456647398844, threshold: 0.9535335898399353, 
+fpr: 0.07321772639691715, tpr: 0.43488609316558996, threshold: 0.9514143466949463, 
+fpr: 0.07418111753371869, tpr: 0.43488609316558996, threshold: 0.9513537287712097, 
+fpr: 0.07418111753371869, tpr: 0.43590615436926217, threshold: 0.9505446553230286, 
+fpr: 0.07514450867052024, tpr: 0.43590615436926217, threshold: 0.9504550695419312, 
+fpr: 0.07514450867052024, tpr: 0.43896633798027884, threshold: 0.9494341015815735, 
+fpr: 0.07610789980732177, tpr: 0.43896633798027884, threshold: 0.9494271874427795, 
+fpr: 0.07610789980732177, tpr: 0.43998639918395105, threshold: 0.9492428302764893, 
+fpr: 0.07707129094412331, tpr: 0.43998639918395105, threshold: 0.9491667151451111, 
+fpr: 0.07707129094412331, tpr: 0.4430465827949677, threshold: 0.9484972953796387, 
+fpr: 0.07803468208092486, tpr: 0.4430465827949677, threshold: 0.9484518766403198, 
+fpr: 0.07803468208092486, tpr: 0.45256715402924175, threshold: 0.9446308016777039, 
+fpr: 0.0789980732177264, tpr: 0.45256715402924175, threshold: 0.9445223212242126, 
+fpr: 0.0789980732177264, tpr: 0.45664739884393063, threshold: 0.9431140422821045, 
+fpr: 0.07996146435452794, tpr: 0.45664739884393063, threshold: 0.9430058002471924, 
+fpr: 0.07996146435452794, tpr: 0.4617477048622917, threshold: 0.9407522678375244, 
+fpr: 0.08092485549132948, tpr: 0.4617477048622917, threshold: 0.9402844905853271, 
+fpr: 0.08092485549132948, tpr: 0.46310778646718803, threshold: 0.9395073056221008, 
+fpr: 0.08188824662813102, tpr: 0.46310778646718803, threshold: 0.9391375780105591, 
+fpr: 0.08188824662813102, tpr: 0.46548792927575655, threshold: 0.938269317150116, 
+fpr: 0.08285163776493257, tpr: 0.46548792927575655, threshold: 0.9382632970809937, 
+fpr: 0.08285163776493257, tpr: 0.4671880312818769, threshold: 0.9376559853553772, 
+fpr: 0.0838150289017341, tpr: 0.4671880312818769, threshold: 0.9376541972160339, 
+fpr: 0.0838150289017341, tpr: 0.4753485209112547, threshold: 0.9347920417785645, 
+fpr: 0.08477842003853564, tpr: 0.4753485209112547, threshold: 0.9347246885299683, 
+fpr: 0.08477842003853564, tpr: 0.47602856171370284, threshold: 0.9339191317558289, 
+fpr: 0.08574181117533719, tpr: 0.47602856171370284, threshold: 0.9339029788970947, 
+fpr: 0.08574181117533719, tpr: 0.4763685821149269, threshold: 0.9338973760604858, 
+fpr: 0.08670520231213873, tpr: 0.4763685821149269, threshold: 0.9337425827980042, 
+fpr: 0.08670520231213873, tpr: 0.4841890513430806, threshold: 0.9303491115570068, 
+fpr: 0.08766859344894026, tpr: 0.4841890513430806, threshold: 0.9300143122673035, 
+fpr: 0.08766859344894026, tpr: 0.48452907174430465, threshold: 0.9298901557922363, 
+fpr: 0.08863198458574181, tpr: 0.48452907174430465, threshold: 0.9295568466186523, 
+fpr: 0.08863198458574181, tpr: 0.4852091125467528, threshold: 0.929404616355896, 
+fpr: 0.08959537572254335, tpr: 0.4852091125467528, threshold: 0.929340660572052, 
+fpr: 0.08959537572254335, tpr: 0.48894933696021764, threshold: 0.9278087019920349, 
+fpr: 0.0905587668593449, tpr: 0.48894933696021764, threshold: 0.9276303648948669, 
+fpr: 0.0905587668593449, tpr: 0.4903094185651139, threshold: 0.92674720287323, 
+fpr: 0.09152215799614644, tpr: 0.4903094185651139, threshold: 0.926306962966919, 
+fpr: 0.09152215799614644, tpr: 0.4937096225773546, threshold: 0.925027072429657, 
+fpr: 0.09248554913294797, tpr: 0.4937096225773546, threshold: 0.924957811832428, 
+fpr: 0.09248554913294797, tpr: 0.495409724583475, threshold: 0.9241876006126404, 
+fpr: 0.09344894026974952, tpr: 0.495409724583475, threshold: 0.9239924550056458, 
+fpr: 0.09344894026974952, tpr: 0.4957497449846991, threshold: 0.9238860607147217, 
+fpr: 0.09441233140655106, tpr: 0.4957497449846991, threshold: 0.9238499402999878, 
+fpr: 0.09441233140655106, tpr: 0.5022101326079564, threshold: 0.9213421940803528, 
+fpr: 0.0953757225433526, tpr: 0.5022101326079564, threshold: 0.9212671518325806, 
+fpr: 0.0953757225433526, tpr: 0.5025501530091806, threshold: 0.9211403727531433, 
+fpr: 0.09633911368015415, tpr: 0.5025501530091806, threshold: 0.9206044673919678, 
+fpr: 0.09633911368015415, tpr: 0.5066303978238694, threshold: 0.9194023013114929, 
+fpr: 0.09826589595375723, tpr: 0.5066303978238694, threshold: 0.9192777276039124, 
+fpr: 0.09826589595375723, tpr: 0.5073104386263175, threshold: 0.9190037846565247, 
+fpr: 0.10115606936416185, tpr: 0.5073104386263175, threshold: 0.9187628626823425, 
+fpr: 0.10115606936416185, tpr: 0.5076504590275417, threshold: 0.9185968637466431, 
+fpr: 0.10404624277456648, tpr: 0.5076504590275417, threshold: 0.9184901118278503, 
+fpr: 0.10404624277456648, tpr: 0.5079904794287657, threshold: 0.9183754920959473, 
+fpr: 0.1069364161849711, tpr: 0.5079904794287657, threshold: 0.9182637929916382, 
+fpr: 0.1069364161849711, tpr: 0.5083304998299898, threshold: 0.9180919528007507, 
+fpr: 0.10789980732177264, tpr: 0.5083304998299898, threshold: 0.918049156665802, 
+fpr: 0.10789980732177264, tpr: 0.509350561033662, threshold: 0.9178235530853271, 
+fpr: 0.10886319845857419, tpr: 0.509350561033662, threshold: 0.9177071452140808, 
+fpr: 0.10886319845857419, tpr: 0.5096905814348861, threshold: 0.9176893830299377, 
+fpr: 0.10982658959537572, tpr: 0.5096905814348861, threshold: 0.9175467491149902, 
+fpr: 0.10982658959537572, tpr: 0.5100306018361102, threshold: 0.9175371527671814, 
+fpr: 0.11078998073217726, tpr: 0.5100306018361102, threshold: 0.9174003601074219, 
+fpr: 0.11078998073217726, tpr: 0.5103706222373342, threshold: 0.917283296585083, 
+fpr: 0.11175337186897881, tpr: 0.5103706222373342, threshold: 0.9171096086502075, 
+fpr: 0.11175337186897881, tpr: 0.5107106426385584, threshold: 0.916694700717926, 
+fpr: 0.11464354527938343, tpr: 0.5107106426385584, threshold: 0.9161381721496582, 
+fpr: 0.11464354527938343, tpr: 0.5113906834410065, threshold: 0.9156194925308228, 
+fpr: 0.11657032755298652, tpr: 0.5113906834410065, threshold: 0.9155340194702148, 
+fpr: 0.11657032755298652, tpr: 0.5161509690581435, threshold: 0.9137278199195862, 
+fpr: 0.11753371868978806, tpr: 0.5161509690581435, threshold: 0.9136549830436707, 
+fpr: 0.11753371868978806, tpr: 0.5164909894593676, threshold: 0.9136005640029907, 
+fpr: 0.11849710982658959, tpr: 0.5164909894593676, threshold: 0.9135759472846985, 
+fpr: 0.11849710982658959, tpr: 0.5198911934716083, threshold: 0.9110327959060669, 
+fpr: 0.11946050096339114, tpr: 0.5198911934716083, threshold: 0.9108367562294006, 
+fpr: 0.11946050096339114, tpr: 0.5219313158789527, threshold: 0.9100345969200134, 
+fpr: 0.12138728323699421, tpr: 0.5219313158789527, threshold: 0.9095084071159363, 
+fpr: 0.12138728323699421, tpr: 0.5222713362801769, threshold: 0.9091785550117493, 
+fpr: 0.12235067437379576, tpr: 0.5222713362801769, threshold: 0.9091275334358215, 
+fpr: 0.12235067437379576, tpr: 0.5226113566814009, threshold: 0.9087859988212585, 
+fpr: 0.1233140655105973, tpr: 0.5226113566814009, threshold: 0.9087215065956116, 
+fpr: 0.1233140655105973, tpr: 0.5243114586875213, threshold: 0.9081088304519653, 
+fpr: 0.12427745664739884, tpr: 0.5243114586875213, threshold: 0.908074140548706, 
+fpr: 0.12427745664739884, tpr: 0.5270316218973138, threshold: 0.9059677124023438, 
+fpr: 0.1252408477842004, tpr: 0.5270316218973138, threshold: 0.9057388305664062, 
+fpr: 0.1252408477842004, tpr: 0.5294117647058824, threshold: 0.9043055772781372, 
+fpr: 0.12620423892100194, tpr: 0.5294117647058824, threshold: 0.9042243957519531, 
+fpr: 0.12620423892100194, tpr: 0.5297517851071064, threshold: 0.9040032625198364, 
+fpr: 0.12716763005780346, tpr: 0.5297517851071064, threshold: 0.903857946395874, 
+fpr: 0.12716763005780346, tpr: 0.5300918055083305, threshold: 0.9037580490112305, 
+fpr: 0.128131021194605, tpr: 0.5300918055083305, threshold: 0.9037216305732727, 
+fpr: 0.128131021194605, tpr: 0.5304318259095546, threshold: 0.9035494327545166, 
+fpr: 0.12909441233140656, tpr: 0.5304318259095546, threshold: 0.9033504724502563, 
+fpr: 0.12909441233140656, tpr: 0.5365521931315879, threshold: 0.9001790285110474, 
+fpr: 0.13005780346820808, tpr: 0.5365521931315879, threshold: 0.8998917937278748, 
+fpr: 0.13005780346820808, tpr: 0.5372322339340361, threshold: 0.8995451927185059, 
+fpr: 0.13005780346820808, tpr: 0.5385923155389324, threshold: 0.8983352780342102, 
+fpr: 0.13102119460500963, tpr: 0.5385923155389324, threshold: 0.8982325196266174, 
+fpr: 0.13102119460500963, tpr: 0.5389323359401564, threshold: 0.8979124426841736, 
+fpr: 0.13198458574181118, tpr: 0.5389323359401564, threshold: 0.8978955745697021, 
+fpr: 0.13198458574181118, tpr: 0.5453927235634138, threshold: 0.8929819464683533, 
+fpr: 0.1329479768786127, tpr: 0.5453927235634138, threshold: 0.8929683566093445, 
+fpr: 0.1329479768786127, tpr: 0.5467528051683102, threshold: 0.8923054337501526, 
+fpr: 0.13583815028901733, tpr: 0.5467528051683102, threshold: 0.8920385241508484, 
+fpr: 0.13583815028901733, tpr: 0.5477728663719823, threshold: 0.8919042944908142, 
+fpr: 0.13680154142581888, tpr: 0.5477728663719823, threshold: 0.8915209770202637, 
+fpr: 0.13680154142581888, tpr: 0.5481128867732064, threshold: 0.8912727236747742, 
+fpr: 0.13776493256262043, tpr: 0.5481128867732064, threshold: 0.8910155296325684, 
+fpr: 0.13776493256262043, tpr: 0.5515130907854471, threshold: 0.8889466524124146, 
+fpr: 0.13872832369942195, tpr: 0.5515130907854471, threshold: 0.8886032104492188, 
+fpr: 0.13872832369942195, tpr: 0.5518531111866712, threshold: 0.8884892463684082, 
+fpr: 0.1396917148362235, tpr: 0.5518531111866712, threshold: 0.8883267641067505, 
+fpr: 0.1396917148362235, tpr: 0.5596735804148248, threshold: 0.8840442299842834, 
+fpr: 0.14065510597302505, tpr: 0.5596735804148248, threshold: 0.8840060830116272, 
+fpr: 0.14065510597302505, tpr: 0.5654539272356341, threshold: 0.8808697462081909, 
+fpr: 0.1416184971098266, tpr: 0.5654539272356341, threshold: 0.8808419108390808, 
+fpr: 0.1416184971098266, tpr: 0.5712342740564433, threshold: 0.8775686621665955, 
+fpr: 0.14354527938342967, tpr: 0.5712342740564433, threshold: 0.8767229318618774, 
+fpr: 0.14354527938342967, tpr: 0.5793947636858211, threshold: 0.8723927736282349, 
+fpr: 0.14450867052023122, tpr: 0.5793947636858211, threshold: 0.8723781108856201, 
+fpr: 0.14450867052023122, tpr: 0.5851751105066304, threshold: 0.8685474991798401, 
+fpr: 0.14547206165703275, tpr: 0.5851751105066304, threshold: 0.8684932589530945, 
+fpr: 0.14547206165703275, tpr: 0.5872152329139748, threshold: 0.8673887848854065, 
+fpr: 0.1464354527938343, tpr: 0.5872152329139748, threshold: 0.8672118782997131, 
+fpr: 0.1464354527938343, tpr: 0.5909554573274396, threshold: 0.8658995628356934, 
+fpr: 0.14836223506743737, tpr: 0.5909554573274396, threshold: 0.865421712398529, 
+fpr: 0.14836223506743737, tpr: 0.5919755185311119, threshold: 0.864382266998291, 
+fpr: 0.14932562620423892, tpr: 0.5919755185311119, threshold: 0.864273726940155, 
+fpr: 0.14932562620423892, tpr: 0.5923155389323359, threshold: 0.8641507625579834, 
+fpr: 0.15028901734104047, tpr: 0.5923155389323359, threshold: 0.863857090473175, 
+fpr: 0.15028901734104047, tpr: 0.5929955797347841, threshold: 0.8633691668510437, 
+fpr: 0.151252408477842, tpr: 0.5929955797347841, threshold: 0.8632557988166809, 
+fpr: 0.151252408477842, tpr: 0.5933356001360082, threshold: 0.8629685044288635, 
+fpr: 0.1531791907514451, tpr: 0.5933356001360082, threshold: 0.8624373078346252, 
+fpr: 0.1531791907514451, tpr: 0.5940156409384563, threshold: 0.8622946739196777, 
+fpr: 0.15414258188824662, tpr: 0.5940156409384563, threshold: 0.8621371984481812, 
+fpr: 0.15414258188824662, tpr: 0.5957157429445766, threshold: 0.8609638810157776, 
+fpr: 0.15510597302504817, tpr: 0.5957157429445766, threshold: 0.8608387112617493, 
+fpr: 0.15510597302504817, tpr: 0.5960557633458008, threshold: 0.860518217086792, 
+fpr: 0.15606936416184972, tpr: 0.5960557633458008, threshold: 0.8599311113357544, 
+fpr: 0.15606936416184972, tpr: 0.5967358041482489, threshold: 0.8590042591094971, 
+fpr: 0.15703275529865124, tpr: 0.5967358041482489, threshold: 0.8580946326255798, 
+fpr: 0.15703275529865124, tpr: 0.5984359061543693, threshold: 0.8563298583030701, 
+fpr: 0.1579961464354528, tpr: 0.5984359061543693, threshold: 0.8561797738075256, 
+fpr: 0.1579961464354528, tpr: 0.5991159469568174, threshold: 0.8538861274719238, 
+fpr: 0.15895953757225434, tpr: 0.5991159469568174, threshold: 0.8538614511489868, 
+fpr: 0.15895953757225434, tpr: 0.6004760285617137, threshold: 0.8533557057380676, 
+fpr: 0.1628131021194605, tpr: 0.6004760285617137, threshold: 0.8522445559501648, 
+fpr: 0.1628131021194605, tpr: 0.6008160489629377, threshold: 0.85211580991745, 
+fpr: 0.16377649325626203, tpr: 0.6008160489629377, threshold: 0.8515530228614807, 
+fpr: 0.16377649325626203, tpr: 0.6011560693641619, threshold: 0.8512774705886841, 
+fpr: 0.16473988439306358, tpr: 0.6011560693641619, threshold: 0.8511550426483154, 
+fpr: 0.16473988439306358, tpr: 0.60183611016661, threshold: 0.850874125957489, 
+fpr: 0.16570327552986513, tpr: 0.60183611016661, threshold: 0.8506790399551392, 
+fpr: 0.16570327552986513, tpr: 0.6042162529751786, threshold: 0.849399209022522, 
+fpr: 0.16666666666666666, tpr: 0.6042162529751786, threshold: 0.8492553234100342, 
+fpr: 0.16666666666666666, tpr: 0.6055763345800748, threshold: 0.8477295637130737, 
+fpr: 0.1676300578034682, tpr: 0.6055763345800748, threshold: 0.8476616740226746, 
+fpr: 0.1676300578034682, tpr: 0.6069364161849711, threshold: 0.8458560109138489, 
+fpr: 0.16859344894026976, tpr: 0.6069364161849711, threshold: 0.8456768989562988, 
+fpr: 0.16859344894026976, tpr: 0.6099965997959877, threshold: 0.8430687189102173, 
+fpr: 0.17052023121387283, tpr: 0.6099965997959877, threshold: 0.8429162502288818, 
+fpr: 0.17052023121387283, tpr: 0.6116967018021081, threshold: 0.839368462562561, 
+fpr: 0.17148362235067438, tpr: 0.6116967018021081, threshold: 0.8393333554267883, 
+fpr: 0.17148362235067438, tpr: 0.6147568854131248, threshold: 0.8370451927185059, 
+fpr: 0.1724470134874759, tpr: 0.6147568854131248, threshold: 0.8369807600975037, 
+fpr: 0.1724470134874759, tpr: 0.6150969058143488, threshold: 0.8369516134262085, 
+fpr: 0.17341040462427745, tpr: 0.6150969058143488, threshold: 0.836715817451477, 
+fpr: 0.17341040462427745, tpr: 0.6154369262155729, threshold: 0.8365393280982971, 
+fpr: 0.17533718689788053, tpr: 0.6154369262155729, threshold: 0.836298942565918, 
+fpr: 0.17533718689788053, tpr: 0.6191771506290378, threshold: 0.83225417137146, 
+fpr: 0.17630057803468208, tpr: 0.6191771506290378, threshold: 0.8321595788002014, 
+fpr: 0.17630057803468208, tpr: 0.6229173750425026, threshold: 0.8279246687889099, 
+fpr: 0.17726396917148363, tpr: 0.6229173750425026, threshold: 0.8272085785865784, 
+fpr: 0.17726396917148363, tpr: 0.6242774566473989, threshold: 0.8259235620498657, 
+fpr: 0.17822736030828518, tpr: 0.6242774566473989, threshold: 0.8254776000976562, 
+fpr: 0.17822736030828518, tpr: 0.6283577014620877, threshold: 0.8237004280090332, 
+fpr: 0.1791907514450867, tpr: 0.6283577014620877, threshold: 0.8236987590789795, 
+fpr: 0.1791907514450867, tpr: 0.6324379462767766, threshold: 0.8230233788490295, 
+fpr: 0.1811175337186898, tpr: 0.6324379462767766, threshold: 0.822571337223053, 
+fpr: 0.1811175337186898, tpr: 0.634478068684121, threshold: 0.819993793964386, 
+fpr: 0.18208092485549132, tpr: 0.634478068684121, threshold: 0.8199450969696045, 
+fpr: 0.18208092485549132, tpr: 0.6361781706902414, threshold: 0.8193650841712952, 
+fpr: 0.18304431599229287, tpr: 0.6361781706902414, threshold: 0.8191620111465454, 
+fpr: 0.18304431599229287, tpr: 0.6392383543012581, threshold: 0.8175160884857178, 
+fpr: 0.18400770712909442, tpr: 0.6392383543012581, threshold: 0.8172767758369446, 
+fpr: 0.18400770712909442, tpr: 0.6399183951037062, threshold: 0.8167915940284729, 
+fpr: 0.18497109826589594, tpr: 0.6399183951037062, threshold: 0.8167786002159119, 
+fpr: 0.18497109826589594, tpr: 0.6450187011220673, threshold: 0.8123541474342346, 
+fpr: 0.1859344894026975, tpr: 0.6450187011220673, threshold: 0.8120847940444946, 
+fpr: 0.1859344894026975, tpr: 0.6460387623257395, threshold: 0.8105371594429016, 
+fpr: 0.18689788053949905, tpr: 0.6460387623257395, threshold: 0.810515284538269, 
+fpr: 0.18689788053949905, tpr: 0.6463787827269636, threshold: 0.8103969097137451, 
+fpr: 0.18786127167630057, tpr: 0.6463787827269636, threshold: 0.8103610277175903, 
+fpr: 0.18786127167630057, tpr: 0.6473988439306358, threshold: 0.8096886873245239, 
+fpr: 0.18978805394990367, tpr: 0.6473988439306358, threshold: 0.8091657757759094, 
+fpr: 0.18978805394990367, tpr: 0.6497789867392043, threshold: 0.8075613975524902, 
+fpr: 0.1907514450867052, tpr: 0.6497789867392043, threshold: 0.807405412197113, 
+fpr: 0.1907514450867052, tpr: 0.6518191091465488, threshold: 0.8058233261108398, 
+fpr: 0.19171483622350674, tpr: 0.6518191091465488, threshold: 0.8053737878799438, 
+fpr: 0.19171483622350674, tpr: 0.6524991499489969, threshold: 0.8049400448799133, 
+fpr: 0.1926782273603083, tpr: 0.6524991499489969, threshold: 0.8047797679901123, 
+fpr: 0.1926782273603083, tpr: 0.6535192111526692, threshold: 0.8039477467536926, 
+fpr: 0.1936416184971098, tpr: 0.6535192111526692, threshold: 0.803033173084259, 
+fpr: 0.1936416184971098, tpr: 0.6579394763685821, threshold: 0.7991581559181213, 
+fpr: 0.19460500963391136, tpr: 0.6579394763685821, threshold: 0.7990878224372864, 
+fpr: 0.19460500963391136, tpr: 0.6592995579734784, threshold: 0.7978532910346985, 
+fpr: 0.1955684007707129, tpr: 0.6592995579734784, threshold: 0.79742032289505, 
+fpr: 0.1955684007707129, tpr: 0.6599795987759266, threshold: 0.7972087264060974, 
+fpr: 0.19653179190751446, tpr: 0.6599795987759266, threshold: 0.7969251871109009, 
+fpr: 0.19653179190751446, tpr: 0.6637198231893914, threshold: 0.7914968132972717, 
+fpr: 0.197495183044316, tpr: 0.6637198231893914, threshold: 0.7910890579223633, 
+fpr: 0.197495183044316, tpr: 0.6647398843930635, threshold: 0.78989177942276, 
+fpr: 0.19845857418111754, tpr: 0.6647398843930635, threshold: 0.7896690964698792, 
+fpr: 0.19845857418111754, tpr: 0.6650799047942877, threshold: 0.7881196141242981, 
+fpr: 0.1994219653179191, tpr: 0.6650799047942877, threshold: 0.7879132032394409, 
+fpr: 0.1994219653179191, tpr: 0.6732403944236655, threshold: 0.7816941142082214, 
+fpr: 0.2003853564547206, tpr: 0.6732403944236655, threshold: 0.7815740704536438, 
+fpr: 0.2003853564547206, tpr: 0.6769806188371302, threshold: 0.7797343134880066, 
+fpr: 0.20134874759152216, tpr: 0.6769806188371302, threshold: 0.7793628573417664, 
+fpr: 0.20134874759152216, tpr: 0.6776606596395783, threshold: 0.7784020304679871, 
+fpr: 0.2023121387283237, tpr: 0.6776606596395783, threshold: 0.7782611846923828, 
+fpr: 0.2023121387283237, tpr: 0.6797007820469229, threshold: 0.7763983011245728, 
+fpr: 0.20423892100192678, tpr: 0.6797007820469229, threshold: 0.77582848072052, 
+fpr: 0.20423892100192678, tpr: 0.6885413124787487, threshold: 0.7702672481536865, 
+fpr: 0.20520231213872833, tpr: 0.6885413124787487, threshold: 0.7697323560714722, 
+fpr: 0.20520231213872833, tpr: 0.6905814348860931, threshold: 0.7690805792808533, 
+fpr: 0.20616570327552985, tpr: 0.6905814348860931, threshold: 0.7688446640968323, 
+fpr: 0.20616570327552985, tpr: 0.6933015980958858, threshold: 0.7662370204925537, 
+fpr: 0.20809248554913296, tpr: 0.6933015980958858, threshold: 0.7655470967292786, 
+fpr: 0.20809248554913296, tpr: 0.6939816388983339, threshold: 0.7646838426589966, 
+fpr: 0.20905587668593448, tpr: 0.6939816388983339, threshold: 0.7639657258987427, 
+fpr: 0.20905587668593448, tpr: 0.6973818429105746, threshold: 0.7593480944633484, 
+fpr: 0.21098265895953758, tpr: 0.6973818429105746, threshold: 0.7591008543968201, 
+fpr: 0.21098265895953758, tpr: 0.6977218633117988, threshold: 0.7588685154914856, 
+fpr: 0.2119460500963391, tpr: 0.6977218633117988, threshold: 0.7586616277694702, 
+fpr: 0.2119460500963391, tpr: 0.6984019041142469, threshold: 0.7578808069229126, 
+fpr: 0.21290944123314065, tpr: 0.6984019041142469, threshold: 0.7571430802345276, 
+fpr: 0.21290944123314065, tpr: 0.699081944916695, threshold: 0.7558413743972778, 
+fpr: 0.21483622350674375, tpr: 0.699081944916695, threshold: 0.7543005347251892, 
+fpr: 0.21483622350674375, tpr: 0.7001020061203672, threshold: 0.7532045841217041, 
+fpr: 0.21579961464354527, tpr: 0.7001020061203672, threshold: 0.752521812915802, 
+fpr: 0.21579961464354527, tpr: 0.7011220673240395, threshold: 0.7519185543060303, 
+fpr: 0.21676300578034682, tpr: 0.7011220673240395, threshold: 0.7510460615158081, 
+fpr: 0.21676300578034682, tpr: 0.7018021081264876, threshold: 0.7504944801330566, 
+fpr: 0.21772639691714837, tpr: 0.7018021081264876, threshold: 0.750164806842804, 
+fpr: 0.21772639691714837, tpr: 0.7031621897313839, threshold: 0.7487677931785583, 
+fpr: 0.2186897880539499, tpr: 0.7031621897313839, threshold: 0.7485891580581665, 
+fpr: 0.2186897880539499, tpr: 0.7055423325399524, threshold: 0.7457364201545715, 
+fpr: 0.21965317919075145, tpr: 0.7055423325399524, threshold: 0.7453373074531555, 
+fpr: 0.21965317919075145, tpr: 0.7058823529411765, threshold: 0.745169460773468, 
+fpr: 0.220616570327553, tpr: 0.7058823529411765, threshold: 0.7441226243972778, 
+fpr: 0.220616570327553, tpr: 0.7065623937436246, threshold: 0.7435230016708374, 
+fpr: 0.22254335260115607, tpr: 0.7065623937436246, threshold: 0.7433188557624817, 
+fpr: 0.22254335260115607, tpr: 0.7072424345460727, threshold: 0.7430936694145203, 
+fpr: 0.22447013487475914, tpr: 0.7072424345460727, threshold: 0.742555558681488, 
+fpr: 0.22447013487475914, tpr: 0.7092825569534172, threshold: 0.7415074110031128, 
+fpr: 0.2254335260115607, tpr: 0.7092825569534172, threshold: 0.7413000464439392, 
+fpr: 0.2254335260115607, tpr: 0.7103026181570894, threshold: 0.7401766180992126, 
+fpr: 0.22639691714836224, tpr: 0.7103026181570894, threshold: 0.7399458289146423, 
+fpr: 0.22639691714836224, tpr: 0.7109826589595376, threshold: 0.7391723394393921, 
+fpr: 0.22736030828516376, tpr: 0.7109826589595376, threshold: 0.7389314770698547, 
+fpr: 0.22736030828516376, tpr: 0.7113226793607617, threshold: 0.7386730909347534, 
+fpr: 0.22832369942196531, tpr: 0.7113226793607617, threshold: 0.7382541298866272, 
+fpr: 0.22832369942196531, tpr: 0.7116626997619857, threshold: 0.7381247282028198, 
+fpr: 0.22928709055876687, tpr: 0.7116626997619857, threshold: 0.7380520701408386, 
+fpr: 0.22928709055876687, tpr: 0.7157429445766746, threshold: 0.7336905598640442, 
+fpr: 0.2302504816955684, tpr: 0.7157429445766746, threshold: 0.7334309816360474, 
+fpr: 0.2302504816955684, tpr: 0.7167630057803468, threshold: 0.7330592274665833, 
+fpr: 0.2321772639691715, tpr: 0.7167630057803468, threshold: 0.7317637801170349, 
+fpr: 0.2321772639691715, tpr: 0.7286637198231893, threshold: 0.7199751734733582, 
+fpr: 0.23314065510597304, tpr: 0.7286637198231893, threshold: 0.7194104790687561, 
+fpr: 0.23314065510597304, tpr: 0.7293437606256375, threshold: 0.719241201877594, 
+fpr: 0.23410404624277456, tpr: 0.7293437606256375, threshold: 0.7189221382141113, 
+fpr: 0.23410404624277456, tpr: 0.7330839850391023, threshold: 0.7154004573822021, 
+fpr: 0.2350674373795761, tpr: 0.7330839850391023, threshold: 0.7153851985931396, 
+fpr: 0.2350674373795761, tpr: 0.7337640258415505, threshold: 0.7150503396987915, 
+fpr: 0.23603082851637766, tpr: 0.7337640258415505, threshold: 0.713901698589325, 
+fpr: 0.23603082851637766, tpr: 0.736484189051343, threshold: 0.7116608023643494, 
+fpr: 0.23699421965317918, tpr: 0.736484189051343, threshold: 0.71152263879776, 
+fpr: 0.23699421965317918, tpr: 0.7371642298537913, threshold: 0.7113556861877441, 
+fpr: 0.23795761078998073, tpr: 0.7371642298537913, threshold: 0.7111711502075195, 
+fpr: 0.23795761078998073, tpr: 0.7381842910574634, threshold: 0.710081160068512, 
+fpr: 0.23892100192678228, tpr: 0.7381842910574634, threshold: 0.7098666429519653, 
+fpr: 0.23892100192678228, tpr: 0.740564433866032, threshold: 0.7072955369949341, 
+fpr: 0.2398843930635838, tpr: 0.740564433866032, threshold: 0.7072699666023254, 
+fpr: 0.2398843930635838, tpr: 0.7412444746684801, threshold: 0.7057326436042786, 
+fpr: 0.24084778420038536, tpr: 0.7412444746684801, threshold: 0.705387532711029, 
+fpr: 0.24084778420038536, tpr: 0.7415844950697041, threshold: 0.705302894115448, 
+fpr: 0.2418111753371869, tpr: 0.7415844950697041, threshold: 0.7051264643669128, 
+fpr: 0.2418111753371869, tpr: 0.7460047602856171, threshold: 0.7027706503868103, 
+fpr: 0.2418111753371869, tpr: 0.7466848010880652, threshold: 0.7027671337127686, 
+fpr: 0.2418111753371869, tpr: 0.7517851071064264, threshold: 0.7027653455734253, 
+fpr: 0.2418111753371869, tpr: 0.7524651479088745, threshold: 0.7026874423027039, 
+fpr: 0.2418111753371869, tpr: 0.7538252295137708, threshold: 0.7026803493499756, 
+fpr: 0.2418111753371869, tpr: 0.7575654539272356, threshold: 0.7012801766395569, 
+fpr: 0.24277456647398843, tpr: 0.7575654539272356, threshold: 0.7012573480606079, 
+fpr: 0.24277456647398843, tpr: 0.7585855151309079, threshold: 0.7009317278862, 
+fpr: 0.24373795761078998, tpr: 0.7585855151309079, threshold: 0.7006849646568298, 
+fpr: 0.24373795761078998, tpr: 0.7589255355321319, threshold: 0.7005866169929504, 
+fpr: 0.24470134874759153, tpr: 0.7589255355321319, threshold: 0.7004508972167969, 
+fpr: 0.24470134874759153, tpr: 0.7599455967358042, threshold: 0.6992152333259583, 
+fpr: 0.24566473988439305, tpr: 0.7599455967358042, threshold: 0.6991597414016724, 
+fpr: 0.24566473988439305, tpr: 0.7613056783407004, threshold: 0.6981245279312134, 
+fpr: 0.2466281310211946, tpr: 0.7613056783407004, threshold: 0.697533130645752, 
+fpr: 0.2466281310211946, tpr: 0.7616456987419246, threshold: 0.696678102016449, 
+fpr: 0.24759152215799615, tpr: 0.7616456987419246, threshold: 0.6962264180183411, 
+fpr: 0.24759152215799615, tpr: 0.764025841550493, threshold: 0.6938387155532837, 
+fpr: 0.24855491329479767, tpr: 0.764025841550493, threshold: 0.693356454372406, 
+fpr: 0.24855491329479767, tpr: 0.7643658619517171, threshold: 0.6933287978172302, 
+fpr: 0.24951830443159922, tpr: 0.7643658619517171, threshold: 0.693016767501831, 
+fpr: 0.24951830443159922, tpr: 0.7647058823529411, threshold: 0.69251549243927, 
+fpr: 0.2514450867052023, tpr: 0.7647058823529411, threshold: 0.6917401552200317, 
+fpr: 0.2514450867052023, tpr: 0.7677660659639578, threshold: 0.6871863603591919, 
+fpr: 0.25337186897880537, tpr: 0.7677660659639578, threshold: 0.6857053637504578, 
+fpr: 0.25337186897880537, tpr: 0.7698061883713023, threshold: 0.6834412217140198, 
+fpr: 0.2543352601156069, tpr: 0.7698061883713023, threshold: 0.6831991076469421, 
+fpr: 0.2543352601156069, tpr: 0.7704862291737504, threshold: 0.6827357411384583, 
+fpr: 0.25529865125240847, tpr: 0.7704862291737504, threshold: 0.6823186874389648, 
+fpr: 0.25529865125240847, tpr: 0.7711662699761985, threshold: 0.6819822788238525, 
+fpr: 0.25626204238921, tpr: 0.7711662699761985, threshold: 0.6817467212677002, 
+fpr: 0.25626204238921, tpr: 0.7715062903774227, threshold: 0.681584894657135, 
+fpr: 0.2591522157996146, tpr: 0.7715062903774227, threshold: 0.681143045425415, 
+fpr: 0.2591522157996146, tpr: 0.7749064943896634, threshold: 0.6764293909072876, 
+fpr: 0.26011560693641617, tpr: 0.7749064943896634, threshold: 0.675067126750946, 
+fpr: 0.26011560693641617, tpr: 0.7769466167970078, threshold: 0.6732935905456543, 
+fpr: 0.2610789980732177, tpr: 0.7769466167970078, threshold: 0.6732584834098816, 
+fpr: 0.2610789980732177, tpr: 0.7796667800068005, threshold: 0.6701151728630066, 
+fpr: 0.2630057803468208, tpr: 0.7796667800068005, threshold: 0.6695862412452698, 
+fpr: 0.2630057803468208, tpr: 0.7800068004080245, threshold: 0.669573187828064, 
+fpr: 0.26396917148362237, tpr: 0.7800068004080245, threshold: 0.6694775819778442, 
+fpr: 0.26396917148362237, tpr: 0.7803468208092486, threshold: 0.6692498922348022, 
+fpr: 0.2649325626204239, tpr: 0.7803468208092486, threshold: 0.6687698364257812, 
+fpr: 0.2649325626204239, tpr: 0.7834070044202652, threshold: 0.6674647927284241, 
+fpr: 0.2658959537572254, tpr: 0.7834070044202652, threshold: 0.6670598387718201, 
+fpr: 0.2658959537572254, tpr: 0.7837470248214893, threshold: 0.6665689945220947, 
+fpr: 0.26685934489402696, tpr: 0.7837470248214893, threshold: 0.6664642095565796, 
+fpr: 0.26685934489402696, tpr: 0.7861271676300579, threshold: 0.6662075519561768, 
+fpr: 0.2678227360308285, tpr: 0.7861271676300579, threshold: 0.66619873046875, 
+fpr: 0.2678227360308285, tpr: 0.7864671880312819, threshold: 0.6661806106567383, 
+fpr: 0.2678227360308285, tpr: 0.7874872492349541, threshold: 0.6661794781684875, 
+fpr: 0.2678227360308285, tpr: 0.7878272696361782, threshold: 0.6661432385444641, 
+fpr: 0.2678227360308285, tpr: 0.791567494049643, threshold: 0.6661428809165955, 
+fpr: 0.2678227360308285, tpr: 0.7973478408704522, threshold: 0.6651232838630676, 
+fpr: 0.26878612716763006, tpr: 0.7973478408704522, threshold: 0.6651111245155334, 
+fpr: 0.26878612716763006, tpr: 0.7983679020741244, threshold: 0.6650552153587341, 
+fpr: 0.26878612716763006, tpr: 0.8014280856851411, threshold: 0.6646402478218079, 
+fpr: 0.26878612716763006, tpr: 0.8024481468888133, threshold: 0.6646400094032288, 
+fpr: 0.26878612716763006, tpr: 0.8027881672900374, threshold: 0.6645718216896057, 
+fpr: 0.26878612716763006, tpr: 0.8038082284937096, threshold: 0.6645708680152893, 
+fpr: 0.26878612716763006, tpr: 0.8068684121047263, threshold: 0.6621299982070923, 
+fpr: 0.2697495183044316, tpr: 0.8068684121047263, threshold: 0.662011981010437, 
+fpr: 0.2697495183044316, tpr: 0.8078884733083985, threshold: 0.6590959429740906, 
+fpr: 0.27071290944123316, tpr: 0.8078884733083985, threshold: 0.6590356230735779, 
+fpr: 0.27071290944123316, tpr: 0.8085685141108466, threshold: 0.6588526368141174, 
+fpr: 0.27167630057803466, tpr: 0.8085685141108466, threshold: 0.6587035655975342, 
+fpr: 0.27167630057803466, tpr: 0.8095885753145189, threshold: 0.6582627296447754, 
+fpr: 0.2726396917148362, tpr: 0.8095885753145189, threshold: 0.6577163934707642, 
+fpr: 0.2726396917148362, tpr: 0.8143488609316559, threshold: 0.6529443860054016, 
+fpr: 0.2745664739884393, tpr: 0.8143488609316559, threshold: 0.6523035764694214, 
+fpr: 0.2745664739884393, tpr: 0.815028901734104, threshold: 0.6519798040390015, 
+fpr: 0.27552986512524086, tpr: 0.815028901734104, threshold: 0.6519141793251038, 
+fpr: 0.27552986512524086, tpr: 0.8153689221353281, threshold: 0.650152325630188, 
+fpr: 0.2764932562620424, tpr: 0.8153689221353281, threshold: 0.6498461961746216, 
+fpr: 0.2764932562620424, tpr: 0.819109146548793, threshold: 0.6461864709854126, 
+fpr: 0.2774566473988439, tpr: 0.819109146548793, threshold: 0.6460043787956238, 
+fpr: 0.2774566473988439, tpr: 0.819449166950017, threshold: 0.6459428668022156, 
+fpr: 0.27842003853564545, tpr: 0.819449166950017, threshold: 0.6459090113639832, 
+fpr: 0.27842003853564545, tpr: 0.8208092485549133, threshold: 0.6447180509567261, 
+fpr: 0.279383429672447, tpr: 0.8208092485549133, threshold: 0.6441961526870728, 
+fpr: 0.279383429672447, tpr: 0.8211492689561374, threshold: 0.6441368460655212, 
+fpr: 0.28034682080924855, tpr: 0.8211492689561374, threshold: 0.6431511640548706, 
+fpr: 0.28034682080924855, tpr: 0.8221693301598096, threshold: 0.6423578858375549, 
+fpr: 0.2813102119460501, tpr: 0.8221693301598096, threshold: 0.6422613859176636, 
+fpr: 0.2813102119460501, tpr: 0.82386943216593, threshold: 0.6395868062973022, 
+fpr: 0.28227360308285165, tpr: 0.82386943216593, threshold: 0.6395779848098755, 
+fpr: 0.28227360308285165, tpr: 0.8248894933696022, threshold: 0.6384288668632507, 
+fpr: 0.2832369942196532, tpr: 0.8248894933696022, threshold: 0.6370103359222412, 
+fpr: 0.2832369942196532, tpr: 0.8255695341720504, threshold: 0.6364555358886719, 
+fpr: 0.2842003853564547, tpr: 0.8255695341720504, threshold: 0.6361674666404724, 
+fpr: 0.2842003853564547, tpr: 0.8265895953757225, threshold: 0.6343160271644592, 
+fpr: 0.28516377649325625, tpr: 0.8265895953757225, threshold: 0.634107232093811, 
+fpr: 0.28516377649325625, tpr: 0.8299897993879632, threshold: 0.6249856948852539, 
+fpr: 0.28709055876685935, tpr: 0.8299897993879632, threshold: 0.6245498657226562, 
+fpr: 0.28709055876685935, tpr: 0.8306698401904115, threshold: 0.6236244440078735, 
+fpr: 0.28901734104046245, tpr: 0.8306698401904115, threshold: 0.6223005056381226, 
+fpr: 0.28901734104046245, tpr: 0.8313498809928596, threshold: 0.6210132241249084, 
+fpr: 0.29190751445086704, tpr: 0.8313498809928596, threshold: 0.6203786730766296, 
+fpr: 0.29190751445086704, tpr: 0.8340700442026522, threshold: 0.6153066158294678, 
+fpr: 0.2928709055876686, tpr: 0.8340700442026522, threshold: 0.6150665283203125, 
+fpr: 0.2928709055876686, tpr: 0.8344100646038762, threshold: 0.614953875541687, 
+fpr: 0.29672447013487474, tpr: 0.8344100646038762, threshold: 0.6104936003684998, 
+fpr: 0.29672447013487474, tpr: 0.8350901054063243, threshold: 0.6099842190742493, 
+fpr: 0.2976878612716763, tpr: 0.8350901054063243, threshold: 0.6099162101745605, 
+fpr: 0.2976878612716763, tpr: 0.8354301258075485, threshold: 0.609851062297821, 
+fpr: 0.29865125240847784, tpr: 0.8354301258075485, threshold: 0.6098013520240784, 
+fpr: 0.29865125240847784, tpr: 0.8361101666099966, threshold: 0.609407901763916, 
+fpr: 0.2996146435452794, tpr: 0.8361101666099966, threshold: 0.6079124212265015, 
+fpr: 0.2996146435452794, tpr: 0.8367902074124447, threshold: 0.6070466637611389, 
+fpr: 0.30057803468208094, tpr: 0.8367902074124447, threshold: 0.6067599654197693, 
+fpr: 0.30057803468208094, tpr: 0.8374702482148929, threshold: 0.6059305667877197, 
+fpr: 0.3015414258188825, tpr: 0.8374702482148929, threshold: 0.6057556867599487, 
+fpr: 0.3015414258188825, tpr: 0.838150289017341, threshold: 0.6054605841636658, 
+fpr: 0.302504816955684, tpr: 0.838150289017341, threshold: 0.6050366163253784, 
+fpr: 0.302504816955684, tpr: 0.8391703502210133, threshold: 0.6037420630455017, 
+fpr: 0.30346820809248554, tpr: 0.8391703502210133, threshold: 0.6036596894264221, 
+fpr: 0.30346820809248554, tpr: 0.8412104726283577, threshold: 0.6018058657646179, 
+fpr: 0.3044315992292871, tpr: 0.8412104726283577, threshold: 0.6017121076583862, 
+fpr: 0.3044315992292871, tpr: 0.8418905134308059, threshold: 0.6006255149841309, 
+fpr: 0.30539499036608864, tpr: 0.8418905134308059, threshold: 0.6003543138504028, 
+fpr: 0.30539499036608864, tpr: 0.8435906154369263, threshold: 0.5961211323738098, 
+fpr: 0.3063583815028902, tpr: 0.8435906154369263, threshold: 0.5959961414337158, 
+fpr: 0.3063583815028902, tpr: 0.8476708602516151, threshold: 0.5920534729957581, 
+fpr: 0.30828516377649323, tpr: 0.8476708602516151, threshold: 0.5902467370033264, 
+fpr: 0.30828516377649323, tpr: 0.8514110846650799, threshold: 0.587850034236908, 
+fpr: 0.3092485549132948, tpr: 0.8514110846650799, threshold: 0.5874425172805786, 
+fpr: 0.3092485549132948, tpr: 0.8524311458687521, threshold: 0.5863015651702881, 
+fpr: 0.31021194605009633, tpr: 0.8524311458687521, threshold: 0.5854755640029907, 
+fpr: 0.31021194605009633, tpr: 0.8554913294797688, threshold: 0.5823832154273987, 
+fpr: 0.3111753371868979, tpr: 0.8554913294797688, threshold: 0.581156313419342, 
+fpr: 0.3111753371868979, tpr: 0.8568514110846651, threshold: 0.579434335231781, 
+fpr: 0.31213872832369943, tpr: 0.8568514110846651, threshold: 0.5779066681861877, 
+fpr: 0.31213872832369943, tpr: 0.8575314518871132, threshold: 0.5775530934333801, 
+fpr: 0.313102119460501, tpr: 0.8575314518871132, threshold: 0.5774985551834106, 
+fpr: 0.313102119460501, tpr: 0.8582114926895614, threshold: 0.5764486789703369, 
+fpr: 0.3140655105973025, tpr: 0.8582114926895614, threshold: 0.5752480030059814, 
+fpr: 0.3140655105973025, tpr: 0.8588915334920095, threshold: 0.5741517543792725, 
+fpr: 0.31695568400770713, tpr: 0.8588915334920095, threshold: 0.5693591833114624, 
+fpr: 0.31695568400770713, tpr: 0.8599115946956818, threshold: 0.5678726434707642, 
+fpr: 0.3179190751445087, tpr: 0.8599115946956818, threshold: 0.566907525062561, 
+fpr: 0.3179190751445087, tpr: 0.861271676300578, threshold: 0.5655891299247742, 
+fpr: 0.31888246628131023, tpr: 0.861271676300578, threshold: 0.5655362606048584, 
+fpr: 0.31888246628131023, tpr: 0.8629717783066984, threshold: 0.5624014735221863, 
+fpr: 0.3198458574181118, tpr: 0.8629717783066984, threshold: 0.5623245239257812, 
+fpr: 0.3198458574181118, tpr: 0.8646718803128187, threshold: 0.5596491694450378, 
+fpr: 0.3208092485549133, tpr: 0.8646718803128187, threshold: 0.5590495467185974, 
+fpr: 0.3208092485549133, tpr: 0.8650119007140429, threshold: 0.5584620237350464, 
+fpr: 0.3217726396917148, tpr: 0.8650119007140429, threshold: 0.55643630027771, 
+fpr: 0.3217726396917148, tpr: 0.865691941516491, threshold: 0.556291401386261, 
+fpr: 0.3227360308285164, tpr: 0.865691941516491, threshold: 0.5550758838653564, 
+fpr: 0.3227360308285164, tpr: 0.866031961917715, threshold: 0.553187906742096, 
+fpr: 0.3246628131021195, tpr: 0.866031961917715, threshold: 0.5513945817947388, 
+fpr: 0.3246628131021195, tpr: 0.8663719823189391, threshold: 0.5510812997817993, 
+fpr: 0.32755298651252407, tpr: 0.8663719823189391, threshold: 0.5490543842315674, 
+fpr: 0.32755298651252407, tpr: 0.8667120027201632, threshold: 0.5474515557289124, 
+fpr: 0.3285163776493256, tpr: 0.8667120027201632, threshold: 0.5468749403953552, 
+fpr: 0.3285163776493256, tpr: 0.8677320639238354, threshold: 0.545487105846405, 
+fpr: 0.3304431599229287, tpr: 0.8677320639238354, threshold: 0.5436222553253174, 
+fpr: 0.3304431599229287, tpr: 0.8680720843250596, threshold: 0.5429840683937073, 
+fpr: 0.33140655105973027, tpr: 0.8680720843250596, threshold: 0.5418345332145691, 
+fpr: 0.33140655105973027, tpr: 0.8687521251275077, threshold: 0.5395487546920776, 
+fpr: 0.33236994219653176, tpr: 0.8687521251275077, threshold: 0.5394384264945984, 
+fpr: 0.33236994219653176, tpr: 0.8697721863311799, threshold: 0.5369019508361816, 
+fpr: 0.33429672447013487, tpr: 0.8697721863311799, threshold: 0.5357189178466797, 
+fpr: 0.33429672447013487, tpr: 0.870112206732404, threshold: 0.5343393087387085, 
+fpr: 0.3352601156069364, tpr: 0.870112206732404, threshold: 0.5339993834495544, 
+fpr: 0.3352601156069364, tpr: 0.8711322679360761, threshold: 0.5305634140968323, 
+fpr: 0.33622350674373797, tpr: 0.8711322679360761, threshold: 0.530360221862793, 
+fpr: 0.33622350674373797, tpr: 0.8714722883373003, threshold: 0.5303292870521545, 
+fpr: 0.3371868978805395, tpr: 0.8714722883373003, threshold: 0.5283238887786865, 
+fpr: 0.3371868978805395, tpr: 0.8718123087385243, threshold: 0.5280566811561584, 
+fpr: 0.33815028901734107, tpr: 0.8718123087385243, threshold: 0.5271680951118469, 
+fpr: 0.33815028901734107, tpr: 0.8741924515470928, threshold: 0.5204522609710693, 
+fpr: 0.34104046242774566, tpr: 0.8741924515470928, threshold: 0.5166943669319153, 
+fpr: 0.34104046242774566, tpr: 0.8762325739544373, threshold: 0.5142812728881836, 
+fpr: 0.3420038535645472, tpr: 0.8762325739544373, threshold: 0.5125039219856262, 
+fpr: 0.3420038535645472, tpr: 0.8765725943556614, threshold: 0.5111066102981567, 
+fpr: 0.34296724470134876, tpr: 0.8765725943556614, threshold: 0.5111013650894165, 
+fpr: 0.34296724470134876, tpr: 0.8772526351581095, threshold: 0.5082690715789795, 
+fpr: 0.3448940269749518, tpr: 0.8772526351581095, threshold: 0.506861686706543, 
+fpr: 0.3448940269749518, tpr: 0.8775926555593335, threshold: 0.5067012906074524, 
+fpr: 0.34778420038535646, tpr: 0.8775926555593335, threshold: 0.5025127530097961, 
+fpr: 0.34778420038535646, tpr: 0.8779326759605577, threshold: 0.502472996711731, 
+fpr: 0.34971098265895956, tpr: 0.8779326759605577, threshold: 0.4994625747203827, 
+fpr: 0.34971098265895956, tpr: 0.8782726963617817, threshold: 0.4991700053215027, 
+fpr: 0.35260115606936415, tpr: 0.8782726963617817, threshold: 0.4936510920524597, 
+fpr: 0.35260115606936415, tpr: 0.8789527371642298, threshold: 0.49171310663223267, 
+fpr: 0.3535645472061657, tpr: 0.8789527371642298, threshold: 0.4903603494167328, 
+fpr: 0.3535645472061657, tpr: 0.8792927575654539, threshold: 0.48905056715011597, 
+fpr: 0.35452793834296725, tpr: 0.8792927575654539, threshold: 0.4882650375366211, 
+fpr: 0.35452793834296725, tpr: 0.8799727983679021, threshold: 0.4873168468475342, 
+fpr: 0.35645472061657035, tpr: 0.8799727983679021, threshold: 0.48597821593284607, 
+fpr: 0.35645472061657035, tpr: 0.8803128187691261, threshold: 0.48594802618026733, 
+fpr: 0.35741811175337185, tpr: 0.8803128187691261, threshold: 0.48521071672439575, 
+fpr: 0.35741811175337185, tpr: 0.8806528391703502, threshold: 0.4841494560241699, 
+fpr: 0.3583815028901734, tpr: 0.8806528391703502, threshold: 0.4824191927909851, 
+fpr: 0.3583815028901734, tpr: 0.8809928595715742, threshold: 0.4822814166545868, 
+fpr: 0.3631984585741811, tpr: 0.8809928595715742, threshold: 0.4762876033782959, 
+fpr: 0.3631984585741811, tpr: 0.8813328799727984, threshold: 0.4761178493499756, 
+fpr: 0.36416184971098264, tpr: 0.8813328799727984, threshold: 0.47360995411872864, 
+fpr: 0.36416184971098264, tpr: 0.8820129207752465, threshold: 0.46992695331573486, 
+fpr: 0.3670520231213873, tpr: 0.8820129207752465, threshold: 0.4680216312408447, 
+fpr: 0.3670520231213873, tpr: 0.8826929615776946, threshold: 0.46659722924232483, 
+fpr: 0.36801541425818884, tpr: 0.8826929615776946, threshold: 0.4664405286312103, 
+fpr: 0.36801541425818884, tpr: 0.8833730023801428, threshold: 0.46588557958602905, 
+fpr: 0.36897880539499034, tpr: 0.8833730023801428, threshold: 0.4656623899936676, 
+fpr: 0.36897880539499034, tpr: 0.8837130227813669, threshold: 0.46371427178382874, 
+fpr: 0.3699421965317919, tpr: 0.8837130227813669, threshold: 0.4626702070236206, 
+fpr: 0.3699421965317919, tpr: 0.8847330839850391, threshold: 0.4574556350708008, 
+fpr: 0.3737957610789981, tpr: 0.8847330839850391, threshold: 0.4558294713497162, 
+fpr: 0.3737957610789981, tpr: 0.8850731043862632, threshold: 0.4553258419036865, 
+fpr: 0.37475915221579964, tpr: 0.8850731043862632, threshold: 0.45362138748168945, 
+fpr: 0.37475915221579964, tpr: 0.8854131247874872, threshold: 0.4534751772880554, 
+fpr: 0.37764932562620424, tpr: 0.8854131247874872, threshold: 0.45085519552230835, 
+fpr: 0.37764932562620424, tpr: 0.8857531451887113, threshold: 0.4506591856479645, 
+fpr: 0.3786127167630058, tpr: 0.8857531451887113, threshold: 0.45009908080101013, 
+fpr: 0.3786127167630058, tpr: 0.8864331859911595, threshold: 0.44960784912109375, 
+fpr: 0.37957610789980734, tpr: 0.8864331859911595, threshold: 0.44955363869667053, 
+fpr: 0.37957610789980734, tpr: 0.8867732063923836, threshold: 0.447700172662735, 
+fpr: 0.38246628131021193, tpr: 0.8867732063923836, threshold: 0.44321560859680176, 
+fpr: 0.38246628131021193, tpr: 0.8874532471948317, threshold: 0.4430496096611023, 
+fpr: 0.38631984585741813, tpr: 0.8874532471948317, threshold: 0.44280654191970825, 
+fpr: 0.38631984585741813, tpr: 0.8881332879972799, threshold: 0.44054150581359863, 
+fpr: 0.3872832369942196, tpr: 0.8881332879972799, threshold: 0.44031330943107605, 
+fpr: 0.3872832369942196, tpr: 0.8884733083985039, threshold: 0.4382670223712921, 
+fpr: 0.3892100192678227, tpr: 0.8884733083985039, threshold: 0.4364286959171295, 
+fpr: 0.3892100192678227, tpr: 0.8905134308058483, threshold: 0.43450313806533813, 
+fpr: 0.3901734104046243, tpr: 0.8905134308058483, threshold: 0.43446093797683716, 
+fpr: 0.3901734104046243, tpr: 0.8908534512070724, threshold: 0.43415552377700806, 
+fpr: 0.3911368015414258, tpr: 0.8908534512070724, threshold: 0.43230006098747253, 
+fpr: 0.3911368015414258, tpr: 0.8911934716082965, threshold: 0.43227434158325195, 
+fpr: 0.3921001926782274, tpr: 0.8911934716082965, threshold: 0.43220189213752747, 
+fpr: 0.3921001926782274, tpr: 0.8915334920095206, threshold: 0.43015798926353455, 
+fpr: 0.3930635838150289, tpr: 0.8915334920095206, threshold: 0.4294086694717407, 
+fpr: 0.3930635838150289, tpr: 0.8922135328119687, threshold: 0.4288659691810608, 
+fpr: 0.3959537572254335, tpr: 0.8922135328119687, threshold: 0.4277271032333374, 
+fpr: 0.3959537572254335, tpr: 0.8928935736144169, threshold: 0.42699259519577026, 
+fpr: 0.3969171483622351, tpr: 0.8928935736144169, threshold: 0.42496252059936523, 
+fpr: 0.3969171483622351, tpr: 0.893913634818089, threshold: 0.4235052466392517, 
+fpr: 0.3978805394990366, tpr: 0.893913634818089, threshold: 0.4223403334617615, 
+fpr: 0.3978805394990366, tpr: 0.8942536552193131, threshold: 0.4212370812892914, 
+fpr: 0.40173410404624277, tpr: 0.8942536552193131, threshold: 0.4203249216079712, 
+fpr: 0.40173410404624277, tpr: 0.8952737164229854, threshold: 0.41806408762931824, 
+fpr: 0.4026974951830443, tpr: 0.8952737164229854, threshold: 0.41757532954216003, 
+fpr: 0.4026974951830443, tpr: 0.8962937776266576, threshold: 0.41655871272087097, 
+fpr: 0.40366088631984587, tpr: 0.8962937776266576, threshold: 0.4157920479774475, 
+fpr: 0.40366088631984587, tpr: 0.8973138388303298, threshold: 0.41473445296287537, 
+fpr: 0.4046242774566474, tpr: 0.8973138388303298, threshold: 0.4145309627056122, 
+fpr: 0.4046242774566474, tpr: 0.8976538592315539, threshold: 0.41385552287101746, 
+fpr: 0.4055876685934489, tpr: 0.8976538592315539, threshold: 0.41197237372398376, 
+fpr: 0.4055876685934489, tpr: 0.897993879632778, threshold: 0.4118387997150421, 
+fpr: 0.40655105973025046, tpr: 0.897993879632778, threshold: 0.41158631443977356, 
+fpr: 0.40655105973025046, tpr: 0.898333900034002, threshold: 0.4109523296356201, 
+fpr: 0.4123314065510597, tpr: 0.898333900034002, threshold: 0.40939193964004517, 
+fpr: 0.4123314065510597, tpr: 0.8993539612376743, threshold: 0.4082498550415039, 
+fpr: 0.4161849710982659, tpr: 0.8993539612376743, threshold: 0.40775105357170105, 
+fpr: 0.4161849710982659, tpr: 0.8996939816388984, threshold: 0.40744245052337646, 
+fpr: 0.41714836223506746, tpr: 0.8996939816388984, threshold: 0.4074133336544037, 
+fpr: 0.41714836223506746, tpr: 0.9007140428425705, threshold: 0.40590593218803406, 
+fpr: 0.41811175337186895, tpr: 0.9007140428425705, threshold: 0.4057779908180237, 
+fpr: 0.41811175337186895, tpr: 0.9017341040462428, threshold: 0.4039853811264038, 
+fpr: 0.4238921001926782, tpr: 0.9017341040462428, threshold: 0.4022376835346222, 
+fpr: 0.4238921001926782, tpr: 0.9020741244474668, threshold: 0.40139323472976685, 
+fpr: 0.4296724470134875, tpr: 0.9020741244474668, threshold: 0.3962846100330353, 
+fpr: 0.4296724470134875, tpr: 0.9037742264535872, threshold: 0.39333632588386536, 
+fpr: 0.430635838150289, tpr: 0.9037742264535872, threshold: 0.39308929443359375, 
+fpr: 0.430635838150289, tpr: 0.9041142468548113, threshold: 0.39273685216903687, 
+fpr: 0.4344894026974952, tpr: 0.9041142468548113, threshold: 0.39181089401245117, 
+fpr: 0.4344894026974952, tpr: 0.9044542672560354, threshold: 0.39118802547454834, 
+fpr: 0.44026974951830444, tpr: 0.9044542672560354, threshold: 0.3889399468898773, 
+fpr: 0.44026974951830444, tpr: 0.9064943896633798, threshold: 0.3864181637763977, 
+fpr: 0.4421965317919075, tpr: 0.9064943896633798, threshold: 0.38541293144226074, 
+fpr: 0.4421965317919075, tpr: 0.9068344100646039, threshold: 0.38532909750938416, 
+fpr: 0.4441233140655106, tpr: 0.9068344100646039, threshold: 0.3834679424762726, 
+fpr: 0.4441233140655106, tpr: 0.9075144508670521, threshold: 0.38298699259757996, 
+fpr: 0.4479768786127168, tpr: 0.9075144508670521, threshold: 0.381093293428421, 
+fpr: 0.4479768786127168, tpr: 0.9085345120707242, threshold: 0.3791988790035248, 
+fpr: 0.4489402697495183, tpr: 0.9085345120707242, threshold: 0.37902960181236267, 
+fpr: 0.4489402697495183, tpr: 0.9088745324719483, threshold: 0.3787350654602051, 
+fpr: 0.4508670520231214, tpr: 0.9088745324719483, threshold: 0.3784295320510864, 
+fpr: 0.4508670520231214, tpr: 0.9092145528731724, threshold: 0.37828153371810913, 
+fpr: 0.45375722543352603, tpr: 0.9092145528731724, threshold: 0.3776228129863739, 
+fpr: 0.45375722543352603, tpr: 0.9095545732743965, threshold: 0.3775433301925659, 
+fpr: 0.45472061657032753, tpr: 0.9095545732743965, threshold: 0.3774150013923645, 
+fpr: 0.45472061657032753, tpr: 0.9098945936756205, threshold: 0.37716084718704224, 
+fpr: 0.45664739884393063, tpr: 0.9098945936756205, threshold: 0.37643659114837646, 
+fpr: 0.45664739884393063, tpr: 0.9102346140768446, threshold: 0.3761528730392456, 
+fpr: 0.4701348747591522, tpr: 0.9102346140768446, threshold: 0.37137478590011597, 
+fpr: 0.4701348747591522, tpr: 0.9105746344780686, threshold: 0.3707279562950134, 
+fpr: 0.4730250481695568, tpr: 0.9105746344780686, threshold: 0.36855021119117737, 
+fpr: 0.4730250481695568, tpr: 0.9109146548792928, threshold: 0.3669058680534363, 
+fpr: 0.47398843930635837, tpr: 0.9109146548792928, threshold: 0.3662779629230499, 
+fpr: 0.47398843930635837, tpr: 0.9112546752805168, threshold: 0.36605414748191833, 
+fpr: 0.4749518304431599, tpr: 0.9112546752805168, threshold: 0.36514878273010254, 
+fpr: 0.4749518304431599, tpr: 0.9115946956817409, threshold: 0.36502838134765625, 
+fpr: 0.476878612716763, tpr: 0.9115946956817409, threshold: 0.3647044599056244, 
+fpr: 0.476878612716763, tpr: 0.911934716082965, threshold: 0.36424675583839417, 
+fpr: 0.47784200385356457, tpr: 0.911934716082965, threshold: 0.3641626834869385, 
+fpr: 0.47784200385356457, tpr: 0.912274736484189, threshold: 0.363788902759552, 
+fpr: 0.48073217726396916, tpr: 0.912274736484189, threshold: 0.36138415336608887, 
+fpr: 0.48073217726396916, tpr: 0.9126147568854132, threshold: 0.36114701628685, 
+fpr: 0.4816955684007707, tpr: 0.9126147568854132, threshold: 0.36038824915885925, 
+fpr: 0.4816955684007707, tpr: 0.9132947976878613, threshold: 0.3594534695148468, 
+fpr: 0.48265895953757226, tpr: 0.9132947976878613, threshold: 0.3593638241291046, 
+fpr: 0.48265895953757226, tpr: 0.9136348180890853, threshold: 0.35810384154319763, 
+fpr: 0.4865125240847784, tpr: 0.9136348180890853, threshold: 0.35608580708503723, 
+fpr: 0.4865125240847784, tpr: 0.9139748384903095, threshold: 0.35572177171707153, 
+fpr: 0.48747591522157996, tpr: 0.9139748384903095, threshold: 0.3554934561252594, 
+fpr: 0.48747591522157996, tpr: 0.9146548792927576, threshold: 0.3549944758415222, 
+fpr: 0.4903660886319846, tpr: 0.9146548792927576, threshold: 0.35378172993659973, 
+fpr: 0.4903660886319846, tpr: 0.9149948996939816, threshold: 0.3534310460090637, 
+fpr: 0.49229287090558765, tpr: 0.9149948996939816, threshold: 0.3520563542842865, 
+fpr: 0.49229287090558765, tpr: 0.9160149608976539, threshold: 0.3508766293525696, 
+fpr: 0.4932562620423892, tpr: 0.9160149608976539, threshold: 0.35075727105140686, 
+fpr: 0.4932562620423892, tpr: 0.917035022101326, threshold: 0.3481542468070984, 
+fpr: 0.4951830443159923, tpr: 0.917035022101326, threshold: 0.347879558801651, 
+fpr: 0.4951830443159923, tpr: 0.9183951037062223, threshold: 0.3463823199272156, 
+fpr: 0.4980732177263969, tpr: 0.9183951037062223, threshold: 0.34428390860557556, 
+fpr: 0.4980732177263969, tpr: 0.9187351241074464, threshold: 0.34392619132995605, 
+fpr: 0.49903660886319845, tpr: 0.9187351241074464, threshold: 0.3436952233314514, 
+fpr: 0.49903660886319845, tpr: 0.9194151649098946, threshold: 0.34235313534736633, 
+fpr: 0.5, tpr: 0.9194151649098946, threshold: 0.34146827459335327, 
+fpr: 0.5, tpr: 0.9197551853111187, threshold: 0.3412508964538574, 
+fpr: 0.5009633911368016, tpr: 0.9197551853111187, threshold: 0.3407917022705078, 
+fpr: 0.5009633911368016, tpr: 0.9200952057123427, threshold: 0.3405914008617401, 
+fpr: 0.5028901734104047, tpr: 0.9200952057123427, threshold: 0.33739355206489563, 
+fpr: 0.5028901734104047, tpr: 0.9204352261135668, threshold: 0.3372829556465149, 
+fpr: 0.5038535645472062, tpr: 0.9204352261135668, threshold: 0.33529603481292725, 
+fpr: 0.5038535645472062, tpr: 0.921455287317239, threshold: 0.3340151906013489, 
+fpr: 0.5048169556840078, tpr: 0.921455287317239, threshold: 0.3315892517566681, 
+fpr: 0.5048169556840078, tpr: 0.9217953077184631, threshold: 0.33151787519454956, 
+fpr: 0.5067437379576107, tpr: 0.9217953077184631, threshold: 0.33113375306129456, 
+fpr: 0.5067437379576107, tpr: 0.9228153689221353, threshold: 0.32917657494544983, 
+fpr: 0.5096339113680154, tpr: 0.9228153689221353, threshold: 0.32704004645347595, 
+fpr: 0.5096339113680154, tpr: 0.9231553893233594, threshold: 0.3269747495651245, 
+fpr: 0.5134874759152216, tpr: 0.9231553893233594, threshold: 0.3251437544822693, 
+fpr: 0.5134874759152216, tpr: 0.9238354301258076, threshold: 0.32304713129997253, 
+fpr: 0.5154142581888247, tpr: 0.9238354301258076, threshold: 0.3223130404949188, 
+fpr: 0.5154142581888247, tpr: 0.9241754505270316, threshold: 0.322160542011261, 
+fpr: 0.5163776493256262, tpr: 0.9241754505270316, threshold: 0.32215043902397156, 
+fpr: 0.5163776493256262, tpr: 0.9245154709282557, threshold: 0.32159364223480225, 
+fpr: 0.5173410404624278, tpr: 0.9245154709282557, threshold: 0.32113462686538696, 
+fpr: 0.5173410404624278, tpr: 0.9248554913294798, threshold: 0.32111766934394836, 
+fpr: 0.5202312138728323, tpr: 0.9248554913294798, threshold: 0.31943628191947937, 
+fpr: 0.5202312138728323, tpr: 0.9251955117307038, threshold: 0.3193303048610687, 
+fpr: 0.5211946050096339, tpr: 0.9251955117307038, threshold: 0.31927016377449036, 
+fpr: 0.5211946050096339, tpr: 0.9262155729343761, threshold: 0.31884828209877014, 
+fpr: 0.523121387283237, tpr: 0.9262155729343761, threshold: 0.31803175806999207, 
+fpr: 0.523121387283237, tpr: 0.9265555933356001, threshold: 0.3176116645336151, 
+fpr: 0.5250481695568401, tpr: 0.9265555933356001, threshold: 0.31667429208755493, 
+fpr: 0.5250481695568401, tpr: 0.9272356341380483, threshold: 0.3163260221481323, 
+fpr: 0.5269749518304432, tpr: 0.9272356341380483, threshold: 0.3148918151855469, 
+fpr: 0.5269749518304432, tpr: 0.9275756545392724, threshold: 0.3141650855541229, 
+fpr: 0.5298651252408478, tpr: 0.9275756545392724, threshold: 0.31344494223594666, 
+fpr: 0.5298651252408478, tpr: 0.9279156749404964, threshold: 0.3130000829696655, 
+fpr: 0.5346820809248555, tpr: 0.9279156749404964, threshold: 0.30974915623664856, 
+fpr: 0.5346820809248555, tpr: 0.9282556953417205, threshold: 0.309436559677124, 
+fpr: 0.5375722543352601, tpr: 0.9282556953417205, threshold: 0.30715465545654297, 
+fpr: 0.5375722543352601, tpr: 0.9285957157429445, threshold: 0.3070901334285736, 
+fpr: 0.5433526011560693, tpr: 0.9285957157429445, threshold: 0.3042360544204712, 
+fpr: 0.5433526011560693, tpr: 0.9289357361441687, threshold: 0.3039957582950592, 
+fpr: 0.5443159922928709, tpr: 0.9289357361441687, threshold: 0.3038650155067444, 
+fpr: 0.5443159922928709, tpr: 0.9299557973478408, threshold: 0.30215761065483093, 
+fpr: 0.5472061657032755, tpr: 0.9299557973478408, threshold: 0.2992236316204071, 
+fpr: 0.5472061657032755, tpr: 0.930635838150289, threshold: 0.29799583554267883, 
+fpr: 0.5481695568400771, tpr: 0.930635838150289, threshold: 0.29540005326271057, 
+fpr: 0.5481695568400771, tpr: 0.9309758585515131, threshold: 0.2943931818008423, 
+fpr: 0.5491329479768786, tpr: 0.9309758585515131, threshold: 0.2942238748073578, 
+fpr: 0.5491329479768786, tpr: 0.9313158789527372, threshold: 0.29418134689331055, 
+fpr: 0.5529865125240848, tpr: 0.9313158789527372, threshold: 0.2916582524776459, 
+fpr: 0.5529865125240848, tpr: 0.9316558993539612, threshold: 0.2910972237586975, 
+fpr: 0.5539499036608864, tpr: 0.9316558993539612, threshold: 0.2907240092754364, 
+fpr: 0.5539499036608864, tpr: 0.9319959197551854, threshold: 0.290171355009079, 
+fpr: 0.5568400770712909, tpr: 0.9319959197551854, threshold: 0.28922760486602783, 
+fpr: 0.5568400770712909, tpr: 0.9323359401564094, threshold: 0.2879810929298401, 
+fpr: 0.5597302504816956, tpr: 0.9323359401564094, threshold: 0.2870432436466217, 
+fpr: 0.5597302504816956, tpr: 0.9326759605576335, threshold: 0.2870163023471832, 
+fpr: 0.5616570327552987, tpr: 0.9326759605576335, threshold: 0.28633764386177063, 
+fpr: 0.5616570327552987, tpr: 0.9347160829649779, threshold: 0.2846851944923401, 
+fpr: 0.5645472061657033, tpr: 0.9347160829649779, threshold: 0.2791064381599426, 
+fpr: 0.5645472061657033, tpr: 0.9350561033662019, threshold: 0.2788057327270508, 
+fpr: 0.5655105973025049, tpr: 0.9350561033662019, threshold: 0.27831804752349854, 
+fpr: 0.5655105973025049, tpr: 0.9353961237674261, threshold: 0.2783120572566986, 
+fpr: 0.569364161849711, tpr: 0.9353961237674261, threshold: 0.27398478984832764, 
+fpr: 0.569364161849711, tpr: 0.9357361441686501, threshold: 0.27244824171066284, 
+fpr: 0.5703275529865125, tpr: 0.9357361441686501, threshold: 0.2723047733306885, 
+fpr: 0.5703275529865125, tpr: 0.9360761645698742, threshold: 0.2722747027873993, 
+fpr: 0.5741811175337187, tpr: 0.9360761645698742, threshold: 0.2703210115432739, 
+fpr: 0.5741811175337187, tpr: 0.9364161849710982, threshold: 0.2694952189922333, 
+fpr: 0.5751445086705202, tpr: 0.9364161849710982, threshold: 0.269403874874115, 
+fpr: 0.5751445086705202, tpr: 0.9367562053723223, threshold: 0.2681122422218323, 
+fpr: 0.5761078998073218, tpr: 0.9367562053723223, threshold: 0.2661794126033783, 
+fpr: 0.5761078998073218, tpr: 0.9374362461747705, threshold: 0.2660788595676422, 
+fpr: 0.5780346820809249, tpr: 0.9374362461747705, threshold: 0.2660161852836609, 
+fpr: 0.5799614643545279, tpr: 0.9374362461747705, threshold: 0.26479923725128174, 
+fpr: 0.5799614643545279, tpr: 0.9377762665759946, threshold: 0.26455390453338623, 
+fpr: 0.5847784200385356, tpr: 0.9377762665759946, threshold: 0.25835302472114563, 
+fpr: 0.5847784200385356, tpr: 0.9381162869772186, threshold: 0.2582538425922394, 
+fpr: 0.5876685934489403, tpr: 0.9381162869772186, threshold: 0.25653183460235596, 
+fpr: 0.5876685934489403, tpr: 0.9384563073784427, threshold: 0.25644657015800476, 
+fpr: 0.5895953757225434, tpr: 0.9384563073784427, threshold: 0.25458824634552, 
+fpr: 0.5895953757225434, tpr: 0.9387963277796668, threshold: 0.2544846832752228, 
+fpr: 0.5905587668593449, tpr: 0.9387963277796668, threshold: 0.25445982813835144, 
+fpr: 0.5905587668593449, tpr: 0.9391363481808909, threshold: 0.25403067469596863, 
+fpr: 0.5915221579961464, tpr: 0.9391363481808909, threshold: 0.2539801597595215, 
+fpr: 0.5915221579961464, tpr: 0.9394763685821149, threshold: 0.25243741273880005, 
+fpr: 0.5934489402697495, tpr: 0.9394763685821149, threshold: 0.2523482143878937, 
+fpr: 0.5934489402697495, tpr: 0.939816388983339, threshold: 0.2521090805530548, 
+fpr: 0.5953757225433526, tpr: 0.939816388983339, threshold: 0.2496839016675949, 
+fpr: 0.5953757225433526, tpr: 0.9404964297857872, threshold: 0.24954761564731598, 
+fpr: 0.5963391136801541, tpr: 0.9404964297857872, threshold: 0.24932850897312164, 
+fpr: 0.5963391136801541, tpr: 0.9408364501870112, threshold: 0.24931550025939941, 
+fpr: 0.6021194605009634, tpr: 0.9408364501870112, threshold: 0.24531705677509308, 
+fpr: 0.6021194605009634, tpr: 0.9411764705882353, threshold: 0.2452448159456253, 
+fpr: 0.605009633911368, tpr: 0.9411764705882353, threshold: 0.2447119951248169, 
+fpr: 0.605009633911368, tpr: 0.9415164909894593, threshold: 0.2447117418050766, 
+fpr: 0.6059730250481695, tpr: 0.9415164909894593, threshold: 0.2443670928478241, 
+fpr: 0.6059730250481695, tpr: 0.9418565113906835, threshold: 0.2443617880344391, 
+fpr: 0.6078998073217726, tpr: 0.9418565113906835, threshold: 0.24356883764266968, 
+fpr: 0.6078998073217726, tpr: 0.9421965317919075, threshold: 0.24330945312976837, 
+fpr: 0.6098265895953757, tpr: 0.9421965317919075, threshold: 0.2424008995294571, 
+fpr: 0.6098265895953757, tpr: 0.9428765725943556, threshold: 0.24219441413879395, 
+fpr: 0.6127167630057804, tpr: 0.9428765725943556, threshold: 0.24134917557239532, 
+fpr: 0.6127167630057804, tpr: 0.9432165929955797, threshold: 0.2411515712738037, 
+fpr: 0.615606936416185, tpr: 0.9432165929955797, threshold: 0.24037453532218933, 
+fpr: 0.615606936416185, tpr: 0.944236654199252, threshold: 0.24008521437644958, 
+fpr: 0.6184971098265896, tpr: 0.944236654199252, threshold: 0.2394932061433792, 
+fpr: 0.6184971098265896, tpr: 0.944576674600476, threshold: 0.23838679492473602, 
+fpr: 0.6194605009633911, tpr: 0.944576674600476, threshold: 0.23772963881492615, 
+fpr: 0.6194605009633911, tpr: 0.9449166950017001, threshold: 0.23747560381889343, 
+fpr: 0.6204238921001927, tpr: 0.9449166950017001, threshold: 0.23740927875041962, 
+fpr: 0.6204238921001927, tpr: 0.9452567154029242, threshold: 0.2371646910905838, 
+fpr: 0.6242774566473989, tpr: 0.9452567154029242, threshold: 0.23608388006687164, 
+fpr: 0.6242774566473989, tpr: 0.9455967358041483, threshold: 0.23590005934238434, 
+fpr: 0.626204238921002, tpr: 0.9455967358041483, threshold: 0.2353566437959671, 
+fpr: 0.626204238921002, tpr: 0.9459367562053723, threshold: 0.23507516086101532, 
+fpr: 0.6271676300578035, tpr: 0.9459367562053723, threshold: 0.23468786478042603, 
+fpr: 0.6271676300578035, tpr: 0.9469568174090446, threshold: 0.23294322192668915, 
+fpr: 0.6358381502890174, tpr: 0.9469568174090446, threshold: 0.23083092272281647, 
+fpr: 0.6358381502890174, tpr: 0.9472968378102686, threshold: 0.23077508807182312, 
+fpr: 0.6368015414258189, tpr: 0.9472968378102686, threshold: 0.230756476521492, 
+fpr: 0.6368015414258189, tpr: 0.9476368582114927, threshold: 0.23054563999176025, 
+fpr: 0.6454720616570327, tpr: 0.9476368582114927, threshold: 0.22776246070861816, 
+fpr: 0.6454720616570327, tpr: 0.9483168990139408, threshold: 0.22624585032463074, 
+fpr: 0.653179190751445, tpr: 0.9483168990139408, threshold: 0.22251318395137787, 
+fpr: 0.653179190751445, tpr: 0.948656919415165, threshold: 0.2224344164133072, 
+fpr: 0.6541425818882466, tpr: 0.948656919415165, threshold: 0.22230085730552673, 
+fpr: 0.6541425818882466, tpr: 0.948996939816389, threshold: 0.22218313813209534, 
+fpr: 0.6560693641618497, tpr: 0.948996939816389, threshold: 0.22189806401729584, 
+fpr: 0.6560693641618497, tpr: 0.949336960217613, threshold: 0.22186341881752014, 
+fpr: 0.6579961464354528, tpr: 0.949336960217613, threshold: 0.22134067118167877, 
+fpr: 0.6579961464354528, tpr: 0.9496769806188371, threshold: 0.2210271954536438, 
+fpr: 0.661849710982659, tpr: 0.9496769806188371, threshold: 0.21925480663776398, 
+fpr: 0.661849710982659, tpr: 0.9500170010200613, threshold: 0.2190532237291336, 
+fpr: 0.6666666666666666, tpr: 0.9500170010200613, threshold: 0.21834975481033325, 
+fpr: 0.6666666666666666, tpr: 0.9506970418225094, threshold: 0.21693864464759827, 
+fpr: 0.6724470134874759, tpr: 0.9506970418225094, threshold: 0.21543660759925842, 
+fpr: 0.6724470134874759, tpr: 0.9513770826249575, threshold: 0.2147669941186905, 
+fpr: 0.6734104046242775, tpr: 0.9513770826249575, threshold: 0.21400967240333557, 
+fpr: 0.6734104046242775, tpr: 0.9517171030261816, threshold: 0.21399615705013275, 
+fpr: 0.674373795761079, tpr: 0.9517171030261816, threshold: 0.2133469432592392, 
+fpr: 0.674373795761079, tpr: 0.9520571234274057, threshold: 0.2118585705757141, 
+fpr: 0.6801541425818882, tpr: 0.9520571234274057, threshold: 0.21032124757766724, 
+fpr: 0.6801541425818882, tpr: 0.9523971438286297, threshold: 0.21012090146541595, 
+fpr: 0.6840077071290944, tpr: 0.9523971438286297, threshold: 0.20896685123443604, 
+fpr: 0.6840077071290944, tpr: 0.9530771846310778, threshold: 0.20844468474388123, 
+fpr: 0.684971098265896, tpr: 0.9530771846310778, threshold: 0.2082819640636444, 
+fpr: 0.684971098265896, tpr: 0.953417205032302, threshold: 0.2081521600484848, 
+fpr: 0.6878612716763006, tpr: 0.953417205032302, threshold: 0.2070980668067932, 
+fpr: 0.6878612716763006, tpr: 0.953757225433526, threshold: 0.20701976120471954, 
+fpr: 0.6888246628131022, tpr: 0.953757225433526, threshold: 0.2065267562866211, 
+fpr: 0.6888246628131022, tpr: 0.9544372662359741, threshold: 0.20577900111675262, 
+fpr: 0.6897880539499036, tpr: 0.9544372662359741, threshold: 0.2056647390127182, 
+fpr: 0.6897880539499036, tpr: 0.9547772866371982, threshold: 0.20537549257278442, 
+fpr: 0.6917148362235067, tpr: 0.9547772866371982, threshold: 0.20461462438106537, 
+fpr: 0.6917148362235067, tpr: 0.9557973478408704, threshold: 0.2035500407218933, 
+fpr: 0.6926782273603083, tpr: 0.9557973478408704, threshold: 0.20345130562782288, 
+fpr: 0.6926782273603083, tpr: 0.9561373682420945, threshold: 0.20326127111911774, 
+fpr: 0.6936416184971098, tpr: 0.9561373682420945, threshold: 0.20310254395008087, 
+fpr: 0.6936416184971098, tpr: 0.9564773886433185, threshold: 0.20289689302444458, 
+fpr: 0.6984585741811176, tpr: 0.9564773886433185, threshold: 0.19995766878128052, 
+fpr: 0.6984585741811176, tpr: 0.9568174090445427, threshold: 0.19989675283432007, 
+fpr: 0.6994219653179191, tpr: 0.9568174090445427, threshold: 0.19978627562522888, 
+fpr: 0.6994219653179191, tpr: 0.9571574294457668, threshold: 0.1996382176876068, 
+fpr: 0.7042389210019268, tpr: 0.9571574294457668, threshold: 0.19813492894172668, 
+fpr: 0.7042389210019268, tpr: 0.9574974498469908, threshold: 0.19761922955513, 
+fpr: 0.7052023121387283, tpr: 0.9574974498469908, threshold: 0.19700734317302704, 
+fpr: 0.7052023121387283, tpr: 0.9578374702482149, threshold: 0.19666315615177155, 
+fpr: 0.7071290944123314, tpr: 0.9578374702482149, threshold: 0.19527015089988708, 
+fpr: 0.7071290944123314, tpr: 0.9585175110506631, threshold: 0.19464874267578125, 
+fpr: 0.7090558766859345, tpr: 0.9585175110506631, threshold: 0.19437475502490997, 
+fpr: 0.7090558766859345, tpr: 0.9591975518531112, threshold: 0.1941792368888855, 
+fpr: 0.7119460500963392, tpr: 0.9591975518531112, threshold: 0.1927061676979065, 
+fpr: 0.7119460500963392, tpr: 0.9602176130567834, threshold: 0.19136835634708405, 
+fpr: 0.7129094412331407, tpr: 0.9602176130567834, threshold: 0.1910855770111084, 
+fpr: 0.7129094412331407, tpr: 0.9605576334580075, threshold: 0.1910436749458313, 
+fpr: 0.7186897880539499, tpr: 0.9605576334580075, threshold: 0.1887463629245758, 
+fpr: 0.7186897880539499, tpr: 0.9615776946616797, threshold: 0.18820393085479736, 
+fpr: 0.7215799614643545, tpr: 0.9615776946616797, threshold: 0.18719147145748138, 
+fpr: 0.7215799614643545, tpr: 0.9619177150629038, threshold: 0.18647824227809906, 
+fpr: 0.7225433526011561, tpr: 0.9619177150629038, threshold: 0.18621937930583954, 
+fpr: 0.7225433526011561, tpr: 0.9625977558653519, threshold: 0.184499129652977, 
+fpr: 0.7244701348747592, tpr: 0.9625977558653519, threshold: 0.18428032100200653, 
+fpr: 0.7244701348747592, tpr: 0.962937776266576, threshold: 0.18403813242912292, 
+fpr: 0.7292870905587668, tpr: 0.962937776266576, threshold: 0.18311549723148346, 
+fpr: 0.7292870905587668, tpr: 0.9632777966678001, threshold: 0.18310421705245972, 
+fpr: 0.7302504816955684, tpr: 0.9632777966678001, threshold: 0.182807058095932, 
+fpr: 0.7302504816955684, tpr: 0.9642978578714723, threshold: 0.1815735101699829, 
+fpr: 0.7312138728323699, tpr: 0.9642978578714723, threshold: 0.18156598508358002, 
+fpr: 0.7312138728323699, tpr: 0.9646378782726963, threshold: 0.18035824596881866, 
+fpr: 0.7350674373795761, tpr: 0.9646378782726963, threshold: 0.17872482538223267, 
+fpr: 0.7350674373795761, tpr: 0.9653179190751445, threshold: 0.17816589772701263, 
+fpr: 0.7369942196531792, tpr: 0.9653179190751445, threshold: 0.17779424786567688, 
+fpr: 0.7369942196531792, tpr: 0.9656579394763686, threshold: 0.17769363522529602, 
+fpr: 0.7398843930635838, tpr: 0.9656579394763686, threshold: 0.17606477439403534, 
+fpr: 0.7398843930635838, tpr: 0.9659979598775926, threshold: 0.17602509260177612, 
+fpr: 0.7408477842003853, tpr: 0.9659979598775926, threshold: 0.17589689791202545, 
+fpr: 0.7408477842003853, tpr: 0.9663379802788167, threshold: 0.1752328872680664, 
+fpr: 0.7418111753371869, tpr: 0.9663379802788167, threshold: 0.17456622421741486, 
+fpr: 0.7418111753371869, tpr: 0.9666780006800408, threshold: 0.1745201051235199, 
+fpr: 0.7456647398843931, tpr: 0.9666780006800408, threshold: 0.17290936410427094, 
+fpr: 0.7456647398843931, tpr: 0.967698061883713, threshold: 0.17146036028862, 
+fpr: 0.7495183044315993, tpr: 0.967698061883713, threshold: 0.1705479770898819, 
+fpr: 0.7495183044315993, tpr: 0.9680380822849372, threshold: 0.17031177878379822, 
+fpr: 0.7514450867052023, tpr: 0.9680380822849372, threshold: 0.17003943026065826, 
+fpr: 0.7514450867052023, tpr: 0.9683781026861612, threshold: 0.16968856751918793, 
+fpr: 0.7543352601156069, tpr: 0.9683781026861612, threshold: 0.16866366565227509, 
+fpr: 0.7543352601156069, tpr: 0.9687181230873853, threshold: 0.16863951086997986, 
+fpr: 0.7552986512524085, tpr: 0.9687181230873853, threshold: 0.1684047132730484, 
+fpr: 0.7552986512524085, tpr: 0.9693981638898334, threshold: 0.1660393476486206, 
+fpr: 0.7581888246628131, tpr: 0.9693981638898334, threshold: 0.1646443009376526, 
+fpr: 0.7581888246628131, tpr: 0.9697381842910575, threshold: 0.16419288516044617, 
+fpr: 0.7591522157996147, tpr: 0.9697381842910575, threshold: 0.16398142278194427, 
+fpr: 0.7591522157996147, tpr: 0.9704182250935056, threshold: 0.1628250777721405, 
+fpr: 0.7601156069364162, tpr: 0.9704182250935056, threshold: 0.16280998289585114, 
+fpr: 0.7601156069364162, tpr: 0.9710982658959537, threshold: 0.161366268992424, 
+fpr: 0.7610789980732178, tpr: 0.9710982658959537, threshold: 0.16126346588134766, 
+fpr: 0.7610789980732178, tpr: 0.9714382862971779, threshold: 0.1612330824136734, 
+fpr: 0.7639691714836223, tpr: 0.9714382862971779, threshold: 0.1603793054819107, 
+fpr: 0.7639691714836223, tpr: 0.972118327099626, threshold: 0.16030575335025787, 
+fpr: 0.7649325626204239, tpr: 0.972118327099626, threshold: 0.16022971272468567, 
+fpr: 0.7649325626204239, tpr: 0.97245834750085, threshold: 0.1596834361553192, 
+fpr: 0.7707129094412332, tpr: 0.97245834750085, threshold: 0.15733744204044342, 
+fpr: 0.7707129094412332, tpr: 0.9734784087045223, threshold: 0.1569124460220337, 
+fpr: 0.7716763005780347, tpr: 0.9734784087045223, threshold: 0.15676632523536682, 
+fpr: 0.7716763005780347, tpr: 0.9738184291057463, threshold: 0.15615245699882507, 
+fpr: 0.7755298651252408, tpr: 0.9738184291057463, threshold: 0.15581052005290985, 
+fpr: 0.7755298651252408, tpr: 0.9741584495069704, threshold: 0.15543289482593536, 
+fpr: 0.7784200385356455, tpr: 0.9741584495069704, threshold: 0.1550983488559723, 
+fpr: 0.7784200385356455, tpr: 0.9744984699081944, threshold: 0.15438126027584076, 
+fpr: 0.7870905587668593, tpr: 0.9744984699081944, threshold: 0.15076933801174164, 
+fpr: 0.7870905587668593, tpr: 0.9748384903094186, threshold: 0.15034155547618866, 
+fpr: 0.791907514450867, tpr: 0.9748384903094186, threshold: 0.14921562373638153, 
+fpr: 0.791907514450867, tpr: 0.9751785107106427, threshold: 0.14812418818473816, 
+fpr: 0.7996146435452793, tpr: 0.9751785107106427, threshold: 0.14509545266628265, 
+fpr: 0.7996146435452793, tpr: 0.9755185311118667, threshold: 0.14503562450408936, 
+fpr: 0.802504816955684, tpr: 0.9755185311118667, threshold: 0.14329132437705994, 
+fpr: 0.802504816955684, tpr: 0.9758585515130908, threshold: 0.14293108880519867, 
+fpr: 0.8092485549132948, tpr: 0.9758585515130908, threshold: 0.14044331014156342, 
+fpr: 0.8092485549132948, tpr: 0.9761985719143148, threshold: 0.14036491513252258, 
+fpr: 0.8140655105973025, tpr: 0.9761985719143148, threshold: 0.13641783595085144, 
+fpr: 0.8140655105973025, tpr: 0.976538592315539, threshold: 0.13625653088092804, 
+fpr: 0.8188824662813102, tpr: 0.976538592315539, threshold: 0.13482598960399628, 
+fpr: 0.8188824662813102, tpr: 0.976878612716763, threshold: 0.13423223793506622, 
+fpr: 0.8217726396917149, tpr: 0.976878612716763, threshold: 0.1338164061307907, 
+fpr: 0.8217726396917149, tpr: 0.9772186331179871, threshold: 0.1330266296863556, 
+fpr: 0.825626204238921, tpr: 0.9772186331179871, threshold: 0.13121160864830017, 
+fpr: 0.825626204238921, tpr: 0.9778986739204353, threshold: 0.13036587834358215, 
+fpr: 0.8304431599229287, tpr: 0.9778986739204353, threshold: 0.12806016206741333, 
+fpr: 0.8304431599229287, tpr: 0.9782386943216593, threshold: 0.12762166559696198, 
+fpr: 0.838150289017341, tpr: 0.9782386943216593, threshold: 0.12298647314310074, 
+fpr: 0.838150289017341, tpr: 0.9785787147228834, threshold: 0.1229851022362709, 
+fpr: 0.8420038535645472, tpr: 0.9785787147228834, threshold: 0.1215786412358284, 
+fpr: 0.8420038535645472, tpr: 0.9792587555253315, threshold: 0.12079302966594696, 
+fpr: 0.850674373795761, tpr: 0.9792587555253315, threshold: 0.11559028178453445, 
+fpr: 0.850674373795761, tpr: 0.9799387963277797, threshold: 0.11457963287830353, 
+fpr: 0.8516377649325626, tpr: 0.9799387963277797, threshold: 0.11453741043806076, 
+fpr: 0.8516377649325626, tpr: 0.9802788167290037, threshold: 0.11394642293453217, 
+fpr: 0.8554913294797688, tpr: 0.9802788167290037, threshold: 0.11241862922906876, 
+fpr: 0.8554913294797688, tpr: 0.9806188371302278, threshold: 0.11137735098600388, 
+fpr: 0.8564547206165704, tpr: 0.9806188371302278, threshold: 0.1113731786608696, 
+fpr: 0.8564547206165704, tpr: 0.9809588575314518, threshold: 0.1105918437242508, 
+fpr: 0.8631984585741811, tpr: 0.9809588575314518, threshold: 0.10717029124498367, 
+fpr: 0.8631984585741811, tpr: 0.981298877932676, threshold: 0.1071237176656723, 
+fpr: 0.8641618497109826, tpr: 0.981298877932676, threshold: 0.10677706450223923, 
+fpr: 0.8641618497109826, tpr: 0.9816388983339001, threshold: 0.10670474171638489, 
+fpr: 0.8680154142581888, tpr: 0.9816388983339001, threshold: 0.10480330139398575, 
+fpr: 0.8680154142581888, tpr: 0.9819789187351241, threshold: 0.10387232899665833, 
+fpr: 0.869942196531792, tpr: 0.9819789187351241, threshold: 0.10257285088300705, 
+fpr: 0.869942196531792, tpr: 0.9823189391363482, threshold: 0.10247988253831863, 
+fpr: 0.8747591522157996, tpr: 0.9823189391363482, threshold: 0.10000265389680862, 
+fpr: 0.8747591522157996, tpr: 0.9826589595375722, threshold: 0.09952133893966675, 
+fpr: 0.8766859344894027, tpr: 0.9826589595375722, threshold: 0.0969041958451271, 
+fpr: 0.8766859344894027, tpr: 0.9829989799387964, threshold: 0.09689641743898392, 
+fpr: 0.8786127167630058, tpr: 0.9829989799387964, threshold: 0.09582116454839706, 
+fpr: 0.8786127167630058, tpr: 0.9836790207412445, threshold: 0.09564808011054993, 
+fpr: 0.8872832369942196, tpr: 0.9836790207412445, threshold: 0.09260287880897522, 
+fpr: 0.8872832369942196, tpr: 0.9840190411424685, threshold: 0.0925329402089119, 
+fpr: 0.8901734104046243, tpr: 0.9840190411424685, threshold: 0.09232736378908157, 
+fpr: 0.8901734104046243, tpr: 0.9843590615436926, threshold: 0.09202957898378372, 
+fpr: 0.8930635838150289, tpr: 0.9843590615436926, threshold: 0.09037567675113678, 
+fpr: 0.8930635838150289, tpr: 0.9846990819449167, threshold: 0.08998560160398483, 
+fpr: 0.8959537572254336, tpr: 0.9846990819449167, threshold: 0.08919239044189453, 
+fpr: 0.8959537572254336, tpr: 0.9853791227473648, threshold: 0.08583369106054306, 
+fpr: 0.9007707129094412, tpr: 0.9853791227473648, threshold: 0.08466160297393799, 
+fpr: 0.9007707129094412, tpr: 0.9860591635498129, threshold: 0.08427950739860535, 
+fpr: 0.9036608863198459, tpr: 0.9860591635498129, threshold: 0.08145886659622192, 
+fpr: 0.9036608863198459, tpr: 0.9863991839510371, threshold: 0.08098962903022766, 
+fpr: 0.9046242774566474, tpr: 0.9863991839510371, threshold: 0.08056708425283432, 
+fpr: 0.9046242774566474, tpr: 0.9870792247534852, threshold: 0.07924274355173111, 
+fpr: 0.9075144508670521, tpr: 0.9870792247534852, threshold: 0.07873746007680893, 
+fpr: 0.9075144508670521, tpr: 0.9874192451547092, threshold: 0.07857894897460938, 
+fpr: 0.9084778420038536, tpr: 0.9874192451547092, threshold: 0.07847455888986588, 
+fpr: 0.9084778420038536, tpr: 0.9877592655559334, threshold: 0.07844099402427673, 
+fpr: 0.9113680154142582, tpr: 0.9877592655559334, threshold: 0.07808109372854233, 
+fpr: 0.9113680154142582, tpr: 0.9880992859571575, threshold: 0.07786024361848831, 
+fpr: 0.9123314065510597, tpr: 0.9880992859571575, threshold: 0.077670618891716, 
+fpr: 0.9123314065510597, tpr: 0.9884393063583815, threshold: 0.0776350125670433, 
+fpr: 0.9142581888246628, tpr: 0.9884393063583815, threshold: 0.07663339376449585, 
+fpr: 0.9142581888246628, tpr: 0.9891193471608296, threshold: 0.07585568726062775, 
+fpr: 0.9190751445086706, tpr: 0.9891193471608296, threshold: 0.07408690452575684, 
+fpr: 0.9190751445086706, tpr: 0.9904794287657259, threshold: 0.07247915118932724, 
+fpr: 0.9238921001926782, tpr: 0.9904794287657259, threshold: 0.07028237730264664, 
+fpr: 0.9238921001926782, tpr: 0.99081944916695, threshold: 0.07014094293117523, 
+fpr: 0.9258188824662813, tpr: 0.99081944916695, threshold: 0.0689316838979721, 
+fpr: 0.9258188824662813, tpr: 0.9911594695681741, threshold: 0.06855274736881256, 
+fpr: 0.930635838150289, tpr: 0.9911594695681741, threshold: 0.06669729948043823, 
+fpr: 0.930635838150289, tpr: 0.9914994899693982, threshold: 0.06658901274204254, 
+fpr: 0.9315992292870906, tpr: 0.9914994899693982, threshold: 0.06587761640548706, 
+fpr: 0.9315992292870906, tpr: 0.9918395103706222, threshold: 0.06523110717535019, 
+fpr: 0.9354527938342967, tpr: 0.9918395103706222, threshold: 0.06389372795820236, 
+fpr: 0.9354527938342967, tpr: 0.9925195511730703, threshold: 0.06303241103887558, 
+fpr: 0.9373795761078998, tpr: 0.9925195511730703, threshold: 0.0623561330139637, 
+fpr: 0.9373795761078998, tpr: 0.9931995919755185, threshold: 0.06118282675743103, 
+fpr: 0.9393063583815029, tpr: 0.9931995919755185, threshold: 0.058961763978004456, 
+fpr: 0.9393063583815029, tpr: 0.9942196531791907, threshold: 0.05657663196325302, 
+fpr: 0.941233140655106, tpr: 0.9942196531791907, threshold: 0.056015752255916595, 
+fpr: 0.941233140655106, tpr: 0.9945596735804149, threshold: 0.05559967830777168, 
+fpr: 0.9450867052023122, tpr: 0.9945596735804149, threshold: 0.05438242852687836, 
+fpr: 0.9450867052023122, tpr: 0.9948996939816389, threshold: 0.05410471558570862, 
+fpr: 0.9470134874759152, tpr: 0.9948996939816389, threshold: 0.052512895315885544, 
+fpr: 0.9470134874759152, tpr: 0.995239714382863, threshold: 0.05212419480085373, 
+fpr: 0.9518304431599229, tpr: 0.995239714382863, threshold: 0.04700338467955589, 
+fpr: 0.9518304431599229, tpr: 0.995579734784087, threshold: 0.0465930812060833, 
+fpr: 0.9547206165703276, tpr: 0.995579734784087, threshold: 0.045331619679927826, 
+fpr: 0.9547206165703276, tpr: 0.9959197551853112, threshold: 0.044472839683294296, 
+fpr: 0.9576107899807321, tpr: 0.9959197551853112, threshold: 0.044026345014572144, 
+fpr: 0.9576107899807321, tpr: 0.9962597755865352, threshold: 0.04377835616469383, 
+fpr: 0.9585741811175337, tpr: 0.9962597755865352, threshold: 0.043212927877902985, 
+fpr: 0.9585741811175337, tpr: 0.9965997959877593, threshold: 0.04261636361479759, 
+fpr: 0.9682080924855492, tpr: 0.9965997959877593, threshold: 0.037472475320100784, 
+fpr: 0.9682080924855492, tpr: 0.9972798367902074, threshold: 0.03495415300130844, 
+fpr: 0.9691714836223507, tpr: 0.9972798367902074, threshold: 0.03439488261938095, 
+fpr: 0.9691714836223507, tpr: 0.9982998979938796, threshold: 0.0335225984454155, 
+fpr: 0.9749518304431599, tpr: 0.9982998979938796, threshold: 0.03241666406393051, 
+fpr: 0.9749518304431599, tpr: 0.9986399183951037, threshold: 0.032215263694524765, 
+fpr: 0.9797687861271677, tpr: 0.9986399183951037, threshold: 0.02946726232767105, 
+fpr: 0.9797687861271677, tpr: 0.9989799387963277, threshold: 0.029053276404738426, 
+fpr: 1.0, tpr: 0.9989799387963277, threshold: 0.013538121245801449, 
+fpr: 1.0, tpr: 1.0, threshold: 0.008566543459892273, 
+
+=== best_threshold: 0.579434335231781, best_fpr: 0.3111753371868979, best_tpr: 0.8568514110846651 ===

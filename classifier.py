@@ -24,7 +24,7 @@ from torch import optim
 from torch.utils.data import Dataset, DataLoader
 
 # from network import SquareSmall10min
-from network import SquareSmall5min_D
+from network import SquareSmall10min_D
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
@@ -36,7 +36,7 @@ do_diagnose = True
 do_sleepstaging = False
 is_multitask = do_diagnose and do_sleepstaging
 is_per_epoch = 0 # input: 0: sqauresmall, 1: multicnn
-DURATION_MINUTES = 5 # my first choice: 15min
+DURATION_MINUTES = 10 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
@@ -127,7 +127,7 @@ def LeaveOneSubjectOut(base):
         print(f'\n=== Test on {subject}. train_data({ntrain}), test_data({ntest}) ===')
 
         print('==== START TRAINING ====')
-        model = SquareSmall5min_D(n_channels=3,nepoch=nepoch)
+        model = SquareSmall10min_D(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])

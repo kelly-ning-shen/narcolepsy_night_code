@@ -1,0 +1,4229 @@
+cuda:0
+Subjects num: 78
+
+5min inputs: chc001-nsrr (80)
+5min inputs: chc004-nsrr (106)
+5min inputs: chc005-nsrr (95)
+5min inputs: chc006-nsrr (82)
+5min inputs: chc008-nsrr (96)
+5min inputs: chc009-nsrr (89)
+5min inputs: chc010-nsrr (86)
+5min inputs: chc012-nsrr (92)
+5min inputs: chc013-nsrr (94)
+5min inputs: chc014-nsrr (95)
+5min inputs: chc015-nsrr (93)
+5min inputs: chc016-nsrr (95)
+5min inputs: chc022-nsrr (81)
+5min inputs: chc025-nsrr (83)
+5min inputs: chc027-nsrr (90)
+5min inputs: chc028-nsrr (88)
+5min inputs: chc033-nsrr (87)
+5min inputs: chc035-nsrr (90)
+5min inputs: chc037-nsrr (88)
+5min inputs: chc040-nsrr (108)
+5min inputs: chc041-nsrr (85)
+5min inputs: chc052-nsrr (91)
+5min inputs: chc056-nsrr (92)
+5min inputs: chp001-nsrr (116)
+5min inputs: chp002-nsrr (108)
+5min inputs: chp003-nsrr (100)
+5min inputs: chp004-nsrr (98)
+5min inputs: chp005-nsrr (130)
+5min inputs: chp006-nsrr (110)
+5min inputs: chp007-nsrr (115)
+5min inputs: chp008-nsrr (95)
+5min inputs: chp009-nsrr (103)
+5min inputs: chp010-nsrr (97)
+5min inputs: chp011-nsrr (101)
+5min inputs: chp012-nsrr (111)
+5min inputs: chp013-nsrr (100)
+5min inputs: chp014-nsrr (100)
+5min inputs: chp015-nsrr (115)
+5min inputs: chp016-nsrr (127)
+5min inputs: chp017-nsrr (101)
+5min inputs: chp018-nsrr (112)
+5min inputs: chp019-nsrr (94)
+5min inputs: chp020-nsrr (115)
+5min inputs: chp022-nsrr (126)
+5min inputs: chp024-nsrr (112)
+5min inputs: chp025-nsrr (44)
+5min inputs: chp026-nsrr (94)
+5min inputs: chp028-nsrr (103)
+5min inputs: chp029-nsrr (104)
+5min inputs: chp030-nsrr (120)
+5min inputs: chp031-nsrr (111)
+5min inputs: chp032-nsrr (106)
+5min inputs: chp033-nsrr (101)
+5min inputs: chp034-nsrr (104)
+5min inputs: chp036-nsrr (126)
+5min inputs: chp037-nsrr (103)
+5min inputs: chp038-nsrr (102)
+5min inputs: chp039-nsrr (111)
+5min inputs: chp040-nsrr (107)
+5min inputs: chp041-nsrr (110)
+5min inputs: chp042-nsrr (111)
+5min inputs: chp043-nsrr (120)
+5min inputs: chp044-nsrr (105)
+5min inputs: chp045-nsrr (120)
+5min inputs: chp046-nsrr (109)
+5min inputs: chp047-nsrr (89)
+5min inputs: chp048-nsrr (103)
+5min inputs: chp049-nsrr (108)
+5min inputs: chp051-nsrr (109)
+5min inputs: chp052-nsrr (100)
+5min inputs: chp053-nsrr (108)
+5min inputs: chp054-nsrr (112)
+5min inputs: chp055-nsrr (111)
+5min inputs: chp056-nsrr (110)
+5min inputs: chp057-nsrr (119)
+5min inputs: chp058-nsrr (103)
+5min inputs: chp059-nsrr (113)
+5min inputs: chp060-nsrr (126)
+
+=== Test on chc001-nsrr. train_data(7914), test_data(80) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.186699490480869
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9684525873658028
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8875528024662611
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8380190296058558
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7929950837615769
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7701121616152535
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7291717392530213
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6914829634761087
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6460499661007965
+Starting epoch 10/10.
+Epoch finished! Loss: 0.586821189816622
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.87375
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.92      0.91        78
+         1.0       0.75      0.18      0.29        50
+         2.0       0.85      0.95      0.90       417
+         3.0       0.88      0.90      0.89       143
+         4.0       0.96      0.84      0.90       112
+
+    accuracy                           0.87       800
+   macro avg       0.87      0.76      0.78       800
+weighted avg       0.87      0.87      0.86       800
+ 
+
+
+====== chc001-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  98.12  92.31   98.75  88.89     90.57
+1  94.50  18.00   99.60  75.00     29.03
+2  88.75  94.72   82.25  85.31     89.77
+3  96.12  90.21   97.41  88.36     89.27
+4  97.25  83.93   99.42  95.92     89.52
+Total accuracy: 87.38%
+Average sen: 75.83%
+Average spec: 95.49%
+Macro f1-score: 77.63%
+
+=== Test on chc004-nsrr. train_data(7888), test_data(106) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1676363695393963
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9692334285393585
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9087176046093103
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8707612359962488
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8402124801792469
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7964804013292801
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7642574063714991
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7386447673067829
+Starting epoch 9/10.
+Epoch finished! Loss: 0.7077938907869576
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6760279904994263
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7839622641509434
+              precision    recall  f1-score   support
+
+         0.0       0.71      0.88      0.78        74
+         1.0       0.39      0.43      0.41        42
+         2.0       0.81      0.83      0.82       519
+         3.0       0.96      0.63      0.76       243
+         4.0       0.72      0.91      0.80       182
+
+    accuracy                           0.78      1060
+   macro avg       0.72      0.73      0.71      1060
+weighted avg       0.80      0.78      0.78      1060
+ 
+
+
+====== chc004-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  96.60  87.84   97.26  70.65     78.31
+1  95.09  42.86   97.25  39.13     40.91
+2  82.08  82.85   81.33  80.98     81.90
+3  90.75  62.55   99.14  95.60     75.62
+4  92.26  91.21   92.48  71.55     80.19
+Total accuracy: 78.40%
+Average sen: 73.46%
+Average spec: 93.49%
+Macro f1-score: 71.39%
+
+=== Test on chc005-nsrr. train_data(7899), test_data(95) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1501878856554986
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9307112530610407
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8695697457315955
+Starting epoch 4/10.
+Epoch finished! Loss: 0.837046214609545
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7950403040655061
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7605157299262338
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7378169135751229
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6988978236347096
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6464455234422732
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5914862123807876
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7473684210526316
+              precision    recall  f1-score   support
+
+         0.0       0.47      0.98      0.64        42
+         1.0       0.19      0.09      0.12        34
+         2.0       0.89      0.70      0.78       548
+         3.0       0.84      0.81      0.82       236
+         4.0       0.48      1.00      0.65        90
+
+    accuracy                           0.75       950
+   macro avg       0.57      0.72      0.60       950
+weighted avg       0.79      0.75      0.75       950
+ 
+
+
+====== chc005-nsrr ======
+   acc %   sen %  spec %  ppr %  f1-score
+0  95.05   97.62   94.93  47.13     63.57
+1  95.37    8.82   98.58  18.75     12.00
+2  77.79   70.26   88.06  88.91     78.49
+3  91.37   80.93   94.82  83.77     82.33
+4  89.89  100.00   88.84  48.39     65.22
+Total accuracy: 74.74%
+Average sen: 71.53%
+Average spec: 93.05%
+Macro f1-score: 60.32%
+
+=== Test on chc006-nsrr. train_data(7912), test_data(82) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1446045274680243
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9499236855811325
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8948716164464143
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8422432894878532
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8048603026062137
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7770015285756585
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7516415717478196
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7221952571089741
+Starting epoch 9/10.
+Epoch finished! Loss: 0.7023940041717778
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6633471203814867
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7426829268292683
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.66      0.79       163
+         1.0       0.52      0.31      0.39       108
+         2.0       0.67      0.96      0.79       306
+         3.0       0.99      0.77      0.87       133
+         4.0       0.67      0.65      0.66       110
+
+    accuracy                           0.74       820
+   macro avg       0.77      0.67      0.70       820
+weighted avg       0.77      0.74      0.73       820
+ 
+
+
+====== chc006-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  93.05  66.26   99.70  98.18     79.12
+1  87.20  31.48   95.65  52.31     39.31
+2  81.10  95.75   72.37  67.36     79.08
+3  96.22  77.44   99.85  99.04     86.92
+4  90.98  64.55   95.07  66.98     65.74
+Total accuracy: 74.27%
+Average sen: 67.10%
+Average spec: 92.53%
+Macro f1-score: 70.03%
+
+=== Test on chc008-nsrr. train_data(7898), test_data(96) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1835645471235645
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9439451581549433
+Starting epoch 3/10.
+Epoch finished! Loss: 0.873335084723278
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8248244282259536
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7958338801549566
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7556434936623156
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7347229379966987
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6778199133310935
+Starting epoch 9/10.
+Epoch finished! Loss: 0.640508438697786
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5870894743235846
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7010416666666667
+              precision    recall  f1-score   support
+
+         0.0       0.85      0.66      0.74       144
+         1.0       0.19      0.13      0.16        82
+         2.0       0.65      0.85      0.73       379
+         3.0       0.98      0.65      0.78       227
+         4.0       0.68      0.77      0.72       128
+
+    accuracy                           0.70       960
+   macro avg       0.67      0.61      0.63       960
+weighted avg       0.72      0.70      0.70       960
+ 
+
+
+====== chc008-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  93.12  65.97   97.92  84.82     74.22
+1  87.81  13.41   94.76  19.30     15.83
+2  75.83  84.70   70.05  64.85     73.46
+3  91.46  65.20   99.59  98.01     78.31
+4  91.98  76.56   94.35  67.59     71.79
+Total accuracy: 70.10%
+Average sen: 61.17%
+Average spec: 91.33%
+Macro f1-score: 62.72%
+
+=== Test on chc009-nsrr. train_data(7905), test_data(89) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.183929459882688
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9554367890086355
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8812593084724644
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8389381640319583
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7951914025258414
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7616153465418876
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7386731479364106
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6982540442219264
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6484418635881399
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6037199257483965
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.8370786516853933
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.88      0.89        72
+         1.0       0.42      0.24      0.31        46
+         2.0       0.88      0.84      0.86       463
+         3.0       0.79      0.95      0.86       196
+         4.0       0.82      0.87      0.84       113
+
+    accuracy                           0.84       890
+   macro avg       0.76      0.75      0.75       890
+weighted avg       0.83      0.84      0.83       890
+ 
+
+
+====== chc009-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  98.20  87.50   99.14  90.00     88.73
+1  94.38  23.91   98.22  42.31     30.56
+2  85.62  83.59   87.82  88.15     85.81
+3  93.26  94.90   92.80  78.81     86.11
+4  95.96  86.73   97.30  82.35     84.48
+Total accuracy: 83.71%
+Average sen: 75.32%
+Average spec: 95.06%
+Macro f1-score: 75.14%
+
+=== Test on chc010-nsrr. train_data(7908), test_data(86) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.100031947636906
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9429802512443518
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8834522417451762
+Starting epoch 4/10.
+Epoch finished! Loss: 0.832922496259967
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7887449222274974
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7554879311519334
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7156360354604601
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6897141579962984
+Starting epoch 9/10.
+Epoch finished! Loss: 0.649131270224535
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5816123301658449
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7488372093023256
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.70      0.80       123
+         1.0       0.53      0.49      0.51        43
+         2.0       0.73      0.97      0.83       420
+         3.0       0.91      0.31      0.46       193
+         4.0       0.67      0.86      0.76        81
+
+    accuracy                           0.75       860
+   macro avg       0.75      0.67      0.67       860
+weighted avg       0.78      0.75      0.72       860
+ 
+
+
+====== chc010-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  95.00  69.92   99.19  93.48     80.00
+1  95.23  48.84   97.67  52.50     50.60
+2  80.93  96.90   65.68  72.94     83.23
+3  83.84  31.09   99.10  90.91     46.33
+4  94.77  86.42   95.64  67.31     75.68
+Total accuracy: 74.88%
+Average sen: 66.63%
+Average spec: 91.46%
+Macro f1-score: 67.17%
+
+=== Test on chc012-nsrr. train_data(7902), test_data(92) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1443603971336462
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9448631620859798
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8805726855616026
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8326060552763034
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7950721612836741
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7590377664641489
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7357345375456388
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7040245150840735
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6596434799553473
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6081266779122473
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6891304347826087
+              precision    recall  f1-score   support
+
+         0.0       0.97      0.50      0.66        64
+         1.0       0.14      0.04      0.07        23
+         2.0       0.75      0.88      0.81       559
+         3.0       1.00      0.20      0.33       204
+         4.0       0.38      1.00      0.55        70
+
+    accuracy                           0.69       920
+   macro avg       0.65      0.52      0.48       920
+weighted avg       0.78      0.69      0.65       920
+ 
+
+
+====== chc012-nsrr ======
+   acc %   sen %  spec %   ppr %  f1-score
+0  96.41   50.00   99.88   96.97     65.98
+1  96.96    4.35   99.33   14.29      6.67
+2  74.46   87.66   54.02   74.70     80.66
+3  82.28   20.10  100.00  100.00     33.47
+4  87.72  100.00   86.71   38.25     55.34
+Total accuracy: 68.91%
+Average sen: 52.42%
+Average spec: 87.99%
+Macro f1-score: 48.42%
+
+=== Test on chc013-nsrr. train_data(7900), test_data(94) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1166000647992085
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9122332283148143
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8633412385621452
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8144148833322585
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7788319217728118
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7536180917225561
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7292296972942593
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6762327687821914
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6375828933617612
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5842383004753309
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7468085106382979
+              precision    recall  f1-score   support
+
+         0.0       0.79      0.91      0.85        69
+         1.0       0.22      0.05      0.08        40
+         2.0       0.82      0.71      0.76       434
+         3.0       0.98      0.70      0.82       228
+         4.0       0.54      0.99      0.70       169
+
+    accuracy                           0.75       940
+   macro avg       0.67      0.67      0.64       940
+weighted avg       0.78      0.75      0.74       940
+ 
+
+
+====== chc013-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  97.55  91.30   98.05  78.75     84.56
+1  95.21   5.00   99.22  22.22      8.16
+2  79.47  71.43   86.36  81.79     76.26
+3  92.34  69.74   99.58  98.15     81.54
+4  84.79  99.41   81.58  54.19     70.15
+Total accuracy: 74.68%
+Average sen: 67.38%
+Average spec: 92.96%
+Macro f1-score: 64.13%
+
+=== Test on chc014-nsrr. train_data(7899), test_data(95) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1651242059597648
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9434015501588017
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8834505546153423
+Starting epoch 4/10.
+Epoch finished! Loss: 0.840420497385419
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8000501325904039
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7772306352664914
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7376732415270594
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6971362726467795
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6698753991281124
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6271564741872714
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.8957894736842106
+              precision    recall  f1-score   support
+
+         0.0       0.95      1.00      0.97       240
+         1.0       0.23      0.83      0.36         6
+         2.0       0.88      0.93      0.90       439
+         3.0       0.97      0.81      0.88       190
+         4.0       0.88      0.57      0.69        75
+
+    accuracy                           0.90       950
+   macro avg       0.78      0.83      0.76       950
+weighted avg       0.91      0.90      0.90       950
+ 
+
+
+====== chc014-nsrr ======
+   acc %   sen %  spec %  ppr %  f1-score
+0  98.63  100.00   98.17  94.86     97.36
+1  98.11   83.33   98.20  22.73     35.71
+2  90.84   93.39   88.65  87.61     90.41
+3  95.58   80.53   99.34  96.84     87.93
+4  96.00   57.33   99.31  87.76     69.35
+Total accuracy: 89.58%
+Average sen: 82.92%
+Average spec: 96.73%
+Macro f1-score: 76.15%
+
+=== Test on chc015-nsrr. train_data(7901), test_data(93) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2041533848907373
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9492647084254253
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8889011932702005
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8291091519066051
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7935152852837043
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7643938358448729
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7272661721781839
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6835950818242906
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6590153158465518
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6090229013675376
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7688172043010753
+              precision    recall  f1-score   support
+
+         0.0       0.78      0.82      0.79        38
+         1.0       0.60      0.14      0.23        83
+         2.0       0.88      0.76      0.81       502
+         3.0       0.66      1.00      0.80       166
+         4.0       0.67      0.89      0.76       141
+
+    accuracy                           0.77       930
+   macro avg       0.72      0.72      0.68       930
+weighted avg       0.78      0.77      0.75       930
+ 
+
+
+====== chc015-nsrr ======
+   acc %   sen %  spec %  ppr %  f1-score
+0  98.28   81.58   98.99  77.50     79.49
+1  91.51   14.46   99.06  60.00     23.30
+2  81.40   75.90   87.85  87.99     81.50
+3  90.86  100.00   88.87  66.14     79.62
+4  91.72   88.65   92.27  67.20     76.45
+Total accuracy: 76.88%
+Average sen: 72.12%
+Average spec: 93.41%
+Macro f1-score: 68.07%
+
+=== Test on chc016-nsrr. train_data(7899), test_data(95) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1592102433792084
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9336372114935151
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8760855836635609
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8423407930309479
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7937502959986301
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7702270705814749
+Starting epoch 7/10.
+Epoch finished! Loss: 0.745867287440294
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7114773573228766
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6744702072349036
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6242538636363807
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.84
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.96      0.87       226
+         1.0       0.33      0.07      0.12        55
+         2.0       0.87      0.88      0.87       410
+         3.0       0.80      0.84      0.82       108
+         4.0       0.92      0.83      0.87       151
+
+    accuracy                           0.84       950
+   macro avg       0.74      0.72      0.71       950
+weighted avg       0.82      0.84      0.82       950
+ 
+
+
+====== chc016-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  93.26  96.02   92.40  79.78     87.15
+1  93.79   7.27   99.11  33.33     11.94
+2  89.05  88.05   89.81  86.78     87.41
+3  95.79  84.26   97.27  79.82     81.98
+4  96.11  82.78   98.62  91.91     87.11
+Total accuracy: 84.00%
+Average sen: 71.68%
+Average spec: 95.44%
+Macro f1-score: 71.12%
+
+=== Test on chc022-nsrr. train_data(7913), test_data(81) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1357614767234938
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9372935095794885
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8844508454109413
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8397867785090893
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8228437278876564
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7773121419055423
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7521471865710657
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6968081567893287
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6779346521260916
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6439185340696882
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7814814814814814
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.97      0.93       102
+         1.0       0.53      0.67      0.59        15
+         2.0       0.74      0.90      0.81       397
+         3.0       0.81      0.61      0.70       187
+         4.0       0.98      0.49      0.65       109
+
+    accuracy                           0.78       810
+   macro avg       0.79      0.73      0.74       810
+weighted avg       0.80      0.78      0.77       810
+ 
+
+
+====== chc022-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  98.15  97.06   98.31  89.19     92.96
+1  98.27  66.67   98.87  52.63     58.82
+2  79.14  89.67   69.01  73.55     80.82
+3  87.78  61.50   95.67  80.99     69.91
+4  92.96  48.62   99.86  98.15     65.03
+Total accuracy: 78.15%
+Average sen: 72.70%
+Average spec: 92.34%
+Macro f1-score: 73.51%
+
+=== Test on chc025-nsrr. train_data(7911), test_data(83) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1592062206847025
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9648273498686466
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8993542186454334
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8446860079066039
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8149197862663703
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7813150576785602
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7475035661918625
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7121170206859652
+Starting epoch 9/10.
+Epoch finished! Loss: 0.689939224652183
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6472116630011051
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5036144578313253
+              precision    recall  f1-score   support
+
+         0.0       0.10      0.95      0.19        38
+         1.0       0.29      0.14      0.19        79
+         2.0       0.90      0.43      0.58       427
+         3.0       0.95      0.86      0.90       114
+         4.0       0.67      0.52      0.58       172
+
+    accuracy                           0.50       830
+   macro avg       0.58      0.58      0.49       830
+weighted avg       0.76      0.50      0.57       830
+ 
+
+
+====== chc025-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  61.81  94.74   60.23  10.26     18.51
+1  88.55  13.92   96.40  28.95     18.80
+2  68.19  43.09   94.79  89.76     58.23
+3  97.47  85.96   99.30  95.15     90.32
+4  84.70  51.74   93.31  66.92     58.36
+Total accuracy: 50.36%
+Average sen: 57.89%
+Average spec: 88.81%
+Macro f1-score: 48.84%
+
+=== Test on chc027-nsrr. train_data(7904), test_data(90) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1729910042466996
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9476271135143087
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8851690111658241
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8414773010377643
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8030767339317104
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7645231446510629
+Starting epoch 7/10.
+Epoch finished! Loss: 0.74266668991952
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7125026216612587
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6843831879805915
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6535086336769635
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.8844444444444445
+              precision    recall  f1-score   support
+
+         0.0       0.84      0.97      0.90       277
+         1.0       0.45      0.08      0.13        66
+         2.0       0.87      0.96      0.91       293
+         3.0       0.99      0.90      0.95       189
+         4.0       0.93      0.92      0.93        75
+
+    accuracy                           0.88       900
+   macro avg       0.82      0.77      0.76       900
+weighted avg       0.86      0.88      0.86       900
+ 
+
+
+====== chc027-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  93.56  97.11   91.97  84.33     90.27
+1  92.56   7.58   99.28  45.45     12.99
+2  94.11  96.25   93.08  87.04     91.41
+3  97.89  90.48   99.86  99.42     94.74
+4  98.78  92.00   99.39  93.24     92.62
+Total accuracy: 88.44%
+Average sen: 76.68%
+Average spec: 96.72%
+Macro f1-score: 76.40%
+
+=== Test on chc028-nsrr. train_data(7906), test_data(88) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.138014535813392
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9407755916631675
+Starting epoch 3/10.
+Epoch finished! Loss: 0.877013642538952
+Starting epoch 4/10.
+Epoch finished! Loss: 0.827026685695105
+Starting epoch 5/10.
+Epoch finished! Loss: 0.798529712950127
+Starting epoch 6/10.
+Epoch finished! Loss: 0.755777432194239
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7244536105967775
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6831080835076827
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6510726943234854
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5940048173447199
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7193181818181819
+              precision    recall  f1-score   support
+
+         0.0       0.59      0.88      0.71       129
+         1.0       0.30      0.38      0.33        53
+         2.0       0.88      0.66      0.75       460
+         3.0       0.94      0.79      0.86       164
+         4.0       0.49      0.91      0.63        74
+
+    accuracy                           0.72       880
+   macro avg       0.64      0.72      0.66       880
+weighted avg       0.78      0.72      0.73       880
+ 
+
+
+====== chc028-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  89.20  88.37   89.35  58.76     70.59
+1  90.91  37.74   94.32  29.85     33.33
+2  77.39  65.65   90.24  88.05     75.22
+3  95.23  79.27   98.88  94.20     86.09
+4  91.14  90.54   91.19  48.55     63.21
+Total accuracy: 71.93%
+Average sen: 72.31%
+Average spec: 92.80%
+Macro f1-score: 65.69%
+
+=== Test on chc033-nsrr. train_data(7907), test_data(87) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1539454525030113
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9620073237751103
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9056817450855351
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8450520005029968
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8003028132492983
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7696982535757596
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7426880386056779
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7057968318839617
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6728050105179413
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6198062610399874
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.8149425287356322
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.42      0.58        59
+         1.0       0.44      0.47      0.45        60
+         2.0       0.90      0.86      0.88       389
+         3.0       0.97      0.83      0.89       151
+         4.0       0.70      0.94      0.80       211
+
+    accuracy                           0.81       870
+   macro avg       0.79      0.70      0.72       870
+weighted avg       0.84      0.81      0.81       870
+ 
+
+
+====== chc033-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  95.86  42.37   99.75  92.59     58.14
+1  92.18  46.67   95.56  43.75     45.16
+2  89.43  85.60   92.52  90.24     87.86
+3  96.55  82.78   99.44  96.90     89.29
+4  88.97  93.84   87.41  70.46     80.49
+Total accuracy: 81.49%
+Average sen: 70.25%
+Average spec: 94.93%
+Macro f1-score: 72.19%
+
+=== Test on chc035-nsrr. train_data(7904), test_data(90) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.182490691429452
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9710122715823258
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8774212197789663
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8201149393486071
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7831693544795242
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7413497074495388
+Starting epoch 7/10.
+Epoch finished! Loss: 0.704950323550007
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6622743041077747
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6176760596187809
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5519335496840597
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6744444444444444
+              precision    recall  f1-score   support
+
+         0.0       0.95      0.72      0.82        29
+         1.0       0.51      0.32      0.39        57
+         2.0       0.67      0.76      0.71       391
+         3.0       1.00      0.41      0.58       250
+         4.0       0.56      0.97      0.71       173
+
+    accuracy                           0.67       900
+   macro avg       0.74      0.64      0.64       900
+weighted avg       0.74      0.67      0.66       900
+ 
+
+
+====== chc035-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  99.00  72.41   99.89   95.45     82.35
+1  93.78  31.58   97.98   51.43     39.13
+2  73.56  76.21   71.51   67.27     71.46
+3  83.56  40.80  100.00  100.00     57.95
+4  85.00  97.11   82.12   56.38     71.34
+Total accuracy: 67.44%
+Average sen: 63.62%
+Average spec: 90.30%
+Macro f1-score: 64.45%
+
+=== Test on chc037-nsrr. train_data(7906), test_data(88) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2243778975704047
+Starting epoch 2/10.
+Epoch finished! Loss: 1.0283768584456625
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9473669477278673
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8933015249197996
+Starting epoch 5/10.
+Epoch finished! Loss: 0.841457175868976
+Starting epoch 6/10.
+Epoch finished! Loss: 0.8075395742549172
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7660061604237255
+Starting epoch 8/10.
+Epoch finished! Loss: 0.73321460372285
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6916119234471382
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6501556633393976
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.8522727272727273
+              precision    recall  f1-score   support
+
+         0.0       0.94      0.95      0.95       154
+         1.0       0.26      0.32      0.29        34
+         2.0       0.82      0.94      0.88       317
+         3.0       1.00      0.72      0.84       168
+         4.0       0.89      0.83      0.86       207
+
+    accuracy                           0.85       880
+   macro avg       0.78      0.75      0.76       880
+weighted avg       0.87      0.85      0.85       880
+ 
+
+
+====== chc037-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  98.07  95.45   98.62   93.63     94.53
+1  93.75  32.35   96.22   25.58     28.57
+2  90.34  94.32   88.10   81.69     87.55
+3  94.66  72.02  100.00  100.00     83.74
+4  93.64  83.09   96.88   89.12     86.00
+Total accuracy: 85.23%
+Average sen: 75.45%
+Average spec: 95.96%
+Macro f1-score: 76.08%
+
+=== Test on chc040-nsrr. train_data(7886), test_data(108) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1536449063852958
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9670624113854418
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8857313790524066
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8496977534844791
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8030335130122712
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7845546984052295
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7395165870107975
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7211304182933672
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6878651166476574
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6554240571703706
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.8138888888888889
+              precision    recall  f1-score   support
+
+         0.0       0.72      0.98      0.83       185
+         1.0       0.52      0.22      0.31        50
+         2.0       0.92      0.76      0.83       483
+         3.0       0.82      0.84      0.83       216
+         4.0       0.73      0.95      0.82       146
+
+    accuracy                           0.81      1080
+   macro avg       0.74      0.75      0.73      1080
+weighted avg       0.82      0.81      0.81      1080
+ 
+
+
+====== chc040-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  93.24  98.38   92.18  72.22     83.30
+1  95.46  22.00   99.03  52.38     30.99
+2  86.30  75.57   94.97  92.41     83.14
+3  93.24  84.26   95.49  82.35     83.30
+4  94.54  95.21   94.43  72.77     82.49
+Total accuracy: 81.39%
+Average sen: 75.08%
+Average spec: 95.22%
+Macro f1-score: 72.64%
+
+=== Test on chc041-nsrr. train_data(7909), test_data(85) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1968652624872667
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9485420214224465
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8612051709166056
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8184452867206139
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7905379358726212
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7593734048589875
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7403652010839197
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7093178366558461
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6609838421963439
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6142007518418228
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6729411764705883
+              precision    recall  f1-score   support
+
+         0.0       0.52      0.95      0.68        56
+         1.0       0.10      0.24      0.14        38
+         2.0       0.75      0.75      0.75       416
+         3.0       0.99      0.46      0.63       188
+         4.0       0.70      0.74      0.72       152
+
+    accuracy                           0.67       850
+   macro avg       0.61      0.63      0.58       850
+weighted avg       0.75      0.67      0.69       850
+ 
+
+
+====== chc041-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  94.00  94.64   93.95  52.48     67.52
+1  87.18  23.68   90.15  10.11     14.17
+2  75.65  74.76   76.50  75.30     75.03
+3  88.00  46.28   99.85  98.86     63.04
+4  89.76  73.68   93.27  70.44     72.03
+Total accuracy: 67.29%
+Average sen: 62.61%
+Average spec: 90.74%
+Macro f1-score: 58.36%
+
+=== Test on chc052-nsrr. train_data(7903), test_data(91) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1124276101589203
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9456125600051276
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8813750002957598
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8313553264623956
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7916815188489382
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7616392581145974
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7149127619930461
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6831121960584121
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6332250692987744
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5704459390685528
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.8087912087912088
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.99      0.89       142
+         1.0       0.12      0.17      0.14        23
+         2.0       0.86      0.82      0.84       466
+         3.0       0.82      0.80      0.81       177
+         4.0       0.81      0.66      0.72       102
+
+    accuracy                           0.81       910
+   macro avg       0.68      0.69      0.68       910
+weighted avg       0.82      0.81      0.81       910
+ 
+
+
+====== chc052-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  96.15  98.59   95.70  80.92     88.89
+1  94.62  17.39   96.62  11.76     14.04
+2  83.85  82.40   85.36  85.52     83.93
+3  92.75  79.66   95.91  82.46     81.03
+4  94.40  65.69   98.02  80.72     72.43
+Total accuracy: 80.88%
+Average sen: 68.75%
+Average spec: 94.32%
+Macro f1-score: 68.07%
+
+=== Test on chc056-nsrr. train_data(7902), test_data(92) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2021651641477513
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9359478975021387
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8681591261036788
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8260939071827297
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7961162798766849
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7673553333629536
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7374554487346093
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6963647624359856
+Starting epoch 9/10.
+Epoch finished! Loss: 0.654430958836139
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5954684798664684
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7815217391304348
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.90      0.80       191
+         1.0       0.33      0.12      0.18        89
+         2.0       0.78      0.95      0.86       397
+         3.0       0.98      0.83      0.90       153
+         4.0       0.89      0.34      0.50        90
+
+    accuracy                           0.78       920
+   macro avg       0.74      0.63      0.65       920
+weighted avg       0.77      0.78      0.75       920
+ 
+
+
+====== chc056-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  90.98  89.53   91.36  73.08     80.47
+1  89.13  12.36   97.35  33.33     18.03
+2  86.20  95.47   79.16  77.66     85.65
+3  96.85  83.01   99.61  97.69     89.75
+4  93.15  34.44   99.52  88.57     49.60
+Total accuracy: 78.15%
+Average sen: 62.96%
+Average spec: 93.40%
+Macro f1-score: 64.70%
+
+=== Test on chp001-nsrr. train_data(7878), test_data(116) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1543157683091363
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9593032319027708
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8793570228877182
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8304371012438662
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7984803158794607
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7545145142260168
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7202060334526448
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6945062503881345
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6404715023622428
+Starting epoch 10/10.
+Epoch finished! Loss: 0.599147532764808
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.593103448275862
+              precision    recall  f1-score   support
+
+         0.0       0.29      0.80      0.42        55
+         1.0       0.11      0.27      0.16        79
+         2.0       0.72      0.86      0.78       553
+         3.0       0.86      0.64      0.73        69
+         4.0       0.97      0.25      0.40       404
+
+    accuracy                           0.59      1160
+   macro avg       0.59      0.56      0.50      1160
+weighted avg       0.75      0.59      0.59      1160
+ 
+
+
+====== chp001-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  89.66  80.00   90.14  28.76     42.31
+1  80.95  26.58   84.92  11.41     15.97
+2  77.07  86.26   68.70  71.51     78.20
+3  97.24  63.77   99.36  86.27     73.33
+4  73.71  25.25   99.60  97.14     40.08
+Total accuracy: 59.31%
+Average sen: 56.37%
+Average spec: 88.54%
+Macro f1-score: 49.98%
+
+=== Test on chp002-nsrr. train_data(7886), test_data(108) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2063176932976332
+Starting epoch 2/10.
+Epoch finished! Loss: 0.942282093017537
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8741118005160148
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8212117532334352
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7880484925081888
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7622884779336488
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7215998488936932
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6912291007220442
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6602687003837927
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6098040104820038
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7314814814814815
+              precision    recall  f1-score   support
+
+         0.0       0.84      0.52      0.64       260
+         1.0       0.62      0.46      0.53       248
+         2.0       0.77      0.99      0.87       375
+         3.0       1.00      0.92      0.96       169
+         4.0       0.14      0.50      0.22        28
+
+    accuracy                           0.73      1080
+   macro avg       0.68      0.68      0.64      1080
+weighted avg       0.77      0.73      0.73      1080
+ 
+
+
+====== chp002-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  86.02  51.54   96.95   84.28     63.96
+1  81.11  45.56   91.71   62.09     52.56
+2  89.72  99.47   84.54   77.39     87.05
+3  98.80  92.31  100.00  100.00     96.00
+4  90.65  50.00   91.73   13.86     21.71
+Total accuracy: 73.15%
+Average sen: 67.78%
+Average spec: 92.99%
+Macro f1-score: 64.25%
+
+=== Test on chp003-nsrr. train_data(7894), test_data(100) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1356733759395372
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9440726712629369
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8785294734026543
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8301199497454369
+Starting epoch 5/10.
+Epoch finished! Loss: 0.783721476491111
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7534722074280825
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7153924166854041
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6808223770636267
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6411668328315737
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5900181616704878
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.519
+              precision    recall  f1-score   support
+
+         0.0       0.52      0.32      0.40        90
+         1.0       0.09      0.95      0.17        38
+         2.0       0.75      0.65      0.70       478
+         3.0       1.00      0.48      0.65       196
+         4.0       0.87      0.23      0.37       198
+
+    accuracy                           0.52      1000
+   macro avg       0.65      0.53      0.46      1000
+weighted avg       0.78      0.52      0.58      1000
+ 
+
+
+====== chp003-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0   91.2  32.22   97.03   51.79     39.73
+1   65.3  94.74   64.14    9.45     17.18
+2   73.3  65.48   80.46   75.42     70.10
+3   89.9  48.47  100.00  100.00     65.29
+4   84.1  23.23   99.13   86.79     36.65
+Total accuracy: 51.90%
+Average sen: 52.83%
+Average spec: 88.15%
+Macro f1-score: 45.79%
+
+=== Test on chp004-nsrr. train_data(7896), test_data(98) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1761008601527099
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9498144248063725
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8847770349456633
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8411018372866288
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7918478403103518
+Starting epoch 6/10.
+Epoch finished! Loss: 0.763577295157997
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7323486842545569
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7123257670981198
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6705959690085533
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6338873894269023
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6183673469387755
+              precision    recall  f1-score   support
+
+         0.0       0.46      0.50      0.48       135
+         1.0       0.29      0.47      0.36       141
+         2.0       0.77      0.73      0.75       354
+         3.0       0.91      0.69      0.79       197
+         4.0       0.63      0.52      0.57       153
+
+    accuracy                           0.62       980
+   macro avg       0.61      0.58      0.59       980
+weighted avg       0.67      0.62      0.63       980
+ 
+
+
+====== chp004-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  85.10  50.37   90.65  46.26     48.23
+1  76.12  46.81   81.05  29.33     36.07
+2  82.24  72.60   87.70  76.95     74.71
+3  92.45  69.04   98.34  91.28     78.61
+4  87.76  51.63   94.44  63.20     56.83
+Total accuracy: 61.84%
+Average sen: 58.09%
+Average spec: 90.44%
+Macro f1-score: 58.89%
+
+=== Test on chp005-nsrr. train_data(7864), test_data(130) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.151702396893926
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9320554179317169
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8652400158288824
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8157306977052422
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7762906679518653
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7416181673340821
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7141901721026152
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6742358951623203
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6190793223432609
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5620280749546056
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6261538461538462
+              precision    recall  f1-score   support
+
+         0.0       0.20      0.80      0.32        79
+         1.0       0.47      0.52      0.49       238
+         2.0       0.84      0.88      0.86       565
+         3.0       0.96      0.54      0.69       136
+         4.0       0.97      0.21      0.34       282
+
+    accuracy                           0.63      1300
+   macro avg       0.69      0.59      0.54      1300
+weighted avg       0.78      0.63      0.63      1300
+ 
+
+
+====== chp005-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  79.46  79.75   79.44  20.06     32.06
+1  80.46  51.68   86.91  46.95     49.20
+2  87.69  87.79   87.62  84.50     86.11
+3  94.92  53.68   99.74  96.05     68.87
+4  82.69  20.92   99.80  96.72     34.40
+Total accuracy: 62.62%
+Average sen: 58.76%
+Average spec: 90.70%
+Macro f1-score: 54.13%
+
+=== Test on chp006-nsrr. train_data(7884), test_data(110) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2246852433167132
+Starting epoch 2/10.
+Epoch finished! Loss: 0.940380807984904
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8688917569627012
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8271709079972378
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7698923870921135
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7394835584357305
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7031328696663004
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6731929489728158
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6188754960516383
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5596018288530371
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5409090909090909
+              precision    recall  f1-score   support
+
+         0.0       0.46      0.66      0.54       120
+         1.0       0.52      0.24      0.33       329
+         2.0       0.45      0.97      0.61       287
+         3.0       1.00      0.60      0.75       224
+         4.0       0.89      0.18      0.30       140
+
+    accuracy                           0.54      1100
+   macro avg       0.67      0.53      0.51      1100
+weighted avg       0.64      0.54      0.51      1100
+ 
+
+
+====== chp006-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  88.00  65.83   90.71   46.47     54.48
+1  70.64  24.01   90.53   51.97     32.85
+2  68.36  96.52   58.43   45.04     61.42
+3  91.91  60.27  100.00  100.00     75.21
+4  89.27  17.86   99.69   89.29     29.76
+Total accuracy: 54.09%
+Average sen: 52.90%
+Average spec: 87.87%
+Macro f1-score: 50.74%
+
+=== Test on chp007-nsrr. train_data(7879), test_data(115) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1928017009925358
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9856393564459329
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9094906837846303
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8592978831394806
+Starting epoch 5/10.
+Epoch finished! Loss: 0.812885775650926
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7677460750221752
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7380686690119654
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6948239970691928
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6642374994832042
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6119729694182566
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6904347826086956
+              precision    recall  f1-score   support
+
+         0.0       0.66      0.83      0.73       166
+         1.0       0.13      0.33      0.19        58
+         2.0       0.69      0.76      0.72       397
+         3.0       0.91      0.79      0.85       175
+         4.0       0.96      0.55      0.70       354
+
+    accuracy                           0.69      1150
+   macro avg       0.67      0.65      0.64      1150
+weighted avg       0.77      0.69      0.71      1150
+ 
+
+
+====== chp007-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  91.39  82.53   92.89  66.18     73.46
+1  85.57  32.76   88.37  13.01     18.63
+2  79.91  76.32   81.81  68.86     72.40
+3  95.74  79.43   98.67  91.45     85.02
+4  85.48  55.37   98.87  95.61     70.13
+Total accuracy: 69.04%
+Average sen: 65.28%
+Average spec: 92.12%
+Macro f1-score: 63.93%
+
+=== Test on chp008-nsrr. train_data(7899), test_data(95) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1499947377484108
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9332767834530433
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8552081164525036
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8029994863369921
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7723311441555072
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7317544805837373
+Starting epoch 7/10.
+Epoch finished! Loss: 0.6952473611886058
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6511817063819924
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6003717539126127
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5295221320765402
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6810526315789474
+              precision    recall  f1-score   support
+
+         0.0       0.56      0.88      0.68       129
+         1.0       0.13      0.27      0.18        37
+         2.0       0.84      0.44      0.58       387
+         3.0       0.83      0.88      0.85       263
+         4.0       0.64      0.90      0.75       134
+
+    accuracy                           0.68       950
+   macro avg       0.60      0.67      0.61       950
+weighted avg       0.74      0.68      0.68       950
+ 
+
+
+====== chp008-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  88.84  88.37   88.92  55.61     68.26
+1  90.32  27.03   92.88  13.33     17.86
+2  74.00  44.44   94.32  84.31     58.21
+3  91.58  87.83   93.01  82.80     85.24
+4  91.47  89.55   91.79  64.17     74.77
+Total accuracy: 68.11%
+Average sen: 67.45%
+Average spec: 92.18%
+Macro f1-score: 60.87%
+
+=== Test on chp009-nsrr. train_data(7891), test_data(103) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1631548995451932
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9498810410801751
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8843209973910613
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8500015252518865
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8082548220876807
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7751396477071354
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7488352799143628
+Starting epoch 8/10.
+Epoch finished! Loss: 0.715173972159133
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6794264416277636
+Starting epoch 10/10.
+Epoch finished! Loss: 0.640418456534469
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7524271844660194
+              precision    recall  f1-score   support
+
+         0.0       0.75      0.77      0.76        96
+         1.0       0.37      0.43      0.40       123
+         2.0       0.75      0.79      0.77       355
+         3.0       1.00      0.80      0.89       219
+         4.0       0.82      0.80      0.81       237
+
+    accuracy                           0.75      1030
+   macro avg       0.74      0.72      0.72      1030
+weighted avg       0.77      0.75      0.76      1030
+ 
+
+
+====== chp009-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  95.44  77.08   97.32   74.75     75.90
+1  84.27  43.09   89.86   36.55     39.55
+2  83.69  79.44   85.93   74.80     77.05
+3  95.83  80.37  100.00  100.00     89.11
+4  91.26  80.17   94.58   81.55     80.85
+Total accuracy: 75.24%
+Average sen: 72.03%
+Average spec: 93.54%
+Macro f1-score: 72.49%
+
+=== Test on chp010-nsrr. train_data(7897), test_data(97) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1790044301665177
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9748610221841036
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8978696594673418
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8365515857670546
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7938038140573127
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7556873001677606
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7311607517670315
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6841345739719683
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6487862143868578
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6043717527646377
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6092783505154639
+              precision    recall  f1-score   support
+
+         0.0       0.29      0.84      0.43        57
+         1.0       0.17      0.68      0.27        60
+         2.0       0.89      0.76      0.82       506
+         3.0       0.93      0.59      0.72        90
+         4.0       0.89      0.24      0.38       257
+
+    accuracy                           0.61       970
+   macro avg       0.63      0.62      0.53       970
+weighted avg       0.81      0.61      0.64       970
+ 
+
+
+====== chp010-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  87.01  84.21   87.19  29.09     43.24
+1  77.22  68.33   77.80  16.87     27.06
+2  82.78  76.48   89.66  88.97     82.25
+3  95.77  58.89   99.55  92.98     72.11
+4  79.07  24.12   98.88  88.57     37.92
+Total accuracy: 60.93%
+Average sen: 62.41%
+Average spec: 90.61%
+Macro f1-score: 52.52%
+
+=== Test on chp011-nsrr. train_data(7893), test_data(101) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.163710017545746
+Starting epoch 2/10.
+Epoch finished! Loss: 1.0138413715725163
+Starting epoch 3/10.
+Epoch finished! Loss: 0.923950464439936
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8667244104000401
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8089962480034967
+Starting epoch 6/10.
+Epoch finished! Loss: 0.772283746413556
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7393637704834134
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6868950631493096
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6383029338071555
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5694491687043085
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5336633663366337
+              precision    recall  f1-score   support
+
+         0.0       0.36      0.75      0.49       234
+         1.0       0.26      0.10      0.15       148
+         2.0       0.68      0.33      0.45       221
+         3.0       0.99      0.77      0.87       271
+         4.0       0.45      0.48      0.46       136
+
+    accuracy                           0.53      1010
+   macro avg       0.55      0.49      0.48      1010
+weighted avg       0.60      0.53      0.53      1010
+ 
+
+
+====== chp011-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  63.56  75.21   60.05  36.21     48.89
+1  82.57  10.14   95.01  25.86     14.56
+2  81.98  33.03   95.69  68.22     44.51
+3  93.66  77.49   99.59  98.59     86.78
+4  84.95  47.79   90.73  44.52     46.10
+Total accuracy: 53.37%
+Average sen: 48.73%
+Average spec: 88.22%
+Macro f1-score: 48.17%
+
+=== Test on chp012-nsrr. train_data(7883), test_data(111) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1378087368108294
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9241088541782447
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8767042859707992
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8345851337319703
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7880971576961769
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7606615284221426
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7347220525069891
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7006838971815134
+Starting epoch 9/10.
+Epoch finished! Loss: 0.674887465681824
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6162333506239852
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6252252252252253
+              precision    recall  f1-score   support
+
+         0.0       0.60      0.26      0.36        23
+         1.0       0.35      0.08      0.13       182
+         2.0       0.50      0.97      0.66       379
+         3.0       0.98      0.93      0.95       203
+         4.0       0.91      0.36      0.52       323
+
+    accuracy                           0.63      1110
+   macro avg       0.67      0.52      0.52      1110
+weighted avg       0.68      0.63      0.58      1110
+ 
+
+
+====== chp012-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  98.11  26.09   99.63  60.00     36.36
+1  82.52   7.69   97.20  35.00     12.61
+2  65.77  97.36   49.38  49.93     66.01
+3  98.29  92.61   99.56  97.92     95.19
+4  80.36  36.22   98.48  90.70     51.77
+Total accuracy: 62.52%
+Average sen: 51.99%
+Average spec: 88.85%
+Macro f1-score: 52.39%
+
+=== Test on chp013-nsrr. train_data(7894), test_data(100) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1891410447496575
+Starting epoch 2/10.
+Epoch finished! Loss: 1.0018662365368263
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9313213198961565
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8803475246456639
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8364865850133134
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7978736721970736
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7643553758906472
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7263618380548987
+Starting epoch 9/10.
+Epoch finished! Loss: 0.689998032513378
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6527766139259508
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.659
+              precision    recall  f1-score   support
+
+         0.0       0.52      0.94      0.67        33
+         1.0       0.49      0.17      0.25       142
+         2.0       0.61      0.91      0.73       433
+         3.0       0.87      0.76      0.81       189
+         4.0       0.80      0.32      0.46       203
+
+    accuracy                           0.66      1000
+   macro avg       0.66      0.62      0.58      1000
+weighted avg       0.68      0.66      0.62      1000
+ 
+
+
+====== chp013-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0   96.9  93.94   97.00  51.67     66.67
+1   85.7  16.90   97.09  48.98     25.13
+2   71.3  91.22   56.08  61.34     73.35
+3   93.3  76.19   97.29  86.75     81.13
+4   84.6  32.02   97.99  80.25     45.77
+Total accuracy: 65.90%
+Average sen: 62.06%
+Average spec: 89.09%
+Macro f1-score: 58.41%
+
+=== Test on chp014-nsrr. train_data(7894), test_data(100) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1590922557960144
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9774495586847323
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9096589324138917
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8504643455733213
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8161008445255656
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7852263577915114
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7617444204135841
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7250728555429722
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6954171361427646
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6507706958682516
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.78
+              precision    recall  f1-score   support
+
+         0.0       0.97      0.72      0.83       203
+         1.0       0.23      0.37      0.28        68
+         2.0       0.80      0.93      0.86       397
+         3.0       0.98      0.85      0.91       146
+         4.0       0.76      0.62      0.69       186
+
+    accuracy                           0.78      1000
+   macro avg       0.75      0.70      0.71      1000
+weighted avg       0.81      0.78      0.79      1000
+ 
+
+
+====== chp014-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0   94.0  72.41   99.50  97.35     83.05
+1   87.4  36.76   91.09  23.15     28.41
+2   87.7  92.70   84.41  79.65     85.68
+3   97.5  84.93   99.65  97.64     90.84
+4   89.4  62.37   95.58  76.32     68.64
+Total accuracy: 78.00%
+Average sen: 69.83%
+Average spec: 94.05%
+Macro f1-score: 71.32%
+
+=== Test on chp015-nsrr. train_data(7879), test_data(115) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.164859115623004
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9721596452302218
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8737438792952134
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8276572897746269
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7821670022746963
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7562853798857183
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7265750712406226
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6868782815212215
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6323911018451863
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5730485491255793
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6365217391304347
+              precision    recall  f1-score   support
+
+         0.0       0.25      0.79      0.38        67
+         1.0       0.62      0.11      0.19       281
+         2.0       0.74      0.67      0.70       335
+         3.0       0.77      0.94      0.85       274
+         4.0       0.66      0.87      0.75       193
+
+    accuracy                           0.64      1150
+   macro avg       0.61      0.67      0.57      1150
+weighted avg       0.68      0.64      0.60      1150
+ 
+
+
+====== chp015-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  84.96  79.10   85.32  25.00     37.99
+1  76.61  11.39   97.70  61.54     19.22
+2  83.57  66.57   90.55  74.33     70.24
+3  92.00  93.80   91.44  77.41     84.82
+4  90.17  86.53   90.91  65.75     74.72
+Total accuracy: 63.65%
+Average sen: 67.48%
+Average spec: 91.18%
+Macro f1-score: 57.40%
+
+=== Test on chp016-nsrr. train_data(7867), test_data(127) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1462645627008443
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9552285356906838
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8812008685889742
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8343309566340678
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7884944205293218
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7524813542156729
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7246343493840773
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6853510913351413
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6390659668442554
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5775640866607806
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7456692913385827
+              precision    recall  f1-score   support
+
+         0.0       0.85      0.95      0.90       305
+         1.0       0.78      0.32      0.46       291
+         2.0       0.62      0.87      0.72       330
+         3.0       0.77      0.93      0.84       133
+         4.0       0.83      0.72      0.77       211
+
+    accuracy                           0.75      1270
+   macro avg       0.77      0.76      0.74      1270
+weighted avg       0.76      0.75      0.72      1270
+ 
+
+
+====== chp016-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  94.88  95.08   94.82  85.29     89.92
+1  82.36  32.30   97.24  77.69     45.63
+2  82.76  87.27   81.17  61.94     72.45
+3  96.38  93.23   96.75  77.02     84.35
+4  92.76  71.56   96.98  82.51     76.65
+Total accuracy: 74.57%
+Average sen: 75.89%
+Average spec: 93.39%
+Macro f1-score: 73.80%
+
+=== Test on chp017-nsrr. train_data(7893), test_data(101) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1754404284503825
+Starting epoch 2/10.
+Epoch finished! Loss: 0.940013464035039
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8708042160186478
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8307344738974771
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7952126121792956
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7669594051795616
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7289895271771458
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6944036532113156
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6526860786254868
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6084072104689437
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.400990099009901
+              precision    recall  f1-score   support
+
+         0.0       0.60      0.74      0.66       237
+         1.0       0.35      0.04      0.07       249
+         2.0       0.18      0.03      0.06       210
+         3.0       0.80      0.64      0.71       265
+         4.0       0.10      0.90      0.18        49
+
+    accuracy                           0.40      1010
+   macro avg       0.41      0.47      0.34      1010
+weighted avg       0.48      0.40      0.38      1010
+ 
+
+
+====== chp017-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  82.48  73.84   85.12  60.34     66.41
+1  74.55   3.61   97.77  34.62      6.55
+2  76.73   3.33   96.00  17.95      5.62
+3  86.34  64.15   94.23  79.81     71.13
+4  60.10  89.80   58.58   9.95     17.92
+Total accuracy: 40.10%
+Average sen: 46.95%
+Average spec: 86.34%
+Macro f1-score: 33.53%
+
+=== Test on chp018-nsrr. train_data(7882), test_data(112) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.119453210289103
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9215660861074016
+Starting epoch 3/10.
+Epoch finished! Loss: 0.857637724030744
+Starting epoch 4/10.
+Epoch finished! Loss: 0.811113828594612
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7819885461766103
+Starting epoch 6/10.
+Epoch finished! Loss: 0.749236664493677
+Starting epoch 7/10.
+Epoch finished! Loss: 0.722116215050523
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6847294869686141
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6202029183998629
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5532548283865004
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6258928571428571
+              precision    recall  f1-score   support
+
+         0.0       0.74      0.80      0.77       138
+         1.0       0.21      0.20      0.21       123
+         2.0       0.20      0.16      0.18       130
+         3.0       1.00      0.62      0.77       363
+         4.0       0.61      0.87      0.71       366
+
+    accuracy                           0.63      1120
+   macro avg       0.55      0.53      0.53      1120
+weighted avg       0.66      0.63      0.62      1120
+ 
+
+
+====== chp018-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  94.20  80.43   96.13   74.50     77.35
+1  83.04  20.33   90.77   21.37     20.83
+2  82.95  16.15   91.72   20.39     18.03
+3  87.77  62.26  100.00  100.00     76.74
+4  77.23  86.89   72.55   60.57     71.38
+Total accuracy: 62.59%
+Average sen: 53.21%
+Average spec: 90.23%
+Macro f1-score: 52.87%
+
+=== Test on chp019-nsrr. train_data(7900), test_data(94) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1767781625380231
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9377593449464466
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8729109561639745
+Starting epoch 4/10.
+Epoch finished! Loss: 0.83872765317767
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8005250769422988
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7632923712068638
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7423480427310494
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7071572535580404
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6712107140150663
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6254840179881216
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6276595744680851
+              precision    recall  f1-score   support
+
+         0.0       0.52      0.42      0.46        36
+         1.0       0.22      0.04      0.06       112
+         2.0       0.82      0.12      0.21       224
+         3.0       0.75      0.95      0.84       236
+         4.0       0.57      0.96      0.72       332
+
+    accuracy                           0.63       940
+   macro avg       0.58      0.50      0.46       940
+weighted avg       0.63      0.63      0.54       940
+ 
+
+
+====== chp019-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  96.28  41.67   98.45  51.72     46.15
+1  87.02   3.57   98.31  22.22      6.15
+2  78.40  12.05   99.16  81.82     21.01
+3  90.85  95.34   89.35  75.00     83.96
+4  72.98  96.08   60.36  56.96     71.52
+Total accuracy: 62.77%
+Average sen: 49.74%
+Average spec: 89.13%
+Macro f1-score: 45.76%
+
+=== Test on chp020-nsrr. train_data(7879), test_data(115) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2339129790266103
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9545214834328376
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8891591140396865
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8392969193800887
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7772554842686562
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7474589496282944
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7234732712011931
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6772035322846724
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6486004161183383
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5947295993074225
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5191304347826087
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.44      0.59       307
+         1.0       0.40      0.28      0.33       200
+         2.0       0.44      0.99      0.61       354
+         3.0       1.00      0.14      0.24       159
+         4.0       0.70      0.25      0.37       130
+
+    accuracy                           0.52      1150
+   macro avg       0.69      0.42      0.43      1150
+weighted avg       0.67      0.52      0.48      1150
+ 
+
+
+====== chp020-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  84.09  43.65   98.81   93.06     59.42
+1  80.17  28.00   91.16   40.00     32.94
+2  61.13  99.44   44.10   44.17     61.16
+3  88.09  13.84  100.00  100.00     24.31
+4  90.35  25.38   98.63   70.21     37.29
+Total accuracy: 51.91%
+Average sen: 42.06%
+Average spec: 86.54%
+Macro f1-score: 43.03%
+
+=== Test on chp022-nsrr. train_data(7868), test_data(126) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1426106020239473
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9550075054775364
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8845310191465091
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8390359701470261
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7967025746067669
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7644963058199895
+Starting epoch 7/10.
+Epoch finished! Loss: 0.725711748800205
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6968023443722543
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6505201447176873
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5988540289207875
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5841269841269842
+              precision    recall  f1-score   support
+
+         0.0       0.49      0.95      0.64       253
+         1.0       0.73      0.04      0.07       293
+         2.0       0.81      0.67      0.73       468
+         3.0       0.47      0.93      0.62       107
+         4.0       0.47      0.52      0.49       139
+
+    accuracy                           0.58      1260
+   macro avg       0.59      0.62      0.51      1260
+weighted avg       0.66      0.58      0.53      1260
+ 
+
+
+====== chp022-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  78.81  94.86   74.78  48.58     64.26
+1  77.30   3.75   99.59  73.33      7.14
+2  81.90  67.09   90.66  80.93     73.36
+3  90.56  92.52   90.37  47.14     62.46
+4  88.25  51.80   92.77  47.06     49.32
+Total accuracy: 58.41%
+Average sen: 62.01%
+Average spec: 89.63%
+Macro f1-score: 51.31%
+
+=== Test on chp024-nsrr. train_data(7882), test_data(112) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2046194023589798
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9696355596714213
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8860774699050158
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8334714426531404
+Starting epoch 5/10.
+Epoch finished! Loss: 0.793862067805934
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7604691354075664
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7254105299938148
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6923247696406345
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6491528782936825
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6035406713747433
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.4973214285714286
+              precision    recall  f1-score   support
+
+         0.0       0.36      0.97      0.53       232
+         1.0       0.35      0.05      0.09       179
+         2.0       0.49      0.39      0.43       256
+         3.0       1.00      0.54      0.70       339
+         4.0       0.47      0.36      0.41       114
+
+    accuracy                           0.50      1120
+   macro avg       0.53      0.46      0.43      1120
+weighted avg       0.59      0.50      0.48      1120
+ 
+
+
+====== chp024-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  63.84  96.55   55.29   36.07     52.52
+1  83.30   5.03   98.19   34.62      8.78
+2  76.79  38.67   88.08   49.01     43.23
+3  86.16  54.28  100.00  100.00     70.36
+4  89.38  35.96   95.43   47.13     40.80
+Total accuracy: 49.73%
+Average sen: 46.10%
+Average spec: 87.40%
+Macro f1-score: 43.14%
+
+=== Test on chp025-nsrr. train_data(7950), test_data(44) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2611937446317985
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9924538058207678
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8996364838005013
+Starting epoch 4/10.
+Epoch finished! Loss: 0.84433455787768
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7972988136844611
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7644319986591411
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7307628185232581
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6919581754231633
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6518162299388602
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5976088233385939
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6613636363636364
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.62      0.76       304
+         1.0       0.25      0.06      0.10        31
+         2.0       0.47      0.97      0.63        29
+         3.0       1.00      0.98      0.99        62
+         4.0       0.11      0.93      0.19        14
+
+    accuracy                           0.66       440
+   macro avg       0.56      0.71      0.53       440
+weighted avg       0.88      0.66      0.72       440
+ 
+
+
+====== chp025-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  72.95  61.51   98.53   98.94     75.86
+1  92.05   6.45   98.53   25.00     10.26
+2  92.50  96.55   92.21   46.67     62.92
+3  99.77  98.39  100.00  100.00     99.19
+4  75.00  92.86   74.41   10.66     19.12
+Total accuracy: 66.14%
+Average sen: 71.15%
+Average spec: 92.74%
+Macro f1-score: 53.47%
+
+=== Test on chp026-nsrr. train_data(7900), test_data(94) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1491776455491214
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9568483181326108
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8975090361819974
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8395214839655486
+Starting epoch 5/10.
+Epoch finished! Loss: 0.801028913304833
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7703951098242036
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7355937439528104
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7020365470035901
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6677384526670659
+Starting epoch 10/10.
+Epoch finished! Loss: 0.621237825115975
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7595744680851064
+              precision    recall  f1-score   support
+
+         0.0       0.84      0.71      0.77        58
+         1.0       0.18      0.04      0.06        55
+         2.0       0.80      0.72      0.76       422
+         3.0       0.64      0.98      0.77       182
+         4.0       0.86      0.84      0.85       223
+
+    accuracy                           0.76       940
+   macro avg       0.66      0.66      0.64       940
+weighted avg       0.75      0.76      0.74       940
+ 
+
+
+====== chp026-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  97.34  70.69   99.09  83.67     76.64
+1  93.40   3.64   98.98  18.18      6.06
+2  79.36  72.04   85.33  80.00     75.81
+3  88.83  98.35   86.54  63.70     77.32
+4  92.98  84.30   95.68  85.84     85.07
+Total accuracy: 75.96%
+Average sen: 65.80%
+Average spec: 93.12%
+Macro f1-score: 64.18%
+
+=== Test on chp028-nsrr. train_data(7891), test_data(103) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1481888966566407
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9772925252999038
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9120732606666019
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8669472688051231
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8306632943177555
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7784127003037582
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7500413869270354
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7089939768247883
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6851911307967661
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6542637109454291
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6618075801749271
+              precision    recall  f1-score   support
+
+         0.0       0.96      0.81      0.88       111
+         1.0       0.11      0.13      0.12        55
+         2.0       0.60      0.83      0.70       382
+         3.0       0.70      0.81      0.75       191
+         4.0       0.97      0.38      0.55       290
+
+    accuracy                           0.66      1029
+   macro avg       0.67      0.59      0.60      1029
+weighted avg       0.73      0.66      0.65      1029
+ 
+
+
+====== chp028-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  97.57  81.08   99.56  95.74     87.80
+1  89.60  12.73   93.94  10.61     11.57
+2  72.89  83.25   66.77  59.66     69.51
+3  90.09  81.15   92.12  70.14     75.24
+4  82.22  38.28   99.46  96.52     54.81
+Total accuracy: 66.18%
+Average sen: 59.30%
+Average spec: 90.37%
+Macro f1-score: 59.79%
+
+=== Test on chp029-nsrr. train_data(7890), test_data(104) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1518028301333414
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9657105399191682
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8924065255725444
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8554374291963384
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8190243422682515
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7809457049757091
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7483452656849992
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7239663645171271
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6880459222318557
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6439661674466229
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7057692307692308
+              precision    recall  f1-score   support
+
+         0.0       0.37      0.89      0.52        66
+         1.0       0.12      0.02      0.04        48
+         2.0       0.75      0.73      0.74       422
+         3.0       0.96      0.72      0.83       334
+         4.0       0.59      0.74      0.66       170
+
+    accuracy                           0.71      1040
+   macro avg       0.56      0.62      0.56      1040
+weighted avg       0.74      0.71      0.71      1040
+ 
+
+
+====== chp029-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  89.71  89.39   89.73  37.11     52.44
+1  94.81   2.08   99.29  12.50      3.57
+2  78.85  72.51   83.17  74.63     73.56
+3  90.29  72.46   98.73  96.41     82.74
+4  87.50  74.12   90.11  59.43     65.97
+Total accuracy: 70.58%
+Average sen: 62.11%
+Average spec: 92.21%
+Macro f1-score: 55.66%
+
+=== Test on chp030-nsrr. train_data(7874), test_data(120) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.108979089060157
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9378743112617406
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8782264736434859
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8277001736503392
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7912188611233553
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7611572648170185
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7271470756967005
+Starting epoch 8/10.
+Epoch finished! Loss: 0.684692927926135
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6414125743481831
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6001098957646454
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.658882402001668
+              precision    recall  f1-score   support
+
+         0.0       0.65      0.76      0.70       350
+         1.0       0.47      0.20      0.28       204
+         2.0       0.76      0.73      0.75       346
+         3.0       0.84      0.89      0.86       179
+         4.0       0.39      0.59      0.47       120
+
+    accuracy                           0.66      1199
+   macro avg       0.62      0.63      0.61      1199
+weighted avg       0.65      0.66      0.64      1199
+ 
+
+
+====== chp030-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  81.07  76.29   83.04  64.96     70.17
+1  82.49  19.61   95.38  46.51     27.59
+2  85.57  73.12   90.62  75.98     74.52
+3  95.83  88.83   97.06  84.13     86.41
+4  86.82  59.17   89.90  39.44     47.33
+Total accuracy: 65.89%
+Average sen: 63.40%
+Average spec: 91.20%
+Macro f1-score: 61.20%
+
+=== Test on chp031-nsrr. train_data(7883), test_data(111) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1992720676406385
+Starting epoch 2/10.
+Epoch finished! Loss: 1.0031353272308552
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9080353314955223
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8412638285438422
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7990200354287467
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7516724975202894
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7127002093014378
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6855178987087333
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6376297710851062
+Starting epoch 10/10.
+Epoch finished! Loss: 0.569586716611222
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5684684684684684
+              precision    recall  f1-score   support
+
+         0.0       0.23      0.57      0.33        51
+         1.0       0.04      0.02      0.03        48
+         2.0       0.51      0.59      0.54       309
+         3.0       0.57      0.91      0.70       229
+         4.0       0.91      0.45      0.60       473
+
+    accuracy                           0.57      1110
+   macro avg       0.45      0.51      0.44      1110
+weighted avg       0.66      0.57      0.57      1110
+ 
+
+
+====== chp031-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  89.19  56.86   90.75  22.83     32.58
+1  93.51   2.08   97.65   3.85      2.70
+2  72.52  58.58   77.90  50.56     54.27
+3  83.78  90.83   81.95  56.68     69.80
+4  74.68  44.82   96.86  91.38     60.14
+Total accuracy: 56.85%
+Average sen: 50.63%
+Average spec: 89.02%
+Macro f1-score: 43.90%
+
+=== Test on chp032-nsrr. train_data(7888), test_data(106) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1603971024606434
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9373642048859959
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8677022191624956
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8254468605149216
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7770335465518351
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7541760196767483
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7104405302384178
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6728800833603452
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6255308188271099
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5694724701080226
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7537735849056604
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.68      0.70        47
+         1.0       0.40      0.04      0.07       108
+         2.0       0.87      0.84      0.85       526
+         3.0       0.95      0.73      0.83       150
+         4.0       0.55      0.93      0.69       229
+
+    accuracy                           0.75      1060
+   macro avg       0.70      0.64      0.63      1060
+weighted avg       0.76      0.75      0.73      1060
+ 
+
+
+====== chp032-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  97.45  68.09   98.82  72.73     70.33
+1  89.62   3.70   99.37  40.00      6.78
+2  85.85  83.84   87.83  87.15     85.47
+3  95.66  73.33   99.34  94.83     82.71
+4  82.17  92.58   79.30  55.21     69.17
+Total accuracy: 75.38%
+Average sen: 64.31%
+Average spec: 92.93%
+Macro f1-score: 62.89%
+
+=== Test on chp033-nsrr. train_data(7893), test_data(101) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1686185222161587
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9521573591594914
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8777660244015838
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8330960206508032
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7912397044315387
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7606590273489063
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7223727860793717
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6867815114850478
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6386980573034106
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5898461955468465
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6752475247524753
+              precision    recall  f1-score   support
+
+         0.0       0.20      0.84      0.33        32
+         1.0       0.61      0.57      0.59       252
+         2.0       0.73      0.41      0.52       208
+         3.0       0.88      0.95      0.91       254
+         4.0       0.74      0.70      0.72       264
+
+    accuracy                           0.68      1010
+   macro avg       0.63      0.69      0.61      1010
+weighted avg       0.72      0.68      0.68      1010
+ 
+
+
+====== chp033-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  89.11  84.38   89.26  20.45     32.93
+1  80.20  56.75   87.99  61.11     58.85
+2  84.75  40.87   96.13  73.28     52.47
+3  95.35  94.88   95.50  87.64     91.12
+4  85.64  70.45   91.02  73.52     71.95
+Total accuracy: 67.52%
+Average sen: 69.46%
+Average spec: 91.98%
+Macro f1-score: 61.46%
+
+=== Test on chp034-nsrr. train_data(7890), test_data(104) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.14928807393851
+Starting epoch 2/10.
+Epoch finished! Loss: 0.933624020385258
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8574781630396238
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8171990941169903
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7812237526635228
+Starting epoch 6/10.
+Epoch finished! Loss: 0.754663023171086
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7180992526753904
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6732568577083234
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6295355912203413
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5920417563904663
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6682692307692307
+              precision    recall  f1-score   support
+
+         0.0       0.20      0.85      0.32        20
+         1.0       0.00      0.00      0.00        68
+         2.0       0.73      0.50      0.59       375
+         3.0       0.83      0.82      0.83       345
+         4.0       0.58      0.89      0.71       232
+
+    accuracy                           0.67      1040
+   macro avg       0.47      0.61      0.49      1040
+weighted avg       0.67      0.67      0.65      1040
+ 
+
+
+====== chp034-nsrr ======
+
+The f1-score of  1  has ZeroDivisionError.
+   acc %  sen %  spec %  ppr %  f1-score
+0  93.17  85.00   93.33  20.00     32.38
+1  93.08   0.00   99.59   0.00      0.00
+2  75.38  49.87   89.77  73.33     59.37
+3  88.56  82.32   91.65  83.04     82.68
+4  83.46  89.22   81.81  58.47     70.65
+Total accuracy: 66.83%
+Average sen: 61.28%
+Average spec: 91.23%
+Macro f1-score: 49.01%
+
+=== Test on chp036-nsrr. train_data(7868), test_data(126) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.181568289151932
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9723619464547882
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8986496768379939
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8498248372217474
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8067455297814677
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7754691010364746
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7444677108723395
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7064604460434756
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6710364592780593
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6129275807594222
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6603174603174603
+              precision    recall  f1-score   support
+
+         0.0       0.74      0.93      0.82       237
+         1.0       0.65      0.23      0.34       167
+         2.0       0.68      0.69      0.68       563
+         3.0       0.06      1.00      0.11         8
+         4.0       0.93      0.61      0.74       285
+
+    accuracy                           0.66      1260
+   macro avg       0.61      0.69      0.54      1260
+weighted avg       0.74      0.66      0.67      1260
+ 
+
+
+====== chp036-nsrr ======
+   acc %   sen %  spec %  ppr %  f1-score
+0  92.54   93.25   92.38  73.91     82.46
+1  88.17   23.35   98.08  65.00     34.36
+2  71.51   69.27   73.31  67.71     68.48
+3  89.76  100.00   89.70   5.84     11.03
+4  90.08   61.05   98.56  92.55     73.57
+Total accuracy: 66.03%
+Average sen: 69.39%
+Average spec: 90.41%
+Macro f1-score: 53.98%
+
+=== Test on chp037-nsrr. train_data(7891), test_data(103) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1549422997787726
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9336788743847677
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8769059462616803
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8315314438633139
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7935540783767918
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7527275174969503
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7296901332788142
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7019506100239409
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6547121746873976
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6072195592904122
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5340466926070039
+              precision    recall  f1-score   support
+
+         0.0       0.45      0.85      0.58       202
+         1.0       0.37      0.19      0.25       166
+         2.0       0.83      0.20      0.32       348
+         3.0       0.99      0.90      0.94       208
+         4.0       0.32      0.88      0.47       104
+
+    accuracy                           0.53      1028
+   macro avg       0.59      0.60      0.51      1028
+weighted avg       0.66      0.53      0.50      1028
+ 
+
+
+====== chp037-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  76.36  84.65   74.33  44.65     58.46
+1  81.71  18.67   93.85  36.90     24.80
+2  71.40  19.54   97.94  82.93     31.63
+3  97.86  89.90   99.88  99.47     94.44
+4  79.47  88.46   78.46  31.62     46.58
+Total accuracy: 53.40%
+Average sen: 60.25%
+Average spec: 88.89%
+Macro f1-score: 51.18%
+
+=== Test on chp038-nsrr. train_data(7892), test_data(102) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1235487078079254
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9157901683158899
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8696200889930676
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8185621435046951
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7822535025907258
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7505250168994957
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7116932362431356
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6811802440118729
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6355482149864482
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5751353029553579
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7
+              precision    recall  f1-score   support
+
+         0.0       0.39      0.89      0.54        62
+         1.0       0.44      0.35      0.39       178
+         2.0       0.89      0.82      0.85       437
+         3.0       0.83      0.88      0.86       102
+         4.0       0.65      0.62      0.64       241
+
+    accuracy                           0.70      1020
+   macro avg       0.64      0.71      0.66      1020
+weighted avg       0.72      0.70      0.70      1020
+ 
+
+
+====== chp038-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  90.88  88.71   91.02  39.01     54.19
+1  80.88  34.83   90.62  43.97     38.87
+2  87.94  81.92   92.45  89.05     85.34
+3  97.06  88.24   98.04  83.33     85.71
+4  83.24  61.83   89.86  65.35     63.54
+Total accuracy: 70.00%
+Average sen: 71.10%
+Average spec: 92.40%
+Macro f1-score: 65.53%
+
+=== Test on chp039-nsrr. train_data(7883), test_data(111) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1944815786508134
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9591869879041226
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8863272784173791
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8445510491350581
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7926774784393117
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7613983981802984
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7303394002055154
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6901230948225496
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6477525939191053
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6092342502309889
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5432432432432432
+              precision    recall  f1-score   support
+
+         0.0       0.09      0.63      0.15        19
+         1.0       0.52      0.36      0.43       355
+         2.0       0.69      0.60      0.64       376
+         3.0       0.89      0.87      0.88       199
+         4.0       0.32      0.40      0.35       161
+
+    accuracy                           0.54      1110
+   macro avg       0.50      0.57      0.49      1110
+weighted avg       0.61      0.54      0.57      1110
+ 
+
+
+====== chp039-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  87.84  63.16   88.27   8.57     15.09
+1  69.10  35.77   84.77  52.48     42.55
+2  77.21  59.84   86.10  68.81     64.01
+3  95.86  87.44   97.69  89.23     88.32
+4  78.65  40.37   85.14  31.55     35.42
+Total accuracy: 54.32%
+Average sen: 57.32%
+Average spec: 88.40%
+Macro f1-score: 49.08%
+
+=== Test on chp040-nsrr. train_data(7887), test_data(107) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.192348760926179
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9754750870054748
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8935222192691062
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8473217594366388
+Starting epoch 5/10.
+Epoch finished! Loss: 0.801009720276455
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7601814567286351
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7337473807525514
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6967838342646657
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6558446115270484
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6084139900007829
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6074766355140186
+              precision    recall  f1-score   support
+
+         0.0       0.39      0.93      0.55       181
+         1.0       0.50      0.18      0.26       142
+         2.0       0.80      0.77      0.78       330
+         3.0       0.76      0.92      0.83       201
+         4.0       0.66      0.09      0.16       216
+
+    accuracy                           0.61      1070
+   macro avg       0.62      0.58      0.52      1070
+weighted avg       0.66      0.61      0.56      1070
+ 
+
+
+====== chp040-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  74.02  93.37   70.08  38.85     54.87
+1  86.73  17.61   97.31  50.00     26.04
+2  87.01  76.67   91.62  80.32     78.45
+3  93.08  91.54   93.44  76.35     83.26
+4  80.65   8.80   98.83  65.52     15.51
+Total accuracy: 60.75%
+Average sen: 57.60%
+Average spec: 90.26%
+Macro f1-score: 51.63%
+
+=== Test on chp041-nsrr. train_data(7884), test_data(110) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1538460067080967
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9439299423531228
+Starting epoch 3/10.
+Epoch finished! Loss: 0.876770309876972
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8370700236126251
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8065568895887603
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7644743632317195
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7444591934835245
+Starting epoch 8/10.
+Epoch finished! Loss: 0.709683454278762
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6726429045465089
+Starting epoch 10/10.
+Epoch finished! Loss: 0.625937153467067
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5863636363636363
+              precision    recall  f1-score   support
+
+         0.0       0.64      0.82      0.72       216
+         1.0       0.10      0.09      0.09        58
+         2.0       0.96      0.39      0.56       527
+         3.0       0.20      0.97      0.33        33
+         4.0       0.56      0.83      0.67       266
+
+    accuracy                           0.59      1100
+   macro avg       0.49      0.62      0.48      1100
+weighted avg       0.73      0.59      0.59      1100
+ 
+
+
+====== chp041-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  87.36  82.41   88.57  63.80     71.92
+1  91.00   8.62   95.59   9.80      9.17
+2  70.27  39.47   98.60  96.30     55.99
+3  88.27  96.97   88.00  20.00     33.16
+4  80.36  83.46   79.38  56.35     67.27
+Total accuracy: 58.64%
+Average sen: 62.19%
+Average spec: 90.03%
+Macro f1-score: 47.50%
+
+=== Test on chp042-nsrr. train_data(7883), test_data(111) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1934975446934628
+Starting epoch 2/10.
+Epoch finished! Loss: 0.966384397772363
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9030299660215523
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8600871485804543
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8081613509788126
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7732840701181272
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7386362227010848
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7174341589363699
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6810787964971537
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6341082115804181
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5972972972972973
+              precision    recall  f1-score   support
+
+         0.0       0.31      0.94      0.46       153
+         1.0       0.27      0.06      0.09       232
+         2.0       0.92      0.60      0.73       441
+         3.0       0.83      0.90      0.87        93
+         4.0       0.77      0.82      0.79       191
+
+    accuracy                           0.60      1110
+   macro avg       0.62      0.66      0.59      1110
+weighted avg       0.67      0.60      0.58      1110
+ 
+
+
+====== chp042-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  69.91  94.12   66.04  30.70     46.30
+1  77.12   5.60   96.01  27.08      9.29
+2  82.07  60.32   96.41  91.72     72.78
+3  97.66  90.32   98.33  83.17     86.60
+4  92.70  81.68   94.99  77.23     79.39
+Total accuracy: 59.73%
+Average sen: 66.41%
+Average spec: 90.36%
+Macro f1-score: 58.87%
+
+=== Test on chp043-nsrr. train_data(7874), test_data(120) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2707938863179886
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9857976978888505
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9006181172221861
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8576802919598668
+Starting epoch 5/10.
+Epoch finished! Loss: 0.812249049336059
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7794555238953388
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7562542530829903
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7250708198835162
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6865139548895168
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6564827011909994
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7133333333333334
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.62      0.71       143
+         1.0       0.51      0.12      0.19       197
+         2.0       0.86      0.83      0.84       506
+         3.0       0.85      0.83      0.84        64
+         4.0       0.55      0.94      0.69       290
+
+    accuracy                           0.71      1200
+   macro avg       0.72      0.67      0.65      1200
+weighted avg       0.72      0.71      0.68      1200
+ 
+
+
+====== chp043-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  93.92  62.24   98.20  82.41     70.92
+1  83.67  11.68   97.81  51.11     19.01
+2  86.83  82.81   89.77  85.51     84.14
+3  98.33  82.81   99.21  85.48     84.13
+4  79.92  93.79   75.49  54.95     69.30
+Total accuracy: 71.33%
+Average sen: 66.66%
+Average spec: 92.10%
+Macro f1-score: 65.50%
+
+=== Test on chp044-nsrr. train_data(7889), test_data(105) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1387077979176177
+Starting epoch 2/10.
+Epoch finished! Loss: 0.936352986483102
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8676450875809956
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8216305899287238
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7749506768765788
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7402506525519535
+Starting epoch 7/10.
+Epoch finished! Loss: 0.705468830950369
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6747827559785189
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6299438154334345
+Starting epoch 10/10.
+Epoch finished! Loss: 0.580301865802955
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5904761904761905
+              precision    recall  f1-score   support
+
+         0.0       0.37      0.92      0.53        25
+         1.0       0.25      0.05      0.09        93
+         2.0       0.46      0.87      0.60       324
+         3.0       0.96      0.50      0.66       484
+         4.0       0.68      0.56      0.61       124
+
+    accuracy                           0.59      1050
+   macro avg       0.54      0.58      0.50      1050
+weighted avg       0.70      0.59      0.58      1050
+ 
+
+
+====== chp044-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  96.10  92.00   96.20  37.10     52.87
+1  90.19   5.38   98.43  25.00      8.85
+2  64.19  87.04   53.99  45.78     60.00
+3  76.00  49.79   98.41  96.40     65.67
+4  91.62  55.65   96.44  67.65     61.06
+Total accuracy: 59.05%
+Average sen: 57.97%
+Average spec: 88.69%
+Macro f1-score: 49.69%
+
+=== Test on chp045-nsrr. train_data(7874), test_data(120) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.169209912816936
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9375970442004247
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8725501400391362
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8297319391782584
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7986233921714477
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7618350137825085
+Starting epoch 7/10.
+Epoch finished! Loss: 0.725127173575846
+Starting epoch 8/10.
+Epoch finished! Loss: 0.688797964187862
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6519745352951363
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6041862020195666
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6505421184320267
+              precision    recall  f1-score   support
+
+         0.0       0.69      0.64      0.66       151
+         1.0       0.34      0.28      0.31       135
+         2.0       0.75      0.69      0.72       442
+         3.0       0.87      0.65      0.74       221
+         4.0       0.53      0.80      0.63       250
+
+    accuracy                           0.65      1199
+   macro avg       0.63      0.61      0.61      1199
+weighted avg       0.67      0.65      0.65      1199
+ 
+
+
+====== chp045-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  91.74  63.58   95.80  68.57     65.98
+1  85.74  28.15   93.05  33.93     30.77
+2  80.15  68.78   86.79  75.25     71.87
+3  91.66  64.71   97.75  86.67     74.09
+4  80.82  79.60   81.14  52.65     63.38
+Total accuracy: 65.05%
+Average sen: 60.96%
+Average spec: 90.91%
+Macro f1-score: 61.22%
+
+=== Test on chp046-nsrr. train_data(7885), test_data(109) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.186688125814278
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9584809725886674
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8839142069144903
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8451159188741355
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8114586533401823
+Starting epoch 6/10.
+Epoch finished! Loss: 0.771654676059781
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7428083295371327
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7068129768075072
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6691642066246362
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6105666509096696
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.44036697247706424
+              precision    recall  f1-score   support
+
+         0.0       0.78      0.95      0.86       226
+         1.0       0.33      0.01      0.02       362
+         2.0       0.20      0.58      0.30       192
+         3.0       0.03      1.00      0.05         2
+         4.0       0.80      0.48      0.60       308
+
+    accuracy                           0.44      1090
+   macro avg       0.43      0.60      0.37      1090
+weighted avg       0.54      0.44      0.41      1090
+ 
+
+
+====== chp046-nsrr ======
+   acc %   sen %  spec %  ppr %  f1-score
+0  93.39   95.13   92.94  77.90     85.66
+1  66.51    0.83   99.18  33.33      1.62
+2  52.66   58.33   51.45  20.44     30.27
+3  93.49  100.00   93.47   2.74      5.33
+4  82.02   48.05   95.40  80.43     60.16
+Total accuracy: 44.04%
+Average sen: 60.47%
+Average spec: 86.49%
+Macro f1-score: 36.61%
+
+=== Test on chp047-nsrr. train_data(7905), test_data(89) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2002703628208065
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9808516701188269
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9111784958386723
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8628250502710101
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8218215931819964
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7830190553695341
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7485584054566636
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7157100769160669
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6819231990394713
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6475867713365374
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5382022471910113
+              precision    recall  f1-score   support
+
+         0.0       0.66      0.69      0.67       311
+         1.0       0.58      0.13      0.21       231
+         2.0       0.56      0.75      0.64       233
+         3.0       0.43      1.00      0.60        25
+         4.0       0.25      0.39      0.30        90
+
+    accuracy                           0.54       890
+   macro avg       0.49      0.59      0.49       890
+weighted avg       0.56      0.54      0.51       890
+ 
+
+
+====== chp047-nsrr ======
+   acc %   sen %  spec %  ppr %  f1-score
+0  76.63   68.81   80.83  65.85     67.30
+1  74.94   12.99   96.66  57.69     21.20
+2  77.75   75.11   78.69  55.56     63.87
+3  96.29  100.00   96.18  43.10     60.24
+4  82.02   38.89   86.88  25.00     30.43
+Total accuracy: 53.82%
+Average sen: 59.16%
+Average spec: 87.85%
+Macro f1-score: 48.61%
+
+=== Test on chp048-nsrr. train_data(7891), test_data(103) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1633049779216298
+Starting epoch 2/10.
+Epoch finished! Loss: 0.983495240277966
+Starting epoch 3/10.
+Epoch finished! Loss: 0.910112746125996
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8644515990228858
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8294406396505648
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7883524137002584
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7608588119196801
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7289597403602758
+Starting epoch 9/10.
+Epoch finished! Loss: 0.7010323249644048
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6761060257375013
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.3592233009708738
+              precision    recall  f1-score   support
+
+         0.0       0.06      0.97      0.11        38
+         1.0       0.25      0.01      0.01       144
+         2.0       0.89      0.38      0.53       505
+         3.0       0.81      0.54      0.65       107
+         4.0       0.91      0.36      0.51       236
+
+    accuracy                           0.36      1030
+   macro avg       0.58      0.45      0.36      1030
+weighted avg       0.77      0.36      0.45      1030
+ 
+
+
+====== chp048-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  40.49  97.37   38.31   5.70     10.77
+1  85.83   0.69   99.66  25.00      1.35
+2  67.18  37.62   95.62  89.20     52.92
+3  93.88  54.21   98.48  80.56     64.80
+4  84.47  35.59   98.99  91.30     51.22
+Total accuracy: 35.92%
+Average sen: 45.10%
+Average spec: 86.21%
+Macro f1-score: 36.21%
+
+=== Test on chp049-nsrr. train_data(7886), test_data(108) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1771710684456802
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9520127523671552
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8895469502295335
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8374591582468923
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7977221686827954
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7727819665283115
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7336755345012936
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6955963985115139
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6544298609803776
+Starting epoch 10/10.
+Epoch finished! Loss: 0.616442549368603
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5453703703703704
+              precision    recall  f1-score   support
+
+         0.0       0.71      0.37      0.49       108
+         1.0       0.68      0.16      0.26       387
+         2.0       0.47      0.86      0.61       360
+         3.0       0.57      0.86      0.68        95
+         4.0       0.77      0.72      0.74       130
+
+    accuracy                           0.55      1080
+   macro avg       0.64      0.60      0.56      1080
+weighted avg       0.61      0.55      0.49      1080
+ 
+
+
+====== chp049-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  92.22  37.04   98.35  71.43     48.78
+1  67.22  16.28   95.67  67.74     26.25
+2  62.69  86.39   50.83  46.77     60.68
+3  92.96  86.32   93.60  56.55     68.33
+4  93.98  71.54   97.05  76.86     74.10
+Total accuracy: 54.54%
+Average sen: 59.51%
+Average spec: 87.10%
+Macro f1-score: 55.63%
+
+=== Test on chp051-nsrr. train_data(7885), test_data(109) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2096067176857574
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9538148279646932
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8848060044616007
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8308466718281586
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7895036341272635
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7590165271749957
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7290993441785047
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7036508232506399
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6588959447888251
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6074282738763064
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6513761467889908
+              precision    recall  f1-score   support
+
+         0.0       0.27      0.93      0.42        30
+         1.0       0.30      0.05      0.09       136
+         2.0       0.70      0.57      0.63       414
+         3.0       0.70      0.89      0.78       239
+         4.0       0.70      0.85      0.76       271
+
+    accuracy                           0.65      1090
+   macro avg       0.54      0.66      0.54      1090
+weighted avg       0.64      0.65      0.62      1090
+ 
+
+
+====== chp051-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  92.94  93.33   92.92  27.18     42.11
+1  86.70   5.15   98.32  30.43      8.81
+2  74.50  56.52   85.50  70.48     62.73
+3  89.08  88.70   89.19  69.74     78.08
+4  87.06  84.50   87.91  69.82     76.46
+Total accuracy: 65.14%
+Average sen: 65.64%
+Average spec: 90.77%
+Macro f1-score: 53.64%
+
+=== Test on chp052-nsrr. train_data(7894), test_data(100) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1942892251359192
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9347810609636802
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8729150896969857
+Starting epoch 4/10.
+Epoch finished! Loss: 0.839198373418646
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8052738274156065
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7644973103008947
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7249013132808779
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6885822708086974
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6544875217783436
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6012890626155831
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.724
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.61      0.76       159
+         1.0       0.33      0.06      0.10        87
+         2.0       0.66      0.93      0.77       439
+         3.0       0.77      0.81      0.79       109
+         4.0       0.83      0.60      0.70       206
+
+    accuracy                           0.72      1000
+   macro avg       0.72      0.60      0.62      1000
+weighted avg       0.73      0.72      0.70      1000
+ 
+
+
+====== chp052-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0   93.8  61.01  100.00  100.00     75.78
+1   90.8   5.75   98.90   33.33      9.80
+2   75.8  93.39   62.03   65.81     77.21
+3   95.2  80.73   96.97   76.52     78.57
+4   89.2  60.19   96.73   82.67     69.66
+Total accuracy: 72.40%
+Average sen: 60.22%
+Average spec: 90.93%
+Macro f1-score: 62.21%
+
+=== Test on chp053-nsrr. train_data(7886), test_data(108) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1515520875375282
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9155200439963849
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8639082414320278
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8234619264145793
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7903251573821615
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7453427227015422
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7074398087895462
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6668357479995882
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6139399154385939
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5619288334046221
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6462962962962963
+              precision    recall  f1-score   support
+
+         0.0       0.94      0.40      0.56       251
+         1.0       0.19      0.13      0.15       147
+         2.0       0.67      0.78      0.72       305
+         3.0       0.83      0.93      0.87       250
+         4.0       0.46      0.86      0.60       127
+
+    accuracy                           0.65      1080
+   macro avg       0.62      0.62      0.58      1080
+weighted avg       0.68      0.65      0.63      1080
+ 
+
+
+====== chp053-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  85.56  40.24   99.28  94.39     56.42
+1  80.56  12.93   91.21  18.81     15.32
+2  82.78  77.70   84.77  66.76     71.82
+3  93.80  92.80   94.10  82.56     87.38
+4  86.57  85.83   86.67  46.19     60.06
+Total accuracy: 64.63%
+Average sen: 61.90%
+Average spec: 91.21%
+Macro f1-score: 58.20%
+
+=== Test on chp054-nsrr. train_data(7882), test_data(112) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1669264864649265
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9882307480737037
+Starting epoch 3/10.
+Epoch finished! Loss: 0.9258584718262484
+Starting epoch 4/10.
+Epoch finished! Loss: 0.865073792182552
+Starting epoch 5/10.
+Epoch finished! Loss: 0.82632360490143
+Starting epoch 6/10.
+Epoch finished! Loss: 0.796737300449519
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7616872565092774
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7201226510977382
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6770685266344075
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6204635160336942
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6741071428571429
+              precision    recall  f1-score   support
+
+         0.0       0.87      0.54      0.67       232
+         1.0       0.19      0.05      0.08        98
+         2.0       0.77      0.73      0.75       475
+         3.0       0.63      0.97      0.76        99
+         4.0       0.52      0.83      0.64       216
+
+    accuracy                           0.67      1120
+   macro avg       0.60      0.63      0.58      1120
+weighted avg       0.68      0.67      0.66      1120
+ 
+
+
+====== chp054-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  88.84  53.88   97.97  87.41     66.67
+1  89.82   5.10   97.95  19.23      8.06
+2  79.46  73.47   83.88  77.04     75.22
+3  94.73  96.97   94.52  63.16     76.49
+4  81.96  83.33   81.64  52.02     64.06
+Total accuracy: 67.41%
+Average sen: 62.55%
+Average spec: 91.19%
+Macro f1-score: 58.10%
+
+=== Test on chp055-nsrr. train_data(7883), test_data(111) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1800589805024528
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9815943381054147
+Starting epoch 3/10.
+Epoch finished! Loss: 0.900512238520051
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8495622235279398
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8158803154823139
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7792826691632948
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7478149565418964
+Starting epoch 8/10.
+Epoch finished! Loss: 0.709816538175653
+Starting epoch 9/10.
+Epoch finished! Loss: 0.667179201705958
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6156262484223104
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6468468468468469
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.55      0.65       211
+         1.0       0.43      0.34      0.38       184
+         2.0       0.77      0.80      0.78       408
+         3.0       0.88      0.78      0.83       130
+         4.0       0.40      0.63      0.49       177
+
+    accuracy                           0.65      1110
+   macro avg       0.66      0.62      0.63      1110
+weighted avg       0.67      0.65      0.65      1110
+ 
+
+
+====== chp055-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  88.92  54.50   97.00  80.99     65.16
+1  81.53  34.24   90.93  42.86     38.07
+2  83.78  80.15   85.90  76.76     78.42
+3  96.22  78.46   98.57  87.93     82.93
+4  78.92  62.71   81.99  39.78     48.68
+Total accuracy: 64.68%
+Average sen: 62.01%
+Average spec: 90.88%
+Macro f1-score: 62.65%
+
+=== Test on chp056-nsrr. train_data(7884), test_data(110) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.2038903995062493
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9411108810360056
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8791717735265717
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8379960758658835
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7973202292991773
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7582267813649274
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7208369783489837
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6966079507911871
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6511943242158079
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6037697288098977
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6027272727272728
+              precision    recall  f1-score   support
+
+         0.0       0.54      0.46      0.50        78
+         1.0       0.68      0.06      0.11       284
+         2.0       0.44      0.98      0.60       258
+         3.0       1.00      0.88      0.93       185
+         4.0       0.74      0.66      0.70       295
+
+    accuracy                           0.60      1100
+   macro avg       0.68      0.61      0.57      1100
+weighted avg       0.68      0.60      0.55      1100
+ 
+
+
+====== chp056-nsrr ======
+   acc %  sen %  spec %   ppr %  f1-score
+0  93.36  46.15   96.97   53.73     49.66
+1  75.00   5.99   99.02   68.00     11.00
+2  69.73  98.45   60.93   43.57     60.40
+3  97.91  87.57  100.00  100.00     93.37
+4  84.55  65.76   91.43   73.76     69.53
+Total accuracy: 60.27%
+Average sen: 60.78%
+Average spec: 89.67%
+Macro f1-score: 56.79%
+
+=== Test on chp057-nsrr. train_data(7875), test_data(119) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1628017390698309
+Starting epoch 2/10.
+Epoch finished! Loss: 0.961506021560526
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8988559367241672
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8415461581347101
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8189924444903867
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7764471615966424
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7564585011599176
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7210282935953807
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6892765548738167
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6546283212822911
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7603027754415476
+              precision    recall  f1-score   support
+
+         0.0       0.71      0.88      0.79       274
+         1.0       0.39      0.19      0.25       162
+         2.0       0.80      0.87      0.84       499
+         3.0       0.75      0.81      0.78        74
+         4.0       0.90      0.76      0.82       180
+
+    accuracy                           0.76      1189
+   macro avg       0.71      0.70      0.70      1189
+weighted avg       0.74      0.76      0.74      1189
+ 
+
+
+====== chp057-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  89.15  88.32   89.40  71.39     78.96
+1  85.03  18.52   95.52  39.47     25.21
+2  85.70  87.17   84.64  80.41     83.65
+3  97.14  81.08   98.21  75.00     77.92
+4  95.04  76.11   98.41  89.54     82.28
+Total accuracy: 76.03%
+Average sen: 70.24%
+Average spec: 93.24%
+Macro f1-score: 69.60%
+
+=== Test on chp058-nsrr. train_data(7891), test_data(103) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1633760285468155
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9511750028840489
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8760241902373136
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8271514750705472
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7937349556214607
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7583700548408905
+Starting epoch 7/10.
+Epoch finished! Loss: 0.725752005596729
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6984904670594461
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6597953519024927
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6096213280739138
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.6504854368932039
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.38      0.52       105
+         1.0       0.21      0.14      0.16        44
+         2.0       0.57      0.72      0.63       317
+         3.0       0.73      0.91      0.81       268
+         4.0       0.70      0.52      0.59       296
+
+    accuracy                           0.65      1030
+   macro avg       0.60      0.53      0.54      1030
+weighted avg       0.66      0.65      0.64      1030
+ 
+
+
+====== chp058-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  92.82  38.10   99.03  81.63     51.95
+1  94.08  13.64   97.67  20.69     16.44
+2  74.37  71.61   75.60  56.61     63.23
+3  89.13  91.04   88.45  73.49     81.33
+4  79.71  51.69   91.01  69.86     59.42
+Total accuracy: 65.05%
+Average sen: 53.21%
+Average spec: 90.35%
+Macro f1-score: 54.47%
+
+=== Test on chp059-nsrr. train_data(7881), test_data(113) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.1295983639314089
+Starting epoch 2/10.
+Epoch finished! Loss: 0.949291129251422
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8761221418147764
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8341102014640867
+Starting epoch 5/10.
+Epoch finished! Loss: 0.7863658732039674
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7562959905959628
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7206363153412257
+Starting epoch 8/10.
+Epoch finished! Loss: 0.6927953817631085
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6464175704847738
+Starting epoch 10/10.
+Epoch finished! Loss: 0.5988733531708644
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.5495575221238939
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.64      0.78       267
+         1.0       0.46      0.05      0.09       254
+         2.0       0.42      0.91      0.58       355
+         3.0       0.68      0.79      0.73        87
+         4.0       0.74      0.27      0.39       167
+
+    accuracy                           0.55      1130
+   macro avg       0.66      0.53      0.51      1130
+weighted avg       0.63      0.55      0.50      1130
+ 
+
+
+====== chp059-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  91.33  64.42   99.65  98.29     77.83
+1  77.35   5.12   98.29  46.43      9.22
+2  57.96  90.70   42.97  42.15     57.55
+3  95.49  79.31   96.84  67.65     73.02
+4  87.79  26.95   98.34  73.77     39.47
+Total accuracy: 54.96%
+Average sen: 53.30%
+Average spec: 87.22%
+Macro f1-score: 51.42%
+
+=== Test on chp060-nsrr. train_data(7868), test_data(126) ===
+==== START TRAINING ====
+load model to cuda:0
+Starting epoch 1/10.
+Epoch finished! Loss: 1.205903134728206
+Starting epoch 2/10.
+Epoch finished! Loss: 0.9671464756548253
+Starting epoch 3/10.
+Epoch finished! Loss: 0.8966205940598446
+Starting epoch 4/10.
+Epoch finished! Loss: 0.8566589616333862
+Starting epoch 5/10.
+Epoch finished! Loss: 0.8113778900478329
+Starting epoch 6/10.
+Epoch finished! Loss: 0.7805901991047022
+Starting epoch 7/10.
+Epoch finished! Loss: 0.7490150413212885
+Starting epoch 8/10.
+Epoch finished! Loss: 0.7172741270778137
+Starting epoch 9/10.
+Epoch finished! Loss: 0.6843557151901813
+Starting epoch 10/10.
+Epoch finished! Loss: 0.6520677260656393
+Model saved !
+
+==== START TESTING ====
+Sleep stage: acc = 0.7293650793650793
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.78      0.84       519
+         1.0       0.43      0.43      0.43       201
+         2.0       0.60      0.91      0.72       228
+         3.0       0.89      0.87      0.88       158
+         4.0       0.73      0.53      0.61       154
+
+    accuracy                           0.73      1260
+   macro avg       0.71      0.70      0.70      1260
+weighted avg       0.75      0.73      0.73      1260
+ 
+
+
+====== chp060-nsrr ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  87.70  78.42   94.20  90.44     84.00
+1  81.98  42.79   89.42  43.43     43.11
+2  87.38  91.23   86.53  59.94     72.35
+3  96.98  86.71   98.46  88.96     87.82
+4  91.83  52.60   97.29  72.97     61.13
+Total accuracy: 72.94%
+Average sen: 70.35%
+Average spec: 93.18%
+Macro f1-score: 69.68%
+
+====== all ======
+   acc %  sen %  spec %  ppr %  f1-score
+0  89.04  76.32   91.11  58.29     66.10
+1  85.41  20.42   94.82  36.32     26.14
+2  78.76  75.03   81.02  70.51     72.70
+3  92.88  75.59   96.56  82.37     78.83
+4  86.63  63.80   91.69  62.98     63.39
+Total accuracy: 66.36%
+Average sen: 62.23%
+Average spec: 91.04%
+Macro f1-score: 61.43%

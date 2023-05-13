@@ -1,8 +1,9 @@
 '''Calculate output dimension of the convolutional kernel!'''
 import math
-ninput = 12
+ninput = 3
 padding = 0
 settings = [
+    [3, 1],
     [3, 2],
     [3, 3],
     [4, 2],

@@ -24,7 +24,7 @@ from torch import optim
 from torch.utils.data import Dataset, DataLoader
 
 # from network import SquareSmall10min
-from network import SquareSmall60min_S
+from network import SquareSmall1min
 from a_tools import myprint
 from a_metrics import plot_confusion_matrix, plot_ROC_curve
 
@@ -32,17 +32,17 @@ savelog = 1
 savepic = 1
 savecheckpoints = 1
 
-do_diagnose = False
+do_diagnose = True
 do_sleepstaging = True
 is_multitask = do_diagnose and do_sleepstaging
 is_per_epoch = 0 # input: 0: sqauresmall, 1: multicnn
-DURATION_MINUTES = 60 # my first choice: 15min
+DURATION_MINUTES = 1 # my first choice: 15min
 DEFAULT_MINUTES_PER_EPOCH = 0.5  # 30/60 or DEFAULT_SECONDS_PER_EPOCH/60;
 nepoch = int(DURATION_MINUTES/DEFAULT_MINUTES_PER_EPOCH)
 
 # channel_idx = {'EEG': 0, 'EOG': 1, 'EMG': 2}
 
-MODE = f'squaresmall_{DURATION_MINUTES}min_zscore_shuffle_ROC_ss'
+MODE = f'squaresmall_{DURATION_MINUTES}min_zscore_shuffle_ROC'
 
 if savelog:
     class Logger(object):
@@ -127,7 +127,7 @@ def LeaveOneSubjectOut(base):
         print(f'\n=== Test on {subject}. train_data({ntrain}), test_data({ntest}) ===')
 
         print('==== START TRAINING ====')
-        model = SquareSmall60min_S(n_channels=3,nepoch=nepoch)
+        model = SquareSmall1min(n_channels=3,nepoch=nepoch)
         # if torch.cuda.device_count()>1:
         #     model = nn.DataParallel(model)
         # model = nn.DataParallel(model, device_ids=[0,1])
@@ -334,7 +334,11 @@ class NarcoNight15min(Dataset):
             if DURATION_MINUTES == 15:
                 signal_pic = signal_pic.reshape((3,30,3000))
         else: 
-            if DURATION_MINUTES == 2.5:
+            if DURATION_MINUTES == 0.5:
+                signal_pic = signal_pic.reshape((3,50,60))
+            elif DURATION_MINUTES == 1:
+                signal_pic = signal_pic.reshape((3,60,100))
+            elif DURATION_MINUTES == 2.5:
                 signal_pic = signal_pic.reshape((3,100,150))
             elif DURATION_MINUTES == 5:
                 signal_pic = signal_pic.reshape((3,100,300))

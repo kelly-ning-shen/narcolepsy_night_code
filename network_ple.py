@@ -73,37 +73,37 @@ class Extraction_Network(nn.Module):
         '''TaskA-Experts'''
         for i in range(TaskExpertNum):
             setattr(self, "expert_layer"+str(i+1), Expert_net(in_channels)) 
-        self.Experts_A = [getattr(self,"expert_layer"+str(i+1)) for i in range(TaskExpertNum)]#Experts_A模块，TaskExpertNum个Expert
+        self.Experts_A = [getattr(self,"expert_layer"+str(i+1)).cuda() for i in range(TaskExpertNum)]#Experts_A模块，TaskExpertNum个Expert
         '''Shared-Experts'''
         for i in range(CommonExpertNum):
             setattr(self, "expert_layer"+str(i+1), Expert_net(in_channels)) 
-        self.Experts_Shared = [getattr(self,"expert_layer"+str(i+1)) for i in range(CommonExpertNum)]#Experts_Shared模块，CommonExpertNum个Expert
+        self.Experts_Shared = [getattr(self,"expert_layer"+str(i+1)).cuda() for i in range(CommonExpertNum)]#Experts_Shared模块，CommonExpertNum个Expert
         '''TaskB-Experts'''
         for i in range(TaskExpertNum):
             setattr(self, "expert_layer"+str(i+1), Expert_net(in_channels)) 
-        self.Experts_B = [getattr(self,"expert_layer"+str(i+1)) for i in range(TaskExpertNum)]#Experts_B模块，TaskExpertNum个Expert
+        self.Experts_B = [getattr(self,"expert_layer"+str(i+1)).cuda() for i in range(TaskExpertNum)]#Experts_B模块，TaskExpertNum个Expert
         
         '''Task_Gate网络结构'''
         for i in range(self.n_task):
             setattr(self, "gate_layer"+str(i+1), nn.Sequential(nn.Flatten(),
                                                                 nn.Linear(FeatureDim, TaskExpertNum+CommonExpertNum),
                                         					    nn.Softmax(dim=1))) 
-        self.Task_Gates = [getattr(self,"gate_layer"+str(i+1)) for i in range(self.n_task)]#为每个gate创建一个lr+softmax      
+        self.Task_Gates = [getattr(self,"gate_layer"+str(i+1)).cuda() for i in range(self.n_task)]#为每个gate创建一个lr+softmax      
         '''Shared_Gate网络结构'''
         for i in range(self.n_share):
             setattr(self, "gate_layer"+str(i+1), nn.Sequential(nn.Flatten(),
                                                                 nn.Linear(FeatureDim, 2*TaskExpertNum+CommonExpertNum),
                                         					    nn.Softmax(dim=1))) 
-        self.Shared_Gates = [getattr(self,"gate_layer"+str(i+1)) for i in range(self.n_share)]#共享gate       
+        self.Shared_Gates = [getattr(self,"gate_layer"+str(i+1)).cuda() for i in range(self.n_share)]#共享gate       
         
     def forward(self, x_A, x_S, x_B):
         
         '''Experts_A模块输出'''
         Experts_A_Out = [expert(x_A) for expert in self.Experts_A] #
-        ExpertOutDim = Experts_A_Out.shape
-        print(ExpertOutDim)
+        ExpertOutDim = Experts_A_Out[0].shape
+        # print(ExpertOutDim)
         Experts_A_Out = torch.cat(([expert[:,np.newaxis,:,:,:] for expert in Experts_A_Out]),dim = 1) # 维度 (bs,TaskExpertNum,ExpertOutDim)
-        print(Experts_A_Out.shape)
+        # print(Experts_A_Out.shape)
         '''Experts_Shared模块输出'''
         Experts_Shared_Out = [expert(x_S) for expert in self.Experts_Shared] #
         Experts_Shared_Out = torch.cat(([expert[:,np.newaxis,:,:,:] for expert in Experts_Shared_Out]),dim = 1) # 维度 (bs,CommonExpertNum,ExpertOutDim)
@@ -172,6 +172,7 @@ class CGC(nn.Module):
          
         ss = self.tower1_1(Gate_A_Out)
         ss = self.tower1_2(ss)
+        ss = torch.squeeze(ss, 3)
 
         d = self.tower2_1(Gate_B_Out) 
         d = self.tower2_2(d)
